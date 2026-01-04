@@ -2,18 +2,36 @@ import { defineStore } from 'pinia';
 import { ref, computed } from 'vue';
 import { buildApi } from '../api/client';
 
-// Build interfaces
+export interface SkillSetup {
+    label: string;
+    activeSkill: string;
+    supportGems: string[];
+    description: string;
+}
+
 export interface Build {
     id: number;
     name: string;
     class: string;
     ascendancy: string;
+    // mainSkill removed/deprecated in favor of data.skillGroups, but keeping as string for table compat
     mainSkill: string;
     createdAt: string;
     updatedAt?: string;
     isPublic?: boolean;
     downloads?: number;
-    data?: any;
+    data?: {
+        skillGroups: SkillSetup[];
+        keyMechanics: { name: string; description: string }[];
+        passiveTreePath: {
+            keystones: string[];
+            keyNodes: string[];
+        };
+        playstyle: string; // Add playstyle here
+        analysis: any;
+        gearProgression: any;
+        levelingGuide: any;
+    };
     explanation?: string;
 }
 

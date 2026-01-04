@@ -24,16 +24,28 @@ export interface BuildPreferences {
     preferred_ascendancy?: string;
 }
 
+export interface SkillSetup {
+    label: string; // e.g., "Clear Setup", "Boss Killer", "Movement", "Auras"
+    activeSkill: string;
+    supportGems: string[];
+    description: string; // How to use this setup
+}
+
 export interface Build {
     name: string;
     class: string;
     ascendancy: string;
     playstyle: string;
-    mainSkill: {
-        gem: string;
+
+    // Expanded Skill Section
+    skillGroups: SkillSetup[];
+
+    // Synergies & Mechanics
+    keyMechanics: {
+        name: string;
         description: string;
-        scalingMechanic: string;
-    };
+    }[];
+
     levelingGuide: {
         phases: LevelingPhase[];
         respecNeeded: boolean;
@@ -47,6 +59,7 @@ export interface Build {
     };
     passiveTreePath: {
         keystones: string[];
+        keyNodes: string[]; // Important notables
         byPhase: any;
     };
     analysis: {
@@ -271,91 +284,101 @@ function getAscendancyContext(className: string, playstyleDescription: string): 
     return context + '💡 **CRITICAL**: Ascendancy nodes are build-defining. Choose the ascendancy that best enables your playstyle!\n';
 }
 
-// Helper to build context-aware system prompt
+// Override buildSystemPrompt for new validation
 function buildSystemPrompt(preferences: BuildPreferences): string {
     // Get skills context for this class
     const classInfo = preferences.class ? POE2_CLASSES.find(c => c.name.toLowerCase() === preferences.class?.toLowerCase()) : null;
     const primaryAttr = classInfo?.attribute;
 
-    // Use intelligent filtering based on playstyle description
     const skillsContext = getSkillsContext(preferences.playstyle_description, primaryAttr);
     const uniquesContext = getUniquesContext(preferences.playstyle_description);
     const passivesContext = getPassivesContext(preferences.playstyle_description);
     const runesContext = getRunesContext(preferences.playstyle_description);
     const ascendancyContext = preferences.class ? getAscendancyContext(preferences.class, preferences.playstyle_description) : '';
 
-    // Build context-aware system prompt
-    let systemPrompt = `You are an AI assistant specialized in creating detailed Path of Exile 2 builds.\n\n## CRITICAL GAME RULES\n${GAME_MECHANICS.map(m => `- **${m.name}**: ${m.description}`).join('\n')}\n\n## NEW POE 2 MECHANICS\nPath of Exile 2 has MAJOR changes:\n1. **Spirit Resource**: Each character has a Spirit pool (base: 60-80) used for reserving auras/minions\n2. **Dodge Roll**: Universal mobility (no Quicksilver Flask), creates I-frames\n3. **Weapon Swapping**: Two 6-link setups, can switch mid-combat\n4. **Combo System**: Attacks build combo points for powerful payoffs\n5. **Uncut Gems**: Support gems drop as "uncut" - you must cut them to choose a variant\n\n${skillsContext}\n\n${uniquesContext}\n\n${passivesContext}\n\n${ascendancyContext}\n\n${runesContext}\n`;
+    let systemPrompt = `You are an expert Path of Exile 2 build creator.
+Your goal is to create a DEEP, COMPLEX, and VIABLE build.
 
-    // Inject Class Specific Data if selected
-    if (preferences.class) {
-        const classData = POE2_CLASSES.find(c => c.name === preferences.class);
-        if (classData) {
-            systemPrompt += `\nSELECTED CLASS: ${classData.name}
-            - Attribute: ${classData.attribute}
-            - Ascendancies: ${classData.ascendancies.join(', ')}
-            - Theme: ${classData.description}
-            - Mechanic: ${classData.signatureMechanic}
-            
-            Use this class's specific strengths and ascendancies.`;
-        }
+CRITICAL RULES:
+1. **Multi-Skill Synergy**: Builds in PoE2 use multiple skills. You MUST provide setups for:
+   - **Clear**: AOE skill for maps.
+   - **Single Target**: High DPS skill for bosses.
+   - **Mobility**: Dodge/Dash skill.
+   - **Defense/Auras**: Buffs and reservations (Spirit management).
+2. **Support Gems**: Every active skill needs 2-4 support gems. Explain WHY they are linked.
+3. **Mechanics**: Explain the specific interactions (e.g. "Ignite proliferates via X", "Armor applies to Chaos dmg via Y").
+
+${skillsContext}
+${uniquesContext}
+${passivesContext}
+${ascendancyContext}
+${runesContext}
+`;
+
+    if (classInfo) {
+        systemPrompt += `\nSELECTED CLASS: ${classInfo.name} (${classInfo.attribute})\nUse ${classInfo.ascendancies.join('/')} appropriately.`;
     }
 
-    return systemPrompt + `\n\nCreate a VIABLE, PRACTICAL build that works from Act 1 to endgame. Return ONLY JSON.`;
+    return systemPrompt + `\n\nReturn ONLY valid JSON matching the schema below.`;
 }
 
-// Generate build structure with AI
 export async function generateBuild(preferences: BuildPreferences): Promise<Build> {
     const systemPrompt = buildSystemPrompt(preferences);
 
     const userPrompt = `
-    USER REQUEST: ${preferences.playstyle_description}
-    ${preferences.class ? `Class: ${preferences.class}` : 'Class: Choose the best fit from the 12 PoE2 classes.'}
-    ${preferences.preferred_ascendancy ? `Preferred Ascendancy: ${preferences.preferred_ascendancy}` : ''}
-    ${preferences.allow_uniques === false ? 'CONSTRAINT: No unique items, use only rares' : ''}
+    Create a HIGH-DEPTH build for: "${preferences.playstyle_description}"
+    ${preferences.class ? `Class: ${preferences.class}` : ''}
+    ${preferences.preferred_ascendancy ? `Ascendancy: ${preferences.preferred_ascendancy}` : ''}
     
-    Generate a JSON build plan following this STRICT schema:
+    JSON SCHEMA (STRICTLY FOLLOW THIS):
     {
-      "name": "Creative Build Name",
-      "class": "Exact Class Name",
-      "ascendancy": "Ascendancy Name",
-      "playstyle": "Brief description",
-      "mainSkill": {
-        "gem": "Skill Name",
-        "scalingMechanic": "e.g. Bleed, Ignite, Crit",
-        "description": "Short usage info"
-      },
-      "gearProgression": {
-        "starter": { "body": {"baseName": "Item Name", "keyAffixes": ["list"], "reasonWhy": "why"} },
-        "mid": {},
-        "endgame": {},
-        "alternatives": []
-      },
-      "levelingGuide": {
-        "phases": [
-          {
-            "levelRange": "1-24",
-            "location": "Acts 1-3",
-            "mainSkillSetup": { "main": "Skill", "supports": ["Support1"] },
-            "passiveNodes": ["Cluster Name"],
-            "gearTargets": { "weapon": "Type" },
-            "importantNotes": ["Note"]
-          }
-        ],
-        "respecNeeded": false,
-        "respecPoints": []
-      },
+      "name": "Creative Name",
+      "class": "ClassName",
+      "ascendancy": "AscendancyName",
+      "playstyle": "Detailed playstyle summary",
+      "skillGroups": [
+        {
+          "label": "Main Clear (Map Clearing)",
+          "activeSkill": "Skill Name",
+          "supportGems": ["Support 1", "Support 2", "Support 3"],
+          "description": "Why these supports? How to use?"
+        },
+        {
+          "label": "Boss Damage",
+          "activeSkill": "Skill Name",
+          "supportGems": [],
+          "description": "..."
+        },
+        {
+          "label": "Mobility / Utility",
+          "activeSkill": "Skill Name",
+          "supportGems": [],
+          "description": "..."
+        },
+        {
+          "label": "Auras & Buffs (Spirit)",
+          "activeSkill": "Skill Name",
+          "supportGems": [],
+          "description": "Reservations and buffs"
+        }
+      ],
+      "keyMechanics": [
+        { "name": "Mechanic Name", "description": "How it works interaction-wise" }
+      ],
+      "gearProgression": { ... }, 
+      "levelingGuide": { ... },
       "passiveTreePath": {
-        "keystones": ["Keystone Name"],
-        "byPhase": {}
+         "keystones": ["Keystone 1", "Keystone 2"],
+         "keyNodes": ["Notable 1", "Notable 2"],
+         "byPhase": {}
       },
       "analysis": {
-        "strengths": ["List"],
-        "weaknesses": ["List"],
-        "mappingRating": 1-10,
-        "bossingRating": 1-10,
-        "survivalRating": 1-10,
-        "explanation": "Summary"
+         "strengths": ["..."],
+         "weaknesses": ["..."],
+         "mappingRating": 8,
+         "bossingRating": 7,
+         "survivalRating": 6,
+         "explanation": "..."
       }
     }`;
 
@@ -400,9 +423,9 @@ Write a comprehensive BUILD EXPLANATION in Markdown format that covers:
 - Why it works
 
 ## Skill Breakdown
-- Main skill: mechanics and why chosen
-- Support gems: what each does and why they matter
-- Gem progression: how to adapt as you level
+- Analyze the **Skill Groups**: Clear, Single Target, and Utility.
+- Support gems: Explain the synergy in each link.
+- Aura/Spirit Strategy: How reservations are managed.
 
 ## Gear Strategy
 - Unique items: which ones matter, why

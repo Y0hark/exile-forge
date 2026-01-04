@@ -23,22 +23,19 @@
       <!-- Build Header -->
       <div class="card card-accent mb-8">
         <h1 class="font-serif text-4xl md:text-5xl font-bold mb-4 text-eternal-gold">
-          {{ currentBuild.data.name }}
+          {{ currentBuild.name }}
         </h1>
         <div class="flex flex-wrap gap-4 text-text-secondary mb-4">
-          <span>{{ currentBuild.data.class }}</span>
+          <span>{{ currentBuild.class }}</span>
           <span>•</span>
-          <span>{{ currentBuild.data.ascendancy }}</span>
-          <span>•</span>
-          <span>{{ currentBuild.data.mainSkill.gem }}</span>
+          <span>{{ currentBuild.ascendancy }}</span>
+          <span v-if="currentBuild.data?.playstyle">•</span>
+          <span v-if="currentBuild.data?.playstyle">{{ currentBuild.data.playstyle }}</span>
         </div>
-        <p class="text-text-secondary text-lg">
-          {{ currentBuild.data.mainSkill.description }}
-        </p>
       </div>
 
       <!-- Rating Cards -->
-      <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8">
+      <div v-if="currentBuild.data?.analysis" class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8">
         <div class="card text-center">
           <div class="text-4xl font-bold text-eternal-gold mb-2">
             {{ currentBuild.data.analysis.mappingRating }}/10
@@ -60,8 +57,7 @@
       </div>
 
       <!-- Tabs -->
-      <!-- Tabs -->
-      <div class="card">
+      <div v-if="currentBuild.data" class="card">
         <!-- Tab Headers -->
         <div class="flex border-b border-border-primary overflow-x-auto">
           <button
@@ -80,13 +76,44 @@
           <!-- Overview Tab -->
           <div v-if="activeTab === 'overview'">
             <div class="space-y-8">
-              <!-- Visual Skill Links -->
-              <GemLinks 
-                :skillName="currentBuild.data.mainSkill.gem"
-                :supports="getLastPhaseSupports(currentBuild.data)" 
-              />
+              
+              <!-- Skill Groups Section -->
+              <div v-if="currentBuild.data.skillGroups">
+                <h3 class="font-serif text-2xl font-bold mb-4 text-eternal-gold">Skill Groups</h3>
+                <div class="space-y-4">
+                  <div
+                    v-for="(group, idx) in currentBuild.data.skillGroups"
+                    :key="idx"
+                    class="border border-border-primary rounded p-4 bg-surface-darker"
+                  >
+                    <div class="flex flex-col sm:flex-row justify-between mb-2">
+                        <h4 class="text-lg font-bold text-primary-light">{{ group.label }}</h4>
+                        <span class="text-eternal-gold font-mono">{{ group.activeSkill }}</span>
+                    </div>
+                    <div class="text-text-secondary text-sm mb-3">{{ group.description }}</div>
+                    
+                    <div v-if="group.supportGems && group.supportGems.length" class="flex flex-wrap gap-2">
+                        <span class="text-xs uppercase tracking-wider text-text-muted self-center mr-2">Supports:</span>
+                        <span v-for="gem in group.supportGems" :key="gem" class="badge badge-neutral text-sm">
+                            {{ gem }}
+                        </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Key Mechanics Section -->
+              <div v-if="currentBuild.data.keyMechanics">
+                <h3 class="font-serif text-2xl font-bold mb-4 text-eternal-gold">Key Mechanics</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div v-for="(mech, idx) in currentBuild.data.keyMechanics" :key="idx" class="card bg-surface-darker">
+                        <h4 class="font-bold text-primary-light mb-2">{{ mech.name }}</h4>
+                        <p class="text-sm text-text-secondary">{{ mech.description }}</p>
+                    </div>
+                </div>
+              </div>
             
-              <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8" v-if="currentBuild.data.analysis">
                 <div>
                   <h3 class="font-serif text-2xl font-bold mb-3 text-eternal-gold">Strengths</h3>
                   <ul class="list-disc list-inside space-y-2 text-text-secondary">
@@ -111,32 +138,44 @@
           <!-- Equipment Tab -->
           <div v-if="activeTab === 'equipment'">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <div v-if="currentBuild.data.equipment">
-                <h3 class="font-serif text-2xl font-bold mb-4 text-eternal-gold">Key Uniques</h3>
-                <ul class="space-y-4" v-if="currentBuild.data.equipment.keyUniques">
-                  <li v-for="(item, index) in currentBuild.data.equipment.keyUniques" :key="index" class="card bg-surface-darker p-4 flex items-start gap-4">
-                    <div class="w-12 h-12 rounded bg-surface-dark border border-border-primary flex items-center justify-center text-2xl">
-                      🔮
-                    </div>
-                    <div>
-                      <div class="font-bold text-eternal-gold">{{ item }}</div>
-                      <div class="text-xs text-text-secondary mt-1">Unique Item</div>
-                    </div>
-                  </li>
-                </ul>
-                <p v-else class="text-text-secondary">No unique items recommended.</p>
+              <!-- Text-based Gear List -->
+              <div v-if="currentBuild.data.gearProgression">
+                 <h3 class="font-serif text-2xl font-bold mb-4 text-eternal-gold">Gear Progression ({{ selectedGearTier }})</h3>
+                 
+                 <!-- Tier Selector -->
+                 <div class="flex gap-2 mb-4">
+                    <button 
+                        v-for="tier in ['starter', 'mid', 'endgame']" 
+                        :key="tier"
+                        @click="selectedGearTier = tier"
+                        class="btn btn-sm capitalize"
+                        :class="selectedGearTier === tier ? 'btn-primary' : 'btn-secondary'"
+                    >
+                        {{ tier }}
+                    </button>
+                 </div>
+
+                 <div class="space-y-4">
+                     <template v-if="currentBuild.data.gearProgression[selectedGearTier]">
+                        <div v-for="(item, slot) in currentBuild.data.gearProgression[selectedGearTier]" :key="slot" class="card bg-surface-darker p-3">
+                            <div class="flex justify-between items-start">
+                                <span class="text-xs uppercase text-text-muted">{{ slot }}</span>
+                                <span class="font-bold text-primary-light">{{ item.baseName || item.name || 'Random Rare' }}</span>
+                            </div>
+                            <div v-if="item.keyAffixes" class="mt-2">
+                                <div class="text-xs text-text-muted mb-1">Prioritize:</div>
+                                <div class="flex flex-wrap gap-1">
+                                    <span v-for="affix in item.keyAffixes" :key="affix" class="text-xs text-text-secondary bg-black/30 px-2 py-1 rounded">{{ affix }}</span>
+                                </div>
+                            </div>
+                            <div v-if="item.reasonWhy" class="mt-2 text-xs text-text-secondary italic">
+                                "{{ item.reasonWhy }}"
+                            </div>
+                        </div>
+                     </template>
+                 </div>
               </div>
 
-              <div v-if="currentBuild.data.equipment">
-                <h3 class="font-serif text-2xl font-bold mb-4 text-eternal-gold">Stat Priorities</h3>
-                <ul class="space-y-2" v-if="currentBuild.data.equipment.statPriorities">
-                  <li v-for="(stat, index) in currentBuild.data.equipment.statPriorities" :key="index" class="flex items-center gap-2 text-text-secondary">
-                    <span class="text-eternal-gold">›</span>
-                    {{ stat }}
-                  </li>
-                </ul>
-                <p v-else class="text-text-secondary">No stat priorities listed.</p>
-              </div>
             </div>
           </div>
 
@@ -144,55 +183,37 @@
           <div v-else-if="activeTab === 'passives'">
             <div class="space-y-6">
               <div class="flex items-center justify-between">
-                 <h3 class="font-serif text-2xl font-bold text-eternal-gold">Passive Tree</h3>
-                 <div class="text-text-secondary text-sm" v-if="currentBuild.data.passiveTree">
-                   Strategy: <span class="text-white">{{ currentBuild.data.passiveTree.pathingAdvice || 'Follow key nodes' }}</span>
-                 </div>
+                 <h3 class="font-serif text-2xl font-bold text-eternal-gold">Passive Strategy</h3>
               </div>
               
-              <!-- Visualization -->
-              <PassiveTree 
-                v-if="currentBuild.data.passiveTree"
-                :activeNodes="currentBuild.data.passiveTree.keyNodes || []" 
-              />
-              <div v-else class="text-text-secondary">No passive tree strategy available.</div>
-              
-              <!-- Strategy Details -->
-               <div class="card bg-surface-darker" v-if="currentBuild.data.passiveTree && currentBuild.data.passiveTree.keyNodes">
-                <h4 class="font-bold text-lg mb-2 text-eternal-gold">Key Nodes</h4>
-                <div class="flex flex-wrap gap-2">
-                  <span 
-                    v-for="node in currentBuild.data.passiveTree.keyNodes" 
-                    :key="node"
-                    class="badge badge-accent"
-                  >
-                    {{ node }}
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
+              <!-- Text Strategy -->
+              <div class="card bg-surface-darker p-6">
+                  <h4 class="font-bold text-lg mb-4 text-eternal-gold">Keystones</h4>
+                   <div class="flex flex-wrap gap-2 mb-6" v-if="currentBuild.data.passiveTreePath?.keystones">
+                    <span 
+                        v-for="node in currentBuild.data.passiveTreePath.keystones" 
+                        :key="node"
+                        class="badge badge-accent text-lg py-2 px-4"
+                    >
+                        {{ node }}
+                    </span>
+                   </div>
 
-          <!-- Gear Tab (Visual Inventory) -->
-          <div v-else-if="activeTab === 'gear'">
-            <div class="flex justify-center mb-6 gap-2">
-              <button 
-                v-for="tier in ['starter', 'mid', 'endgame']" 
-                :key="tier"
-                @click="selectedGearTier = tier"
-                class="btn btn-sm capitalize"
-                :class="selectedGearTier === tier ? 'btn-primary' : 'btn-secondary'"
-              >
-                {{ tier }}
-              </button>
+                   <h4 class="font-bold text-lg mb-4 text-eternal-gold">Key Notables</h4>
+                   <div class="flex flex-wrap gap-2 mb-6" v-if="currentBuild.data.passiveTreePath?.keyNodes">
+                    <span 
+                        v-for="node in currentBuild.data.passiveTreePath.keyNodes" 
+                        :key="node"
+                        class="badge badge-neutral"
+                    >
+                        {{ node }}
+                    </span>
+                   </div>
+              </div>
             </div>
-            
-            <VisualInventory 
-                v-if="currentBuild.data.gearProgression[selectedGearTier]"
-                :inventory="currentBuild.data.gearProgression[selectedGearTier]" 
-            />
-            <p v-else class="text-center text-text-secondary">No gear data for this tier.</p>
           </div>
+          
+          <!-- NO GEAR TAB (Visual Inventory Removed) -->
 
           <!-- Leveling Tab -->
           <div v-else-if="activeTab === 'leveling'">
@@ -275,9 +296,11 @@ import { useAuthStore } from '../stores/auth';
 import LoadingSpinner from '../components/Common/LoadingSpinner.vue';
 import ErrorAlert from '../components/Common/ErrorAlert.vue';
 import MarkdownRenderer from '../components/Common/MarkdownRenderer.vue';
-import VisualInventory from '../components/Results/VisualInventory.vue';
-import GemLinks from '../components/Results/GemLinks.vue';
-import PassiveTree from '../components/PassiveTree.vue';
+
+// Removed Visual Components for Text-Only Focus
+// import VisualInventory from '../components/Results/VisualInventory.vue';
+// import GemLinks from '../components/Results/GemLinks.vue';
+// import PassiveTree from '../components/PassiveTree.vue';
 
 const route = useRoute();
 const buildsStore = useBuildsStore();
@@ -299,13 +322,6 @@ const tabs = [
 const currentBuild = computed(() => buildsStore.currentBuild);
 const isLoading = computed(() => buildsStore.isLoading);
 const error = computed(() => buildsStore.error);
-
-// Helper to extract support gems from the latest phase
-const getLastPhaseSupports = (data: any) => {
-    if (!data.levelingGuide?.phases || data.levelingGuide.phases.length === 0) return [];
-    const lastPhase = data.levelingGuide.phases[data.levelingGuide.phases.length - 1];
-    return lastPhase.mainSkillSetup?.supports || [];
-};
 
 const togglePhase = (index: number) => {
   if (expandedPhases.value.has(index)) {
