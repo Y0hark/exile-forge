@@ -1,0 +1,416 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+/* ExileForge - Eternal Empire Design System */
+
+/* ============================================================================
+   CSS CUSTOM PROPERTIES
+   ========================================================================= */
+
+:root {
+    /* Brand Colors - Eternal Empire Palette */
+    --color-eternal-black: #0a0a12;
+    /* Darker, deeper black */
+    --color-eternal-gold: #d4af37;
+    --color-eternal-gold-dim: #aa8c2c;
+    --color-eternal-gold-glow: rgba(212, 175, 55, 0.4);
+    --color-eternal-red: #8b0000;
+    --color-eternal-red-glow: rgba(139, 0, 0, 0.4);
+
+    /* Background Colors */
+    --color-bg-primary: #050510;
+    /* Deep void background */
+    --color-bg-secondary: #0f0f1e;
+    --color-bg-surface: rgba(45, 45, 68, 0.4);
+    /* Glassmorphic surface */
+    --color-bg-elevated: rgba(58, 58, 82, 0.6);
+    --color-bg-glass: rgba(15, 15, 30, 0.7);
+
+    /* Border Colors */
+    --color-border-primary: rgba(74, 74, 102, 0.3);
+    --color-border-accent: rgba(212, 175, 55, 0.5);
+    --color-border-glow: rgba(212, 175, 55, 0.3);
+
+    /* Text Colors */
+    --color-text-primary: #f0f0f0;
+    --color-text-secondary: #a0a0b0;
+    --color-text-disabled: #6a6a7e;
+
+    /* Status Colors */
+    --color-success: #51cf66;
+    --color-warning: #ffa500;
+    --color-error: #ff4d4d;
+    --color-info: #6ec6ff;
+
+    /* Utility */
+    --color-shadow: rgba(0, 0, 0, 0.5);
+    --color-overlay: rgba(0, 0, 0, 0.85);
+
+    /* Typography */
+    --font-serif: 'Cinzel', 'Garamond', serif;
+    --font-sans: 'Inter', 'Segoe UI', -apple-system, sans-serif;
+    --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+
+    /* Spacing */
+    --space-xs: 4px;
+    --space-sm: 8px;
+    --space-md: 16px;
+    --space-lg: 24px;
+    --space-xl: 32px;
+    --space-2xl: 48px;
+    --space-3xl: 64px;
+
+    /* Transitions */
+    --transition-fast: 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    --transition-normal: 350ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    --transition-slow: 500ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    /* Smoother */
+}
+
+/* ============================================================================
+   GOOGLE FONTS IMPORT (Moved to top)
+   ========================================================================= */
+
+/* ============================================================================
+   BASE STYLES
+   ========================================================================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-sans);
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--color-text-primary);
+    background-color: var(--color-bg-primary);
+    background-image:
+        radial-gradient(circle at 15% 50%, rgba(212, 175, 55, 0.03) 0%, transparent 25%),
+        radial-gradient(circle at 85% 30%, rgba(139, 0, 0, 0.03) 0%, transparent 25%);
+    min-height: 100vh;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--color-bg-primary);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--color-border-primary);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--color-text-secondary);
+}
+
+/* ============================================================================
+   TYPOGRAPHY
+   ========================================================================= */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-serif);
+    color: var(--color-text-primary);
+    margin-bottom: var(--space-md);
+    letter-spacing: 0.02em;
+}
+
+h1 {
+    font-size: 3.5rem;
+    line-height: 1.1;
+    text-shadow: 0 0 20px rgba(212, 175, 55, 0.2);
+}
+
+h2 {
+    font-size: 2.5rem;
+    line-height: 1.2;
+}
+
+h3 {
+    font-size: 2rem;
+    line-height: 1.3;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+.text-gradient-gold {
+    background: linear-gradient(135deg, #d4af37 0%, #f9e29c 50%, #d4af37 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% auto;
+    animation: shine 5s linear infinite;
+}
+
+/* ============================================================================
+   BUTTONS
+   ========================================================================= */
+
+.btn {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 28px;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: var(--font-serif);
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all var(--transition-fast);
+    text-decoration: none;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.btn-sm {
+    padding: 8px 16px;
+    font-size: 14px;
+}
+
+/* Primary Button - Gold Glow */
+.btn-primary {
+    background: linear-gradient(135deg, var(--color-eternal-gold-dim) 0%, var(--color-eternal-gold) 100%);
+    color: var(--color-eternal-black);
+    border: 1px solid var(--color-eternal-gold);
+    box-shadow: 0 4px 15px var(--color-eternal-gold-glow);
+}
+
+.btn-primary::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+    transition: 0.5s;
+    z-index: -1;
+}
+
+.btn-primary:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px var(--color-eternal-gold-glow), 0 0 10px var(--color-eternal-gold) inset;
+}
+
+.btn-primary:hover::before {
+    left: 100%;
+}
+
+.btn-primary:active:not(:disabled) {
+    transform: translateY(0);
+}
+
+/* Secondary Button - Ghost/Glass */
+.btn-secondary {
+    background: rgba(212, 175, 55, 0.05);
+    color: var(--color-eternal-gold);
+    border: 1px solid var(--color-eternal-gold-dim);
+    backdrop-filter: blur(4px);
+}
+
+.btn-secondary:hover:not(:disabled) {
+    background: rgba(212, 175, 55, 0.15);
+    border-color: var(--color-eternal-gold);
+    box-shadow: 0 0 15px var(--color-eternal-gold-glow);
+    text-shadow: 0 0 8px var(--color-eternal-gold-glow);
+}
+
+/* Danger Button */
+.btn-danger {
+    background: rgba(139, 0, 0, 0.2);
+    color: #ff6b6b;
+    border: 1px solid var(--color-eternal-red);
+}
+
+.btn-danger:hover:not(:disabled) {
+    background: rgba(139, 0, 0, 0.4);
+    box-shadow: 0 0 15px var(--color-eternal-red-glow);
+}
+
+.btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    filter: grayscale(100%);
+}
+
+/* ============================================================================
+   GLASSMORPHIC CARDS & INPUTS
+   ========================================================================= */
+
+.card {
+    background: var(--color-bg-surface);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid var(--color-border-primary);
+    border-radius: 8px;
+    padding: var(--space-lg);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+    transition: all var(--transition-normal);
+}
+
+.card:hover {
+    border-color: var(--color-border-accent);
+    box-shadow: 0 12px 40px 0 rgba(0, 0, 0, 0.5), 0 0 20px -10px var(--color-eternal-gold-glow);
+    transform: translateY(-4px);
+}
+
+.card-accent {
+    position: relative;
+    overflow: hidden;
+}
+
+.card-accent::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(to bottom, var(--color-eternal-gold), transparent);
+}
+
+.input,
+input,
+textarea,
+select {
+    width: 100%;
+    padding: 12px 16px;
+    font-family: var(--font-sans);
+    font-size: 16px;
+    color: var(--color-text-primary);
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid var(--color-border-primary);
+    border-radius: 4px;
+    transition: all var(--transition-fast);
+}
+
+.input:focus,
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+    border-color: var(--color-eternal-gold);
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 15px rgba(212, 175, 55, 0.15);
+}
+
+/* ============================================================================
+   ANIMATIONS
+   ========================================================================= */
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes shine {
+    to {
+        background-position: 200% center;
+    }
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+/* Fade In */
+.fade-in {
+    animation: fadeIn var(--transition-slow) forwards;
+    opacity: 0;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+/* Slide Up */
+.slide-in-up {
+    animation: slideInUp var(--transition-slow) forwards;
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+@keyframes slideInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Stagger delays */
+.delay-100 {
+    animation-delay: 100ms;
+}
+
+.delay-200 {
+    animation-delay: 200ms;
+}
+
+.delay-300 {
+    animation-delay: 300ms;
+}
+
+/* Spinner */
+.spinner {
+    border: 3px solid rgba(212, 175, 55, 0.1);
+    border-top-color: var(--color-eternal-gold);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+    box-shadow: 0 0 15px var(--color-eternal-gold-glow);
+}
+
+/* ============================================================================
+   UTILITIES
+   ========================================================================= */
+
+.text-eternal-gold {
+    color: var(--color-eternal-gold);
+    text-shadow: 0 0 10px var(--color-eternal-gold-glow);
+}
+
+.bg-bg-secondary {
+    background-color: var(--color-bg-secondary);
+}
+
+.border-border-primary {
+    border-color: var(--color-border-primary);
+}
+
+/* Glass Overlay */
+.bg-overlay {
+    background: rgba(5, 5, 10, 0.85);
+    /* Darker overlay */
+    backdrop-filter: blur(8px);
+}

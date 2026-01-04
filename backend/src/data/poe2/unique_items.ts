@@ -1,0 +1,12880 @@
+// Auto-generated from PoB Uniques data - DO NOT EDIT MANUALLY
+// Generated on: 2026-01-03T14:20:02.451Z
+
+export interface UniqueItemVariant {
+  name: string;
+  mods: string[];
+}
+
+export interface SkillGrant {
+  skillName: string;
+  minLevel: number;
+  maxLevel: number;
+}
+
+export interface SkillLevelBoost {
+  skillTypes: string[];  // e.g., ["fire"], ["lightning"], ["all"]
+  bonus: number;         // e.g., +1, +2
+}
+
+export interface ConditionalMod {
+  condition: string;     // e.g., "when_ignited", "while_chilled", "on_kill"
+  effect: string;        // Full mod text
+  tags: string[];        // Associated tags
+}
+
+export interface UniqueItem {
+  id: string;
+  name: string;
+  baseType: string;
+  itemClass: string;
+  requiredLevel?: number;
+  league?: string;
+  source?: string;
+  variants: UniqueItemVariant[];
+  implicits: string[];
+  explicits: string[];
+  tags: string[];
+  
+  // NEW: Enhanced fields
+  grantedSkills?: SkillGrant[];          // Skills this item grants
+  skillLevelBoosts?: SkillLevelBoost[];  // +X to Level bonuses
+  conditionalMods?: ConditionalMod[];    // Conditional effects
+}
+
+export const POE2_UNIQUE_ITEMS: UniqueItem[] = [
+  {
+    "id": "astramentis",
+    "name": "Astramentis",
+    "baseType": "Stellar Amulet",
+    "itemClass": "amulet",
+    "variants": [
+      {
+        "name": "Pre 0.2.0",
+        "mods": [
+          "+(80-100) to all Attributes"
+        ]
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "+(50-100) to all Attributes"
+        ]
+      }
+    ],
+    "implicits": [
+      "+(5-7) to all Attributes",
+      "-4 Physical Damage taken from Attack Hits"
+    ],
+    "explicits": [],
+    "tags": [
+      "attack",
+      "attribute",
+      "damage",
+      "physical"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "beacon_of_azis",
+    "name": "Beacon of Azis",
+    "baseType": "Solar Amulet",
+    "itemClass": "amulet",
+    "variants": [],
+    "implicits": [
+      "+(10-15) to Spirit",
+      "+(60-100) to maximum Mana",
+      "+30 to Spirit",
+      "30% increased Light Radius",
+      "Critical Hits ignore Enemy Monster Elemental Resistances"
+    ],
+    "explicits": [],
+    "tags": [
+      "crit",
+      "mana",
+      "resistance"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "carnage_heart",
+    "name": "Carnage Heart",
+    "baseType": "Amber Amulet",
+    "itemClass": "amulet",
+    "variants": [
+      {
+        "name": "Pre 0.4.0",
+        "mods": [
+          "100% increased amount of Life Leeched"
+        ]
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "(100-200)% increased amount of Life Leeched"
+        ]
+      }
+    ],
+    "implicits": [
+      "+(10-15) to Strength",
+      "20% reduced maximum Life",
+      "+(10-20) to all Attributes",
+      "+(10-20)% to all Elemental Resistances"
+    ],
+    "explicits": [],
+    "tags": [
+      "attribute",
+      "cold",
+      "fire",
+      "life",
+      "lightning",
+      "resistance",
+      "strength"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "choir_of_the_storm",
+    "name": "Choir of the Storm",
+    "baseType": "Jade Amulet",
+    "itemClass": "amulet",
+    "source": "Drops from unique{Xesht, We That Are One} in normal{Twisted Domain}",
+    "variants": [
+      {
+        "name": "Pre 0.4.0",
+        "mods": [
+          "+(20-30)% to Lightning Resistance"
+        ]
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "+(50-100)% to Lightning Resistance"
+        ]
+      }
+    ],
+    "implicits": [
+      "Grants Skill: Level (1-20) Lightning Bolt",
+      "+(10-15) to Dexterity",
+      "Critical Hits Ignore Enemy Monster Lightning Resistance",
+      "Trigger Lightning Bolt Skill on Critical Hit"
+    ],
+    "explicits": [],
+    "tags": [
+      "attribute",
+      "conditional",
+      "crit",
+      "dexterity",
+      "grants_lightning_bolt",
+      "grants_skill",
+      "lightning",
+      "on_crit",
+      "resistance"
+    ],
+    "grantedSkills": [
+      {
+        "skillName": "Lightning Bolt",
+        "minLevel": 1,
+        "maxLevel": 20
+      }
+    ],
+    "skillLevelBoosts": [],
+    "conditionalMods": [
+      {
+        "condition": "on_crit",
+        "effect": "Trigger Lightning Bolt Skill on Critical Hit",
+        "tags": [
+          "lightning"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "defiance_of_destiny",
+    "name": "Defiance of Destiny",
+    "baseType": "Jade Amulet",
+    "itemClass": "amulet",
+    "requiredLevel": 56,
+    "variants": [
+      {
+        "name": "Pre 0.1.1",
+        "mods": [
+          "Recover 5% of Missing Life before being Hit by an Enemy"
+        ]
+      },
+      {
+        "name": "Pre 0.2.1",
+        "mods": [
+          "Recover 10% of Missing Life before being Hit by an Enemy"
+        ]
+      },
+      {
+        "name": "Pre 0.4.0",
+        "mods": [
+          "Recover (10-20)% of Missing Life before being Hit by an Enemy"
+        ]
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "Recover (20-30)% of Missing Life before being Hit by an Enemy"
+        ]
+      }
+    ],
+    "implicits": [
+      "+(10-15) to Dexterity",
+      "(6-10)% increased maximum Life",
+      "+(10-20) to Strength",
+      "(25-40)% increased Mana Regeneration Rate"
+    ],
+    "explicits": [],
+    "tags": [
+      "attribute",
+      "dexterity",
+      "life",
+      "mana",
+      "strength"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "eye_of_chayula",
+    "name": "Eye of Chayula",
+    "baseType": "Gold Amulet",
+    "itemClass": "amulet",
+    "variants": [
+      {
+        "name": "Pre 0.2.0",
+        "mods": [
+          "+2500 to Stun Threshold"
+        ]
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "Cannot be Light Stunned"
+        ]
+      }
+    ],
+    "implicits": [
+      "(12-20)% increased Rarity of Items found",
+      "(20-30)% reduced maximum Life",
+      "+(10-15) to all Attributes"
+    ],
+    "explicits": [],
+    "tags": [
+      "attribute",
+      "life",
+      "rarity"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "fireflower",
+    "name": "Fireflower",
+    "baseType": "Solar Amulet",
+    "itemClass": "amulet",
+    "requiredLevel": 52,
+    "variants": [
+      {
+        "name": "Pre 0.2.0",
+        "mods": [
+          "(10-20)% increased Rarity of Items found"
+        ]
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "(10-15)% increased Rarity of Items found"
+        ]
+      }
+    ],
+    "implicits": [
+      "+(10-15) to Spirit",
+      "(30-40)% increased Mana Regeneration Rate",
+      "Take 100 Fire Damage when you Ignite an Enemy",
+      "+(1-4) to Level of all Fire Skills"
+    ],
+    "explicits": [],
+    "tags": [
+      "damage",
+      "fire",
+      "ignite",
+      "mana",
+      "rarity"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "fixation_of_yix",
+    "name": "Fixation of Yix",
+    "baseType": "Stellar Amulet",
+    "itemClass": "amulet",
+    "variants": [],
+    "implicits": [
+      "+(5-7) to all Attributes",
+      "+100 to maximum Life",
+      "Allies in your Presence have (30-50)% increased Critical Hit Chance",
+      "Allies in your Presence have (30-50)% increased Critical Damage Bonus",
+      "Allies in your Presence have (10-20)% increased Attack Speed"
+    ],
+    "explicits": [
+      "Allies in your Presence have (10-20)% increased Cast Speed",
+      "50% reduced Presence Area of Effect"
+    ],
+    "tags": [
+      "attack",
+      "attribute",
+      "caster",
+      "crit",
+      "damage",
+      "life",
+      "speed"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "hinekora_s_sight",
+    "name": "Hinekora's Sight",
+    "baseType": "Stellar Amulet",
+    "itemClass": "amulet",
+    "requiredLevel": 44,
+    "league": "Rise of the Abyssal",
+    "variants": [],
+    "implicits": [
+      "Grants Skill: Level (1-20) Future-Past",
+      "+(5-7) to all Attributes",
+      "+(300-600) to Accuracy Rating",
+      "+(300-600) to Evasion Rating",
+      "Cannot be Blinded"
+    ],
+    "explicits": [],
+    "tags": [
+      "attack",
+      "attribute",
+      "defences",
+      "evasion",
+      "grants_future_past",
+      "grants_skill"
+    ],
+    "grantedSkills": [
+      {
+        "skillName": "Future-Past",
+        "minLevel": 1,
+        "maxLevel": 20
+      }
+    ],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "idol_of_uldurn",
+    "name": "Idol of Uldurn",
+    "baseType": "Crimson Amulet",
+    "itemClass": "amulet",
+    "requiredLevel": 24,
+    "variants": [],
+    "implicits": [
+      "(2-4) Life Regeneration per second",
+      "+(60-80) to maximum Life",
+      "+(10-20) to Dexterity",
+      "Skills have +1 to Limit"
+    ],
+    "explicits": [],
+    "tags": [
+      "attribute",
+      "dexterity",
+      "life"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "igniferis",
+    "name": "Igniferis",
+    "baseType": "Crimson Amulet",
+    "itemClass": "amulet",
+    "variants": [],
+    "implicits": [
+      "(2-4) Life Regeneration per second",
+      "+(10-20)% to Fire Resistance",
+      "(20-30)% increased Mana Regeneration Rate",
+      "25% reduced Light Radius",
+      "Life Recovery from Regeneration is not applied"
+    ],
+    "explicits": [
+      "Every 4 seconds, Recover 1 Life for every 0.2 Life Recovery per second from Regeneration"
+    ],
+    "tags": [
+      "fire",
+      "life",
+      "mana",
+      "resistance"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "ligurium_talisman",
+    "name": "Ligurium Talisman",
+    "baseType": "Lapis Amulet",
+    "itemClass": "amulet",
+    "requiredLevel": 35,
+    "variants": [],
+    "implicits": [
+      "+(10-15) to Intelligence",
+      "+(30-40) to maximum Energy Shield",
+      "+(25-35) to Spirit",
+      "+(20-30) to Intelligence",
+      "Life Regeneration is applied to Energy Shield instead"
+    ],
+    "explicits": [],
+    "tags": [
+      "attribute",
+      "defences",
+      "es",
+      "intelligence",
+      "life"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "revered_resin",
+    "name": "Revered Resin",
+    "baseType": "Amber Amulet",
+    "itemClass": "amulet",
+    "variants": [],
+    "implicits": [
+      "+(10-15) to Strength",
+      "+(40-60) to maximum Life",
+      "(20-30)% increased Flask Life Recovery rate",
+      "Life Flasks gain (0.17-0.25) charges per Second"
+    ],
+    "explicits": [],
+    "tags": [
+      "attribute",
+      "life",
+      "strength"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "rondel_of_fragility",
+    "name": "Rondel of Fragility",
+    "baseType": "Lunar Amulet",
+    "itemClass": "amulet",
+    "variants": [],
+    "implicits": [
+      "+(20-30) to maximum Energy Shield",
+      "(15-30)% increased Skill Speed",
+      "(20-30)% increased Critical Hit Chance",
+      "-30% to all Elemental Resistances",
+      "(30-50)% increased Damage"
+    ],
+    "explicits": [],
+    "tags": [
+      "cold",
+      "crit",
+      "damage",
+      "defences",
+      "es",
+      "fire",
+      "lightning",
+      "resistance",
+      "speed"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "serpent_s_egg",
+    "name": "Serpent's Egg",
+    "baseType": "Gold Amulet",
+    "itemClass": "amulet",
+    "variants": [],
+    "implicits": [
+      "(12-20)% increased Rarity of Items found",
+      "+(10-20) to all Attributes",
+      "+(17-23)% to Chaos Resistance",
+      "(20-30)% increased Mana Regeneration Rate",
+      "Gain an additional Charge when you gain a Charge"
+    ],
+    "explicits": [],
+    "tags": [
+      "attribute",
+      "chaos",
+      "mana",
+      "rarity",
+      "resistance"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "stone_of_lazhwar",
+    "name": "Stone of Lazhwar",
+    "baseType": "Lapis Amulet",
+    "itemClass": "amulet",
+    "league": "Dawn of the Hunt",
+    "variants": [],
+    "implicits": [
+      "+(10-15) to Intelligence",
+      "+(50-100) to maximum Mana",
+      "(15-25)% increased Cast Speed",
+      "+(15-25)% to Block Chance while holding a Focus"
+    ],
+    "explicits": [],
+    "tags": [
+      "attribute",
+      "caster",
+      "intelligence",
+      "mana",
+      "speed"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "strugglescream",
+    "name": "Strugglescream",
+    "baseType": "Stellar Amulet",
+    "itemClass": "amulet",
+    "variants": [
+      {
+        "name": "Pre 0.4.0",
+        "mods": [
+          "Can have 2 additional Instilled Modifiers"
+        ]
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "Can have 3 additional Instilled Modifiers"
+        ]
+      }
+    ],
+    "implicits": [
+      "+(5-7) to all Attributes"
+    ],
+    "explicits": [],
+    "tags": [
+      "attribute"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "surefooted_sigil",
+    "name": "Surefooted Sigil",
+    "baseType": "Jade Amulet",
+    "itemClass": "amulet",
+    "variants": [],
+    "implicits": [
+      "+(10-15) to Dexterity",
+      "+(40-60) to maximum Life",
+      "+(5-15) to Dexterity",
+      "+1 metre to Dodge Roll distance",
+      "50% increased Evasion Rating if you've Dodge Rolled Recently"
+    ],
+    "explicits": [],
+    "tags": [
+      "attribute",
+      "conditional",
+      "dexterity",
+      "evasion",
+      "life",
+      "recently"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": [
+      {
+        "condition": "recently",
+        "effect": "50% increased Evasion Rating if you've Dodge Rolled Recently",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": "the_everlasting_gaze",
+    "name": "The Everlasting Gaze",
+    "baseType": "Azure Amulet",
+    "itemClass": "amulet",
+    "variants": [
+      {
+        "name": "Pre 0.2.0",
+        "mods": [
+          "+50 to maximum Mana",
+          "Gain (20-30)% of maximum Mana as Extra maximum Energy Shield"
+        ]
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "+(40-60) to maximum Mana",
+          "Gain (4-6)% of maximum Mana as Extra maximum Energy Shield"
+        ]
+      }
+    ],
+    "implicits": [
+      "(20-30)% increased Mana Regeneration Rate",
+      "50% increased Mana Regeneration Rate"
+    ],
+    "explicits": [],
+    "tags": [
+      "defences",
+      "es",
+      "mana"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "the_pandemonius",
+    "name": "The Pandemonius",
+    "baseType": "Lapis Amulet",
+    "itemClass": "amulet",
+    "requiredLevel": 52,
+    "source": "Drops from unique{Xesht, We That Are One} in normal{Twisted Domain}",
+    "variants": [
+      {
+        "name": "Pre 0.4.0",
+        "mods": [
+          "+(20-30)% to Cold Resistance"
+        ]
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "+(50-100)% to Cold Resistance"
+        ]
+      }
+    ],
+    "implicits": [
+      "+(10-15) to Intelligence",
+      "Damage Penetrates 75% Cold Resistance",
+      "Blind Chilled enemies on Hit"
+    ],
+    "explicits": [],
+    "tags": [
+      "attribute",
+      "chill",
+      "cold",
+      "conditional",
+      "damage",
+      "intelligence",
+      "on_hit",
+      "resistance"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": [
+      {
+        "condition": "on_hit",
+        "effect": "Blind Chilled enemies on Hit",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": "ungil_s_harmony",
+    "name": "Ungil's Harmony",
+    "baseType": "Azure Amulet",
+    "itemClass": "amulet",
+    "requiredLevel": 25,
+    "variants": [
+      {
+        "name": "Pre 0.1.1",
+        "mods": [
+          "100% increased Critical Hit Chance"
+        ]
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "(100-200)% increased Critical Hit Chance"
+        ]
+      }
+    ],
+    "implicits": [
+      "(20-30)% increased Mana Regeneration Rate",
+      "+(30-50) to maximum Life",
+      "+(30-50) to maximum Mana",
+      "+(60-100) to Stun Threshold",
+      "Your Critical Hits do not deal extra Damage"
+    ],
+    "explicits": [],
+    "tags": [
+      "crit",
+      "damage",
+      "life",
+      "mana"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "xoph_s_blood",
+    "name": "Xoph's Blood",
+    "baseType": "Amber Amulet",
+    "itemClass": "amulet",
+    "source": "Drops from unique{Xesht, We That Are One} in normal{Twisted Domain}",
+    "variants": [
+      {
+        "name": "Pre 0.3.0",
+        "mods": [
+          "Enemies in your Presence have +1% to Fire Resistance"
+        ]
+      },
+      {
+        "name": "Pre 0.4.0",
+        "mods": [
+          "Enemies in your Presence have -10% to Fire Resistance"
+        ]
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "+(20-30)% to Fire Resistance",
+          "Enemies in your Presence have -25% to Fire Resistance"
+        ]
+      }
+    ],
+    "implicits": [
+      "+(10-15) to Strength",
+      "(10-20)% increased maximum Life",
+      "{variant:1,2}+(30-40)% to Fire Resistance"
+    ],
+    "explicits": [],
+    "tags": [
+      "attribute",
+      "fire",
+      "life",
+      "resistance",
+      "strength"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "yoke_of_suffering",
+    "name": "Yoke of Suffering",
+    "baseType": "Bloodstone Amulet",
+    "itemClass": "amulet",
+    "league": "Dawn of the Hunt",
+    "variants": [
+      {
+        "name": "Pre 0.2.1",
+        "mods": [
+          "Enemies take (5-10)% increased Damage for each Elemental Ailment type among",
+          "your Ailments on them",
+          "(20-30)% reduced Duration of Ignite, Shock and Chill on Enemies"
+        ]
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "Enemies take (15-20)% increased Damage for each Elemental Ailment type among",
+          "your Ailments on them",
+          "(30-40)% reduced Duration of Ignite, Shock and Chill on Enemies"
+        ]
+      }
+    ],
+    "implicits": [
+      "+(30-40) to maximum Life",
+      "+(10-15)% to all Elemental Resistances",
+      "(15-30)% increased Elemental Damage"
+    ],
+    "explicits": [],
+    "tags": [
+      "chill",
+      "cold",
+      "damage",
+      "fire",
+      "ignite",
+      "life",
+      "lightning",
+      "resistance",
+      "shock"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "birthright_buckle",
+    "name": "Birthright Buckle",
+    "baseType": "Wide Belt",
+    "itemClass": "belt",
+    "variants": [],
+    "implicits": [
+      "Has (1-3) Charm Slot",
+      "(20-30)% increased Flask Charges gained",
+      "+(100-150) to Armour",
+      "(10-15)% reduced Flask Charges used",
+      "(20-30)% increased Flask Charges gained"
+    ],
+    "explicits": [
+      "Life Flasks used while on Low Life apply Recovery Instantly",
+      "Mana Flasks used while on Low Mana apply Recovery Instantly"
+    ],
+    "tags": [
+      "conditional",
+      "life",
+      "mana",
+      "on_low_life"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": [
+      {
+        "condition": "on_low_life",
+        "effect": "Life Flasks used while on Low Life apply Recovery Instantly",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": "byrnabas",
+    "name": "Byrnabas",
+    "baseType": "Wide Belt",
+    "itemClass": "belt",
+    "variants": [
+      {
+        "name": "Pre 0.1.1",
+        "mods": [
+          "+(20-30)% to Lightning Resistance"
+        ]
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "+(30-40)% to Lightning Resistance"
+        ]
+      }
+    ],
+    "implicits": [
+      "Has (1-3) Charm Slot",
+      "(20-30)% increased Flask Charges gained",
+      "+(40-60) to maximum Mana",
+      "(7-12) Life Regeneration per second",
+      "Cannot be Shocked"
+    ],
+    "explicits": [],
+    "tags": [
+      "life",
+      "lightning",
+      "mana",
+      "resistance",
+      "shock"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "coward_s_legacy",
+    "name": "Coward's Legacy",
+    "baseType": "Mail Belt",
+    "itemClass": "belt",
+    "variants": [],
+    "implicits": [
+      "(10-15)% reduced Flask Charges used",
+      "Has (1-3) Charm Slot",
+      "-(20-10) to Strength",
+      "+(20-30) to Dexterity",
+      "(30-40)% increased Life and Mana Recovery from Flasks"
+    ],
+    "explicits": [
+      "You are considered on Low Life while at 75% of maximum Life or below instead"
+    ],
+    "tags": [
+      "conditional",
+      "dexterity",
+      "life",
+      "mana",
+      "on_low_life",
+      "strength"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": [
+      {
+        "condition": "on_low_life",
+        "effect": "You are considered on Low Life while at 75% of maximum Life or below instead",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": "darkness_enthroned",
+    "name": "Darkness Enthroned",
+    "baseType": "Fine Belt",
+    "itemClass": "belt",
+    "league": "Rise of the Abyssal",
+    "variants": [
+      {
+        "name": "Helmet",
+        "mods": [
+          "This item gains bonuses from Socketed Items as though it was a Helmet"
+        ]
+      },
+      {
+        "name": "Body Armour",
+        "mods": [
+          "This item gains bonuses from Socketed Items as though it was a Body Armour"
+        ]
+      },
+      {
+        "name": "Gloves",
+        "mods": [
+          "This item gains bonuses from Socketed Items as though it was Gloves"
+        ]
+      },
+      {
+        "name": "Boots",
+        "mods": [
+          "This item gains bonuses from Socketed Items as though it was Boots"
+        ]
+      },
+      {
+        "name": "Shield",
+        "mods": [
+          "This item gains bonuses from Socketed Items as though it was a Shield"
+        ]
+      }
+    ],
+    "implicits": [
+      "Has (1-3) Charm Slot",
+      "Flasks gain 0.17 charges per Second",
+      "(50-100)% increased effect of Socketed Items"
+    ],
+    "explicits": [],
+    "tags": [],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "goregirdle",
+    "name": "Goregirdle",
+    "baseType": "Plate Belt",
+    "itemClass": "belt",
+    "league": "Dawn of the Hunt",
+    "variants": [],
+    "implicits": [
+      "+(100-140) to Armour",
+      "Has (1-3) Charm Slot",
+      "+(20-30) to Strength",
+      "(10-20) Life Regeneration per second",
+      "Defend with 200% of Armour"
+    ],
+    "explicits": [
+      "Maximum Physical Damage Reduction is 50%"
+    ],
+    "tags": [
+      "damage",
+      "life",
+      "physical",
+      "strength"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "headhunter",
+    "name": "Headhunter",
+    "baseType": "Heavy Belt",
+    "itemClass": "belt",
+    "variants": [],
+    "implicits": [
+      "(20-30)% increased Stun Threshold",
+      "Has (1-3) Charm Slot",
+      "+(40-60) to maximum Life",
+      "+(20-40) to Strength",
+      "+(20-40) to Dexterity"
+    ],
+    "explicits": [
+      "When you kill a Rare monster, you gain its Modifiers for 60 seconds"
+    ],
+    "tags": [
+      "dexterity",
+      "life",
+      "strength"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "infernoclasp",
+    "name": "Infernoclasp",
+    "baseType": "Plate Belt",
+    "itemClass": "belt",
+    "source": "No longer obtainable",
+    "variants": [
+      {
+        "name": "Pre 0.1.1",
+        "mods": [
+          "+(25-35)% to Fire Resistance"
+        ]
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "+(30-50)% to Fire Resistance"
+        ]
+      }
+    ],
+    "implicits": [
+      "+(100-140) to Armour",
+      "Has (1-3) Charm Slot",
+      "+(100-150) to Armour",
+      "+(10-20) to Strength",
+      "+(3-5)% to Maximum Fire Resistance"
+    ],
+    "explicits": [],
+    "tags": [
+      "fire",
+      "resistance",
+      "strength"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "ingenuity",
+    "name": "Ingenuity",
+    "baseType": "Utility Belt",
+    "itemClass": "belt",
+    "source": "Drops from unique{The King in the Mists} in normal{Crux of Nothingness}",
+    "variants": [
+      {
+        "name": "Pre 0.2.0",
+        "mods": [
+          "(40-80)% increased bonuses gained from Equipped Rings"
+        ]
+      },
+      {
+        "name": "Pre 0.2.0F",
+        "mods": [
+          "+(1-2) Charm Slot"
+        ]
+      },
+      {
+        "name": "Current",
+        "mods": []
+      }
+    ],
+    "implicits": [
+      "Has (1-3) Charm Slot",
+      "20% of Flask Recovery applied Instantly",
+      "{variant:2,3}(-20-20)% reduced Charm Charges gained",
+      "{variant:2,3}(-10-10)% reduced Charm Charges used",
+      "{variant:2,3}(20-30)% increased bonuses gained from left Equipped Ring"
+    ],
+    "explicits": [
+      "{variant:2,3}(20-30)% increased bonuses gained from right Equipped Ring"
+    ],
+    "tags": [],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "keelhaul",
+    "name": "Keelhaul",
+    "baseType": "Linen Belt",
+    "itemClass": "belt",
+    "variants": [
+      {
+        "name": "Pre 0.1.1",
+        "mods": [
+          "Life Flasks gain (0-0.25) charges per Second",
+          "Mana Flasks gain (0-0.25) charges per Second"
+        ]
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "Life Flasks gain 0.25 charges per Second",
+          "Mana Flasks gain 0.25 charges per Second"
+        ]
+      }
+    ],
+    "implicits": [
+      "(20-30)% increased Mana Recovery from Flasks",
+      "Has (1-3) Charm Slot",
+      "(-25-25)% reduced Flask Life Recovery rate",
+      "(-25-25)% reduced Flask Mana Recovery rate"
+    ],
+    "explicits": [],
+    "tags": [
+      "life",
+      "mana"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "meginord_s_girdle",
+    "name": "Meginord's Girdle",
+    "baseType": "Rawhide Belt",
+    "itemClass": "belt",
+    "variants": [],
+    "implicits": [
+      "(20-30)% increased Life Recovery from Flasks",
+      "Has (1-3) Charm Slot",
+      "+(40-50) to Strength",
+      "+(10-15)% to Cold Resistance",
+      "50% increased Flask Charges used"
+    ],
+    "explicits": [
+      "100% increased Flask Charges gained"
+    ],
+    "tags": [
+      "cold",
+      "life",
+      "resistance",
+      "strength"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "midnight_braid",
+    "name": "Midnight Braid",
+    "baseType": "Rawhide Belt",
+    "itemClass": "belt",
+    "variants": [],
+    "implicits": [
+      "(20-30)% increased Life Recovery from Flasks",
+      "Has (1-3) Charm Slot",
+      "+(30-50) to maximum Mana",
+      "+(5-10)% to all Elemental Resistances",
+      "50% of Damage taken Recouped as Mana"
+    ],
+    "explicits": [],
+    "tags": [
+      "damage",
+      "life",
+      "mana",
+      "resistance"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "ryslatha_s_coil",
+    "name": "Ryslatha's Coil",
+    "baseType": "Ornate Belt",
+    "itemClass": "belt",
+    "variants": [],
+    "implicits": [
+      "Has (1-3) Charm Slot",
+      "(10-15)% reduced Charm Charges used",
+      "+(80-100) to maximum Life",
+      "(30-50)% increased Flask Life Recovery rate",
+      "(30-40)% more maximum Physical Attack Damage"
+    ],
+    "explicits": [
+      "(30-40)% less minimum Physical Attack Damage"
+    ],
+    "tags": [
+      "attack",
+      "damage",
+      "life",
+      "physical"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "shavronne_s_satchel",
+    "name": "Shavronne's Satchel",
+    "baseType": "Fine Belt",
+    "itemClass": "belt",
+    "variants": [],
+    "implicits": [
+      "Has (1-3) Charm Slot",
+      "Flasks gain 0.17 charges per Second",
+      "(20-30)% reduced Flask Life Recovery rate",
+      "+(20-30) to Intelligence",
+      "(20-30)% increased Flask Charges gained"
+    ],
+    "explicits": [
+      "Life Recovery from Flasks also applies to Energy Shield"
+    ],
+    "tags": [
+      "es",
+      "intelligence",
+      "life"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "soul_tether",
+    "name": "Soul Tether",
+    "baseType": "Long Belt",
+    "itemClass": "belt",
+    "variants": [],
+    "implicits": [
+      "(15-20)% increased Charm Effect Duration",
+      "Has (1-3) Charm Slot",
+      "+(40-60) to maximum Energy Shield",
+      "+(20-30) to Intelligence",
+      "You lose 5% of maximum Energy Shield per second"
+    ],
+    "explicits": [
+      "Excess Life Recovery from Leech is applied to Energy Shield"
+    ],
+    "tags": [
+      "es",
+      "intelligence",
+      "life"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "the_gnashing_sash",
+    "name": "The Gnashing Sash",
+    "baseType": "Wide Belt",
+    "itemClass": "belt",
+    "requiredLevel": 60,
+    "league": "Dawn of the Hunt",
+    "variants": [],
+    "implicits": [
+      "Has (1-3) Charm Slot",
+      "(20-30)% increased Flask Charges gained",
+      "(15-35)% increased Flask Life Recovery rate",
+      "+(17-23)% to Chaos Resistance",
+      "Lose 5% of maximum Life per second"
+    ],
+    "explicits": [
+      "Life Recovery from Flasks can Overflow Maximum Life"
+    ],
+    "tags": [
+      "chaos",
+      "life",
+      "resistance"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "umbilicus_immortalis",
+    "name": "Umbilicus Immortalis",
+    "baseType": "Linen Belt",
+    "itemClass": "belt",
+    "requiredLevel": 24,
+    "league": "Rise of the Abyssal",
+    "variants": [],
+    "implicits": [
+      "(20-30)% increased Mana Recovery from Flasks",
+      "Has (1-3) Charm Slot",
+      "(30-40)% reduced Flask Effect Duration",
+      "+(20-30) to Intelligence",
+      "Minions have (20-30)% increased maximum Life"
+    ],
+    "explicits": [
+      "Your Life Flask also applies to your Minions",
+      "Minions cannot Die while affected by a Life Flask",
+      "(20-30)% increased Flask Charges gained"
+    ],
+    "tags": [
+      "intelligence",
+      "life",
+      "mana",
+      "minion"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "waistgate_heavy_belt",
+    "name": "Waistgate Heavy Belt",
+    "baseType": "Heavy Belt",
+    "itemClass": "belt",
+    "league": "Dawn of the Hunt",
+    "variants": [],
+    "implicits": [
+      "(20-30)% increased Stun Threshold",
+      "Has (1-3) Charm Slot",
+      "+(50-80) to maximum Life",
+      "+(50-80) to maximum Mana",
+      "(20-30)% increased Flask Life Recovery rate"
+    ],
+    "explicits": [
+      "(20-30)% increased Flask Mana Recovery rate",
+      "Life and Mana Flasks can be equipped in either slot"
+    ],
+    "tags": [
+      "life",
+      "mana"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "zerphi_s_genesis",
+    "name": "Zerphi's Genesis",
+    "baseType": "Heavy Belt",
+    "itemClass": "belt",
+    "requiredLevel": 56,
+    "source": "Drops from unique{Trialmaster} in normal{The Trial of Chaos}",
+    "variants": [
+      {
+        "name": "Pre 0.2.0f",
+        "mods": [
+          "+(0-2) Charm Slot"
+        ]
+      },
+      {
+        "name": "Current",
+        "mods": []
+      }
+    ],
+    "implicits": [
+      "(20-30)% increased Stun Threshold",
+      "Has (1-3) Charm Slot",
+      "+(10-30) to Strength",
+      "Corrupted Blood cannot be inflicted on you",
+      "50% of charges used by Charms granted to your Life Flasks"
+    ],
+    "explicits": [
+      "(10-30)% increased Charm Charges used"
+    ],
+    "tags": [
+      "life",
+      "strength"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "belly_of_the_beast",
+    "name": "Belly of the Beast",
+    "baseType": "Explorer Armour",
+    "itemClass": "body",
+    "variants": [
+      {
+        "name": "Pre 0.1.1",
+        "mods": []
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "(25-30) to (35-40) Physical Thorns damage"
+        ]
+      }
+    ],
+    "implicits": [],
+    "explicits": [
+      "(100-150)% increased Armour and Evasion",
+      "+(100-150) to maximum Life",
+      "+(100-150) to Stun Threshold",
+      "Life Recovery from Flasks is instant"
+    ],
+    "tags": [
+      "damage",
+      "evasion",
+      "life",
+      "physical"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "bramblejack",
+    "name": "Bramblejack",
+    "baseType": "Rusted Cuirass",
+    "itemClass": "body",
+    "variants": [
+      {
+        "name": "Pre 0.1.1",
+        "mods": [
+          "+(50-80) to maximum Life"
+        ]
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "+(60-100) to maximum Life",
+          "Cannot Evade Enemy Attacks",
+          "Regenerate 5% of maximum Life per second while Surrounded"
+        ]
+      }
+    ],
+    "implicits": [],
+    "explicits": [
+      "+(60-100) to Stun Threshold",
+      "250% of Melee Physical Damage taken reflected to Attacker"
+    ],
+    "tags": [
+      "attack",
+      "damage",
+      "life",
+      "physical"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "briskwrap",
+    "name": "Briskwrap",
+    "baseType": "Rhoahide Coat",
+    "itemClass": "body",
+    "variants": [
+      {
+        "name": "Pre 0.1.1",
+        "mods": []
+      },
+      {
+        "name": "Pre 0.3.0",
+        "mods": []
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "Gain Deflection Rating equal to (20-30)% of Evasion Rating"
+        ]
+      }
+    ],
+    "implicits": [],
+    "explicits": [
+      "{variant:2,3}(60-100)% increased Evasion Rating",
+      "(40-60)% increased Flask Life Recovery rate",
+      "(40-60)% increased Flask Mana Recovery rate",
+      "+(20-30) to Dexterity",
+      "+(20-30)% to Cold Resistance"
+    ],
+    "tags": [
+      "cold",
+      "dexterity",
+      "evasion",
+      "life",
+      "mana",
+      "resistance"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "bristleboar",
+    "name": "Bristleboar",
+    "baseType": "Leather Vest",
+    "itemClass": "body",
+    "variants": [
+      {
+        "name": "Pre 0.1.1",
+        "mods": [
+          "(40-80)% increased Evasion Rating",
+          "Gain 3 Rage when Hit by an Enemy"
+        ]
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "50% reduced Evasion Rating",
+          "(3-5) Life Regeneration per second",
+          "Gain 5 Rage when Hit by an Enemy"
+        ]
+      }
+    ],
+    "implicits": [],
+    "explicits": [
+      "+(40-60) to maximum Life",
+      "Gain 10 Rage when Critically Hit by an Enemy"
+    ],
+    "tags": [
+      "evasion",
+      "life"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "cloak_of_defiance",
+    "name": "Cloak of Defiance",
+    "baseType": "Havoc Raiment",
+    "itemClass": "body",
+    "league": "Dawn of the Hunt",
+    "variants": [
+      {
+        "name": "Pre 0.4.0",
+        "mods": [
+          "50% increased Mana Regeneration Rate",
+          "30% of Damage is taken from Mana before Life"
+        ]
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "(50-100)% increased Mana Regeneration Rate",
+          "50% of Damage is taken from Mana before Life"
+        ]
+      }
+    ],
+    "implicits": [],
+    "explicits": [
+      "(50-100)% increased Energy Shield",
+      "+(100-150) to maximum Mana"
+    ],
+    "tags": [
+      "damage",
+      "es",
+      "life",
+      "mana"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "cloak_of_flame",
+    "name": "Cloak of Flame",
+    "baseType": "Silk Robe",
+    "itemClass": "body",
+    "variants": [
+      {
+        "name": "Pre 0.4.0",
+        "mods": [
+          "40% of Physical Damage taken as Fire Damage"
+        ]
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "+(30-50) to maximum Energy Shield",
+          "50% of Physical Damage taken as Fire Damage"
+        ]
+      }
+    ],
+    "implicits": [],
+    "explicits": [
+      "+(30-50)% to Fire Resistance",
+      "(30-50)% reduced Ignite Duration on you",
+      "25 to 35 Fire Thorns damage"
+    ],
+    "tags": [
+      "damage",
+      "es",
+      "fire",
+      "ignite",
+      "physical",
+      "resistance"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "coat_of_red",
+    "name": "Coat of Red",
+    "baseType": "Chain Mail",
+    "itemClass": "body",
+    "variants": [],
+    "implicits": [],
+    "explicits": [
+      "(80-100)% increased Armour and Evasion",
+      "+(80-100) to maximum Life",
+      "+(75-150) to Stun Threshold",
+      "25% chance to be inflicted with Bleeding when Hit"
+    ],
+    "tags": [
+      "bleed",
+      "evasion",
+      "life"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "cospri_s_will",
+    "name": "Cospri's Will",
+    "baseType": "Assassin Garb",
+    "itemClass": "body",
+    "league": "Rise of the Abyssal",
+    "variants": [],
+    "implicits": [
+      "Grants Skill: Level (1-20) Withering Presence",
+      "5% increased Movement Speed",
+      "(150-200)% increased Evasion and Energy Shield",
+      "+(23-29)% to Chaos Resistance",
+      "Curses you inflict have infinite Duration"
+    ],
+    "explicits": [
+      "Curses you inflict can affect Hexproof Enemies",
+      "Withered you inflict has infinite Duration"
+    ],
+    "tags": [
+      "chaos",
+      "curse",
+      "es",
+      "evasion",
+      "grants_skill",
+      "grants_withering_presence",
+      "resistance",
+      "speed"
+    ],
+    "grantedSkills": [
+      {
+        "skillName": "Withering Presence",
+        "minLevel": 1,
+        "maxLevel": 20
+      }
+    ],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "doryani_s_prototype",
+    "name": "Doryani's Prototype",
+    "baseType": "Scale Mail",
+    "itemClass": "body",
+    "variants": [],
+    "implicits": [],
+    "explicits": [
+      "(50-100)% increased Armour and Evasion",
+      "+(60-80) to maximum Life",
+      "+100% of Armour also applies to Lightning Damage",
+      "Enemies in your Presence have Lightning Resistance equal to yours",
+      "Lightning Resistance does not affect Lightning damage taken"
+    ],
+    "tags": [
+      "damage",
+      "evasion",
+      "life",
+      "lightning",
+      "resistance"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "dustbloom",
+    "name": "Dustbloom",
+    "baseType": "Studded Vest",
+    "itemClass": "body",
+    "variants": [],
+    "implicits": [],
+    "explicits": [
+      "(100-150)% increased Evasion Rating",
+      "+(20-30)% to Cold Resistance",
+      "Maximum 10 Fragile Regrowth",
+      "0.5% of maximum Life Regenerated per second per Fragile Regrowth",
+      "10% increased Mana Regeneration Rate per Fragile Regrowth",
+      "Lose all Fragile Regrowth when Hit",
+      "Gain 1 Fragile Regrowth each second"
+    ],
+    "tags": [
+      "cold",
+      "evasion",
+      "life",
+      "mana",
+      "resistance"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "edyrn_s_tusks",
+    "name": "Edyrn's Tusks",
+    "baseType": "Iron Cuirass",
+    "itemClass": "body",
+    "variants": [
+      {
+        "name": "Pre 0.1.1",
+        "mods": [
+          "10% chance to inflict Bleeding on Hit"
+        ]
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "50% chance to inflict Bleeding on Hit"
+        ]
+      }
+    ],
+    "implicits": [],
+    "explicits": [
+      "(120-160)% increased Armour",
+      "50% reduced Slowing Potency of Debuffs on You",
+      "(15-20) to (25-30) Physical Thorns damage"
+    ],
+    "tags": [
+      "bleed",
+      "conditional",
+      "damage",
+      "on_hit",
+      "physical"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": [
+      {
+        "condition": "on_hit",
+        "effect": "10% chance to inflict Bleeding on Hit",
+        "tags": []
+      },
+      {
+        "condition": "on_hit",
+        "effect": "50% chance to inflict Bleeding on Hit",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": "enfolding_dawn",
+    "name": "Enfolding Dawn",
+    "baseType": "Pilgrim Vestments",
+    "itemClass": "body",
+    "variants": [],
+    "implicits": [],
+    "explicits": [
+      "(50-100)% increased Armour and Energy Shield",
+      "+100 to Spirit",
+      "+(5-15)% to all Elemental Resistances",
+      "Gain no inherent bonus from Intelligence"
+    ],
+    "tags": [
+      "es",
+      "intelligence",
+      "resistance"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "foxshade",
+    "name": "Foxshade",
+    "baseType": "Quilted Vest",
+    "itemClass": "body",
+    "variants": [],
+    "implicits": [],
+    "explicits": [
+      "+(50-70) to Evasion Rating",
+      "+(20-30) to Dexterity",
+      "10% increased Movement Speed when on Full Life",
+      "100% increased Evasion Rating when on Full Life"
+    ],
+    "tags": [
+      "conditional",
+      "dexterity",
+      "evasion",
+      "life",
+      "on_full_life",
+      "speed"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": [
+      {
+        "condition": "on_full_life",
+        "effect": "10% increased Movement Speed when on Full Life",
+        "tags": []
+      },
+      {
+        "condition": "on_full_life",
+        "effect": "100% increased Evasion Rating when on Full Life",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": "ghostwrithe",
+    "name": "Ghostwrithe",
+    "baseType": "Tattered Robe",
+    "itemClass": "body",
+    "variants": [
+      {
+        "name": "Pre 0.2.0",
+        "mods": [
+          "50% of Maximum Life Converted to Energy Shield"
+        ]
+      },
+      {
+        "name": "Pre 0.4.0",
+        "mods": [
+          "25% of Maximum Life Converted to Energy Shield"
+        ]
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "35% of Maximum Life Converted to Energy Shield"
+        ]
+      }
+    ],
+    "implicits": [],
+    "explicits": [
+      "+100 to maximum Energy Shield",
+      "+(29-37)% to Chaos Resistance"
+    ],
+    "tags": [
+      "chaos",
+      "es",
+      "life",
+      "resistance"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "gloamgown",
+    "name": "Gloamgown",
+    "baseType": "Elementalist Robe",
+    "itemClass": "body",
+    "league": "Dawn of the Hunt",
+    "variants": [],
+    "implicits": [],
+    "explicits": [
+      "(100-140)% increased Energy Shield",
+      "+(30-40) to Spirit",
+      "+(25-35)% to Cold Resistance",
+      "1000% increased Energy Shield Recharge Rate",
+      "Your base Energy Shield Recharge Delay is 10 seconds"
+    ],
+    "tags": [
+      "cold",
+      "es",
+      "resistance"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "gloomform",
+    "name": "Gloomform",
+    "baseType": "Waxed Jacket",
+    "itemClass": "body",
+    "variants": [
+      {
+        "name": "Pre 0.1.1",
+        "mods": []
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "+(10-20)% to Fire Resistance"
+        ]
+      }
+    ],
+    "implicits": [],
+    "explicits": [
+      "(100-150)% increased Evasion Rating",
+      "+(10-20) to Dexterity",
+      "20% reduced Light Radius",
+      "You have a Smoke Cloud around you while stationary"
+    ],
+    "tags": [
+      "dexterity",
+      "evasion",
+      "fire",
+      "resistance"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "greed_s_embrace",
+    "name": "Greed's Embrace",
+    "baseType": "Vaal Cuirass",
+    "itemClass": "body",
+    "variants": [],
+    "implicits": [],
+    "explicits": [
+      "50% increased Strength Requirement",
+      "20% reduced Movement Speed",
+      "(100-150)% increased Armour",
+      "(30-50)% increased Rarity of Items found",
+      "+(20-30)% to Fire Resistance"
+    ],
+    "tags": [
+      "fire",
+      "rarity",
+      "resistance",
+      "speed",
+      "strength"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "husk_of_dreams",
+    "name": "Husk of Dreams",
+    "baseType": "Shaman Mantle",
+    "itemClass": "body",
+    "variants": [
+      {
+        "name": "Pre 0.1.1",
+        "mods": [
+          "+(13-17)% to Chaos Resistance",
+          "(25-50)% increased Flask Charges gained"
+        ]
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "+(13-17)% to Chaos Resistance",
+          "(20-30)% increased Flask Charges gained"
+        ]
+      }
+    ],
+    "implicits": [],
+    "explicits": [
+      "(100-150)% increased Armour and Energy Shield",
+      "-10% to Fire Resistance",
+      "50% less Flask Charges used"
+    ],
+    "tags": [
+      "chaos",
+      "es",
+      "fire",
+      "resistance"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "hyrri_s_ire",
+    "name": "Hyrri's Ire",
+    "baseType": "Armoured Vest",
+    "itemClass": "body",
+    "league": "Dawn of the Hunt",
+    "variants": [
+      {
+        "name": "Pre 0.4.0",
+        "mods": [
+          "(100-130)% increased Evasion Rating",
+          "Adds (13-20) to (21-31) Cold damage to Attacks",
+          "25% increased Chill Duration on Enemies"
+        ]
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "(200-250)% increased Evasion Rating",
+          "Gain (15-25)% of Damage as Extra Cold Damage",
+          "25% increased Freeze Duration on Enemies"
+        ]
+      }
+    ],
+    "implicits": [
+      "(30-40)% increased Elemental Ailment Threshold",
+      "+(30-40) to Dexterity",
+      "Evasion Rating is doubled if you have not been Hit Recently"
+    ],
+    "explicits": [],
+    "tags": [
+      "attack",
+      "chill",
+      "cold",
+      "conditional",
+      "damage",
+      "dexterity",
+      "evasion",
+      "freeze",
+      "recently"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": [
+      {
+        "condition": "recently",
+        "effect": "Evasion Rating is doubled if you have not been Hit Recently",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": "icetomb",
+    "name": "Icetomb",
+    "baseType": "Mail Vestments",
+    "itemClass": "body",
+    "variants": [],
+    "implicits": [],
+    "explicits": [
+      "+(20-30) to Strength",
+      "+(20-30) to Intelligence",
+      "+(30-40)% to Cold Resistance",
+      "Gain Cold Thorns Damage equal to (10-18)% of your maximum Mana"
+    ],
+    "tags": [
+      "cold",
+      "damage",
+      "intelligence",
+      "mana",
+      "resistance",
+      "strength"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "irongrasp",
+    "name": "Irongrasp",
+    "baseType": "Vagabond Armour",
+    "itemClass": "body",
+    "variants": [
+      {
+        "name": "Pre 0.1.1",
+        "mods": []
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "+(20-30) to Strength"
+        ]
+      }
+    ],
+    "implicits": [],
+    "explicits": [
+      "(100-150)% increased Armour and Evasion",
+      "+(100-150) to Stun Threshold",
+      "Iron Grip",
+      "Iron Will"
+    ],
+    "tags": [
+      "evasion",
+      "strength"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "kaom_s_heart",
+    "name": "Kaom's Heart",
+    "baseType": "Conqueror Plate",
+    "itemClass": "body",
+    "variants": [
+      {
+        "name": "Pre 0.2.1",
+        "mods": [
+          "+1000 to maximum Life"
+        ]
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "+1500 to maximum Life"
+        ]
+      }
+    ],
+    "implicits": [
+      "(30-40)% increased Stun Threshold",
+      "You have no Spirit"
+    ],
+    "explicits": [],
+    "tags": [
+      "life"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "kingsguard",
+    "name": "Kingsguard",
+    "baseType": "Full Plate",
+    "itemClass": "body",
+    "variants": [],
+    "implicits": [],
+    "explicits": [
+      "+(60-80) to maximum Life",
+      "+(40-60) to maximum Mana",
+      "+(5-10)% to all Elemental Resistances",
+      "25% reduced Endurance Charge Duration",
+      "Recover 5% of maximum Life for each Endurance Charge consumed"
+    ],
+    "tags": [
+      "life",
+      "mana",
+      "resistance"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "lightning_coil",
+    "name": "Lightning Coil",
+    "baseType": "Ancestral Mail",
+    "itemClass": "body",
+    "league": "Rise of the Abyssal",
+    "variants": [
+      {
+        "name": "Pre 0.4.0",
+        "mods": [
+          "(20-40)% of Physical damage from Hits taken as Lightning damage"
+        ]
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "(30-50)% of Physical damage from Hits taken as Lightning damage"
+        ]
+      }
+    ],
+    "implicits": [
+      "Grants Skill: Level (1-20) Valako's Charge",
+      "(80-120)% increased Armour and Evasion",
+      "+(80-100) to maximum Life",
+      "+(20-30) to Dexterity",
+      "-(40-30)% to Lightning Resistance"
+    ],
+    "explicits": [],
+    "tags": [
+      "damage",
+      "dexterity",
+      "evasion",
+      "grants_skill",
+      "grants_valako_s_charge",
+      "life",
+      "lightning",
+      "physical",
+      "resistance"
+    ],
+    "grantedSkills": [
+      {
+        "skillName": "Valako's Charge",
+        "minLevel": 1,
+        "maxLevel": 20
+      }
+    ],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "necromantle",
+    "name": "Necromantle",
+    "baseType": "Bone Raiment",
+    "itemClass": "body",
+    "variants": [
+      {
+        "name": "Pre 0.1.1",
+        "mods": []
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "Minions have +(17-23)% to Chaos Resistance"
+        ]
+      }
+    ],
+    "implicits": [],
+    "explicits": [
+      "+(40-60) to maximum Life",
+      "+(30-50) to maximum Mana",
+      "Minions gain (20-30)% of their maximum Life as Extra maximum Energy Shield",
+      "Minions Revive 50% faster"
+    ],
+    "tags": [
+      "chaos",
+      "es",
+      "life",
+      "mana",
+      "minion",
+      "resistance"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "pariah_s_embrace",
+    "name": "Pariah's Embrace",
+    "baseType": "Cloaked Mail",
+    "itemClass": "body",
+    "variants": [
+      {
+        "name": "Pre 0.1.1",
+        "mods": []
+      },
+      {
+        "name": "Pre 0.3.0",
+        "mods": []
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "(20-40)% increased Mana Cost Efficiency"
+        ]
+      }
+    ],
+    "implicits": [],
+    "explicits": [
+      "(50-80)% increased Armour and Evasion",
+      "+50 to Spirit",
+      "{variant:2,3}+(10-15) to all Attributes",
+      "(10-15) Life Regeneration per second",
+      "{variant:1,2}20% reduced Mana Cost of Skills"
+    ],
+    "tags": [
+      "evasion",
+      "life",
+      "mana"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "perfidy",
+    "name": "Perfidy",
+    "baseType": "Knight Armour",
+    "itemClass": "body",
+    "source": "Drops from unique{Kosis, The Revelation}",
+    "variants": [
+      {
+        "name": "Pre 0.4.0",
+        "mods": [
+          "(100-150)% increased Armour and Evasion",
+          "(10-40)% chance to Avoid Physical Damage from Hits",
+          "(10-40)% chance to Avoid Chaos Damage from Hits"
+        ]
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "(300-450)% increased Armour and Evasion",
+          "(10-30)% chance to Avoid Physical Damage from Hits",
+          "(10-30)% chance to Avoid Fire Damage from Hits",
+          "(10-30)% chance to Avoid Cold Damage from Hits",
+          "(10-30)% chance to Avoid Lightning Damage from Hits",
+          "(10-30)% chance to Avoid Chaos Damage from Hits"
+        ]
+      }
+    ],
+    "implicits": [],
+    "explicits": [
+      "Enemies in your Presence are Intimidated"
+    ],
+    "tags": [
+      "chaos",
+      "cold",
+      "damage",
+      "evasion",
+      "fire",
+      "lightning",
+      "physical"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "pragmatism",
+    "name": "Pragmatism",
+    "baseType": "Explorer Armour",
+    "itemClass": "body",
+    "source": "Drops from unique{The King in the Mists} in normal{Crux of Nothingness}",
+    "variants": [],
+    "implicits": [],
+    "explicits": [
+      "(200-300)% increased Armour and Evasion",
+      "+(10-20)% to all Elemental Resistances",
+      "-17% to Chaos Resistance",
+      "Charms use no Charges"
+    ],
+    "tags": [
+      "chaos",
+      "evasion",
+      "resistance"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "prayers_for_rain",
+    "name": "Prayers for Rain",
+    "baseType": "Keth Raiment",
+    "itemClass": "body",
+    "variants": [
+      {
+        "name": "Pre 0.1.1",
+        "mods": []
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "+(10-20)% to Lightning Resistance"
+        ]
+      }
+    ],
+    "implicits": [],
+    "explicits": [
+      "(60-100)% increased Energy Shield",
+      "+(10-15) to Intelligence",
+      "30% slower start of Energy Shield Recharge",
+      "Energy Shield Recharge is not interrupted by Damage if Recharge began Recently"
+    ],
+    "tags": [
+      "conditional",
+      "damage",
+      "es",
+      "intelligence",
+      "lightning",
+      "recently",
+      "resistance"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": [
+      {
+        "condition": "recently",
+        "effect": "Energy Shield Recharge is not interrupted by Damage if Recharge began Recently",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": "quatl_s_molt",
+    "name": "Quatl's Molt",
+    "baseType": "Serpentscale Coat",
+    "itemClass": "body",
+    "variants": [
+      {
+        "name": "Pre 0.1.1",
+        "mods": [
+          "+(30-50) to maximum Life"
+        ]
+      },
+      {
+        "name": "Pre 0.3.0",
+        "mods": []
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "Gain Deflection Rating equal to (40-60)% of Evasion Rating"
+        ]
+      }
+    ],
+    "implicits": [],
+    "explicits": [
+      "{variant:2,3}(60-80)% increased Evasion Rating",
+      "{variant:2,3}+(60-80) to maximum Life",
+      "+(17-23)% to Chaos Resistance",
+      "(10-20) Life Regeneration per second",
+      "Cannot be Poisoned"
+    ],
+    "tags": [
+      "chaos",
+      "evasion",
+      "life",
+      "poison",
+      "resistance"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "queen_of_the_forest",
+    "name": "Queen of the Forest",
+    "baseType": "Smuggler Coat",
+    "itemClass": "body",
+    "variants": [
+      {
+        "name": "Pre 0.2.0",
+        "mods": [
+          "Increases Movement Speed by 25%, plus 1% per 500 Evasion Rating, up to a maximum of 75%",
+          "Other Modifiers to Movement Speed except for Sprinting do not apply"
+        ]
+      },
+      {
+        "name": "Pre 0.4.0",
+        "mods": [
+          "Increases Movement Speed by 25%, plus 1% per 800 Evasion Rating, up to a maximum of 75%",
+          "Other Modifiers to Movement Speed except for Sprinting do not apply"
+        ]
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "Increases Movement Speed by 25%, plus 1% per 600 Evasion Rating, up to a maximum of 75%",
+          "Other Modifiers to Movement Speed except for Sprinting do not apply"
+        ]
+      }
+    ],
+    "implicits": [],
+    "explicits": [
+      "(100-150)% increased Evasion Rating",
+      "-(15-10)% to Fire Resistance",
+      "+(25-30)% to Cold Resistance",
+      "+(10-15)% to Lightning Resistance"
+    ],
+    "tags": [
+      "cold",
+      "evasion",
+      "fire",
+      "lightning",
+      "resistance",
+      "speed"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "redflare_conduit",
+    "name": "Redflare Conduit",
+    "baseType": "Anchorite Garb",
+    "itemClass": "body",
+    "variants": [
+      {
+        "name": "Pre 0.1.1",
+        "mods": [
+          "+(20-30)% to Lightning Resistance"
+        ]
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "-15% to Cold Resistance",
+          "+(30-40)% to Lightning Resistance"
+        ]
+      }
+    ],
+    "implicits": [],
+    "explicits": [
+      "+(50-70) to maximum Mana",
+      "20% chance to gain a Power Charge on Hit",
+      "Lose all Power Charges on reaching maximum Power Charges",
+      "Shocks you when you reach maximum Power Charges"
+    ],
+    "tags": [
+      "cold",
+      "conditional",
+      "lightning",
+      "mana",
+      "on_hit",
+      "resistance",
+      "shock"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": [
+      {
+        "condition": "on_hit",
+        "effect": "20% chance to gain a Power Charge on Hit",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": "sacrosanctum",
+    "name": "Sacrosanctum",
+    "baseType": "Corvus Mantle",
+    "itemClass": "body",
+    "league": "Dawn of the Hunt",
+    "variants": [
+      {
+        "name": "Pre 0.4.0",
+        "mods": [
+          "(5-10)% of Damage taken Recouped as Life"
+        ]
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "(10-20)% of Damage taken Recouped as Life"
+        ]
+      }
+    ],
+    "implicits": [
+      "+(20-30) to Spirit",
+      "(80-120)% increased Armour and Energy Shield",
+      "+(20-30) to Strength",
+      "+(20-30) to Intelligence",
+      "+(17-23)% to Chaos Resistance"
+    ],
+    "explicits": [
+      "Damage taken Recouped as Life is also Recouped as Energy Shield"
+    ],
+    "tags": [
+      "chaos",
+      "damage",
+      "es",
+      "intelligence",
+      "life",
+      "resistance",
+      "strength"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "sands_of_silk",
+    "name": "Sands of Silk",
+    "baseType": "Shrouded Vest",
+    "itemClass": "body",
+    "league": "Dawn of the Hunt",
+    "variants": [],
+    "implicits": [
+      "Grants Skill: Level (1-20) Blink",
+      "(50-100)% increased Evasion Rating",
+      "+(50-80) to maximum Mana",
+      "+(10-20) to Dexterity",
+      "+(10-20) to Intelligence"
+    ],
+    "explicits": [
+      "+(10-15)% to Fire Resistance",
+      "(15-30)% increased Cooldown Recovery Rate"
+    ],
+    "tags": [
+      "dexterity",
+      "evasion",
+      "fire",
+      "grants_blink",
+      "grants_skill",
+      "intelligence",
+      "mana",
+      "resistance"
+    ],
+    "grantedSkills": [
+      {
+        "skillName": "Blink",
+        "minLevel": 1,
+        "maxLevel": 20
+      }
+    ],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "sierran_inheritance",
+    "name": "Sierran Inheritance",
+    "baseType": "Marabout Garb",
+    "itemClass": "body",
+    "variants": [
+      {
+        "name": "Pre 0.4.0",
+        "mods": []
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "All Damage taken from Hits Contributes to Magnitude of Chill inflicted on you"
+        ]
+      }
+    ],
+    "implicits": [],
+    "explicits": [
+      "(50-80)% increased Evasion and Energy Shield",
+      "+(15-25)% to Lightning Resistance",
+      "(30-50)% faster start of Energy Shield Recharge",
+      "The Effect of Chill on you is reversed"
+    ],
+    "tags": [
+      "chill",
+      "damage",
+      "es",
+      "evasion",
+      "lightning",
+      "resistance"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "silks_of_veneration",
+    "name": "Silks of Veneration",
+    "baseType": "Enlightened Robe",
+    "itemClass": "body",
+    "league": "Dawn of the Hunt",
+    "variants": [
+      {
+        "name": "Pre 0.4.0",
+        "mods": [
+          "+(10-20)% to all Elemental Resistances"
+        ]
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "(150-200)% increased Energy Shield"
+        ]
+      }
+    ],
+    "implicits": [
+      "(40-50)% increased Mana Regeneration Rate",
+      "+(30-50) to Spirit",
+      "+(20-30) to Intelligence",
+      "(30-50)% increased Energy Shield Recharge Rate",
+      "Current Energy Shield also grants Elemental Damage reduction"
+    ],
+    "explicits": [],
+    "tags": [
+      "damage",
+      "es",
+      "intelligence",
+      "mana",
+      "resistance"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "skin_of_the_loyal",
+    "name": "Skin of the Loyal",
+    "baseType": "Garment",
+    "itemClass": "body",
+    "source": "Drops from unique{Xesht, We That Are One} in normal{Twisted Domain}",
+    "variants": [],
+    "implicits": [],
+    "explicits": [
+      "+(5-40)% to all Elemental Resistances",
+      "Elemental Ailment Threshold is increased by Uncapped Chaos Resistance",
+      "Armour is increased by Uncapped Fire Resistance",
+      "Energy Shield is increased by Uncapped Cold Resistance",
+      "Evasion Rating is increased by Uncapped Lightning Resistance"
+    ],
+    "tags": [
+      "chaos",
+      "cold",
+      "es",
+      "evasion",
+      "fire",
+      "lightning",
+      "resistance"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "soul_mantle",
+    "name": "Soul Mantle",
+    "baseType": "Sacrificial Mantle",
+    "itemClass": "body",
+    "league": "Dawn of the Hunt",
+    "variants": [],
+    "implicits": [],
+    "explicits": [
+      "(80-120)% increased Armour and Energy Shield",
+      "+10 to Strength",
+      "+15 to Intelligence",
+      "(20-30)% reduced Totem Life",
+      "+1 to maximum number of Summoned Totems",
+      "Inflicts a random Curse on you when your Totems die, ignoring Curse limit"
+    ],
+    "tags": [
+      "curse",
+      "es",
+      "intelligence",
+      "life",
+      "strength",
+      "totem"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "tabula_rasa",
+    "name": "Tabula Rasa",
+    "baseType": "Garment",
+    "itemClass": "body",
+    "league": "Dawn of the Hunt",
+    "variants": [],
+    "implicits": [],
+    "explicits": [
+      "Sockets: S S S S S S",
+      "Has 6 Rune Sockets"
+    ],
+    "tags": [],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "temporalis",
+    "name": "Temporalis",
+    "baseType": "Silk Robe",
+    "itemClass": "body",
+    "source": "Drops from unique{Zarokh, the Temporal}",
+    "variants": [
+      {
+        "name": "Pre 0.2.0",
+        "mods": [
+          "Skills have -(4-2) seconds to Cooldown"
+        ]
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "Skills have -(2-1) seconds to Cooldown"
+        ]
+      }
+    ],
+    "implicits": [],
+    "explicits": [
+      "+(100-150) to maximum Energy Shield",
+      "+(10-20)% to all Elemental Resistances",
+      "(5-30)% of Damage taken Recouped as Life",
+      "(5-30)% of Damage taken Recouped as Mana"
+    ],
+    "tags": [
+      "damage",
+      "es",
+      "life",
+      "mana",
+      "resistance"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "tetzlapokal_s_desire",
+    "name": "Tetzlapokal's Desire",
+    "baseType": "Votive Raiment",
+    "itemClass": "body",
+    "variants": [
+      {
+        "name": "Pre 0.1.1",
+        "mods": []
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "+(20-30) to Intelligence"
+        ]
+      }
+    ],
+    "implicits": [],
+    "explicits": [
+      "(100-150)% increased Energy Shield",
+      "+(20-30) to Strength",
+      "+(17-23)% to Chaos Resistance",
+      "Life Recharges"
+    ],
+    "tags": [
+      "chaos",
+      "es",
+      "intelligence",
+      "life",
+      "resistance",
+      "strength"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "the_black_doubt",
+    "name": "The Black Doubt",
+    "baseType": "Hexer's Robe",
+    "itemClass": "body",
+    "variants": [
+      {
+        "name": "Pre 0.1.1",
+        "mods": []
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "+(10-20)% to Cold Resistance"
+        ]
+      }
+    ],
+    "implicits": [],
+    "explicits": [
+      "(60-100)% increased Energy Shield",
+      "+(10-30) to Intelligence",
+      "Damage over Time bypasses your Energy Shield",
+      "While not on Full Life, Sacrifice 10% of maximum Mana per Second to Recover that much Life"
+    ],
+    "tags": [
+      "cold",
+      "conditional",
+      "damage",
+      "es",
+      "intelligence",
+      "life",
+      "mana",
+      "on_full_life",
+      "resistance"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": [
+      {
+        "condition": "on_full_life",
+        "effect": "While not on Full Life, Sacrifice 10% of maximum Mana per Second to Recover that much Life",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": "the_brass_dome",
+    "name": "The Brass Dome",
+    "baseType": "Champion Cuirass",
+    "itemClass": "body",
+    "variants": [
+      {
+        "name": "Pre 0.1.1",
+        "mods": [
+          "(300-400)% increased Armour",
+          "+5% to all Maximum Elemental Resistances"
+        ]
+      },
+      {
+        "name": "Pre 0.4.0",
+        "mods": [
+          "(400-500)% increased Armour"
+        ]
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "(700-800)% increased Armour"
+        ]
+      }
+    ],
+    "implicits": [],
+    "explicits": [
+      "{variant:2,3}-(5-1)% to all Maximum Elemental Resistances",
+      "+(200-300) to Stun Threshold",
+      "Take no Extra Damage from Critical Hits"
+    ],
+    "tags": [
+      "crit",
+      "damage",
+      "resistance"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "the_coming_calamity",
+    "name": "The Coming Calamity",
+    "baseType": "Heroic Armour",
+    "itemClass": "body",
+    "league": "Dawn of the Hunt",
+    "variants": [
+      {
+        "name": "Pre 0.4.0",
+        "mods": []
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "Herald Skills deal (50-100)% increased Damage"
+        ]
+      }
+    ],
+    "implicits": [
+      "Grants Skill: Level (1-20) Herald of Ash",
+      "Grants Skill: Level (1-20) Herald of Ice",
+      "Grants Skill: Level (1-20) Herald of Thunder",
+      "+(60-80) to maximum Life",
+      "+(30-40)% to all Elemental Resistances"
+    ],
+    "explicits": [
+      "Enemies in your Presence have no Elemental Resistances"
+    ],
+    "tags": [
+      "damage",
+      "grants_herald_of_ash",
+      "grants_herald_of_ice",
+      "grants_herald_of_thunder",
+      "grants_skill",
+      "life",
+      "resistance"
+    ],
+    "grantedSkills": [
+      {
+        "skillName": "Herald of Ash",
+        "minLevel": 1,
+        "maxLevel": 20
+      },
+      {
+        "skillName": "Herald of Ice",
+        "minLevel": 1,
+        "maxLevel": 20
+      },
+      {
+        "skillName": "Herald of Thunder",
+        "minLevel": 1,
+        "maxLevel": 20
+      }
+    ],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "the_covenant",
+    "name": "The Covenant",
+    "baseType": "Altar Robe",
+    "itemClass": "body",
+    "variants": [
+      {
+        "name": "Pre 0.4.0",
+        "mods": [
+          "5% of Spell Damage Leeched as Life",
+          "Skills gain a Base Life Cost equal to 50% of Base Mana Cost"
+        ]
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "Grants Skill: Level 14 Life Remnants",
+          "10% of Spell Damage Leeched as Life",
+          "Skills gain a Base Life Cost equal to 100% of Base Mana Cost"
+        ]
+      }
+    ],
+    "implicits": [],
+    "explicits": [
+      "(100-150)% increased Energy Shield",
+      "+(100-150) to maximum Life"
+    ],
+    "tags": [
+      "damage",
+      "es",
+      "grants_level",
+      "grants_skill",
+      "life",
+      "mana",
+      "spell"
+    ],
+    "grantedSkills": [
+      {
+        "skillName": "Level",
+        "minLevel": 1,
+        "maxLevel": 20
+      }
+    ],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "the_dancing_mirage",
+    "name": "The Dancing Mirage",
+    "baseType": "Wayfarer Jacket",
+    "itemClass": "body",
+    "variants": [
+      {
+        "name": "Pre 0.1.1",
+        "mods": [
+          "(60-100)% increased Evasion and Energy Shield"
+        ]
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "(150-200)% increased Evasion and Energy Shield"
+        ]
+      }
+    ],
+    "implicits": [],
+    "explicits": [
+      "+(10-20)% to Lightning Resistance",
+      "20% less Damage taken if you have not been Hit Recently",
+      "100% increased Evasion Rating if you have been Hit Recently"
+    ],
+    "tags": [
+      "conditional",
+      "damage",
+      "es",
+      "evasion",
+      "lightning",
+      "recently",
+      "resistance"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": [
+      {
+        "condition": "recently",
+        "effect": "20% less Damage taken if you have not been Hit Recently",
+        "tags": []
+      },
+      {
+        "condition": "recently",
+        "effect": "100% increased Evasion Rating if you have been Hit Recently",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": "the_fallen_formation",
+    "name": "The Fallen Formation",
+    "baseType": "Lamellar Mail",
+    "itemClass": "body",
+    "league": "Dawn of the Hunt",
+    "source": "No longer obtainable",
+    "variants": [],
+    "implicits": [],
+    "explicits": [
+      "(100-200)% increased Armour and Evasion",
+      "+(20-30) to Strength",
+      "+(20-30) to Dexterity",
+      "(8-12) Life Regeneration per second",
+      "-20 to maximum Valour",
+      "Banners always have maximum Valour"
+    ],
+    "tags": [
+      "dexterity",
+      "evasion",
+      "life",
+      "strength"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "the_mutable_star",
+    "name": "The Mutable Star",
+    "baseType": "Cleric Vestments",
+    "itemClass": "body",
+    "league": "Dawn of the Hunt",
+    "variants": [],
+    "implicits": [],
+    "explicits": [
+      "(100-150)% increased Armour and Energy Shield",
+      "(50-100)% increased Energy Shield Recharge Rate",
+      "(25-35) Life Regeneration per second",
+      "(30-50)% reduced Ignite Duration on you",
+      "Defend against Hits as though you had 1% more Armour per 1% current Energy Shield",
+      "(30-50)% reduced Duration of Bleeding on You"
+    ],
+    "tags": [
+      "bleed",
+      "es",
+      "ignite",
+      "life"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "the_rat_cage",
+    "name": "The Rat Cage",
+    "baseType": "Scout's Vest",
+    "itemClass": "body",
+    "variants": [],
+    "implicits": [],
+    "explicits": [
+      "(100-150)% increased Evasion Rating",
+      "+300 to maximum Life",
+      "25% reduced Attribute Requirements",
+      "100% of Fire Damage from Hits taken as Physical Damage"
+    ],
+    "tags": [
+      "damage",
+      "evasion",
+      "fire",
+      "life",
+      "physical"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "the_road_warrior",
+    "name": "The Road Warrior",
+    "baseType": "Raider Plate",
+    "itemClass": "body",
+    "variants": [
+      {
+        "name": "Pre 0.1.1",
+        "mods": [
+          "(50-100)% increased Armour",
+          "+(15-25)% to Fire Resistance",
+          "+(15-25)% to Lightning Resistance"
+        ]
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "+(10-15) to all Attributes",
+          "+(15-30)% to Fire Resistance",
+          "+(15-30)% to Lightning Resistance",
+          "(10-15) Life Regeneration per second"
+        ]
+      }
+    ],
+    "implicits": [],
+    "explicits": [
+      "Moving while Bleeding doesn't cause you to take extra damage"
+    ],
+    "tags": [
+      "bleed",
+      "conditional",
+      "damage",
+      "fire",
+      "life",
+      "lightning",
+      "resistance",
+      "while_bleeding"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": [
+      {
+        "condition": "while_bleeding",
+        "effect": "Moving while Bleeding doesn't cause you to take extra damage",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": "titanrot_cataphract",
+    "name": "Titanrot Cataphract",
+    "baseType": "Maraketh Cuirass",
+    "itemClass": "body",
+    "variants": [
+      {
+        "name": "Pre 0.1.1",
+        "mods": [
+          "(200-300)% increased Armour",
+          "(10-20)% increased Strength"
+        ]
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "(400-500)% increased Armour",
+          "(15-30)% increased Strength"
+        ]
+      }
+    ],
+    "implicits": [],
+    "explicits": [
+      "10% reduced Dexterity",
+      "10% reduced Intelligence",
+      "You have no Life Regeneration"
+    ],
+    "tags": [
+      "dexterity",
+      "intelligence",
+      "life",
+      "strength"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "vis_mortis",
+    "name": "Vis Mortis",
+    "baseType": "Plated Raiment",
+    "itemClass": "body",
+    "league": "Dawn of the Hunt",
+    "variants": [
+      {
+        "name": "Pre 0.1.1",
+        "mods": []
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "Damage of Enemies Hitting you is Unlucky while you are on Low Life"
+        ]
+      }
+    ],
+    "implicits": [],
+    "explicits": [
+      "(70-100)% increased Energy Shield",
+      "+(70-100) to maximum Mana",
+      "Minions have 50% reduced maximum Life",
+      "Minions have Unholy Might",
+      "]],",
+      "-- Body: Armour/Evasion",
+      "[[",
+      "The Barrow Dweller",
+      "Rogue Armour",
+      "(60-100)% increased Armour and Evasion",
+      "-(20-10)% to Fire Resistance",
+      "+50% to Cold Resistance",
+      "50% chance to Avoid Death from Hits"
+    ],
+    "tags": [
+      "cold",
+      "conditional",
+      "damage",
+      "es",
+      "evasion",
+      "fire",
+      "life",
+      "mana",
+      "minion",
+      "on_low_life",
+      "resistance"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": [
+      {
+        "condition": "on_low_life",
+        "effect": "Damage of Enemies Hitting you is Unlucky while you are on Low Life",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": "voll_s_protector",
+    "name": "Voll's Protector",
+    "baseType": "{variant:1}Ironclad Vestments",
+    "itemClass": "body",
+    "variants": [
+      {
+        "name": "Pre 0.1.1",
+        "mods": [
+          "(100-150)% increased Armour and Energy Shield"
+        ]
+      },
+      {
+        "name": "Pre 0.4.0",
+        "mods": [
+          "(150-200)% increased Armour and Energy Shield"
+        ]
+      },
+      {
+        "name": "Current",
+        "mods": []
+      }
+    ],
+    "implicits": [],
+    "explicits": [
+      "Plated Vestments",
+      "25% reduced maximum Mana",
+      "{variant:2,3}+(13-17)% to Chaos Resistance",
+      "25% chance to gain a Power Charge on Critical Hit"
+    ],
+    "tags": [
+      "chaos",
+      "conditional",
+      "crit",
+      "es",
+      "mana",
+      "on_crit",
+      "resistance"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": [
+      {
+        "condition": "on_crit",
+        "effect": "25% chance to gain a Power Charge on Critical Hit",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": "wandering_reliquary",
+    "name": "Wandering Reliquary",
+    "baseType": "Steel Plate",
+    "itemClass": "body",
+    "variants": [
+      {
+        "name": "Pre 0.1.1",
+        "mods": [
+          "+(20-30)% to Fire Resistance"
+        ]
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "+(60-80) to Stun Threshold",
+          "+(10-20) to Strength",
+          "+(30-40)% to Fire Resistance"
+        ]
+      }
+    ],
+    "implicits": [],
+    "explicits": [
+      "(50-100)% increased Armour",
+      "+(40-60) to maximum Mana",
+      "+(10-20) to Strength",
+      "50% of Physical Damage prevented Recouped as Life",
+      "]],",
+      "-- Body: Evasion",
+      "[[",
+      "Ashrend",
+      "Pathfinder Coat",
+      "+(40-60) to maximum Life",
+      "Cannot be Ignited",
+      "-10 Physical Damage taken from Attack Hits"
+    ],
+    "tags": [
+      "attack",
+      "damage",
+      "evasion",
+      "fire",
+      "ignite",
+      "life",
+      "mana",
+      "physical",
+      "resistance",
+      "strength"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "waveshaper",
+    "name": "Waveshaper",
+    "baseType": "Tideseer Mantle",
+    "itemClass": "body",
+    "league": "Dawn of the Hunt",
+    "variants": [],
+    "implicits": [],
+    "explicits": [
+      "+(100-200) to maximum Energy Shield",
+      "+(20-40) to Spirit",
+      "+(25-35)% to Fire Resistance",
+      "+(25-35)% to Cold Resistance",
+      "Increases and Reductions to Mana Regeneration Rate also",
+      "apply to Energy Shield Recharge Rate",
+      "Gain (30-50)% of Maximum Mana as Armour",
+      "]],",
+      "-- Body: Evasion/Energy Shield",
+      "[[",
+      "Apron of Emiran",
+      "Hermit Garb",
+      "(30-50)% increased Evasion and Energy Shield",
+      "+(10-20) to Dexterity",
+      "Bleeding you inflict is Aggravated",
+      "(40-60)% reduced Duration of Bleeding on You"
+    ],
+    "tags": [
+      "bleed",
+      "cold",
+      "dexterity",
+      "es",
+      "evasion",
+      "fire",
+      "mana",
+      "resistance"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "widow_s_reign",
+    "name": "Widow's Reign",
+    "baseType": "Knight Armour",
+    "itemClass": "body",
+    "league": "Dawn of the Hunt",
+    "variants": [
+      {
+        "name": "Pre 0.4.0",
+        "mods": [
+          "Life that would be lost by taking Damage is instead Reserved",
+          "until you take no Damage to Life for 5 seconds",
+          "25% reduced maximum Life"
+        ]
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "Life that would be lost by taking Damage is instead Reserved",
+          "until you take no Damage to Life for 3 seconds",
+          "(10-15)% increased maximum Life"
+        ]
+      }
+    ],
+    "implicits": [],
+    "explicits": [
+      "(100-150)% increased Armour and Evasion",
+      "+(100-150) to maximum Life",
+      "+(17-23)% to Chaos Resistance",
+      "+(200-300) to Ailment Threshold",
+      "]],",
+      "-- Body: Armour/Energy Shield",
+      "[[",
+      "Couture of Crimson",
+      "Gilded Vestments",
+      "(50-100)% increased Armour and Energy Shield",
+      "Life Leech can Overflow Maximum Life",
+      "(40-60)% reduced Duration of Bleeding on You"
+    ],
+    "tags": [
+      "bleed",
+      "chaos",
+      "damage",
+      "es",
+      "evasion",
+      "life",
+      "resistance"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "yriel_s_fostering",
+    "name": "Yriel's Fostering",
+    "baseType": "Strider Vest",
+    "itemClass": "body",
+    "league": "Dawn of the Hunt",
+    "variants": [],
+    "implicits": [],
+    "explicits": [
+      "(100-150)% increased Evasion Rating",
+      "+(80-120) to maximum Life",
+      "+(10-30) to Spirit",
+      "(40-60)% reduced Poison Duration on you",
+      "You can have two Companions of different types",
+      "(40-60)% reduced Duration of Bleeding on You",
+      "]],",
+      "-- Body: Energy Shield",
+      "[[",
+      "Bitterbloom",
+      "Feathered Robe",
+      "(50-100)% increased Energy Shield",
+      "+(50-100) to maximum Mana",
+      "50% increased Energy Shield Recharge Rate",
+      "Energy Shield Recharge starts when you use a Mana Flask"
+    ],
+    "tags": [
+      "bleed",
+      "es",
+      "evasion",
+      "life",
+      "mana",
+      "poison"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "zerphi_s_serape",
+    "name": "Zerphi's Serape",
+    "baseType": "Scalper's Jacket",
+    "itemClass": "body",
+    "league": "Dawn of the Hunt",
+    "source": "Drops from unique{Arbiter of Ash} in normal{The Burning Monolith}",
+    "variants": [
+      {
+        "name": "Spirit (Pre 0.2.0)",
+        "mods": [
+          "+10 to Spirit per Socket filled"
+        ]
+      },
+      {
+        "name": "Spirit (Pre 0.4.0)",
+        "mods": [
+          "+(6-10) to Spirit per Socket filled"
+        ]
+      },
+      {
+        "name": "Spirit",
+        "mods": [
+          "+(10-14) to Spirit per Socket filled"
+        ]
+      },
+      {
+        "name": "Life (Pre 0.2.0)",
+        "mods": [
+          "5% increased Maximum Life per Socket filled"
+        ]
+      },
+      {
+        "name": "Life (Pre 0.4.0)",
+        "mods": [
+          "+(25-40) to maximum Life per Socket filled"
+        ]
+      },
+      {
+        "name": "Life",
+        "mods": [
+          "+(45-60) to maximum Life per Socket filled"
+        ]
+      },
+      {
+        "name": "Mana (Pre 0.2.0)",
+        "mods": [
+          "5% increased Maximum Mana per Socket filled"
+        ]
+      },
+      {
+        "name": "Mana (Pre 0.4.0)",
+        "mods": [
+          "+(20-30) to maximum Mana per Socket filled"
+        ]
+      },
+      {
+        "name": "Mana",
+        "mods": [
+          "+(50-60) to maximum Mana per Socket filled"
+        ]
+      },
+      {
+        "name": "Global Defences (Pre 0.2.0)",
+        "mods": [
+          "10% increased Global Defences per Socket filled"
+        ]
+      },
+      {
+        "name": "Global Defences (Pre 0.4.0)",
+        "mods": [
+          "(6-10)% increased Global Defences per Socket filled"
+        ]
+      },
+      {
+        "name": "Global Defences",
+        "mods": [
+          "(9-12)% increased Global Defences per Socket filled"
+        ]
+      },
+      {
+        "name": "Item Rarity (Pre 0.2.0)",
+        "mods": [
+          "10% increased Rarity of Items found per Socket filled"
+        ]
+      },
+      {
+        "name": "All Resistances (Pre 0.2.0)",
+        "mods": [
+          "+10% to all Elemental Resistances per Socket filled"
+        ]
+      },
+      {
+        "name": "All Resistances (Pre 0.4.0)",
+        "mods": [
+          "+(5-7)% to all Elemental Resistances per Socket filled"
+        ]
+      },
+      {
+        "name": "All Resistances",
+        "mods": [
+          "+(8-10)% to all Elemental Resistances per Socket filled"
+        ]
+      },
+      {
+        "name": "Attributes (Pre 0.2.0)",
+        "mods": [
+          "5% increased Attributes per Socket filled"
+        ]
+      },
+      {
+        "name": "Attributes (Pre 0.4.0)",
+        "mods": [
+          "+(4-6) to all Attributes per Socket filled"
+        ]
+      },
+      {
+        "name": "Attributes",
+        "mods": [
+          "+(5-7) to all Attributes per Socket filled"
+        ]
+      },
+      {
+        "name": "Chaos Resistance (Pre 0.4.0)",
+        "mods": [
+          "+(7-10)% to Chaos Resistance per Socket filled"
+        ]
+      },
+      {
+        "name": "Chaos Resistance",
+        "mods": [
+          "+(10-13)% to Chaos Resistance per Socket filled"
+        ]
+      },
+      {
+        "name": "Stun Threshold (Pre 0.4.0)",
+        "mods": [
+          "+(40-60) to Stun Threshold per Socket filled"
+        ]
+      },
+      {
+        "name": "Stun Threshold",
+        "mods": [
+          "+(70-90) to Stun Threshold per Socket filled"
+        ]
+      },
+      {
+        "name": "Life Regeneration (Pre 0.4.0)",
+        "mods": [
+          "(4-6) Life Regeneration per second per Socket filled"
+        ]
+      },
+      {
+        "name": "Life Regeneration",
+        "mods": [
+          "(8-12) Life Regeneration per second per Socket filled"
+        ]
+      },
+      {
+        "name": "Reduced Crit Damage (Pre 0.4.0)",
+        "mods": [
+          "Hits against you have (10-15)% reduced Critical Damage Bonus per Socket filled"
+        ]
+      },
+      {
+        "name": "Reduced Crit Damage",
+        "mods": [
+          "Hits against you have (15-20)% reduced Critical Damage Bonus per Socket filled"
+        ]
+      },
+      {
+        "name": "Pre 0.4.0",
+        "mods": [
+          "(200-300)% increased Armour, Evasion and Energy Shield"
+        ]
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "(300-400)% increased Armour, Evasion and Energy Shield"
+        ]
+      }
+    ],
+    "implicits": [],
+    "explicits": [
+      "(60-80)% increased Evasion and Energy Shield",
+      "+(40-60) to maximum Mana",
+      "50% increased Attribute Requirements",
+      "(-30-30)% reduced Life Regeneration rate",
+      "(-30-30)% reduced Mana Regeneration Rate",
+      "Soul Eater",
+      "]],",
+      "-- Body: Armour/Evasion/Energy Shield",
+      "[[",
+      "Morior Invictus",
+      "Grand Regalia",
+      "Has Alt Variant: true",
+      "Has Alt Variant Two: true",
+      "Has Alt Variant Three: true",
+      "Selected Variant: 29",
+      "Selected Alt Variant: 3",
+      "Selected Alt Variant Two: 6",
+      "Selected Alt Variant Three: 9",
+      "Sockets: S S S S"
+    ],
+    "tags": [
+      "chaos",
+      "crit",
+      "damage",
+      "es",
+      "evasion",
+      "life",
+      "mana",
+      "rarity",
+      "resistance"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "bushwhack",
+    "name": "Bushwhack",
+    "baseType": "Lizardscale Boots",
+    "itemClass": "boots",
+    "variants": [],
+    "implicits": [],
+    "explicits": [
+      "(15-25)% increased Movement Speed",
+      "(50-80)% increased Evasion Rating",
+      "+(10-20) to Dexterity",
+      "Physical Damage is Pinning"
+    ],
+    "tags": [
+      "damage",
+      "dexterity",
+      "evasion",
+      "physical",
+      "speed"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "corpsewade",
+    "name": "Corpsewade",
+    "baseType": "Iron Greaves",
+    "itemClass": "boots",
+    "variants": [],
+    "implicits": [
+      "Grants Skill: Level (1-20) Decompose",
+      "10% increased Movement Speed",
+      "(30-50)% increased Armour",
+      "+(5-10) to Strength",
+      "Trigger Decompose every 1.2 metres travelled"
+    ],
+    "explicits": [],
+    "tags": [
+      "grants_decompose",
+      "grants_skill",
+      "speed",
+      "strength"
+    ],
+    "grantedSkills": [
+      {
+        "skillName": "Decompose",
+        "minLevel": 1,
+        "maxLevel": 20
+      }
+    ],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "gamblesprint",
+    "name": "Gamblesprint",
+    "baseType": "Embossed Boots",
+    "itemClass": "boots",
+    "variants": [
+      {
+        "name": "Pre 0.1.1",
+        "mods": [
+          "+(5-15)% to Lightning Resistance"
+        ]
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "(10-15)% increased Rarity of Items found",
+          "+(15-25)% to Lightning Resistance"
+        ]
+      }
+    ],
+    "implicits": [],
+    "explicits": [
+      "(100-140)% increased Evasion Rating",
+      "+(10-15) to Dexterity",
+      "Gain 0% to 40% increased Movement Speed at random when Hit, until Hit again"
+    ],
+    "tags": [
+      "dexterity",
+      "evasion",
+      "lightning",
+      "rarity",
+      "resistance",
+      "speed"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "ghostmarch",
+    "name": "Ghostmarch",
+    "baseType": "Threaded Shoes",
+    "itemClass": "boots",
+    "variants": [
+      {
+        "name": "Pre 0.4.0.",
+        "mods": []
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "15% increased Movement Speed"
+        ]
+      }
+    ],
+    "implicits": [],
+    "explicits": [
+      "(100-150)% increased Evasion and Energy Shield",
+      "+(30-50) to maximum Mana",
+      "+(17-23)% to Chaos Resistance",
+      "Dodge Roll passes through Enemies"
+    ],
+    "tags": [
+      "chaos",
+      "es",
+      "evasion",
+      "mana",
+      "resistance",
+      "speed"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "legionstride",
+    "name": "Legionstride",
+    "baseType": "Rough Greaves",
+    "itemClass": "boots",
+    "variants": [
+      {
+        "name": "Pre 0.1.1",
+        "mods": [
+          "(50-80)% increased Armour",
+          "+(30-50) to Stun Threshold"
+        ]
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "+(50-70) to Armour",
+          "+(50-70) to Stun Threshold"
+        ]
+      }
+    ],
+    "implicits": [],
+    "explicits": [
+      "-10 Physical damage taken from Projectile Attacks",
+      "+10% to Block chance"
+    ],
+    "tags": [
+      "attack",
+      "damage",
+      "physical"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "luminous_pace",
+    "name": "Luminous Pace",
+    "baseType": "Straw Sandals",
+    "itemClass": "boots",
+    "variants": [
+      {
+        "name": "Pre 0.1.1",
+        "mods": []
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "+(20-30) to maximum Energy Shield"
+        ]
+      }
+    ],
+    "implicits": [],
+    "explicits": [
+      "10% increased Movement Speed",
+      "+(5-10) to Intelligence",
+      "(20-30)% reduced Energy Shield Recharge Rate",
+      "100% faster start of Energy Shield Recharge"
+    ],
+    "tags": [
+      "es",
+      "intelligence",
+      "speed"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "obern_s_bastion",
+    "name": "Obern's Bastion",
+    "baseType": "Stacked Sabatons",
+    "itemClass": "boots",
+    "variants": [],
+    "implicits": [],
+    "explicits": [
+      "(150-200)% increased Armour and Evasion",
+      "(20-25) Life Regeneration per second",
+      "200% increased Stun Recovery",
+      "(30-50)% reduced Chill Duration on you",
+      "(30-50)% reduced Freeze Duration on you",
+      "(30-50)% reduced Shock duration on you"
+    ],
+    "tags": [
+      "chill",
+      "evasion",
+      "freeze",
+      "life",
+      "shock"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "powertread",
+    "name": "Powertread",
+    "baseType": "Hunting Shoes",
+    "itemClass": "boots",
+    "source": "Drops from unique{Arbiter of Ash} in normal{The Burning Monolith}",
+    "variants": [
+      {
+        "name": "Pre 0.1.1",
+        "mods": [
+          "8% increased Critical Damage Bonus per Power Charge",
+          "(60-80)% increased Armour, Evasion and Energy Shield"
+        ]
+      },
+      {
+        "name": "Pre 0.4.0",
+        "mods": [
+          "(100-150)% increased Armour, Evasion and Energy Shield"
+        ]
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "(15-20)% increased Movement Speed"
+        ]
+      }
+    ],
+    "implicits": [],
+    "explicits": [
+      "{variant:1,2}(10-15)% increased Movement Speed",
+      "(60-80)% increased Evasion and Energy Shield",
+      "+(10-20) to Intelligence",
+      "+1 to Maximum Power Charges",
+      "{variant:2,3}12% increased Critical Damage Bonus per Power Charge",
+      "]],",
+      "-- Boots: Armour/Evasion/Energy Shield",
+      "[[",
+      "Ab Aeterno",
+      "Grand Cuisses",
+      "(15-30)% increased Movement Speed",
+      "Dodge Roll avoids all Hits",
+      "10% less Movement and Skill Speed per Dodge Roll in the past 20 seconds"
+    ],
+    "tags": [
+      "crit",
+      "damage",
+      "es",
+      "evasion",
+      "intelligence",
+      "speed"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "shankgonne",
+    "name": "Shankgonne",
+    "baseType": "Covered Sabatons",
+    "itemClass": "boots",
+    "league": "Rise of the Abyssal",
+    "source": "Drops from unique{The King in the Mists} in normal{Crux of Nothingness}",
+    "variants": [
+      {
+        "name": "Pre 0.1.1",
+        "mods": []
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "10% increased Movement Speed"
+        ]
+      }
+    ],
+    "implicits": [
+      "Grants Skill: Level (1-20) Black Powder Blitz",
+      "(80-100)% increased Armour and Evasion",
+      "(10-20)% increased Rarity of Items found",
+      "+(15-25)% to Fire Resistance",
+      "Gain Deflection Rating equal to 20% of Armour"
+    ],
+    "explicits": [
+      "+(200-300) to Stun Threshold",
+      "You cannot Sprint",
+      "]],",
+      "-- Boots: Armour/Energy Shield",
+      "[[",
+      "Wake of Destruction",
+      "Secured Leggings",
+      "(30-60)% increased Armour and Energy Shield",
+      "Adds 1 to (30-50) Lightning damage to Attacks",
+      "Drop Shocked Ground while moving, lasting 8 seconds",
+      "]],",
+      "-- Boots: Evasion/Energy Shield",
+      "[[",
+      "Beetlebite",
+      "Velour Shoes",
+      "(20-30)% increased Movement Speed",
+      "(60-120)% increased Evasion and Energy Shield",
+      "Aggravate Bleeding on Enemies when they Enter your Presence",
+      "100% increased Thorns damage"
+    ],
+    "tags": [
+      "attack",
+      "bleed",
+      "damage",
+      "es",
+      "evasion",
+      "fire",
+      "grants_black_powder_blitz",
+      "grants_skill",
+      "lightning",
+      "rarity",
+      "resistance",
+      "shock",
+      "speed"
+    ],
+    "grantedSkills": [
+      {
+        "skillName": "Black Powder Blitz",
+        "minLevel": 1,
+        "maxLevel": 20
+      }
+    ],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "the_infinite_pursuit",
+    "name": "The Infinite Pursuit",
+    "baseType": "Bronze Greaves",
+    "itemClass": "boots",
+    "variants": [
+      {
+        "name": "Pre 0.1.1",
+        "mods": [
+          "20% increased Movement Speed while affected by an Ailment"
+        ]
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "25% increased Movement Speed while affected by an Ailment"
+        ]
+      }
+    ],
+    "implicits": [],
+    "explicits": [
+      "10% increased Movement Speed",
+      "(100-150)% increased Armour",
+      "+(80-100) to maximum Life",
+      "(80-100)% increased Chance to be afflicted by Ailments when Hit"
+    ],
+    "tags": [
+      "life",
+      "speed"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "the_knight_errant",
+    "name": "The Knight-errant",
+    "baseType": "Mail Sabatons",
+    "itemClass": "boots",
+    "variants": [
+      {
+        "name": "Pre 0.1.1",
+        "mods": []
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "+(30-50) to Ailment Threshold"
+        ]
+      }
+    ],
+    "implicits": [],
+    "explicits": [
+      "10% increased Movement Speed",
+      "(30-50)% increased Armour and Evasion",
+      "+(30-50) to Stun Threshold",
+      "Iron Reflexes"
+    ],
+    "tags": [
+      "evasion",
+      "speed"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "thunderstep",
+    "name": "Thunderstep",
+    "baseType": "Steeltoe Boots",
+    "itemClass": "boots",
+    "source": "No longer obtainable",
+    "variants": [
+      {
+        "name": "Pre 0.1.1",
+        "mods": [
+          "(10-15)% increased Movement Speed",
+          "+(25-35)% to Lightning Resistance",
+          "+25 to maximum Life",
+          "+25 to maximum Mana"
+        ]
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "(10-20)% increased Movement Speed",
+          "+(30-50)% to Lightning Resistance",
+          "+(20-40) to maximum Mana"
+        ]
+      },
+      {
+        "name": "Pre 0.3.0",
+        "mods": [
+          "(5-15)% increased Movement Speed",
+          "(20-30)% increased Reservation Efficiency of Skills which create Undead Minions"
+        ]
+      }
+    ],
+    "implicits": [],
+    "explicits": [
+      "(40-60)% increased Evasion Rating",
+      "+(3-5)% to Maximum Lightning Resistance",
+      "]],",
+      "-- Boots: Energy Shield",
+      "[[",
+      "Bones of Ullr",
+      "Lattice Sandals",
+      "(40-60)% increased Energy Shield",
+      "{variant:2,3}+(20-40) to maximum Life",
+      "{variant:1,2}20% reduced Reservation Efficiency of Skills which create Undead Minions"
+    ],
+    "tags": [
+      "es",
+      "evasion",
+      "life",
+      "lightning",
+      "mana",
+      "minion",
+      "resistance",
+      "speed"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "trampletoe",
+    "name": "Trampletoe",
+    "baseType": "Trimmed Greaves",
+    "itemClass": "boots",
+    "variants": [
+      {
+        "name": "Pre 0.1.1",
+        "mods": [
+          "10% increased Movement Speed",
+          "+0.15% to Thorns Critical Hit Chance"
+        ]
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "15% increased Movement Speed",
+          "+25% to Thorns Critical Hit Chance",
+          "(10-15) to (20-25) Physical Thorns damage"
+        ]
+      }
+    ],
+    "implicits": [],
+    "explicits": [
+      "(50-100)% increased Armour",
+      "50% increased Attribute Requirements",
+      "Deal 30% of Overkill damage to enemies within 2 metres of the enemy killed",
+      "]],",
+      "-- Boots: Evasion",
+      "[[",
+      "Briarpatch",
+      "Laced Boots",
+      "(10-20)% increased Movement Speed",
+      "+(40-60) to maximum Life",
+      "+(60-80) to Stun Threshold"
+    ],
+    "tags": [
+      "crit",
+      "damage",
+      "evasion",
+      "life",
+      "physical",
+      "speed"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "wanderlust",
+    "name": "Wanderlust",
+    "baseType": "Wrapped Sandals",
+    "itemClass": "boots",
+    "variants": [],
+    "implicits": [],
+    "explicits": [
+      "20% increased Movement Speed",
+      "+(10-20) to maximum Energy Shield",
+      "+5 to Dexterity",
+      "Your speed is unaffected by Slows"
+    ],
+    "tags": [
+      "dexterity",
+      "es",
+      "speed"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "windscream",
+    "name": "Windscream",
+    "baseType": "Feathered Sandals",
+    "itemClass": "boots",
+    "variants": [
+      {
+        "name": "Pre 0.1.1",
+        "mods": [
+          "(10-15)% increased Movement Speed"
+        ]
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "(10-20)% increased Movement Speed",
+          "Curse Skills have (10-20)% increased Cast Speed"
+        ]
+      }
+    ],
+    "implicits": [],
+    "explicits": [
+      "(50-100)% increased Energy Shield",
+      "+(10-20) to Intelligence",
+      "Curses have no Activation Delay"
+    ],
+    "tags": [
+      "curse",
+      "es",
+      "intelligence",
+      "speed"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "wondertrap",
+    "name": "Wondertrap",
+    "baseType": "Silk Slippers",
+    "itemClass": "boots",
+    "variants": [
+      {
+        "name": "Pre 0.1.1",
+        "mods": [
+          "(5-15)% increased Movement Speed",
+          "+(5-15) to Strength",
+          "+(5-15) to Intelligence"
+        ]
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "(10-20)% increased Movement Speed",
+          "+(30-50) to maximum Energy Shield",
+          "+(10-20) to Strength",
+          "+(10-20) to Dexterity",
+          "+(10-20) to Intelligence"
+        ]
+      }
+    ],
+    "implicits": [],
+    "explicits": [
+      "50% increased Rarity of Items found when on Low Life",
+      "]],",
+      "-- Boots: Armour/Evasion",
+      "[[",
+      "Darkray Vectors",
+      "Braced Sabatons",
+      "(50-100)% increased Armour and Evasion",
+      "+(20-30)% to Lightning Resistance",
+      "25% reduced Light Radius",
+      "5% increased Movement Speed per Frenzy Charge",
+      "+1 to Maximum Frenzy Charges"
+    ],
+    "tags": [
+      "conditional",
+      "dexterity",
+      "es",
+      "evasion",
+      "intelligence",
+      "life",
+      "lightning",
+      "on_low_life",
+      "rarity",
+      "resistance",
+      "speed",
+      "strength"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": [
+      {
+        "condition": "on_low_life",
+        "effect": "50% increased Rarity of Items found when on Low Life",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": "doomfletch",
+    "name": "Doomfletch",
+    "baseType": "Composite Bow",
+    "itemClass": "bow",
+    "league": "Dawn of the Hunt",
+    "variants": [
+      {
+        "name": "Pre 0.4.0",
+        "mods": [
+          "Attacks with this Weapon gain 50% of Physical damage as Extra damage of each Element"
+        ]
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "Attacks with this Weapon gain 100% of Physical damage as Extra damage of each Element"
+        ]
+      }
+    ],
+    "implicits": [],
+    "explicits": [
+      "Adds (5-7) to (10-12) Physical Damage",
+      "+10 to Dexterity",
+      "(30-50)% increased Mana Regeneration Rate"
+    ],
+    "tags": [
+      "attack",
+      "damage",
+      "dexterity",
+      "mana",
+      "physical"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "fairgraves_curse",
+    "name": "Fairgraves' Curse",
+    "baseType": "Artillery Bow",
+    "itemClass": "bow",
+    "league": "Rise of the Abyssal",
+    "variants": [],
+    "implicits": [
+      "Grants Skill: Level (1-20) Phantasmal Arrow",
+      "50% reduced Projectile Range",
+      "Adds (76-98) to (126-193) Fire Damage",
+      "(30-50)% increased Flammability Magnitude",
+      "(10-20)% increased Ignite Magnitude"
+    ],
+    "explicits": [
+      "30% reduced Life Recovery rate",
+      "-30 Physical Damage taken from Hits",
+      "Attack Hits inflict Spectral Fire for 8 seconds"
+    ],
+    "tags": [
+      "attack",
+      "damage",
+      "fire",
+      "grants_phantasmal_arrow",
+      "grants_skill",
+      "ignite",
+      "life",
+      "physical"
+    ],
+    "grantedSkills": [
+      {
+        "skillName": "Phantasmal Arrow",
+        "minLevel": 1,
+        "maxLevel": 20
+      }
+    ],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "lioneye_s_glare",
+    "name": "Lioneye's Glare",
+    "baseType": "Heavy Bow",
+    "itemClass": "bow",
+    "league": "Dawn of the Hunt",
+    "variants": [
+      {
+        "name": "Pre 0.4.0",
+        "mods": [
+          "Barrageable Attacks with this Bow Repeat +1 time if no enemies are in your Presence"
+        ]
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "Barrageable Attacks with this Bow Repeat +2 times if no enemies are in your Presence"
+        ]
+      }
+    ],
+    "implicits": [],
+    "explicits": [
+      "(150-240)% increased Physical Damage",
+      "+(300-500) to Accuracy Rating",
+      "10% increased Attack Speed",
+      "+(20-30) to Dexterity",
+      "+2 metres to Dodge Roll distance if you haven't Dodge Rolled Recently",
+      "-1 metre to Dodge Roll distance if you've Dodge Rolled Recently"
+    ],
+    "tags": [
+      "attack",
+      "conditional",
+      "damage",
+      "dexterity",
+      "physical",
+      "recently",
+      "speed"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": [
+      {
+        "condition": "recently",
+        "effect": "+2 metres to Dodge Roll distance if you haven't Dodge Rolled Recently",
+        "tags": []
+      },
+      {
+        "condition": "recently",
+        "effect": "-1 metre to Dodge Roll distance if you've Dodge Rolled Recently",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": "quill_rain",
+    "name": "Quill Rain",
+    "baseType": "Shortbow",
+    "itemClass": "bow",
+    "variants": [],
+    "implicits": [],
+    "explicits": [
+      "100% increased Attack Speed",
+      "+(10-20) to Dexterity",
+      "(50-100)% increased Arrow Speed",
+      "40% less Attack Damage"
+    ],
+    "tags": [
+      "attack",
+      "damage",
+      "dexterity",
+      "speed"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "slivertongue",
+    "name": "Slivertongue",
+    "baseType": "Zealot Bow",
+    "itemClass": "bow",
+    "league": "Dawn of the Hunt",
+    "variants": [],
+    "implicits": [],
+    "explicits": [
+      "Adds (40-48) to (65-72) Physical Damage",
+      "+(4-6)% to Critical Hit Chance",
+      "Leeches (5-8)% of Physical Damage as Life",
+      "Leeches (4-7)% of Physical Damage as Mana",
+      "Arrows Fork",
+      "Arrows Pierce all targets after Forking"
+    ],
+    "tags": [
+      "crit",
+      "damage",
+      "life",
+      "mana",
+      "physical"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "splinterheart",
+    "name": "Splinterheart",
+    "baseType": "Recurve Bow",
+    "itemClass": "bow",
+    "variants": [
+      {
+        "name": "Pre 0.1.1",
+        "mods": [
+          "(60-80)% increased Physical Damage"
+        ]
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "(120-160)% increased Physical Damage"
+        ]
+      }
+    ],
+    "implicits": [],
+    "explicits": [
+      "+(50-70) to Accuracy Rating",
+      "(20-30)% increased Projectile Speed",
+      "Projectiles Split towards +2 targets"
+    ],
+    "tags": [
+      "damage",
+      "physical",
+      "speed"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "voltaxic_rift",
+    "name": "Voltaxic Rift",
+    "baseType": "Fanatic Bow",
+    "itemClass": "bow",
+    "league": "Dawn of the Hunt",
+    "variants": [
+      {
+        "name": "Pre 0.4.0",
+        "mods": [
+          "Adds 1 to (200-300) Lightning Damage"
+        ]
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "Adds 1 to (300-500) Lightning Damage"
+        ]
+      }
+    ],
+    "implicits": [],
+    "explicits": [
+      "(10-15)% increased Attack Speed",
+      "100% of Lightning Damage Converted to Chaos Damage",
+      "Chaos Damage from Hits also Contributes to Shock Chance"
+    ],
+    "tags": [
+      "attack",
+      "chaos",
+      "damage",
+      "lightning",
+      "shock",
+      "speed"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "widowhail",
+    "name": "Widowhail",
+    "baseType": "Crude Bow",
+    "itemClass": "bow",
+    "variants": [],
+    "implicits": [],
+    "explicits": [
+      "(150-250)% increased bonuses gained from Equipped Quiver"
+    ],
+    "tags": [],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "mist_whisper",
+    "name": "Mist Whisper",
+    "baseType": "Makeshift Crossbow",
+    "itemClass": "crossbow",
+    "variants": [
+      {
+        "name": "Pre 0.1.1",
+        "mods": [
+          "Adds (4-6) to (9-12) Cold Damage",
+          "Attacks Chain an additional time"
+        ]
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "Adds (8-10) to (13-15) Cold Damage",
+          "30% increased Chill Duration on Enemies",
+          "Attacks Chain 2 additional times"
+        ]
+      }
+    ],
+    "implicits": [],
+    "explicits": [
+      "Gain 5 Mana per enemy killed",
+      "(30-50)% increased Freeze Buildup"
+    ],
+    "tags": [
+      "attack",
+      "chill",
+      "cold",
+      "damage",
+      "freeze",
+      "mana"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "rampart_raptor",
+    "name": "Rampart Raptor",
+    "baseType": "Tense Crossbow",
+    "itemClass": "crossbow",
+    "variants": [],
+    "implicits": [
+      "(20-30)% increased Bolt Speed",
+      "(40-60)% increased Physical Damage",
+      "(30-40)% increased Attack Speed",
+      "30% reduced Reload Speed",
+      "Bolts fired by Crossbow Attacks have 100% chance to not"
+    ],
+    "explicits": [
+      "expend Ammunition if you've Reloaded Recently"
+    ],
+    "tags": [
+      "attack",
+      "conditional",
+      "damage",
+      "physical",
+      "recently",
+      "speed"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": [
+      {
+        "condition": "recently",
+        "effect": "expend Ammunition if you've Reloaded Recently",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": "the_last_lament",
+    "name": "The Last Lament",
+    "baseType": "Desolate Crossbow",
+    "itemClass": "crossbow",
+    "league": "Dawn of the Hunt",
+    "variants": [],
+    "implicits": [
+      "Grants Skill: Level (1-20) Compose Requiem",
+      "(250-300)% increased Physical Damage",
+      "(10-20)% increased Attack Speed",
+      "(40-60)% reduced Reload Speed",
+      "Leeches (5-10)% of Physical Damage as Life"
+    ],
+    "explicits": [
+      "(10-20)% chance to load a bolt into all Crossbow skills on Kill",
+      "Sacrifice 300 Life to not consume the last bolt when firing"
+    ],
+    "tags": [
+      "attack",
+      "conditional",
+      "damage",
+      "grants_compose_requiem",
+      "grants_skill",
+      "life",
+      "on_kill",
+      "physical",
+      "speed"
+    ],
+    "grantedSkills": [
+      {
+        "skillName": "Compose Requiem",
+        "minLevel": 1,
+        "maxLevel": 20
+      }
+    ],
+    "skillLevelBoosts": [],
+    "conditionalMods": [
+      {
+        "condition": "on_kill",
+        "effect": "(10-20)% chance to load a bolt into all Crossbow skills on Kill",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": "beira_s_anguish",
+    "name": "Beira's Anguish",
+    "baseType": "Dousing Charm",
+    "itemClass": "flask",
+    "league": "Dawn of the Hunt",
+    "variants": [],
+    "implicits": [
+      "Used when you become Ignited",
+      "(20-25)% Chance to gain a Charge when you kill an enemy",
+      "Creates Ignited Ground for 4 seconds when used, Igniting enemies as though dealing Fire damage equal to 500% of your maximum Life"
+    ],
+    "explicits": [],
+    "tags": [
+      "damage",
+      "fire",
+      "ignite",
+      "life"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "breath_of_the_mountains",
+    "name": "Breath of the Mountains",
+    "baseType": "Sapphire Charm",
+    "itemClass": "flask",
+    "league": "Dawn of the Hunt",
+    "variants": [],
+    "implicits": [
+      "Used when you take Cold damage from a Hit",
+      "(10-15)% reduced Charges per use",
+      "Grants a Power Charge on use"
+    ],
+    "explicits": [],
+    "tags": [
+      "cold",
+      "damage"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "for_utopia",
+    "name": "For Utopia",
+    "baseType": "Stone Charm",
+    "itemClass": "flask",
+    "variants": [],
+    "implicits": [
+      "Used when you become Stunned",
+      "Defend with 200% of Armour during effect"
+    ],
+    "explicits": [],
+    "tags": [],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "forsaken_bangle",
+    "name": "Forsaken Bangle",
+    "baseType": "Amethyst Charm",
+    "itemClass": "flask",
+    "league": "Dawn of the Hunt",
+    "variants": [],
+    "implicits": [
+      "Used when you take Chaos damage from a Hit",
+      "(15-25)% increased Duration",
+      "50% of Chaos damage you prevent when Hit Recouped as Life and Mana during effect"
+    ],
+    "explicits": [],
+    "tags": [
+      "chaos",
+      "damage",
+      "life",
+      "mana"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "nascent_hope",
+    "name": "Nascent Hope",
+    "baseType": "Thawing Charm",
+    "itemClass": "flask",
+    "league": "Dawn of the Hunt",
+    "variants": [],
+    "implicits": [
+      "Used when you become Frozen",
+      "(20-25)% Chance to gain a Charge when you kill an enemy",
+      "Energy Shield Recharge starts on use"
+    ],
+    "explicits": [],
+    "tags": [
+      "es"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "ngamahu_s_chosen",
+    "name": "Ngamahu's Chosen",
+    "baseType": "Ruby Charm",
+    "itemClass": "flask",
+    "league": "Dawn of the Hunt",
+    "variants": [],
+    "implicits": [
+      "Used when you take Fire damage from a Hit",
+      "(30-40)% increased Charges",
+      "Grants up to your maximum Rage on use"
+    ],
+    "explicits": [],
+    "tags": [
+      "damage",
+      "fire"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "olroth_s_resolve",
+    "name": "Olroth's Resolve",
+    "baseType": "Ultimate Life Flask",
+    "itemClass": "flask",
+    "league": "Dawn of the Hunt",
+    "source": "Drops from unique{Kosis, The Revelation}",
+    "variants": [
+      {
+        "name": "Pre 0.4.0",
+        "mods": [
+          "Excess Life Recovery added as Guard for 10 seconds",
+          "Recover all Mana when Used"
+        ]
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "Excess Life Recovery added as Guard for 20 seconds"
+        ]
+      },
+      {
+        "name": "Pre 0.2.0",
+        "mods": [
+          "Every 3 seconds during Effect, deal 100% of Mana spent in those seconds as Chaos Damage to Enemies within 3 metres"
+        ]
+      }
+    ],
+    "implicits": [
+      "Used when you become Poisoned",
+      "Recover Life equal to (15-20)% of Mana Flask's Recovery Amount when used",
+      "Recover Mana equal to (15-20)% of Life Flask's Recovery Amount when used"
+    ],
+    "explicits": [
+      "Instant Recovery",
+      "(100-150)% increased Charges per use",
+      "]],",
+      "-- Flask: Mana",
+      "[[",
+      "Melting Maelstrom",
+      "Ultimate Mana Flask",
+      "Effect is not removed when Unreserved Mana is Filled",
+      "(200-250)% increased Duration",
+      "{variant:1,2}Every 3 seconds during Effect, deal 50% of Mana spent in those seconds as Chaos Damage to Enemies within 3 metres",
+      "Deals 25% of current Mana as Chaos Damage to you when Effect ends",
+      "]],",
+      "-- Charm",
+      "[[",
+      "Arakaali's Gift",
+      "Antidote Charm"
+    ],
+    "tags": [
+      "chaos",
+      "damage",
+      "life",
+      "mana",
+      "poison"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "rite_of_passage",
+    "name": "Rite of Passage",
+    "baseType": "Golden Charm",
+    "itemClass": "flask",
+    "league": "Dawn of the Hunt",
+    "variants": [
+      {
+        "name": "Owl",
+        "mods": [
+          "Possessed by Spirit Of The Owl for (10-20) seconds on use"
+        ]
+      },
+      {
+        "name": "Serpent",
+        "mods": [
+          "Possessed by Spirit Of The Serpent for (10-20) seconds on use"
+        ]
+      },
+      {
+        "name": "Primate",
+        "mods": [
+          "Possessed by Spirit Of The Primate for (10-20) seconds on use"
+        ]
+      },
+      {
+        "name": "Bear",
+        "mods": [
+          "Possessed by Spirit Of The Bear for (10-20) seconds on use"
+        ]
+      },
+      {
+        "name": "Boar",
+        "mods": [
+          "Possessed by Spirit Of The Boar for (10-20) seconds on use"
+        ]
+      },
+      {
+        "name": "Ox",
+        "mods": [
+          "Possessed by Spirit Of The Ox for (10-20) seconds on use"
+        ]
+      },
+      {
+        "name": "Wolf",
+        "mods": [
+          "Possessed by Spirit Of The Wolf for (10-20) seconds on use"
+        ]
+      },
+      {
+        "name": "Stag",
+        "mods": [
+          "Possessed by Spirit Of The Stag for (10-20) seconds on use"
+        ]
+      },
+      {
+        "name": "Cat",
+        "mods": [
+          "Possessed by Spirit Of The Cat for (10-20) seconds on use"
+        ]
+      }
+    ],
+    "implicits": [
+      "15% increased Rarity of Items found",
+      "Used when you kill a Rare or Unique enemy"
+    ],
+    "explicits": [],
+    "tags": [
+      "rarity"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "sanguis_heroum",
+    "name": "Sanguis Heroum",
+    "baseType": "Staunching Charm",
+    "itemClass": "flask",
+    "league": "Dawn of the Hunt",
+    "variants": [],
+    "implicits": [
+      "Used when you start Bleeding",
+      "Gains (0.15-0.2) Charges per Second",
+      "Creates Consecrated Ground on use"
+    ],
+    "explicits": [],
+    "tags": [
+      "bleed"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "the_black_cat",
+    "name": "The Black Cat",
+    "baseType": "Grounding Charm",
+    "itemClass": "flask",
+    "league": "Dawn of the Hunt",
+    "variants": [],
+    "implicits": [
+      "Used when you become Shocked",
+      "(10-20)% increased Duration",
+      "Lightning Damage of Enemies Hitting you is Unlucky during effect"
+    ],
+    "explicits": [],
+    "tags": [
+      "damage",
+      "lightning",
+      "shock"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "the_fall_of_the_axe",
+    "name": "The Fall of the Axe",
+    "baseType": "Silver Charm",
+    "itemClass": "flask",
+    "league": "Dawn of the Hunt",
+    "variants": [],
+    "implicits": [
+      "Used when you are affected by a Slow",
+      "Grants Onslaught during effect"
+    ],
+    "explicits": [],
+    "tags": [],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "valako_s_roar",
+    "name": "Valako's Roar",
+    "baseType": "Topaz Charm",
+    "itemClass": "flask",
+    "league": "Dawn of the Hunt",
+    "variants": [],
+    "implicits": [
+      "Used when you take Lightning damage from a Hit",
+      "(30-40)% increased Charges gained",
+      "Grants a Frenzy Charge on use"
+    ],
+    "explicits": [],
+    "tags": [
+      "damage",
+      "lightning"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "carrion_call",
+    "name": "Carrion Call",
+    "baseType": "Engraved Focus",
+    "itemClass": "focus",
+    "variants": [
+      {
+        "name": "Pre 0.1.1",
+        "mods": []
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "Minions deal (20-30)% increased Damage"
+        ]
+      }
+    ],
+    "implicits": [],
+    "explicits": [
+      "+(30-40) to maximum Energy Shield",
+      "Minions have (20-30)% increased maximum Life",
+      "(20-30)% increased Mana Regeneration Rate",
+      "Minions' Resistances are equal to yours"
+    ],
+    "tags": [
+      "damage",
+      "es",
+      "life",
+      "mana",
+      "minion",
+      "resistance"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "deathrattle",
+    "name": "Deathrattle",
+    "baseType": "Twig Focus",
+    "itemClass": "focus",
+    "variants": [],
+    "implicits": [],
+    "explicits": [
+      "+(10-20) to maximum Energy Shield",
+      "(20-40)% increased Spell Damage",
+      "+(5-10) to Intelligence",
+      "20% chance for Energy Shield Recharge to start when you Kill an Enemy"
+    ],
+    "tags": [
+      "damage",
+      "es",
+      "intelligence",
+      "spell"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "effigy_of_cruelty",
+    "name": "Effigy of Cruelty",
+    "baseType": "Antler Focus",
+    "itemClass": "focus",
+    "league": "Dawn of the Hunt",
+    "variants": [
+      {
+        "name": "Pre 0.3.0",
+        "mods": [
+          "Critical Hits with Spells apply (3-5) Stacks of Critical Weakness"
+        ]
+      },
+      {
+        "name": "Pre 0.4.0",
+        "mods": [
+          "Critical Hits with Spells apply (1-3) Stack of Critical Weakness"
+        ]
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "(40-50)% increased Spell Damage"
+        ]
+      }
+    ],
+    "implicits": [],
+    "explicits": [
+      "+(20-30) to maximum Energy Shield",
+      "{variant:1,2}(60-80)% increased Spell Damage",
+      "+10 to Intelligence",
+      "+(7-13)% to Chaos Resistance"
+    ],
+    "tags": [
+      "chaos",
+      "crit",
+      "damage",
+      "es",
+      "intelligence",
+      "resistance",
+      "spell"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "rathpith_globe",
+    "name": "Rathpith Globe",
+    "baseType": "Sacred Focus",
+    "itemClass": "focus",
+    "league": "Dawn of the Hunt",
+    "variants": [
+      {
+        "name": "Pre 0.4.0",
+        "mods": [
+          "Non-Channelling Spells have 5% increased Critical Hit Chance per 100 maximum Life",
+          "Non-Channelling Spells deal 10% increased Damage per 100 maximum Life"
+        ]
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "Non-Channelling Spells have 3% increased Critical Hit Chance per 100 maximum Life",
+          "Non-Channelling Spells deal 6% increased Damage per 100 maximum Life"
+        ]
+      }
+    ],
+    "implicits": [],
+    "explicits": [
+      "(60-100)% increased Energy Shield",
+      "+(60-100) to maximum Life",
+      "Non-Channelling Spells cost an additional 6% of your maximum Life"
+    ],
+    "tags": [
+      "crit",
+      "damage",
+      "es",
+      "life",
+      "spell"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "serpent_s_lesson",
+    "name": "Serpent's Lesson",
+    "baseType": "Tonal Focus",
+    "itemClass": "focus",
+    "variants": [],
+    "implicits": [],
+    "explicits": [
+      "+(60-100) to maximum Life",
+      "+(60-100) to maximum Mana",
+      "You count as on Low Life while at 35% of maximum Mana or below",
+      "You count as on Low Mana while at 35% of maximum Life or below"
+    ],
+    "tags": [
+      "conditional",
+      "life",
+      "mana",
+      "on_low_life"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": [
+      {
+        "condition": "on_low_life",
+        "effect": "You count as on Low Life while at 35% of maximum Mana or below",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": "the_eternal_spark",
+    "name": "The Eternal Spark",
+    "baseType": "Crystal Focus",
+    "itemClass": "focus",
+    "variants": [
+      {
+        "name": "Pre 0.1.1",
+        "mods": [
+          "50% increased Mana Regeneration Rate while stationary"
+        ]
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "40% increased Mana Regeneration Rate",
+          "40% increased Mana Regeneration Rate while stationary"
+        ]
+      }
+    ],
+    "implicits": [],
+    "explicits": [
+      "(50-70)% increased Energy Shield",
+      "+5% to Maximum Lightning Resistance",
+      "+(20-30)% to Lightning Resistance"
+    ],
+    "tags": [
+      "es",
+      "lightning",
+      "mana",
+      "resistance"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "threaded_light",
+    "name": "Threaded Light",
+    "baseType": "Woven Focus",
+    "itemClass": "focus",
+    "variants": [],
+    "implicits": [],
+    "explicits": [
+      "(50-70)% increased Energy Shield",
+      "(30-40)% increased Mana Regeneration Rate",
+      "20% increased Light Radius",
+      "(8-12)% increased Spell Damage per 10 Spirit"
+    ],
+    "tags": [
+      "damage",
+      "es",
+      "mana",
+      "spell"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "aurseize",
+    "name": "Aurseize",
+    "baseType": "Layered Gauntlets",
+    "itemClass": "gloves",
+    "variants": [],
+    "implicits": [],
+    "explicits": [
+      "(40-60)% increased Armour and Evasion",
+      "(40-50)% increased Rarity of Items found",
+      "Lose 2% of maximum Life on Kill"
+    ],
+    "tags": [
+      "conditional",
+      "evasion",
+      "life",
+      "on_kill",
+      "rarity"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": [
+      {
+        "condition": "on_kill",
+        "effect": "Lose 2% of maximum Life on Kill",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": "death_articulated",
+    "name": "Death Articulated",
+    "baseType": "Ornate Gauntlets",
+    "itemClass": "gloves",
+    "league": "Dawn of the Hunt",
+    "variants": [],
+    "implicits": [],
+    "explicits": [
+      "(100-150)% increased Armour and Evasion",
+      "(5-10)% increased Attack Speed",
+      "+(17-23)% to Chaos Resistance",
+      "Lose 5% of maximum Life per second",
+      "Regenerate 5 Rage per second",
+      "No Inherent loss of Rage"
+    ],
+    "tags": [
+      "attack",
+      "chaos",
+      "evasion",
+      "life",
+      "resistance",
+      "speed"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "deathblow",
+    "name": "Deathblow",
+    "baseType": "Doubled Gauntlets",
+    "itemClass": "gloves",
+    "variants": [
+      {
+        "name": "Pre 0.1.1",
+        "mods": []
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "(5-10)% increased Attack Speed"
+        ]
+      }
+    ],
+    "implicits": [],
+    "explicits": [
+      "(100-150)% increased Armour and Evasion",
+      "Gain (20-30) Life per enemy killed",
+      "Gain (20-30) Mana per enemy killed",
+      "Culling Strike"
+    ],
+    "tags": [
+      "attack",
+      "evasion",
+      "life",
+      "mana",
+      "speed"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "demon_stitcher",
+    "name": "Demon Stitcher",
+    "baseType": "Intricate Gloves",
+    "itemClass": "gloves",
+    "variants": [],
+    "implicits": [],
+    "explicits": [
+      "+(40-60) to maximum Energy Shield",
+      "+(80-120) to maximum Life",
+      "(6-12)% increased Cast Speed",
+      "Sacrifice (5-15)% of Life to gain that much Energy Shield when you Cast a Spell"
+    ],
+    "tags": [
+      "es",
+      "life",
+      "speed",
+      "spell"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "doedre_s_tenure",
+    "name": "Doedre's Tenure",
+    "baseType": "Stitched Gloves",
+    "itemClass": "gloves",
+    "variants": [
+      {
+        "name": "Pre 0.1.1",
+        "mods": []
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "+(20-30) to maximum Energy Shield"
+        ]
+      }
+    ],
+    "implicits": [],
+    "explicits": [
+      "100% increased Spell Damage",
+      "(15-25)% reduced Cast Speed",
+      "+(10-15) to Intelligence"
+    ],
+    "tags": [
+      "damage",
+      "es",
+      "intelligence",
+      "speed",
+      "spell"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "dreadfist",
+    "name": "Dreadfist",
+    "baseType": "Bolstered Mitts",
+    "itemClass": "gloves",
+    "league": "Dawn of the Hunt",
+    "variants": [],
+    "implicits": [],
+    "explicits": [
+      "(50-100)% increased Armour",
+      "(20-30)% increased Critical Damage Bonus",
+      "Critical Hits inflict Impale",
+      "Critical Hits cannot Extract Impale",
+      "(20-31) to (31-49) Physical Thorns damage"
+    ],
+    "tags": [
+      "crit",
+      "damage",
+      "physical"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "empire_s_grasp",
+    "name": "Empire's Grasp",
+    "baseType": "Titan Mitts",
+    "itemClass": "gloves",
+    "league": "Dawn of the Hunt",
+    "variants": [],
+    "implicits": [],
+    "explicits": [
+      "(150-200)% increased Armour",
+      "+(20-30) to Strength",
+      "Gain (30-50) Life per enemy killed",
+      "(10-20)% increased Global Physical Damage",
+      "Knockback direction is reversed"
+    ],
+    "tags": [
+      "damage",
+      "life",
+      "physical",
+      "strength"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "essentia_sanguis",
+    "name": "Essentia Sanguis",
+    "baseType": "Furtive Wraps",
+    "itemClass": "gloves",
+    "league": "Dawn of the Hunt",
+    "variants": [],
+    "implicits": [],
+    "explicits": [
+      "(50-70)% increased Evasion and Energy Shield",
+      "Adds 1 to (30-50) Lightning damage to Attacks",
+      "+(15-25) to Intelligence",
+      "+(25-35)% to Lightning Resistance",
+      "Life Leech is Converted to Energy Shield Leech"
+    ],
+    "tags": [
+      "attack",
+      "damage",
+      "es",
+      "evasion",
+      "intelligence",
+      "life",
+      "lightning",
+      "resistance"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "gravebind",
+    "name": "Gravebind",
+    "baseType": "Rope Cuffs",
+    "itemClass": "gloves",
+    "variants": [
+      {
+        "name": "Pre 0.1.1",
+        "mods": []
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "+(10-15)% to Cold Resistance"
+        ]
+      }
+    ],
+    "implicits": [],
+    "explicits": [
+      "(40-60)% increased Armour and Energy Shield",
+      "Gain (7-10) Life per enemy killed",
+      "Gain (4-6) Mana per enemy killed",
+      "Enemies in your Presence killed by anyone count as being killed by you instead"
+    ],
+    "tags": [
+      "cold",
+      "es",
+      "life",
+      "mana",
+      "resistance"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "hand_of_wisdom_and_action",
+    "name": "Hand of Wisdom and Action",
+    "baseType": "Variant: Pre 0.2.0",
+    "itemClass": "gloves",
+    "source": "Drops from unique{Xesht, We That Are One} in normal{Twisted Domain}",
+    "variants": [
+      {
+        "name": "Current",
+        "mods": [
+          "Furtive Wraps",
+          "3% increased Attack Speed per 20 Dexterity"
+        ]
+      }
+    ],
+    "implicits": [],
+    "explicits": [
+      "+(15-25) to Dexterity",
+      "+(15-25) to Intelligence",
+      "Adds 1 to 10 Lightning Damage to Attacks per 20 Intelligence"
+    ],
+    "tags": [
+      "attack",
+      "damage",
+      "dexterity",
+      "intelligence",
+      "lightning",
+      "speed"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "hateforge",
+    "name": "Hateforge",
+    "baseType": "Moulded Mitts",
+    "itemClass": "gloves",
+    "source": "Drops from unique{Trialmaster} in normal{The Trial of Chaos}",
+    "variants": [
+      {
+        "name": "Pre 0.4.0",
+        "mods": [
+          "(50-80)% increased Armour"
+        ]
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "(300-400)% increased Armour",
+          "Gain (3-6) Rage on Hit"
+        ]
+      }
+    ],
+    "implicits": [],
+    "explicits": [
+      "Gain a random Charge on reaching Maximum Rage, no more than once every (3-6) seconds",
+      "Lose all Rage on reaching Maximum Rage"
+    ],
+    "tags": [
+      "conditional",
+      "on_hit"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": [
+      {
+        "condition": "on_hit",
+        "effect": "Gain (3-6) Rage on Hit",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": "idle_hands",
+    "name": "Idle Hands",
+    "baseType": "Sectioned Bracers",
+    "itemClass": "gloves",
+    "variants": [],
+    "implicits": [],
+    "explicits": [
+      "(40-60)% increased Evasion Rating",
+      "+(60-100) to Accuracy Rating",
+      "+(5-10) to Intelligence",
+      "25% increased Attack Speed while on Full Mana",
+      "You count as on Full Mana while at 90% of maximum Mana or above"
+    ],
+    "tags": [
+      "attack",
+      "evasion",
+      "intelligence",
+      "mana",
+      "speed"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "jarngreipr",
+    "name": "Jarngreipr",
+    "baseType": "Ringmail Gauntlets",
+    "itemClass": "gloves",
+    "variants": [
+      {
+        "name": "Pre 0.1.1",
+        "mods": []
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "50% increased Armour and Evasion"
+        ]
+      }
+    ],
+    "implicits": [],
+    "explicits": [
+      "Adds (2-3) to (5-6) Physical Damage to Attacks",
+      "+(30-50) to maximum Life",
+      "(4-8)% increased Attack Speed",
+      "Strength can satisfy other Attribute Requirements of Melee Weapons and Melee Skills"
+    ],
+    "tags": [
+      "attack",
+      "damage",
+      "evasion",
+      "life",
+      "physical",
+      "speed",
+      "strength"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "killjoy",
+    "name": "Killjoy",
+    "baseType": "Linen Wraps",
+    "itemClass": "gloves",
+    "variants": [
+      {
+        "name": "Pre 0.1.1",
+        "mods": []
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "(20-30)% increased Critical Damage Bonus"
+        ]
+      }
+    ],
+    "implicits": [],
+    "explicits": [
+      "(30-60)% increased Evasion and Energy Shield",
+      "+(30-50) to maximum Life",
+      "Life Flasks do not recover Life",
+      "On-Kill Effects happen twice"
+    ],
+    "tags": [
+      "crit",
+      "damage",
+      "es",
+      "evasion",
+      "life"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "kitoko_s_current",
+    "name": "Kitoko's Current",
+    "baseType": "Jewelled Gloves",
+    "itemClass": "gloves",
+    "variants": [],
+    "implicits": [],
+    "explicits": [
+      "(30-50)% increased Energy Shield",
+      "+(10-20) to Dexterity",
+      "(10-15)% reduced Attack and Cast Speed",
+      "Lightning damage from Hits Contributes to Electrocution Buildup"
+    ],
+    "tags": [
+      "attack",
+      "damage",
+      "dexterity",
+      "es",
+      "lightning",
+      "speed"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "leopold_s_applause",
+    "name": "Leopold's Applause",
+    "baseType": "Embroidered Gloves",
+    "itemClass": "gloves",
+    "league": "Dawn of the Hunt",
+    "variants": [],
+    "implicits": [],
+    "explicits": [
+      "(60-100)% increased Energy Shield",
+      "+(60-100) to maximum Mana",
+      "(10-15)% increased Rarity of Items found",
+      "Damage Penetrates 10% Elemental Resistances",
+      "Your Hits can Penetrate Elemental Resistances down to a minimum of -50%"
+    ],
+    "tags": [
+      "damage",
+      "es",
+      "mana",
+      "rarity",
+      "resistance"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "lochtonial_caress",
+    "name": "Lochtonial Caress",
+    "baseType": "Tempered Mitts",
+    "itemClass": "gloves",
+    "variants": [
+      {
+        "name": "Pre 0.1.1",
+        "mods": []
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "+(15-25) to Armour"
+        ]
+      }
+    ],
+    "implicits": [],
+    "explicits": [
+      "(10-15)% increased Skill Speed",
+      "+(40-60) to maximum Life",
+      "(10-15)% reduced maximum Mana",
+      "Share Charges with Allies in your Presence"
+    ],
+    "tags": [
+      "life",
+      "mana",
+      "speed"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "maligaro_s_virtuosity",
+    "name": "Maligaro's Virtuosity",
+    "baseType": "Fine Bracers",
+    "itemClass": "gloves",
+    "variants": [
+      {
+        "name": "Pre 0.4.0",
+        "mods": [
+          "Your Critical Damage Bonus is 250%"
+        ]
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "Your Critical Hit Chance cannot be Rerolled"
+        ]
+      }
+    ],
+    "implicits": [],
+    "explicits": [
+      "(60-80)% increased Evasion Rating",
+      "(20-30)% increased Critical Hit Chance",
+      "5% increased Attack Speed",
+      "+(10-20) to Dexterity"
+    ],
+    "tags": [
+      "attack",
+      "crit",
+      "damage",
+      "dexterity",
+      "evasion",
+      "speed"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "nightscale",
+    "name": "Nightscale",
+    "baseType": "Pauascale Gloves",
+    "itemClass": "gloves",
+    "league": "Dawn of the Hunt",
+    "variants": [],
+    "implicits": [],
+    "explicits": [
+      "(60-100)% increased Energy Shield",
+      "(30-50)% increased Critical Hit Chance",
+      "+(10-20) to Intelligence",
+      "+(20-30)% to Cold Resistance",
+      "150% increased Mana Regeneration Rate if you've dealt a Critical Hit Recently",
+      "Cannot Regenerate Mana if you haven't dealt a Critical Hit Recently"
+    ],
+    "tags": [
+      "cold",
+      "conditional",
+      "crit",
+      "es",
+      "intelligence",
+      "mana",
+      "recently",
+      "resistance"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": [
+      {
+        "condition": "recently",
+        "effect": "150% increased Mana Regeneration Rate if you've dealt a Critical Hit Recently",
+        "tags": []
+      },
+      {
+        "condition": "recently",
+        "effect": "Cannot Regenerate Mana if you haven't dealt a Critical Hit Recently",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": "northpaw",
+    "name": "Northpaw",
+    "baseType": "Suede Bracers",
+    "itemClass": "gloves",
+    "variants": [
+      {
+        "name": "Pre 0.1.1",
+        "mods": [
+          "Adds (2-3) to (5-6) Physical Damage to Attacks"
+        ]
+      },
+      {
+        "name": "Pre 0.2.0",
+        "mods": [
+          "(20-30)% increased Critical Damage Bonus",
+          "Base Critical Hit Chance for Attacks with Weapons is 8%"
+        ]
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "(10-15)% increased Critical Damage Bonus",
+          "Base Critical Hit Chance for Attacks with Weapons is 7%"
+        ]
+      }
+    ],
+    "implicits": [],
+    "explicits": [
+      "{variant:2,3}+(15-25) to Evasion Rating",
+      "{variant:2,3}Adds (3-5) to (8-10) Physical Damage to Attacks"
+    ],
+    "tags": [
+      "attack",
+      "crit",
+      "damage",
+      "evasion",
+      "physical"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "painter_s_servant",
+    "name": "Painter's Servant",
+    "baseType": "Torn Gloves",
+    "itemClass": "gloves",
+    "variants": [
+      {
+        "name": "Pre 0.1.1",
+        "mods": [
+          "+(5-10)% to Fire Resistance",
+          "+(5-10)% to Cold Resistance",
+          "+(5-10)% to Lightning Resistance"
+        ]
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "Gain (5-10)% of Elemental Damage as Extra Cold Damage",
+          "Gain (5-10)% of Elemental Damage as Extra Fire Damage",
+          "Gain (5-10)% of Elemental Damage as Extra Lightning Damage"
+        ]
+      }
+    ],
+    "implicits": [],
+    "explicits": [
+      "33% of Elemental Damage Converted to Cold Damage",
+      "33% of Elemental Damage Converted to Fire Damage",
+      "33% of Elemental Damage Converted to Lightning Damage",
+      "]],",
+      "-- Gloves: Armour/Evasion",
+      "[[",
+      "Aerisvane's Wings",
+      "Burnished Gauntlets",
+      "(50-70)% increased Armour and Evasion",
+      "(5-10)% increased Attack Speed",
+      "+(20-30) to Intelligence",
+      "Decimating Strike"
+    ],
+    "tags": [
+      "attack",
+      "cold",
+      "damage",
+      "evasion",
+      "fire",
+      "intelligence",
+      "lightning",
+      "resistance",
+      "speed"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "plaguefinger",
+    "name": "Plaguefinger",
+    "baseType": "Gauze Wraps",
+    "itemClass": "gloves",
+    "variants": [
+      {
+        "name": "Pre 0.1.1",
+        "mods": [
+          "(5-10)% chance to Poison on Hit"
+        ]
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "(20-30)% chance to Poison on Hit"
+        ]
+      }
+    ],
+    "implicits": [],
+    "explicits": [
+      "(30-50)% increased Evasion and Energy Shield",
+      "(4-6)% increased Attack Speed",
+      "All Damage from Hits Contributes to Poison Magnitude"
+    ],
+    "tags": [
+      "attack",
+      "conditional",
+      "damage",
+      "es",
+      "evasion",
+      "on_hit",
+      "poison",
+      "speed"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": [
+      {
+        "condition": "on_hit",
+        "effect": "(5-10)% chance to Poison on Hit",
+        "tags": []
+      },
+      {
+        "condition": "on_hit",
+        "effect": "(20-30)% chance to Poison on Hit",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": "shackles_of_the_wretched",
+    "name": "Shackles of the Wretched",
+    "baseType": "Aged Cuffs",
+    "itemClass": "gloves",
+    "source": "Drops from unique{Zarokh, the Temporal}",
+    "variants": [],
+    "implicits": [],
+    "explicits": [
+      "(30-50)% increased Armour and Energy Shield",
+      "You cannot be Chilled for 6 seconds after being Chilled",
+      "You cannot be Frozen for 6 seconds after being Frozen",
+      "You cannot be Ignited for 6 seconds after being Ignited",
+      "You cannot be Shocked for 6 seconds after being Shocked",
+      "Curses you inflict are reflected back to you",
+      "]],",
+      "-- Gloves: Evasion/Energy Shield",
+      "[[",
+      "Blessed Bonds",
+      "Linen Wraps",
+      "+(60-100) to Evasion Rating",
+      "+(30-50) to maximum Energy Shield",
+      "Gain (25-35) Mana per enemy killed",
+      "Inflict Cold Exposure on Igniting an Enemy",
+      "Inflict Fire Exposure on Shocking an Enemy",
+      "Inflict Lightning Exposure on Critical Hit"
+    ],
+    "tags": [
+      "chill",
+      "cold",
+      "conditional",
+      "crit",
+      "curse",
+      "es",
+      "evasion",
+      "fire",
+      "ignite",
+      "lightning",
+      "mana",
+      "on_crit",
+      "shock"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": [
+      {
+        "condition": "on_crit",
+        "effect": "Inflict Lightning Exposure on Critical Hit",
+        "tags": [
+          "lightning"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "snakebite",
+    "name": "Snakebite",
+    "baseType": "Spined Bracers",
+    "itemClass": "gloves",
+    "variants": [
+      {
+        "name": "Pre 0.1.1",
+        "mods": [
+          "20% chance to Poison on Hit",
+          "+(15-30)% to Fire Resistance",
+          "-(30-15)% to Cold Resistance"
+        ]
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "(6-10) Life Regeneration per second",
+          "(20-30)% chance to Poison on Hit",
+          "(20-40)% increased Fire Damage",
+          "(10-20)% reduced Cold Damage",
+          "+(20-40)% to Fire Resistance",
+          "-(20-10)% to Cold Resistance"
+        ]
+      }
+    ],
+    "implicits": [],
+    "explicits": [
+      "(40-60)% increased Evasion Rating",
+      "+(7-17)% to Chaos Resistance",
+      "Targets can be affected by +1 of your Poisons at the same time",
+      "]],",
+      "-- Gloves: Energy Shield",
+      "[[",
+      "Candlemaker",
+      "Sombre Gloves",
+      "(50-80)% increased Energy Shield",
+      "Flammability Magnitude is doubled"
+    ],
+    "tags": [
+      "chaos",
+      "cold",
+      "conditional",
+      "damage",
+      "es",
+      "evasion",
+      "fire",
+      "life",
+      "on_hit",
+      "poison",
+      "resistance"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": [
+      {
+        "condition": "on_hit",
+        "effect": "20% chance to Poison on Hit",
+        "tags": []
+      },
+      {
+        "condition": "on_hit",
+        "effect": "(20-30)% chance to Poison on Hit",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": "the_prisoner_s_manacles",
+    "name": "The Prisoner's Manacles",
+    "baseType": "Verisium Cuffs",
+    "itemClass": "gloves",
+    "league": "Dawn of the Hunt",
+    "variants": [],
+    "implicits": [],
+    "explicits": [
+      "(200-300)% increased Armour and Energy Shield",
+      "+100 to maximum Life",
+      "100% increased Attribute Requirements",
+      "+(20-40)% to Lightning Resistance",
+      "(15-30) Life Regeneration per second",
+      "Debuffs you inflict have (20-30)% increased Slow Magnitude",
+      "Cannot Immobilise enemies"
+    ],
+    "tags": [
+      "es",
+      "life",
+      "lightning",
+      "resistance"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "thunderfist",
+    "name": "Thunderfist",
+    "baseType": "Utility Wraps",
+    "itemClass": "gloves",
+    "league": "Rise of the Abyssal",
+    "source": "Drops from unique{Arbiter of Ash} in normal{The Burning Monolith}",
+    "variants": [
+      {
+        "name": "Pre 0.4.0",
+        "mods": [
+          "(40-60)% increased Armour, Evasion and Energy Shield",
+          "Enemies Immobilised by you take 25% less Damage"
+        ]
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "(100-150)% increased Armour, Evasion and Energy Shield",
+          "Enemies Immobilised by you take 20% more Damage"
+        ]
+      }
+    ],
+    "implicits": [
+      "Grants Skill: Level (1-20) Crackling Palm",
+      "(1-111)% increased Evasion and Energy Shield",
+      "(1-11)% increased Attack Speed",
+      "+(1-33)% to Lightning Resistance",
+      "Adds 1 to (77-111) Lightning Damage to Unarmed Melee Hits"
+    ],
+    "explicits": [
+      "+(0.1-1.1)% to Unarmed Melee Attack Critical Hit Chance",
+      "]],",
+      "-- Gloves: Armour/Evasion/Energy Shield",
+      "[[",
+      "Sine Aequo",
+      "Grand Manchettes",
+      "(10-15)% increased Skill Speed",
+      "Immobilise enemies at 50% buildup instead of 100%"
+    ],
+    "tags": [
+      "attack",
+      "crit",
+      "damage",
+      "es",
+      "evasion",
+      "grants_crackling_palm",
+      "grants_skill",
+      "lightning",
+      "resistance",
+      "speed"
+    ],
+    "grantedSkills": [
+      {
+        "skillName": "Crackling Palm",
+        "minLevel": 1,
+        "maxLevel": 20
+      }
+    ],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "treefingers",
+    "name": "Treefingers",
+    "baseType": "Riveted Mitts",
+    "itemClass": "gloves",
+    "variants": [
+      {
+        "name": "Pre 0.1.1",
+        "mods": [
+          "Adds (3-5) to (6-8) Physical Damage to Attacks"
+        ]
+      },
+      {
+        "name": "Pre 0.4.0",
+        "mods": [
+          "+(20-30)% to Cold Resistance"
+        ]
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "+(15-20) to Strength"
+        ]
+      }
+    ],
+    "implicits": [],
+    "explicits": [
+      "(30-60)% increased Armour",
+      "{variant:2,3}Adds (6-10) to (12-16) Physical Damage to Attacks",
+      "{variant:2,3}5% reduced Attack Speed",
+      "{variant:2,3}(20-30)% increased Stun Buildup",
+      "Giant's Blood",
+      "]],",
+      "-- Gloves: Evasion",
+      "[[",
+      "Grip of Winter",
+      "Firm Bracers",
+      "(30-50)% increased Evasion Rating",
+      "Adds (3-5) to (6-8) Cold damage to Attacks",
+      "(40-50)% increased Freeze Buildup",
+      "(20-30)% increased Magnitude of Chill you inflict"
+    ],
+    "tags": [
+      "attack",
+      "chill",
+      "cold",
+      "damage",
+      "evasion",
+      "freeze",
+      "physical",
+      "resistance",
+      "speed",
+      "strength"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "valako_s_vice",
+    "name": "Valako's Vice",
+    "baseType": "Plate Gauntlets",
+    "itemClass": "gloves",
+    "league": "Dawn of the Hunt",
+    "variants": [
+      {
+        "name": "Pre 0.1.1",
+        "mods": []
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "+20 to maximum Energy Shield"
+        ]
+      }
+    ],
+    "implicits": [],
+    "explicits": [
+      "(50-100)% increased Armour and Evasion",
+      "(5-10)% increased Attack Speed",
+      "+(20-30) to Strength",
+      "+(20-30) to Dexterity",
+      "+(30-50)% to Lightning Resistance",
+      "100% of Fire damage Converted to Lightning damage",
+      "]],",
+      "-- Gloves: Armour/Energy Shield",
+      "[[",
+      "Blueflame Bracers",
+      "Goldcast Cuffs",
+      "+(10-20) to Intelligence",
+      "+(5-15)% to Fire Resistance",
+      "+(5-15)% to Cold Resistance",
+      "100% of Fire Damage Converted to Cold Damage"
+    ],
+    "tags": [
+      "attack",
+      "cold",
+      "damage",
+      "dexterity",
+      "es",
+      "evasion",
+      "fire",
+      "intelligence",
+      "lightning",
+      "resistance",
+      "speed",
+      "strength"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "blood_price",
+    "name": "Blood Price",
+    "baseType": "Fierce Greathelm",
+    "itemClass": "helmet",
+    "league": "Dawn of the Hunt",
+    "variants": [],
+    "implicits": [],
+    "explicits": [
+      "(80-120)% increased Armour",
+      "(10-15) Life Regeneration per second",
+      "+(100-150) to Stun Threshold",
+      "(30-60)% increased Presence Area of Effect",
+      "Enemies in your Presence have at least 10% of Life Reserved"
+    ],
+    "tags": [
+      "life"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "constricting_command",
+    "name": "Constricting Command",
+    "baseType": "Viper Cap",
+    "itemClass": "helmet",
+    "league": "Dawn of the Hunt",
+    "variants": [
+      {
+        "name": "Pre 0.3.0",
+        "mods": [
+          "Pin Enemies which are Primed for Pinning"
+        ]
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "Require (2-4) fewer enemies to be Surrounded"
+        ]
+      }
+    ],
+    "implicits": [],
+    "explicits": [
+      "+(80-120) to maximum Life",
+      "+(10-15) to all Attributes",
+      "(8-12) Life Regeneration per second"
+    ],
+    "tags": [
+      "life"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "cornathaum",
+    "name": "Cornathaum",
+    "baseType": "Heavy Crown",
+    "itemClass": "helmet",
+    "variants": [],
+    "implicits": [],
+    "explicits": [
+      "(10-20)% increased Rarity of Items found",
+      "+(40-50) to Intelligence",
+      "30% increased Light Radius",
+      "5% increased Experience gain"
+    ],
+    "tags": [
+      "intelligence",
+      "rarity"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "corona_of_the_red_sun",
+    "name": "Corona of the Red Sun",
+    "baseType": "Warrior Greathelm",
+    "itemClass": "helmet",
+    "variants": [
+      {
+        "name": "Pre 0.1.1",
+        "mods": []
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "+(20-25)% to Fire Resistance"
+        ]
+      }
+    ],
+    "implicits": [],
+    "explicits": [
+      "+(100-150) to Accuracy Rating",
+      "+(60-80) to maximum Life",
+      "25% increased Light Radius",
+      "Leeching Life from your Hits causes Allies in your Presence to also Leech the same amount of Life"
+    ],
+    "tags": [
+      "fire",
+      "life",
+      "resistance"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "crown_of_eyes",
+    "name": "Crown of Eyes",
+    "baseType": "Vermeil Circlet",
+    "itemClass": "helmet",
+    "league": "Dawn of the Hunt",
+    "variants": [],
+    "implicits": [],
+    "explicits": [
+      "(100-140)% increased Energy Shield",
+      "+(150-200) to Accuracy Rating",
+      "+(10-15) to all Attributes",
+      "-10% to Fire Resistance",
+      "Increases and Reductions to Spell damage also apply to Attacks"
+    ],
+    "tags": [
+      "attack",
+      "damage",
+      "es",
+      "fire",
+      "resistance",
+      "spell"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "crown_of_the_pale_king",
+    "name": "Crown of the Pale King",
+    "baseType": "Cultist Crown",
+    "itemClass": "helmet",
+    "variants": [
+      {
+        "name": "Pre 0.1.1",
+        "mods": []
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "(10-15) to (20-25) Physical Thorns damage"
+        ]
+      }
+    ],
+    "implicits": [],
+    "explicits": [
+      "(50-100)% increased Armour and Energy Shield",
+      "+(40-80) to maximum Life",
+      "10% increased Rarity of Items found",
+      "Thorns can Retaliate against all Hits"
+    ],
+    "tags": [
+      "damage",
+      "es",
+      "life",
+      "physical",
+      "rarity"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "crown_of_the_victor",
+    "name": "Crown of the Victor",
+    "baseType": "Iron Crown",
+    "itemClass": "helmet",
+    "variants": [
+      {
+        "name": "Pre 0.2.0",
+        "mods": [
+          "(10-20)% increased Rarity of Items found"
+        ]
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "(10-15)% increased Rarity of Items found"
+        ]
+      }
+    ],
+    "implicits": [],
+    "explicits": [
+      "Gain 10 Life per enemy killed",
+      "Gain 10 Mana per enemy killed",
+      "+1 to Level of all Skills"
+    ],
+    "tags": [
+      "boosts_all_skills",
+      "boosts_skill_level",
+      "life",
+      "mana",
+      "rarity"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [
+      {
+        "skillTypes": [
+          "all"
+        ],
+        "bonus": 1
+      }
+    ],
+    "conditionalMods": []
+  },
+  {
+    "id": "crown_of_thorns",
+    "name": "Crown of Thorns",
+    "baseType": "Twig Circlet",
+    "itemClass": "helmet",
+    "variants": [],
+    "implicits": [],
+    "explicits": [
+      "+(100-150) to maximum Energy Shield",
+      "Lose 5 Life when you use a Skill",
+      "(3-5) to (6-10) Physical Thorns damage",
+      "Pain Attunement"
+    ],
+    "tags": [
+      "damage",
+      "es",
+      "life",
+      "physical"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "deidbell",
+    "name": "Deidbell",
+    "baseType": "Elite Greathelm",
+    "itemClass": "helmet",
+    "variants": [
+      {
+        "name": "Pre 0.1.1",
+        "mods": []
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "+(10-20) to Strength"
+        ]
+      }
+    ],
+    "implicits": [],
+    "explicits": [
+      "(60-100)% increased Armour",
+      "(20-30)% increased Warcry Speed",
+      "Warcries Explode Corpses dealing 10% of their Life as Physical Damage",
+      "Warcry Skills have (20-30)% increased Area of Effect"
+    ],
+    "tags": [
+      "damage",
+      "life",
+      "physical",
+      "speed",
+      "strength"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "elevore",
+    "name": "Elevore",
+    "baseType": "Hunter Hood",
+    "itemClass": "helmet",
+    "variants": [
+      {
+        "name": "Pre 0.1.1",
+        "mods": [
+          "+(10-20) to Dexterity"
+        ]
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "+(20-30) to Dexterity",
+          "+1 Charm Slot"
+        ]
+      }
+    ],
+    "implicits": [],
+    "explicits": [
+      "(50-80)% increased Evasion Rating",
+      "Charms gain 0.5 charges per Second"
+    ],
+    "tags": [
+      "dexterity",
+      "evasion"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "erian_s_cobble",
+    "name": "Erian's Cobble",
+    "baseType": "Guarded Helm",
+    "itemClass": "helmet",
+    "variants": [
+      {
+        "name": "Pre 0.1.1",
+        "mods": [
+          "+(0-20) to Armour",
+          "+(0-15) to Evasion Rating",
+          "+(0-10) to maximum Energy Shield",
+          "+(0-30) to Accuracy Rating",
+          "+(0-15) to maximum Life",
+          "+(0-10) to maximum Mana",
+          "(0-10)% increased Rarity of Items found",
+          "(0-15)% increased Critical Hit Chance",
+          "+(0-5) to Strength",
+          "+(0-5) to Dexterity",
+          "+(0-5) to Intelligence",
+          "+(0-5)% to Fire Resistance",
+          "+(0-5)% to Cold Resistance",
+          "+(0-5)% to Lightning Resistance",
+          "(0-0.05) Life Regeneration per second"
+        ]
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "+(0-40) to Armour",
+          "+(0-30) to Evasion Rating",
+          "+(0-20) to maximum Energy Shield",
+          "+(0-60) to Accuracy Rating",
+          "+(0-30) to maximum Life",
+          "+(0-20) to maximum Mana",
+          "(0-20)% increased Rarity of Items found",
+          "(0-30)% increased Critical Hit Chance",
+          "+(0-10) to Strength",
+          "+(0-10) to Dexterity",
+          "+(0-10) to Intelligence",
+          "+(0-10)% to Fire Resistance",
+          "+(0-10)% to Cold Resistance",
+          "+(0-10)% to Lightning Resistance",
+          "(0-6) Life Regeneration per second"
+        ]
+      }
+    ],
+    "implicits": [],
+    "explicits": [],
+    "tags": [
+      "cold",
+      "crit",
+      "dexterity",
+      "es",
+      "evasion",
+      "fire",
+      "intelligence",
+      "life",
+      "lightning",
+      "mana",
+      "rarity",
+      "resistance",
+      "strength"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "ezomyte_peak",
+    "name": "Ezomyte Peak",
+    "baseType": "Soldier Greathelm",
+    "itemClass": "helmet",
+    "variants": [
+      {
+        "name": "Pre 0.1.1",
+        "mods": [
+          "+(30-50) to maximum Life"
+        ]
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "+(50-80) to maximum Life",
+          "(3-6) Life Regeneration per second"
+        ]
+      }
+    ],
+    "implicits": [],
+    "explicits": [
+      "(50-100)% increased Armour",
+      "(10-20)% increased Area of Effect",
+      "Unwavering Stance"
+    ],
+    "tags": [
+      "life"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "forbidden_gaze",
+    "name": "Forbidden Gaze",
+    "baseType": "Chain Tiara",
+    "itemClass": "helmet",
+    "source": "No longer obtainable",
+    "variants": [
+      {
+        "name": "Pre 0.1.1",
+        "mods": [
+          "+(25-35)% to Cold Resistance"
+        ]
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "+(30-50)% to Cold Resistance"
+        ]
+      }
+    ],
+    "implicits": [],
+    "explicits": [
+      "(60-100)% increased Energy Shield",
+      "+(3-5)% to Maximum Cold Resistance",
+      "25% reduced Light Radius"
+    ],
+    "tags": [
+      "cold",
+      "es",
+      "resistance"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "glimpse_of_chaos",
+    "name": "Glimpse of Chaos",
+    "baseType": "Tribal Mask",
+    "itemClass": "helmet",
+    "source": "Drops from unique{Trialmaster} in normal{The Trial of Chaos}",
+    "variants": [],
+    "implicits": [],
+    "explicits": [
+      "Can be modified while Corrupted",
+      "+(50-150) to maximum Life",
+      "+(50-150) to maximum Mana",
+      "+(-30-30)% to Fire Resistance",
+      "+(-30-30)% to Cold Resistance",
+      "+(-30-30)% to Lightning Resistance",
+      "Chaos Resistance is zero"
+    ],
+    "tags": [
+      "chaos",
+      "cold",
+      "fire",
+      "life",
+      "lightning",
+      "mana",
+      "resistance"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "goldrim",
+    "name": "Goldrim",
+    "baseType": "Felt Cap",
+    "itemClass": "helmet",
+    "variants": [],
+    "implicits": [],
+    "explicits": [
+      "+(30-50) to Evasion Rating",
+      "10% increased Rarity of Items found",
+      "+(25-35)% to all Elemental Resistances"
+    ],
+    "tags": [
+      "evasion",
+      "rarity",
+      "resistance"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "greymake",
+    "name": "Greymake",
+    "baseType": "Brimmed Helm",
+    "itemClass": "helmet",
+    "variants": [
+      {
+        "name": "Pre 0.4.0",
+        "mods": []
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "Has 4 Augment Sockets"
+        ]
+      }
+    ],
+    "implicits": [],
+    "explicits": [
+      "+(30-50) to Strength",
+      "+(30-50) to Dexterity",
+      "+(30-50) to Intelligence",
+      "-1 to all Attributes per Level"
+    ],
+    "tags": [
+      "dexterity",
+      "intelligence",
+      "strength"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "heatshiver",
+    "name": "Heatshiver",
+    "baseType": "Velvet Cap",
+    "itemClass": "helmet",
+    "league": "Dawn of the Hunt",
+    "variants": [],
+    "implicits": [],
+    "explicits": [
+      "(50-70)% increased Evasion Rating",
+      "+(60-100) to maximum Mana",
+      "+(20-30)% to Fire Resistance",
+      "+(20-30)% to Cold Resistance",
+      "Gain 1% of Cold damage as Extra Fire damage per 1% Chill Magnitude on enemy"
+    ],
+    "tags": [
+      "chill",
+      "cold",
+      "damage",
+      "evasion",
+      "fire",
+      "mana",
+      "resistance"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "horns_of_bynden",
+    "name": "Horns of Bynden",
+    "baseType": "Rusted Greathelm",
+    "itemClass": "helmet",
+    "variants": [
+      {
+        "name": "Pre 0.1.1",
+        "mods": []
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "+20 to Armour"
+        ]
+      }
+    ],
+    "implicits": [],
+    "explicits": [
+      "(5-15)% increased Rarity of Items found",
+      "+(20-30) to Strength",
+      "Gain 1 Rage on Melee Hit",
+      "Every Rage also grants 1% increased Armour"
+    ],
+    "tags": [
+      "rarity",
+      "strength"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "indigon",
+    "name": "Indigon",
+    "baseType": "Magus Tiara",
+    "itemClass": "helmet",
+    "league": "Dawn of the Hunt",
+    "variants": [
+      {
+        "name": "Pre 0.4.0",
+        "mods": [
+          "(60-100)% increased Energy Shield",
+          "(35-50)% increased Cost of Skills for each 200 total Mana Spent Recently",
+          "(35-50)% increased Spell damage for each 200 total Mana you have Spent Recently"
+        ]
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "(100-140)% increased Energy Shield",
+          "(5-10)% increased Cost of Skills for each 200 total Mana Spent Recently",
+          "(10-15)% increased Spell damage for each 200 total Mana you have Spent Recently"
+        ]
+      }
+    ],
+    "implicits": [],
+    "explicits": [
+      "+(80-120) to maximum Mana",
+      "Mana Recovery other than Regeneration cannot Recover Mana"
+    ],
+    "tags": [
+      "conditional",
+      "damage",
+      "es",
+      "mana",
+      "recently",
+      "spell"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": [
+      {
+        "condition": "recently",
+        "effect": "(35-50)% increased Cost of Skills for each 200 total Mana Spent Recently",
+        "tags": []
+      },
+      {
+        "condition": "recently",
+        "effect": "(5-10)% increased Cost of Skills for each 200 total Mana Spent Recently",
+        "tags": []
+      },
+      {
+        "condition": "recently",
+        "effect": "(35-50)% increased Spell damage for each 200 total Mana you have Spent Recently",
+        "tags": []
+      },
+      {
+        "condition": "recently",
+        "effect": "(10-15)% increased Spell damage for each 200 total Mana you have Spent Recently",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": "innsmouth",
+    "name": "Innsmouth",
+    "baseType": "Shabby Hood",
+    "itemClass": "helmet",
+    "variants": [
+      {
+        "name": "Pre 0.1.1",
+        "mods": []
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "+(20-30) to Evasion Rating"
+        ]
+      }
+    ],
+    "implicits": [],
+    "explicits": [
+      "25% reduced maximum Mana",
+      "+(10-20)% to Cold Resistance",
+      "+(13-19)% to Chaos Resistance",
+      "100% increased Mana Regeneration Rate"
+    ],
+    "tags": [
+      "chaos",
+      "cold",
+      "evasion",
+      "mana",
+      "resistance"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "ironride",
+    "name": "Ironride",
+    "baseType": "Visored Helm",
+    "itemClass": "helmet",
+    "variants": [
+      {
+        "name": "Pre 0.1.1",
+        "mods": []
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "+(30-50) to maximum Life"
+        ]
+      }
+    ],
+    "implicits": [],
+    "explicits": [
+      "(60-80)% increased Armour and Evasion",
+      "+(30-50) to maximum Mana",
+      "+(10-15)% to Lightning Resistance",
+      "You have no Accuracy Penalty at Distance"
+    ],
+    "tags": [
+      "evasion",
+      "life",
+      "lightning",
+      "mana",
+      "resistance"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "keeper_of_the_arc",
+    "name": "Keeper of the Arc",
+    "baseType": "Spiritbone Crown",
+    "itemClass": "helmet",
+    "source": "Drops from unique{Olroth, Origin of the Fall}",
+    "variants": [
+      {
+        "name": "Pre 0.4.0",
+        "mods": [
+          "(100-150)% increased Armour and Energy Shield",
+          "Alternating every 5 seconds:",
+          "Take 30% more Damage from Hits",
+          "Take 30% more Damage over time"
+        ]
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "(150-250)% increased Armour and Energy Shield",
+          "Alternating every 5 seconds:",
+          "Take 40% less Damage from Hits",
+          "Take 40% less Damage over time"
+        ]
+      }
+    ],
+    "implicits": [],
+    "explicits": [
+      "(15-25) Life Regeneration per second",
+      "(15-25)% increased Mana Regeneration Rate"
+    ],
+    "tags": [
+      "damage",
+      "es",
+      "life",
+      "mana"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "leer_cast",
+    "name": "Leer Cast",
+    "baseType": "Hooded Mask",
+    "itemClass": "helmet",
+    "variants": [
+      {
+        "name": "Pre 0.1.1",
+        "mods": []
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "+(10-20) to Dexterity"
+        ]
+      }
+    ],
+    "implicits": [],
+    "explicits": [
+      "+(30-50) to maximum Life",
+      "+(30-50) to maximum Mana",
+      "Allies in your Presence deal 50% increased Damage",
+      "25% reduced Damage"
+    ],
+    "tags": [
+      "damage",
+      "dexterity",
+      "life",
+      "mana"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "mask_of_the_sanguimancer",
+    "name": "Mask of the Sanguimancer",
+    "baseType": "Face Mask",
+    "itemClass": "helmet",
+    "variants": [],
+    "implicits": [],
+    "explicits": [
+      "+(20-25) to Evasion Rating",
+      "+(10-15) to maximum Energy Shield",
+      "(20-40)% increased Critical Hit Chance for Spells",
+      "+(10-20) to Strength",
+      "+(10-20) to Intelligence",
+      "Blood Magic"
+    ],
+    "tags": [
+      "crit",
+      "es",
+      "evasion",
+      "intelligence",
+      "spell",
+      "strength"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "mask_of_the_stitched_demon",
+    "name": "Mask of the Stitched Demon",
+    "baseType": "Feathered Tiara",
+    "itemClass": "helmet",
+    "variants": [],
+    "implicits": [],
+    "explicits": [
+      "(120-160)% increased Energy Shield",
+      "+(17-23)% to Chaos Resistance",
+      "Cannot have Energy Shield",
+      "Regenerate 0.05 Life per second per Maximum Energy Shield"
+    ],
+    "tags": [
+      "chaos",
+      "es",
+      "life",
+      "resistance"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "mind_of_the_council",
+    "name": "Mind of the Council",
+    "baseType": "Death Mask",
+    "itemClass": "helmet",
+    "league": "Dawn of the Hunt",
+    "variants": [
+      {
+        "name": "Pre 0.4.0",
+        "mods": [
+          "(60-90)% increased Evasion and Energy Shield"
+        ]
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "(150-200)% increased Evasion and Energy Shield"
+        ]
+      }
+    ],
+    "implicits": [],
+    "explicits": [
+      "+(60-90) to maximum Mana",
+      "+(20-30)% to Lightning Resistance",
+      "Attacks cost an additional 6% of your maximum Mana",
+      "Attacks have Added maximum Lightning Damage equal to (6-9)% of maximum Mana"
+    ],
+    "tags": [
+      "attack",
+      "damage",
+      "es",
+      "evasion",
+      "lightning",
+      "mana",
+      "resistance"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "myris_uxor",
+    "name": "Myris Uxor",
+    "baseType": "Covert Hood",
+    "itemClass": "helmet",
+    "variants": [],
+    "implicits": [],
+    "explicits": [
+      "(40-60)% increased Evasion Rating",
+      "+(100-150) to Accuracy Rating",
+      "+(40-60) to maximum Mana",
+      "100% increased Culling Strike Threshold"
+    ],
+    "tags": [
+      "evasion",
+      "mana"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "radiant_grief",
+    "name": "Radiant Grief",
+    "baseType": "Lace Hood",
+    "itemClass": "helmet",
+    "variants": [],
+    "implicits": [],
+    "explicits": [
+      "(80-100)% increased Evasion Rating",
+      "+(15-25)% to Fire Resistance",
+      "30% increased Light Radius",
+      "Enemies in your Presence are Ignited as though dealt 100 Base Fire Damage"
+    ],
+    "tags": [
+      "damage",
+      "evasion",
+      "fire",
+      "ignite",
+      "resistance"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "sandstorm_visage",
+    "name": "Sandstorm Visage",
+    "baseType": "Chain Tiara",
+    "itemClass": "helmet",
+    "source": "Drops from unique{Zarokh, the Temporal}",
+    "variants": [
+      {
+        "name": "Pre 0.2.0",
+        "mods": [
+          "Every second, inflicts Critical Weakness on enemies in your Presence for 1 second"
+        ]
+      },
+      {
+        "name": "Pre 0.4.0",
+        "mods": [
+          "Every second, inflicts Critical Weakness on enemies in your Presence for 15 seconds"
+        ]
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "Every second, inflicts Critical Weakness on enemies in your Presence for (15-20) seconds"
+        ]
+      }
+    ],
+    "implicits": [],
+    "explicits": [
+      "+(80-120) to maximum Energy Shield",
+      "+(20-30) to Dexterity",
+      "Enemies in your Presence are Blinded"
+    ],
+    "tags": [
+      "crit",
+      "dexterity",
+      "es"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "scold_s_bridle",
+    "name": "Scold's Bridle",
+    "baseType": "Jade Tiara",
+    "itemClass": "helmet",
+    "league": "Dawn of the Hunt",
+    "variants": [],
+    "implicits": [],
+    "explicits": [
+      "+(75-150) to maximum Energy Shield",
+      "(60-100)% increased Spell Damage",
+      "+(80-100) to maximum Mana",
+      "15% reduced Cast Speed",
+      "Take (25-100)% of Mana Costs you pay for Skills as Physical Damage"
+    ],
+    "tags": [
+      "damage",
+      "es",
+      "mana",
+      "physical",
+      "speed",
+      "spell"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "starkonja_s_head",
+    "name": "Starkonja's Head",
+    "baseType": "Leatherbound Hood",
+    "itemClass": "helmet",
+    "league": "Dawn of the Hunt",
+    "variants": [
+      {
+        "name": "0.2.0",
+        "mods": [
+          "+(40-60) to maximum Mana",
+          "(10-20)% increased Rarity of Items found",
+          "(20-25)% of Damage taken bypasses Energy Shield",
+          "Gain (25-30)% of maximum Life as Extra maximum Energy Shield"
+        ]
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "+(60-100) to maximum Mana",
+          "(10-15)% increased Rarity of Items found",
+          "10% of Damage taken bypasses Energy Shield",
+          "Gain (10-15)% of maximum Life as Extra maximum Energy Shield"
+        ]
+      }
+    ],
+    "implicits": [],
+    "explicits": [
+      "(100-200)% increased Evasion Rating",
+      "(15-25)% increased Critical Hit Chance",
+      "+(30-40) to Dexterity",
+      "150% increased Global Evasion Rating when on Low Life",
+      "15% of Damage from Hits is taken from your Damageable Companion's Life before you",
+      "]],",
+      "-- Helmet: Energy Shield",
+      "[[",
+      "Atziri's Disdain",
+      "Gold Circlet"
+    ],
+    "tags": [
+      "conditional",
+      "crit",
+      "damage",
+      "dexterity",
+      "es",
+      "evasion",
+      "life",
+      "mana",
+      "on_low_life",
+      "rarity"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": [
+      {
+        "condition": "on_low_life",
+        "effect": "150% increased Global Evasion Rating when on Low Life",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": "the_black_insignia",
+    "name": "The Black Insignia",
+    "baseType": "Corsair Cap",
+    "itemClass": "helmet",
+    "league": "Dawn of the Hunt",
+    "variants": [],
+    "implicits": [],
+    "explicits": [
+      "(70-100)% increased Evasion Rating",
+      "(10-20)% increased Rarity of Items found",
+      "+(15-25)% to Lightning Resistance",
+      "Gain Tailwind on Critical Hit, no more than once per second",
+      "Lose all Tailwind when Hit"
+    ],
+    "tags": [
+      "conditional",
+      "crit",
+      "evasion",
+      "lightning",
+      "on_crit",
+      "rarity",
+      "resistance"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": [
+      {
+        "condition": "on_crit",
+        "effect": "Gain Tailwind on Critical Hit, no more than once per second",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": "the_bringer_of_rain",
+    "name": "The Bringer of Rain",
+    "baseType": "Decorated Helm",
+    "itemClass": "helmet",
+    "league": "Dawn of the Hunt",
+    "variants": [
+      {
+        "name": "Pre 0.2.1",
+        "mods": []
+      },
+      {
+        "name": "Pre 0.4.0",
+        "mods": []
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "This item gains bonuses from Socketed Items as though it was a Body Armour",
+          "Has 4 Augment Sockets"
+        ]
+      }
+    ],
+    "implicits": [],
+    "explicits": [
+      "(600-800)% increased Armour and Evasion",
+      "+(200-300) to Accuracy Rating",
+      "{variant:2,3}100% increased Critical Hit Chance",
+      "(30-60) Life Regeneration per second",
+      "Can't use Body Armour",
+      "You can wield Two-Handed Axes, Maces and Swords in one hand"
+    ],
+    "tags": [
+      "crit",
+      "evasion",
+      "life"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "the_deepest_tower",
+    "name": "The Deepest Tower",
+    "baseType": "Spiritbone Crown",
+    "itemClass": "helmet",
+    "league": "Dawn of the Hunt",
+    "source": "No longer obtainable",
+    "variants": [],
+    "implicits": [],
+    "explicits": [
+      "(70-130)% increased Armour and Energy Shield",
+      "+(70-100) to maximum Life",
+      "+(17-23)% to Chaos Resistance",
+      "50% reduced Presence Area of Effect",
+      "10% reduced Light Radius",
+      "Enemies in your Presence count as being on Low Life"
+    ],
+    "tags": [
+      "chaos",
+      "conditional",
+      "es",
+      "life",
+      "on_low_life",
+      "resistance"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": [
+      {
+        "condition": "on_low_life",
+        "effect": "Enemies in your Presence count as being on Low Life",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": "the_devouring_diadem",
+    "name": "The Devouring Diadem",
+    "baseType": "Wicker Tiara",
+    "itemClass": "helmet",
+    "variants": [
+      {
+        "name": "Pre 0.1.1",
+        "mods": []
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "+(40-60) to maximum Life"
+        ]
+      }
+    ],
+    "implicits": [],
+    "explicits": [
+      "(60-100)% increased Energy Shield",
+      "+(10-20) to Intelligence",
+      "+(13-19)% to Chaos Resistance",
+      "Every 3 seconds, Consume a nearby Corpse to Recover 20% of maximum Life"
+    ],
+    "tags": [
+      "chaos",
+      "es",
+      "intelligence",
+      "life",
+      "resistance"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "the_hollow_mask",
+    "name": "The Hollow Mask",
+    "baseType": "Hewn Mask",
+    "itemClass": "helmet",
+    "variants": [
+      {
+        "name": "Pre 0.1.1",
+        "mods": []
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "+13% to Chaos Resistance"
+        ]
+      }
+    ],
+    "implicits": [],
+    "explicits": [
+      "+(60-80) to maximum Life",
+      "15% additional Physical Damage Reduction",
+      "-10% to all Elemental Resistances"
+    ],
+    "tags": [
+      "chaos",
+      "damage",
+      "life",
+      "physical",
+      "resistance"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "the_smiling_knight",
+    "name": "The Smiling Knight",
+    "baseType": "Cowled Helm",
+    "itemClass": "helmet",
+    "variants": [
+      {
+        "name": "Pre 0.1.1",
+        "mods": [
+          "(30-50)% increased Armour and Evasion"
+        ]
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "(150-200)% increased Armour and Evasion"
+        ]
+      }
+    ],
+    "implicits": [],
+    "explicits": [
+      "+(50-100) to Accuracy Rating",
+      "(15-25)% increased Critical Hit Chance",
+      "Aggravate Bleeding on targets you Critically Hit with Attacks"
+    ],
+    "tags": [
+      "attack",
+      "bleed",
+      "crit",
+      "evasion"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "the_three_dragons",
+    "name": "The Three Dragons",
+    "baseType": "Solid Mask",
+    "itemClass": "helmet",
+    "variants": [],
+    "implicits": [],
+    "explicits": [
+      "(40-60)% increased Evasion and Energy Shield",
+      "+(10-20)% to all Elemental Resistances",
+      "Fire Damage from Hits Contributes to Shock Chance instead of Flammability and Ignite Magnitudes",
+      "Cold Damage from Hits Contributes to Flammability and Ignite Magnitudes instead of Chill Magnitude or Freeze Buildup",
+      "Lightning Damage from Hits Contributes to Freeze Buildup instead of Shock Chance"
+    ],
+    "tags": [
+      "chill",
+      "cold",
+      "damage",
+      "es",
+      "evasion",
+      "fire",
+      "freeze",
+      "ignite",
+      "lightning",
+      "resistance",
+      "shock"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "the_vertex",
+    "name": "The Vertex",
+    "baseType": "Tribal Mask",
+    "itemClass": "helmet",
+    "source": "Drops from unique{Arbiter of Ash} in normal{The Burning Monolith}",
+    "variants": [
+      {
+        "name": "Pre 0.4.0",
+        "mods": [
+          "Equipment and Skill Gems have 50% reduced Attribute Requirements",
+          "(100-150)% increased Armour, Evasion and Energy Shield",
+          "You can Socket an additional copy of each Lineage Support Gem, in different Skills"
+        ]
+      },
+      {
+        "name": "Equipment",
+        "mods": [
+          "Equipment has no Attribute Requirements",
+          "(150-200)% increased Armour, Evasion and Energy Shield",
+          "You can Socket 2 additional copies of each Lineage Support Gem, in different Skills"
+        ]
+      },
+      {
+        "name": "Skill Gems",
+        "mods": [
+          "Skill Gems have no Attribute Requirements"
+        ]
+      },
+      {
+        "name": "Current",
+        "mods": []
+      }
+    ],
+    "implicits": [],
+    "explicits": [
+      "(100-150)% increased Evasion and Energy Shield",
+      "(20-30)% increased Critical Hit Chance",
+      "+(13-17)% to Chaos Resistance",
+      "]],",
+      "-- Helmet: Armour/Evasion/Energy Shield",
+      "[[",
+      "Solus Ipse",
+      "Grand Visage",
+      "+(60-100) to maximum Mana",
+      "25% increased Light Radius",
+      "Equipment and Skill Gems have 25% increased Attribute Requirements"
+    ],
+    "tags": [
+      "chaos",
+      "crit",
+      "es",
+      "evasion",
+      "mana",
+      "resistance"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "the_vile_knight",
+    "name": "The Vile Knight",
+    "baseType": "Shielded Helm",
+    "itemClass": "helmet",
+    "variants": [
+      {
+        "name": "Pre 0.1.1",
+        "mods": [
+          "+(40-60) to maximum Life"
+        ]
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "+100 to maximum Life"
+        ]
+      }
+    ],
+    "implicits": [],
+    "explicits": [
+      "(60-100)% increased Armour and Evasion",
+      "+(75-125) to Accuracy Rating",
+      "(10-15) Life Regeneration per second",
+      "Deal 4% increased Damage with Hits to Rare or Unique Enemies for each second they've ever been in your Presence, up to a maximum of 200%",
+      "]],",
+      "-- Helmet: Armour/Energy Shield",
+      "[[",
+      "Bronzebeard",
+      "Horned Crown",
+      "10% reduced Movement Speed",
+      "(50-100)% increased Armour and Energy Shield",
+      "(35-50)% reduced Effect of Chill on you",
+      "(35-50)% reduced Magnitude of Ignite on you",
+      "(35-50)% reduced effect of Shock on you"
+    ],
+    "tags": [
+      "chill",
+      "damage",
+      "es",
+      "evasion",
+      "ignite",
+      "life",
+      "shock",
+      "speed"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "thrillsteel",
+    "name": "Thrillsteel",
+    "baseType": "Spired Greathelm",
+    "itemClass": "helmet",
+    "variants": [],
+    "implicits": [],
+    "explicits": [
+      "Onslaught"
+    ],
+    "tags": [],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "veil_of_the_night",
+    "name": "Veil of the Night",
+    "baseType": "Martyr Crown",
+    "itemClass": "helmet",
+    "variants": [
+      {
+        "name": "Pre 0.1.1",
+        "mods": [
+          "(20-40)% increased Critical Hit Chance"
+        ]
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "(100-150)% increased Evasion and Energy Shield",
+          "(30-40)% increased Critical Hit Chance"
+        ]
+      }
+    ],
+    "implicits": [],
+    "explicits": [
+      "50% increased maximum Life",
+      "+(10-20) to all Attributes",
+      "40% reduced Light Radius",
+      "You have no Elemental Resistances",
+      "]],",
+      "-- Helmet: Evasion/Energy Shield",
+      "[[",
+      "Atsak's Sight",
+      "Veiled Mask",
+      "+(10-20) to Dexterity",
+      "+(10-20) to Intelligence",
+      "Critical Hits Poison the enemy"
+    ],
+    "tags": [
+      "crit",
+      "dexterity",
+      "es",
+      "evasion",
+      "intelligence",
+      "life",
+      "poison",
+      "resistance"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "visage_of_ayah",
+    "name": "Visage of Ayah",
+    "baseType": "Beaded Circlet",
+    "itemClass": "helmet",
+    "source": "Drops from unique{Kosis, The Revelation}",
+    "variants": [
+      {
+        "name": "Pre 0.1.1",
+        "mods": [
+          "(50-100)% increased Armour and Evasion"
+        ]
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "+(10-20)% to Lightning Resistance",
+          "(200-300)% increased Armour and Evasion"
+        ]
+      },
+      {
+        "name": "Pre 0.4.0",
+        "mods": []
+      }
+    ],
+    "implicits": [],
+    "explicits": [
+      "(50-80)% increased Energy Shield",
+      "(10-15)% increased Rarity of Items found",
+      "(20-30)% increased Critical Hit Chance",
+      "Eldritch Battery",
+      "]],",
+      "-- Helmet: Armour/Evasion",
+      "[[",
+      "Assailum",
+      "Closed Helm",
+      "+(200-400) to Accuracy Rating",
+      "(30-50)% increased Critical Hit Chance",
+      "Skills have a (100-150)% longer Perfect Timing window"
+    ],
+    "tags": [
+      "crit",
+      "es",
+      "evasion",
+      "lightning",
+      "rarity",
+      "resistance"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "wings_of_caelyn",
+    "name": "Wings of Caelyn",
+    "baseType": "Rusted Greathelm",
+    "itemClass": "helmet",
+    "variants": [
+      {
+        "name": "Pre 0.1.1",
+        "mods": []
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "+20 to Armour"
+        ]
+      }
+    ],
+    "implicits": [],
+    "explicits": [
+      "(5-15)% increased Rarity of Items found",
+      "+(20-30) to Dexterity",
+      "Gain 1 Rage on Melee Hit",
+      "Every Rage also grants 1% increased Stun Threshold",
+      "]],",
+      "-- Helmet: Evasion",
+      "[[",
+      "Alpha's Howl",
+      "Armoured Cap",
+      "(80-100)% increased Evasion Rating",
+      "+100 to Spirit",
+      "+(50-75)% to Cold Resistance",
+      "Presence Radius is doubled"
+    ],
+    "tags": [
+      "cold",
+      "dexterity",
+      "evasion",
+      "rarity",
+      "resistance"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "controlled_metamorphosis",
+    "name": "Controlled Metamorphosis",
+    "baseType": "Diamond",
+    "itemClass": "jewel",
+    "source": "Drops from unique{Xesht, We That Are One} in normal{Twisted Domain}",
+    "variants": [
+      {
+        "name": "Very Small Ring",
+        "mods": [
+          "Only affects Passives in Very Small Ring"
+        ]
+      },
+      {
+        "name": "Small Ring",
+        "mods": [
+          "Only affects Passives in Small Ring"
+        ]
+      },
+      {
+        "name": "Medium-Small Ring",
+        "mods": [
+          "Only affects Passives in Medium-Small Ring"
+        ]
+      },
+      {
+        "name": "Medium Ring",
+        "mods": [
+          "Only affects Passives in Medium Ring"
+        ]
+      },
+      {
+        "name": "Medium-Large Ring",
+        "mods": [
+          "Only affects Passives in Medium-Large Ring"
+        ]
+      },
+      {
+        "name": "Large Ring",
+        "mods": [
+          "Only affects Passives in Large Ring"
+        ]
+      },
+      {
+        "name": "Very Large Ring",
+        "mods": [
+          "Only affects Passives in Very Large Ring"
+        ]
+      },
+      {
+        "name": "Massive Ring",
+        "mods": [
+          "Only affects Passives in Massive Ring"
+        ]
+      }
+    ],
+    "implicits": [],
+    "explicits": [
+      "Limited to: 1",
+      "Radius: Variable",
+      "Passives in Radius can be Allocated without being connected to your tree",
+      "-(20-5)% to all Elemental Resistances",
+      "-(23-3)% to Chaos Resistance"
+    ],
+    "tags": [
+      "chaos",
+      "resistance"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "grand_spectrum",
+    "name": "Grand Spectrum",
+    "baseType": "Ruby",
+    "itemClass": "jewel",
+    "variants": [],
+    "implicits": [],
+    "explicits": [
+      "Limited to: 3",
+      "2% increased Maximum Life per socketed Grand Spectrum"
+    ],
+    "tags": [
+      "life"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "grand_spectrum",
+    "name": "Grand Spectrum",
+    "baseType": "Emerald",
+    "itemClass": "jewel",
+    "variants": [],
+    "implicits": [],
+    "explicits": [
+      "Limited to: 3",
+      "2% increased Spirit per socketed Grand Spectrum"
+    ],
+    "tags": [],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "grand_spectrum",
+    "name": "Grand Spectrum",
+    "baseType": "Sapphire",
+    "itemClass": "jewel",
+    "source": "Drops from unique{Olroth, Origin of the Fall}",
+    "variants": [
+      {
+        "name": "Pre 0.4.0",
+        "mods": [
+          "+4% to all Elemental Resistances per socketed Grand Spectrum",
+          "Remembrancing (100-8000) songworthy deeds by the line of Vorana"
+        ]
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "+6% to all Elemental Resistances per socketed Grand Spectrum",
+          "Remembrancing (100-8000) songworthy deeds by the line of Medved"
+        ]
+      },
+      {
+        "name": "Vorana",
+        "mods": [
+          "Remembrancing (100-8000) songworthy deeds by the line of Olroth"
+        ]
+      },
+      {
+        "name": "Medved",
+        "mods": []
+      },
+      {
+        "name": "Olroth",
+        "mods": []
+      }
+    ],
+    "implicits": [],
+    "explicits": [
+      "Limited to: 3",
+      "]],",
+      "-- Jewel: Timeless",
+      "[[",
+      "Heroic Tragedy",
+      "Timeless Jewel",
+      "Limited to: 1 Historic",
+      "Radius: Very Large",
+      "Passives in radius are Conquered by the Kalguur",
+      "Historic"
+    ],
+    "tags": [
+      "resistance"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "undying_hate",
+    "name": "Undying Hate",
+    "baseType": "Timeless Jewel",
+    "itemClass": "jewel",
+    "source": "Drops from unique{Vessel of Kulemak}",
+    "variants": [
+      {
+        "name": "Amanamu",
+        "mods": [
+          "Glorifying the defilement of (100-8000) souls in tribute to Amanamu"
+        ]
+      },
+      {
+        "name": "Kulemak",
+        "mods": [
+          "Glorifying the defilement of (100-8000) souls in tribute to Kulemak"
+        ]
+      },
+      {
+        "name": "Kurgal",
+        "mods": [
+          "Glorifying the defilement of (100-8000) souls in tribute to Kurgal"
+        ]
+      },
+      {
+        "name": "Tecrod",
+        "mods": [
+          "Glorifying the defilement of (100-8000) souls in tribute to Tecrod"
+        ]
+      },
+      {
+        "name": "Ulaman",
+        "mods": [
+          "Glorifying the defilement of (100-8000) souls in tribute to Ulaman"
+        ]
+      }
+    ],
+    "implicits": [],
+    "explicits": [
+      "Limited to: 1 Historic",
+      "Radius: Very Large",
+      "Passives in radius are Conquered by the Abyssals",
+      "Historic"
+    ],
+    "tags": [],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "chober_chaber",
+    "name": "Chober Chaber",
+    "baseType": "Leaden Greathammer",
+    "itemClass": "mace",
+    "variants": [
+      {
+        "name": "Pre 0.1.1",
+        "mods": [
+          "(80-120)% increased Physical Damage",
+          "+5% to Critical Hit Chance"
+        ]
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "Adds (58-65) to (102-110) Physical Damage",
+          "+50 to Spirit"
+        ]
+      }
+    ],
+    "implicits": [],
+    "explicits": [
+      "+100 Intelligence Requirement",
+      "+(80-100) to maximum Mana",
+      "Increases and Reductions to Minion Damage also affect you"
+    ],
+    "tags": [
+      "crit",
+      "damage",
+      "intelligence",
+      "mana",
+      "minion",
+      "physical"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "frostbreath",
+    "name": "Frostbreath",
+    "baseType": "Slim Mace",
+    "itemClass": "mace",
+    "variants": [
+      {
+        "name": "Pre 0.1.1",
+        "mods": [
+          "Adds (4-6) to (8-12) Physical Damage",
+          "Adds (4-6) to (8-12) Cold Damage"
+        ]
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "Adds (8-12) to (16-20) Physical Damage",
+          "Adds (8-12) to (16-20) Cold Damage",
+          "+5% to Critical Hit Chance"
+        ]
+      }
+    ],
+    "implicits": [],
+    "explicits": [
+      "All Damage from Hits with this Weapon Contributes to Freeze Buildup",
+      "Culling Strike against Frozen Enemies"
+    ],
+    "tags": [
+      "cold",
+      "crit",
+      "damage",
+      "freeze",
+      "physical"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "hoghunt",
+    "name": "Hoghunt",
+    "baseType": "Felled Greatclub",
+    "itemClass": "mace",
+    "variants": [
+      {
+        "name": "Pre 0.1.1",
+        "mods": [
+          "(100-150)% increased Physical Damage"
+        ]
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "Adds (16-20) to (23-27) Physical Damage"
+        ]
+      }
+    ],
+    "implicits": [],
+    "explicits": [
+      "+15% to Critical Hit Chance",
+      "10% reduced Attack Speed",
+      "+10 to Strength",
+      "Maim on Critical Hit"
+    ],
+    "tags": [
+      "attack",
+      "conditional",
+      "crit",
+      "damage",
+      "on_crit",
+      "physical",
+      "speed",
+      "strength"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": [
+      {
+        "condition": "on_crit",
+        "effect": "Maim on Critical Hit",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": "hrimnor_s_hymn",
+    "name": "Hrimnor's Hymn",
+    "baseType": "Oak Greathammer",
+    "itemClass": "mace",
+    "variants": [
+      {
+        "name": "Pre 0.1.1",
+        "mods": [
+          "(60-80)% increased Physical Damage"
+        ]
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "(80-120)% increased Physical Damage"
+        ]
+      }
+    ],
+    "implicits": [
+      "Causes (20-40)% increased Stun Buildup",
+      "+(10-15) to Strength",
+      "Gain (10-20) Life per enemy killed",
+      "Slam Skills you use yourself cause an additional Aftershock"
+    ],
+    "explicits": [],
+    "tags": [
+      "damage",
+      "life",
+      "physical",
+      "strength"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "marohi_erqi",
+    "name": "Marohi Erqi",
+    "baseType": "Totemic Greatclub",
+    "itemClass": "mace",
+    "league": "Rise of the Abyssal",
+    "variants": [],
+    "implicits": [
+      "Crushes Enemies on Hit",
+      "+150 Strength Requirement",
+      "(600-700)% increased Physical Damage",
+      "-(300-200) to Accuracy Rating",
+      "35% reduced Attack Speed"
+    ],
+    "explicits": [
+      "Causes (40-60)% increased Stun Buildup",
+      "Heavy Stuns Enemies that are on Full Life"
+    ],
+    "tags": [
+      "attack",
+      "conditional",
+      "damage",
+      "life",
+      "on_full_life",
+      "on_hit",
+      "physical",
+      "speed",
+      "strength"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": [
+      {
+        "condition": "on_hit",
+        "effect": "Crushes Enemies on Hit",
+        "tags": []
+      },
+      {
+        "condition": "on_full_life",
+        "effect": "Heavy Stuns Enemies that are on Full Life",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": "mj_lner",
+    "name": "Mjölner",
+    "baseType": "Torment Club",
+    "itemClass": "mace",
+    "league": "Dawn of the Hunt",
+    "variants": [
+      {
+        "name": "Pre 0.2.1",
+        "mods": [
+          "(150-200)% increased Physical Damage",
+          "+1 to Level of all Lightning Skills"
+        ]
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "(250-350)% increased Physical Damage",
+          "+(2-4) to Level of all Lightning Skills"
+        ]
+      }
+    ],
+    "implicits": [
+      "Grants Skill: Level (1-20) Thundergod's Wrath",
+      "+200 Intelligence Requirement",
+      "+100 Strength Requirement",
+      "(10-20)% increased Attack Speed"
+    ],
+    "explicits": [],
+    "tags": [
+      "attack",
+      "boosts_lightning_skills",
+      "boosts_skill_level",
+      "damage",
+      "grants_skill",
+      "grants_thundergod_s_wrath",
+      "intelligence",
+      "lightning",
+      "physical",
+      "speed",
+      "strength"
+    ],
+    "grantedSkills": [
+      {
+        "skillName": "Thundergod's Wrath",
+        "minLevel": 1,
+        "maxLevel": 20
+      }
+    ],
+    "skillLevelBoosts": [
+      {
+        "skillTypes": [
+          "lightning"
+        ],
+        "bonus": 1
+      }
+    ],
+    "conditionalMods": []
+  },
+  {
+    "id": "nebuloch",
+    "name": "Nebuloch",
+    "baseType": "Brigand Mace",
+    "itemClass": "mace",
+    "league": "Dawn of the Hunt",
+    "variants": [],
+    "implicits": [],
+    "explicits": [
+      "Adds (39-48) to (69-79) Physical Damage",
+      "+(20-30)% to Critical Damage Bonus",
+      "Adds (25-36) to (44-55) Chaos damage",
+      "Attacks consume an Endurance Charge to Critically Hit",
+      "Take 100 Chaos damage per second per Endurance Charge"
+    ],
+    "tags": [
+      "attack",
+      "chaos",
+      "crit",
+      "damage",
+      "physical"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "olrovasara",
+    "name": "Olrovasara",
+    "baseType": "Torment Club",
+    "itemClass": "mace",
+    "source": "Drops from unique{Olroth, Origin of the Fall}",
+    "variants": [
+      {
+        "name": "Pre 0.2.0",
+        "mods": [
+          "Adds 1 to (60-80) Lightning Damage"
+        ]
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "Adds 1 to (80-120) Lightning Damage"
+        ]
+      }
+    ],
+    "implicits": [],
+    "explicits": [
+      "+(300-400) to Accuracy Rating",
+      "(5-30)% increased Attack Speed",
+      "On Hitting an enemy, gains maximum added Lightning damage equal to",
+      "the enemy's Power for 20 seconds, up to a total of 500"
+    ],
+    "tags": [
+      "attack",
+      "conditional",
+      "damage",
+      "lightning",
+      "on_hit",
+      "speed"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": [
+      {
+        "condition": "on_hit",
+        "effect": "On Hitting an enemy, gains maximum added Lightning damage equal to",
+        "tags": [
+          "lightning"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "quecholli",
+    "name": "Quecholli",
+    "baseType": "Crumbling Maul",
+    "itemClass": "mace",
+    "variants": [],
+    "implicits": [
+      "Causes Enemies to Explode on Critical kill, for 10% of their Life as Physical Damage",
+      "(80-120)% increased Physical Damage",
+      "+(10-15) to all Attributes",
+      "Gain 30 Life per enemy killed",
+      "This Weapon's Critical Hit Chance is 100%"
+    ],
+    "explicits": [
+      "Critical Hits do not deal extra Damage"
+    ],
+    "tags": [
+      "crit",
+      "damage",
+      "life",
+      "physical"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "sculpted_suffering",
+    "name": "Sculpted Suffering",
+    "baseType": "Warpick",
+    "itemClass": "mace",
+    "league": "Dawn of the Hunt",
+    "variants": [
+      {
+        "name": "Pre 0.3.0",
+        "mods": [
+          "+(10-15)% to Critical Damage Bonus"
+        ]
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "+(5-10)% to Critical Damage Bonus"
+        ]
+      }
+    ],
+    "implicits": [
+      "Adds (21-26) to (25-31) Physical Damage",
+      "(10-15)% increased Attack Speed",
+      "Breaks Armour equal to 40% of damage from Hits with this weapon",
+      "Fully Armour Broken enemies you kill with Hits Shatter"
+    ],
+    "explicits": [],
+    "tags": [
+      "attack",
+      "crit",
+      "damage",
+      "physical",
+      "speed"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "seeing_stars",
+    "name": "Seeing Stars",
+    "baseType": "{variant:1,2}Plated Mace",
+    "itemClass": "mace",
+    "variants": [
+      {
+        "name": "Pre 0.1.1",
+        "mods": [
+          "Adds (9-12) to (18-22) Cold Damage",
+          "Adds 1 to (30-35) Lightning Damage"
+        ]
+      },
+      {
+        "name": "Pre 0.4.0",
+        "mods": [
+          "Adds (12-16) to (22-25) Cold Damage",
+          "Adds 1 to (40-45) Lightning Damage"
+        ]
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "Adds (24-31) to (36-46) Cold Damage",
+          "Adds (1-5) to (66-90) Lightning Damage"
+        ]
+      }
+    ],
+    "implicits": [],
+    "explicits": [
+      "Marching Mace",
+      "(10-20)% increased Attack Speed",
+      "Energy Generation is doubled"
+    ],
+    "tags": [
+      "attack",
+      "cold",
+      "damage",
+      "lightning",
+      "speed"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "shyaba",
+    "name": "Shyaba",
+    "baseType": "Temple Maul",
+    "itemClass": "mace",
+    "league": "Dawn of the Hunt",
+    "variants": [],
+    "implicits": [],
+    "explicits": [
+      "+50 Dexterity Requirement",
+      "-15 Strength Requirement",
+      "(80-120)% increased Physical Damage",
+      "50% increased Attack Speed",
+      "(15-25)% increased Light Radius",
+      "Always Hits"
+    ],
+    "tags": [
+      "attack",
+      "damage",
+      "dexterity",
+      "physical",
+      "speed",
+      "strength"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "the_empty_roar",
+    "name": "The Empty Roar",
+    "baseType": "Cultist Greathammer",
+    "itemClass": "mace",
+    "league": "Dawn of the Hunt",
+    "variants": [],
+    "implicits": [
+      "Strikes deal Splash Damage",
+      "Adds (25-35) to (40-50) Physical Damage",
+      "Leeches 10% of Physical Damage as Life",
+      "(10-20)% chance to cause Bleeding on Hit",
+      "All Attacks count as Empowered Attacks"
+    ],
+    "explicits": [
+      "Cannot use Warcries"
+    ],
+    "tags": [
+      "attack",
+      "bleed",
+      "conditional",
+      "damage",
+      "life",
+      "on_hit",
+      "physical"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": [
+      {
+        "condition": "on_hit",
+        "effect": "(10-20)% chance to cause Bleeding on Hit",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": "the_hammer_of_faith",
+    "name": "The Hammer of Faith",
+    "baseType": "Giant Maul",
+    "itemClass": "mace",
+    "league": "Dawn of the Hunt",
+    "variants": [
+      {
+        "name": "Pre 0.2.1",
+        "mods": [
+          "(200-250)% increased Physical Damage"
+        ]
+      },
+      {
+        "name": "Pre 0.4.0",
+        "mods": [
+          "(250-300)% increased Physical Damage"
+        ]
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "(300-350)% increased Physical Damage"
+        ]
+      }
+    ],
+    "implicits": [],
+    "explicits": [
+      "10% reduced Attack Speed",
+      "+10% to all Elemental Resistances",
+      "50% increased Mana Regeneration Rate",
+      "{variant:1,2,3}Every 10 seconds, gain a random non-damaging Shrine buff for 20 seconds"
+    ],
+    "tags": [
+      "attack",
+      "damage",
+      "mana",
+      "physical",
+      "resistance",
+      "speed"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "tidebreaker",
+    "name": "Tidebreaker",
+    "baseType": "Pointed Maul",
+    "itemClass": "mace",
+    "league": "Dawn of the Hunt",
+    "variants": [],
+    "implicits": [],
+    "explicits": [
+      "(120-150)% increased Physical Damage",
+      "+(2-3) to Level of all Melee Skills",
+      "+(20-30) to Intelligence",
+      "Causes (150-200)% increased Stun Buildup",
+      "All Damage from Hits with this Weapon Contributes to Chill Magnitude"
+    ],
+    "tags": [
+      "chill",
+      "damage",
+      "intelligence",
+      "physical"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "trenchtimbre",
+    "name": "Trenchtimbre",
+    "baseType": "Spiked Club",
+    "itemClass": "mace",
+    "variants": [
+      {
+        "name": "Pre 0.1.1",
+        "mods": [
+          "Adds (10-12) to (18-35) Physical Damage"
+        ]
+      },
+      {
+        "name": "Pre 0.2.0",
+        "mods": [
+          "+(1-3) to Level of all Minion Skills"
+        ]
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "+(1-2) to Level of all Minion Skills"
+        ]
+      }
+    ],
+    "implicits": [],
+    "explicits": [
+      "{variant:2,3}Adds (13-15) to (22-25) Physical Damage",
+      "(20-30)% increased Attack Speed",
+      "Increases and Reductions to Minion Attack Speed also affect you"
+    ],
+    "tags": [
+      "attack",
+      "damage",
+      "minion",
+      "physical",
+      "speed"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "trephina",
+    "name": "Trephina",
+    "baseType": "Forge Maul",
+    "itemClass": "mace",
+    "variants": [
+      {
+        "name": "Pre 0.1.1",
+        "mods": [
+          "Adds (7-10) to (12-18) Physical Damage"
+        ]
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "Adds (12-15) to (22-25) Physical Damage"
+        ]
+      }
+    ],
+    "implicits": [],
+    "explicits": [
+      "(10-15)% increased Attack Speed",
+      "Causes (30-50)% increased Stun Buildup",
+      "Always deals Critical Hits against Heavy Stunned Enemies"
+    ],
+    "tags": [
+      "attack",
+      "crit",
+      "damage",
+      "physical",
+      "speed"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "wylund_s_stake",
+    "name": "Wylund's Stake",
+    "baseType": "Smithing Hammer",
+    "itemClass": "mace",
+    "source": "No longer obtainable",
+    "variants": [
+      {
+        "name": "Pre 0.1.1",
+        "mods": [
+          "Adds (2-3) to (4-5) Physical Damage",
+          "Adds (2-3) to (4-5) Fire Damage",
+          "Adds (10-12) to (18-22) Physical Damage",
+          "Adds 1 to (36-42) Lightning Damage"
+        ]
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "Adds (4-6) to (8-10) Physical Damage",
+          "Adds (4-6) to (8-10) Fire Damage",
+          "+(10-20) to Strength",
+          "+(20-30)% to Fire Resistance",
+          "Adds (18-22) to (24-28) Physical Damage",
+          "Adds 1 to (50-55) Lightning Damage"
+        ]
+      }
+    ],
+    "implicits": [],
+    "explicits": [
+      "Hits Break (30-50) Armour",
+      "Inflicts Fire Exposure when this Weapon Fully Breaks Armour",
+      "]],",
+      "-- Weapon: Two Handed Mace",
+      "[[",
+      "Brain Rattler",
+      "Studded Greatclub",
+      "(10-15)% increased Attack Speed",
+      "All damage with this Weapon causes Electrocution buildup"
+    ],
+    "tags": [
+      "attack",
+      "damage",
+      "fire",
+      "lightning",
+      "physical",
+      "resistance",
+      "speed",
+      "strength"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "beyond_reach",
+    "name": "Beyond Reach",
+    "baseType": "Visceral Quiver",
+    "itemClass": "quiver",
+    "source": "Drops from unique{Xesht, We That Are One} in normal{Twisted Domain}",
+    "variants": [],
+    "implicits": [
+      "(20-30)% increased Critical Hit Chance for Attacks",
+      "(10-15)% reduced Attack Speed",
+      "Chaos Damage from Hits also Contributes to Freeze Buildup",
+      "Chaos Damage from Hits also Contributes to Electrocute Buildup",
+      "Attacks Gain (10-20)% of Physical Damage as extra Chaos Damage"
+    ],
+    "explicits": [],
+    "tags": [
+      "attack",
+      "chaos",
+      "crit",
+      "damage",
+      "freeze",
+      "physical",
+      "speed"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "blackgleam",
+    "name": "Blackgleam",
+    "baseType": "Fire Quiver",
+    "itemClass": "quiver",
+    "variants": [
+      {
+        "name": "Pre 0.1.1",
+        "mods": []
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "Adds (3-5) to (6-9) Fire damage to Attacks"
+        ]
+      }
+    ],
+    "implicits": [
+      "Adds 3 to 5 Fire damage to Attacks",
+      "+(30-50) to maximum Mana",
+      "50% increased Flammability Magnitude",
+      "Projectiles Pierce all Ignited enemies",
+      "Attacks Gain (5-10)% of Damage as Extra Fire Damage"
+    ],
+    "explicits": [],
+    "tags": [
+      "attack",
+      "damage",
+      "fire",
+      "ignite",
+      "mana"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "cadiro_s_gambit",
+    "name": "Cadiro's Gambit",
+    "baseType": "Primed Quiver",
+    "itemClass": "quiver",
+    "league": "Dawn of the Hunt",
+    "variants": [],
+    "implicits": [],
+    "explicits": [
+      "(7-10)% increased Attack Speed",
+      "Each Arrow fired is a Crescendo, Splinter, Reversing, Diamond, Covetous, or Blunt Arrow"
+    ],
+    "tags": [
+      "attack",
+      "speed"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "murkshaft",
+    "name": "Murkshaft",
+    "baseType": "Toxic Quiver",
+    "itemClass": "quiver",
+    "league": "Dawn of the Hunt",
+    "variants": [],
+    "implicits": [
+      "Grants Skill: Level (1-20) Bursting Fen Toad",
+      "(20-30)% chance to Poison on Hit with Attacks",
+      "Adds (6-10) to (13-17) Physical Damage to Attacks",
+      "Gain (10-15) Mana per enemy killed",
+      "(10-20)% increased Poison Duration"
+    ],
+    "explicits": [
+      "(20-30)% chance to Poison on Hit with Attacks",
+      "Blind Targets when you Poison them"
+    ],
+    "tags": [
+      "attack",
+      "conditional",
+      "damage",
+      "grants_bursting_fen_toad",
+      "grants_skill",
+      "mana",
+      "on_hit",
+      "physical",
+      "poison"
+    ],
+    "grantedSkills": [
+      {
+        "skillName": "Bursting Fen Toad",
+        "minLevel": 1,
+        "maxLevel": 20
+      }
+    ],
+    "skillLevelBoosts": [],
+    "conditionalMods": [
+      {
+        "condition": "on_hit",
+        "effect": "(20-30)% chance to Poison on Hit with Attacks",
+        "tags": []
+      },
+      {
+        "condition": "on_hit",
+        "effect": "(20-30)% chance to Poison on Hit with Attacks",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": "rearguard",
+    "name": "Rearguard",
+    "baseType": "Blunt Quiver",
+    "itemClass": "quiver",
+    "league": "Dawn of the Hunt",
+    "variants": [
+      {
+        "name": "Pre 0.3.0",
+        "mods": [
+          "(20-30)% increased Stun Buildup"
+        ]
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "(25-40)% increased Stun Buildup"
+        ]
+      }
+    ],
+    "implicits": [
+      "Adds (7-11) to (14-20) Physical Damage to Attacks",
+      "+(150-200) to Armour",
+      "(20-30)% increased Projectile Speed",
+      "+(15-25)% to Block chance"
+    ],
+    "explicits": [],
+    "tags": [
+      "attack",
+      "damage",
+      "physical",
+      "speed"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "the_lethal_draw",
+    "name": "The Lethal Draw",
+    "baseType": "Sacral Quiver",
+    "itemClass": "quiver",
+    "league": "Dawn of the Hunt",
+    "variants": [
+      {
+        "name": "Pre 0.4.0",
+        "mods": [
+          "Bow Attacks consume 10% of your maximum Life Flask Charges if possible to deal added Physical damage equal to 5% of Flask's Life Recovery amount"
+        ]
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "Bow Attacks consume 10% of your maximum Life Flask Charges if possible to deal added Physical damage equal to (5-10)% of Flask's Life Recovery amount"
+        ]
+      }
+    ],
+    "implicits": [
+      "Gain (2-3) Life per Enemy Hit with Attacks",
+      "(5-10)% increased Attack Speed",
+      "Gain 5 Life per Enemy Hit with Attacks",
+      "(15-25)% chance to Pierce an Enemy"
+    ],
+    "explicits": [],
+    "tags": [
+      "attack",
+      "damage",
+      "life",
+      "physical",
+      "speed"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "blackflame",
+    "name": "Blackflame",
+    "baseType": "Amethyst Ring",
+    "itemClass": "ring",
+    "variants": [],
+    "implicits": [
+      "+(7-13)% to Chaos Resistance",
+      "(15-30)% increased Mana Regeneration Rate",
+      "50% increased Ignite Magnitude",
+      "50% reduced Ignite Duration on Enemies",
+      "Enemies Ignited by you take Chaos Damage instead of Fire Damage from Ignite"
+    ],
+    "explicits": [],
+    "tags": [
+      "chaos",
+      "damage",
+      "fire",
+      "ignite",
+      "mana",
+      "resistance"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "blackheart",
+    "name": "Blackheart",
+    "baseType": "Iron Ring",
+    "itemClass": "ring",
+    "variants": [
+      {
+        "name": "Pre 0.1.1",
+        "mods": [
+          "Adds (2-3) to (4-5) Chaos Damage to Attacks"
+        ]
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "Adds (4-6) to (8-10) Chaos Damage to Attacks"
+        ]
+      }
+    ],
+    "implicits": [
+      "Adds 1 to 4 Physical Damage to Attacks",
+      "(3-6) Life Regeneration per second",
+      "25% chance to Intimidate Enemies for 4 seconds on Hit"
+    ],
+    "explicits": [],
+    "tags": [
+      "attack",
+      "chaos",
+      "conditional",
+      "damage",
+      "life",
+      "on_hit",
+      "physical"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": [
+      {
+        "condition": "on_hit",
+        "effect": "25% chance to Intimidate Enemies for 4 seconds on Hit",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": "blistering_bond",
+    "name": "Blistering Bond",
+    "baseType": "Ruby Ring",
+    "itemClass": "ring",
+    "variants": [],
+    "implicits": [
+      "+(20-30)% to Fire Resistance",
+      "+(40-60) to maximum Life",
+      "+(20-30)% to Fire Resistance",
+      "-(15-10)% to Cold Resistance",
+      "You take Fire Damage instead of Physical Damage from Bleeding"
+    ],
+    "explicits": [],
+    "tags": [
+      "bleed",
+      "cold",
+      "damage",
+      "fire",
+      "life",
+      "physical",
+      "resistance"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "bursting_decay",
+    "name": "Bursting Decay",
+    "baseType": "Unset Ring",
+    "itemClass": "ring",
+    "requiredLevel": 60,
+    "league": "Dawn of the Hunt",
+    "variants": [],
+    "implicits": [
+      "Grants 1 additional Skill Slot",
+      "(15-25)% increased Rarity of Items found",
+      "+(17-23)% to Chaos Resistance",
+      "Lose 5% of maximum Life per second",
+      "Attacks have added Physical damage equal to 3% of maximum Life"
+    ],
+    "explicits": [],
+    "tags": [
+      "attack",
+      "chaos",
+      "damage",
+      "life",
+      "physical",
+      "rarity",
+      "resistance"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "call_of_the_brotherhood",
+    "name": "Call of the Brotherhood",
+    "baseType": "Topaz Ring",
+    "itemClass": "ring",
+    "requiredLevel": 32,
+    "variants": [],
+    "implicits": [
+      "+(20-30)% to Lightning Resistance",
+      "+(10-20) to Intelligence",
+      "(25-35)% increased Mana Regeneration Rate",
+      "(20-30)% increased Freeze Buildup",
+      "100% of Lightning Damage Converted to Cold Damage"
+    ],
+    "explicits": [],
+    "tags": [
+      "attribute",
+      "cold",
+      "damage",
+      "freeze",
+      "intelligence",
+      "lightning",
+      "mana",
+      "resistance"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "cracklecreep",
+    "name": "Cracklecreep",
+    "baseType": "Ruby Ring",
+    "itemClass": "ring",
+    "variants": [],
+    "implicits": [
+      "+(20-30)% to Fire Resistance",
+      "(20-30)% increased Fire Damage",
+      "(3.1-6) Life Regeneration per second",
+      "(20-30)% increased Mana Regeneration Rate",
+      "Ignites you inflict spread to other Enemies that stay within 1.5 metres for 1 second"
+    ],
+    "explicits": [],
+    "tags": [
+      "damage",
+      "fire",
+      "ignite",
+      "life",
+      "mana",
+      "resistance"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "death_rush",
+    "name": "Death Rush",
+    "baseType": "Emerald Ring",
+    "itemClass": "ring",
+    "variants": [],
+    "implicits": [
+      "+(120-160) to Accuracy Rating",
+      "+(75-125) to Accuracy Rating",
+      "+(75-125) to Evasion Rating",
+      "Leech 5% of Physical Attack Damage as Life",
+      "You gain Onslaught for 4 seconds on Kill"
+    ],
+    "explicits": [],
+    "tags": [
+      "attack",
+      "conditional",
+      "damage",
+      "defences",
+      "evasion",
+      "life",
+      "on_kill",
+      "physical"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": [
+      {
+        "condition": "on_kill",
+        "effect": "You gain Onslaught for 4 seconds on Kill",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": "doedre_s_damning",
+    "name": "Doedre's Damning",
+    "baseType": "Lazuli Ring",
+    "itemClass": "ring",
+    "variants": [],
+    "implicits": [
+      "+(20-30) to maximum Mana",
+      "+(5-15)% to all Elemental Resistances",
+      "Gain (1-10) Mana per enemy killed",
+      "You can apply an additional Curse"
+    ],
+    "explicits": [],
+    "tags": [
+      "caster",
+      "cold",
+      "curse",
+      "fire",
+      "lightning",
+      "mana",
+      "resistance"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "dream_fragments",
+    "name": "Dream Fragments",
+    "baseType": "Sapphire Ring",
+    "itemClass": "ring",
+    "variants": [
+      {
+        "name": "Pre 0.2.0",
+        "mods": [
+          "20% increased maximum Mana"
+        ]
+      },
+      {
+        "name": "Pre 0.4.0",
+        "mods": [
+          "10% increased maximum Mana"
+        ]
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "(10-15)% increased maximum Mana"
+        ]
+      }
+    ],
+    "implicits": [
+      "+(20-30)% to Cold Resistance",
+      "(30-50)% increased Mana Regeneration Rate",
+      "You cannot be Chilled or Frozen"
+    ],
+    "explicits": [],
+    "tags": [
+      "chill",
+      "cold",
+      "mana",
+      "resistance"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "evergrasping_ring",
+    "name": "Evergrasping Ring",
+    "baseType": "Pearl Ring",
+    "itemClass": "ring",
+    "league": "Dawn of the Hunt",
+    "variants": [],
+    "implicits": [
+      "(7-10)% increased Cast Speed",
+      "+(60-100) to maximum Mana",
+      "Allies in your Presence Gain (15-25)% of Damage as Extra Chaos Damage",
+      "Enemies in your Presence Gain (6-12)% of Damage as Extra Chaos Damage"
+    ],
+    "explicits": [],
+    "tags": [
+      "caster",
+      "chaos",
+      "damage",
+      "mana",
+      "speed"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "gifts_from_above",
+    "name": "Gifts from Above",
+    "baseType": "Prismatic Ring",
+    "itemClass": "ring",
+    "league": "Dawn of the Hunt",
+    "variants": [],
+    "implicits": [
+      "+(7-10)% to all Elemental Resistances",
+      "(20-30)% increased Critical Hit Chance",
+      "(20-30)% increased Light Radius",
+      "(20-30)% increased Rarity of Items Dropped by Enemies killed with a Critical Hit",
+      "You have Consecrated Ground around you while stationary"
+    ],
+    "explicits": [],
+    "tags": [
+      "cold",
+      "crit",
+      "fire",
+      "lightning",
+      "rarity",
+      "resistance"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "glowswarm",
+    "name": "Glowswarm",
+    "baseType": "Lazuli Ring",
+    "itemClass": "ring",
+    "variants": [],
+    "implicits": [
+      "+(20-30) to maximum Mana",
+      "+(40-60) to maximum Mana",
+      "(20-30)% increased Flask Mana Recovery rate",
+      "Mana Flasks gain (0.17-0.25) charges per Second"
+    ],
+    "explicits": [],
+    "tags": [
+      "mana"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "heartbound_loop",
+    "name": "Heartbound Loop",
+    "baseType": "Pearl Ring",
+    "itemClass": "ring",
+    "variants": [],
+    "implicits": [
+      "(7-10)% increased Cast Speed",
+      "Minions have (10-15)% increased maximum Life",
+      "(10-15) Life Regeneration per second",
+      "(20-40)% increased Mana Regeneration Rate",
+      "300 Physical Damage taken on Minion Death"
+    ],
+    "explicits": [
+      "Minions Revive (10-15)% faster"
+    ],
+    "tags": [
+      "caster",
+      "damage",
+      "life",
+      "mana",
+      "minion",
+      "physical",
+      "speed"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "icefang_orbit",
+    "name": "Icefang Orbit",
+    "baseType": "Iron Ring",
+    "itemClass": "ring",
+    "requiredLevel": 36,
+    "league": "Dawn of the Hunt",
+    "variants": [],
+    "implicits": [
+      "Adds 1 to 4 Physical Damage to Attacks",
+      "Adds (5-7) to (9-13) Physical Damage to Attacks",
+      "+(20-30) to Dexterity",
+      "(10-20)% chance to Poison on Hit",
+      "All Damage taken from Hits while Poisoned Contributes to Magnitude of Chill on you"
+    ],
+    "explicits": [
+      "All Damage from Hits against Poisoned targets Contributes to Chill Magnitude",
+      "(15-25)% increased Magnitude of Poison you inflict"
+    ],
+    "tags": [
+      "attack",
+      "attribute",
+      "chill",
+      "cold",
+      "conditional",
+      "damage",
+      "dexterity",
+      "on_hit",
+      "physical",
+      "poison",
+      "while_poisoned"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": [
+      {
+        "condition": "on_hit",
+        "effect": "(10-20)% chance to Poison on Hit",
+        "tags": []
+      },
+      {
+        "condition": "while_poisoned",
+        "effect": "All Damage taken from Hits while Poisoned Contributes to Magnitude of Chill on you",
+        "tags": [
+          "cold"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "kalandra_s_touch",
+    "name": "Kalandra's Touch",
+    "baseType": "Ring",
+    "itemClass": "ring",
+    "variants": [],
+    "implicits": [],
+    "explicits": [
+      "Reflects opposite Ring",
+      "Mirrored"
+    ],
+    "tags": [],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "levinstone",
+    "name": "Levinstone",
+    "baseType": "Topaz Ring",
+    "itemClass": "ring",
+    "variants": [],
+    "implicits": [
+      "+(20-30)% to Lightning Resistance",
+      "+(40-60) to maximum Mana",
+      "(10-20)% increased chance to Shock",
+      "+1 to Level of all Lightning Skills"
+    ],
+    "explicits": [],
+    "tags": [
+      "boosts_lightning_skills",
+      "boosts_skill_level",
+      "lightning",
+      "mana",
+      "resistance",
+      "shock"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [
+      {
+        "skillTypes": [
+          "lightning"
+        ],
+        "bonus": 1
+      }
+    ],
+    "conditionalMods": []
+  },
+  {
+    "id": "ming_s_heart",
+    "name": "Ming's Heart",
+    "baseType": "Amethyst Ring",
+    "itemClass": "ring",
+    "variants": [],
+    "implicits": [
+      "+(7-13)% to Chaos Resistance",
+      "20% reduced maximum Life",
+      "Gain (30-40)% of Damage as Extra Chaos Damage",
+      "30% reduced Global Defences"
+    ],
+    "explicits": [],
+    "tags": [
+      "chaos",
+      "damage",
+      "defences",
+      "life",
+      "resistance"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "original_sin",
+    "name": "Original Sin",
+    "baseType": "Amethyst Ring",
+    "itemClass": "ring",
+    "variants": [
+      {
+        "name": "Pre 0.1.1",
+        "mods": [
+          "Chaos Resistance is zero"
+        ]
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "+(17-23)% to Chaos Resistance"
+        ]
+      }
+    ],
+    "implicits": [
+      "+(7-13)% to Chaos Resistance",
+      "100% of Elemental Damage Converted to Chaos Damage"
+    ],
+    "explicits": [],
+    "tags": [
+      "chaos",
+      "damage",
+      "resistance"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "perandus_seal",
+    "name": "Perandus Seal",
+    "baseType": "Gold Ring",
+    "itemClass": "ring",
+    "variants": [],
+    "implicits": [
+      "(6-15)% increased Rarity of Items found",
+      "+(30-50) to maximum Mana",
+      "+(5-10) to all Attributes",
+      "(10-15)% increased Quantity of Gold Dropped by Slain Enemies"
+    ],
+    "explicits": [],
+    "tags": [
+      "attribute",
+      "mana",
+      "quantity",
+      "rarity"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "polcirkeln",
+    "name": "Polcirkeln",
+    "baseType": "Sapphire Ring",
+    "itemClass": "ring",
+    "variants": [],
+    "implicits": [
+      "+(20-30)% to Cold Resistance",
+      "(20-30)% increased Cold Damage",
+      "+(40-60) to maximum Mana",
+      "+(10-15) to Strength",
+      "Enemies Chilled by your Hits can be Shattered as though Frozen"
+    ],
+    "explicits": [],
+    "tags": [
+      "attribute",
+      "chill",
+      "cold",
+      "damage",
+      "mana",
+      "resistance",
+      "strength"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "prized_pain",
+    "name": "Prized Pain",
+    "baseType": "Iron Ring",
+    "itemClass": "ring",
+    "requiredLevel": 48,
+    "league": "Dawn of the Hunt",
+    "variants": [],
+    "implicits": [
+      "Adds 1 to 4 Physical Damage to Attacks",
+      "+(20-30) to Strength",
+      "Skills gain a Base Life Cost equal to 10% of Base Mana Cost",
+      "Deal your Thorns Damage to Enemies you Stun with Melee Attacks",
+      "(24-35) to (35-53) Physical Thorns damage"
+    ],
+    "explicits": [],
+    "tags": [
+      "attack",
+      "attribute",
+      "damage",
+      "life",
+      "mana",
+      "physical",
+      "strength"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "seed_of_cataclysm",
+    "name": "Seed of Cataclysm",
+    "baseType": "Lazuli Ring",
+    "itemClass": "ring",
+    "variants": [],
+    "implicits": [
+      "+(20-30) to maximum Mana",
+      "(30-50)% increased Critical Hit Chance for Spells",
+      "(30-50)% increased Critical Spell Damage Bonus",
+      "+(13-17)% to Chaos Resistance",
+      "10% increased Mana Cost of Skills"
+    ],
+    "explicits": [],
+    "tags": [
+      "caster",
+      "chaos",
+      "crit",
+      "damage",
+      "mana",
+      "resistance",
+      "spell"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "sekhema_s_resolve",
+    "name": "Sekhema's Resolve",
+    "baseType": "Ring",
+    "itemClass": "ring",
+    "requiredLevel": 40,
+    "source": "Drops from unique{Zarokh, the Temporal}",
+    "variants": [
+      {
+        "name": "Ruby",
+        "mods": [
+          "Fire Resistance is unaffected by Area Penalties",
+          "You can only Socket Ruby Jewels in this item"
+        ]
+      },
+      {
+        "name": "Emerald",
+        "mods": [
+          "Lightning Resistance is unaffected by Area Penalties",
+          "You can only Socket Emerald Jewels in this item"
+        ]
+      },
+      {
+        "name": "Sapphire",
+        "mods": [
+          "Cold Resistance is unaffected by Area Penalties",
+          "You can only Socket Sapphire Jewels in this item"
+        ]
+      }
+    ],
+    "implicits": [],
+    "explicits": [
+      "(10-20)% increased Rarity of Items found",
+      "+(10-20) to all Attributes"
+    ],
+    "tags": [
+      "attribute",
+      "cold",
+      "fire",
+      "lightning",
+      "rarity",
+      "resistance"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "snakepit",
+    "name": "Snakepit",
+    "baseType": "Pearl Ring",
+    "itemClass": "ring",
+    "variants": [],
+    "implicits": [
+      "(7-10)% increased Cast Speed",
+      "(20-30)% increased Spell Damage",
+      "(10-15)% increased Cast Speed",
+      "Left ring slot: Projectiles from Spells cannot Chain",
+      "Left ring slot: Projectiles from Spells Fork"
+    ],
+    "explicits": [
+      "Right ring slot: Projectiles from Spells Chain +1 times",
+      "Right ring slot: Projectiles from Spells cannot Fork",
+      "Projectiles from Spells cannot Pierce"
+    ],
+    "tags": [
+      "caster",
+      "damage",
+      "speed",
+      "spell"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "the_burrower",
+    "name": "The Burrower",
+    "baseType": "Topaz Ring",
+    "itemClass": "ring",
+    "variants": [
+      {
+        "name": "Pre 0.1.1",
+        "mods": [
+          "-(15-10)% to Cold Resistance",
+          "(25-35)% increased Mana Regeneration Rate"
+        ]
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "-10% to Cold Resistance",
+          "(30-50)% increased Mana Regeneration Rate"
+        ]
+      }
+    ],
+    "implicits": [
+      "+(20-30)% to Lightning Resistance",
+      "+(20-30)% to Lightning Resistance",
+      "Lightning Damage of Enemies Hitting you is Unlucky"
+    ],
+    "explicits": [],
+    "tags": [
+      "cold",
+      "damage",
+      "lightning",
+      "mana",
+      "resistance"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "thief_s_torment",
+    "name": "Thief's Torment",
+    "baseType": "Emerald Ring",
+    "itemClass": "ring",
+    "variants": [],
+    "implicits": [
+      "+(120-160) to Accuracy Rating",
+      "(30-40)% increased Rarity of Items found",
+      "+(10-15)% to all Elemental Resistances",
+      "Gain 25 Life per Enemy Hit with Attacks",
+      "Can't use other Rings"
+    ],
+    "explicits": [
+      "Gain 15 Mana per Enemy Hit with Attacks",
+      "50% reduced Duration of Curses on you"
+    ],
+    "tags": [
+      "attack",
+      "caster",
+      "cold",
+      "curse",
+      "fire",
+      "life",
+      "lightning",
+      "mana",
+      "rarity",
+      "resistance"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "venopuncture",
+    "name": "Venopuncture",
+    "baseType": "Iron Ring",
+    "itemClass": "ring",
+    "requiredLevel": 36,
+    "league": "Dawn of the Hunt",
+    "variants": [],
+    "implicits": [
+      "Adds 1 to 4 Physical Damage to Attacks",
+      "Adds (5-7) to (9-13) Physical Damage to Attacks",
+      "+(20-30) to Strength",
+      "All Damage taken from Hits while Bleeding Contributes to Magnitude of Chill on you",
+      "All Damage from Hits against Bleeding targets Contributes to Chill Magnitude"
+    ],
+    "explicits": [
+      "(10-20)% chance to inflict Bleeding on Hit",
+      "(15-25)% increased Magnitude of Bleeding you inflict"
+    ],
+    "tags": [
+      "attack",
+      "attribute",
+      "bleed",
+      "chill",
+      "cold",
+      "conditional",
+      "damage",
+      "on_hit",
+      "physical",
+      "strength",
+      "while_bleeding"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": [
+      {
+        "condition": "while_bleeding",
+        "effect": "All Damage taken from Hits while Bleeding Contributes to Magnitude of Chill on you",
+        "tags": [
+          "cold"
+        ]
+      },
+      {
+        "condition": "on_hit",
+        "effect": "(10-20)% chance to inflict Bleeding on Hit",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": "ventor_s_gamble",
+    "name": "Ventor's Gamble",
+    "baseType": "Gold Ring",
+    "itemClass": "ring",
+    "requiredLevel": 64,
+    "variants": [
+      {
+        "name": "Pre 0.2.0",
+        "mods": [
+          "(-40-40)% reduced Rarity of Items found"
+        ]
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "(-25-25)% reduced Rarity of Items found"
+        ]
+      }
+    ],
+    "implicits": [
+      "(6-15)% increased Rarity of Items found",
+      "+(0-80) to maximum Life",
+      "+(0-20) to Spirit",
+      "+(-40-40)% to Fire Resistance",
+      "+(-40-40)% to Cold Resistance"
+    ],
+    "explicits": [
+      "+(-40-40)% to Lightning Resistance"
+    ],
+    "tags": [
+      "cold",
+      "fire",
+      "life",
+      "lightning",
+      "rarity",
+      "resistance"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "vigilant_view",
+    "name": "Vigilant View",
+    "baseType": "Emerald Ring",
+    "itemClass": "ring",
+    "requiredLevel": 26,
+    "league": "Dawn of the Hunt",
+    "variants": [],
+    "implicits": [
+      "+(120-160) to Accuracy Rating",
+      "+(100-150) to Accuracy Rating",
+      "+(100-150) to Evasion Rating",
+      "(10-20)% increased Rarity of Items found",
+      "+(20-30) to Dexterity"
+    ],
+    "explicits": [
+      "Enemies have an Accuracy Penalty against you based on Distance",
+      "Maximum Chance to Evade is 50%"
+    ],
+    "tags": [
+      "attack",
+      "attribute",
+      "defences",
+      "dexterity",
+      "evasion",
+      "rarity"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "whisper_of_the_brotherhood",
+    "name": "Whisper of the Brotherhood",
+    "baseType": "Sapphire Ring",
+    "itemClass": "ring",
+    "requiredLevel": 32,
+    "variants": [],
+    "implicits": [
+      "+(20-30)% to Cold Resistance",
+      "(5-10)% increased Skill Speed",
+      "+(10-20) to Dexterity",
+      "(25-35)% increased Mana Regeneration Rate",
+      "100% of Cold Damage Converted to Lightning Damage"
+    ],
+    "explicits": [],
+    "tags": [
+      "attribute",
+      "cold",
+      "damage",
+      "dexterity",
+      "lightning",
+      "mana",
+      "resistance",
+      "speed"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "font_of_power",
+    "name": "Font of Power",
+    "baseType": "Omen Sceptre",
+    "itemClass": "sceptre",
+    "variants": [],
+    "implicits": [
+      "Grants Skill: Level (1-20) Malice",
+      "(30-50)% increased Spirit",
+      "+(40-60) to maximum Mana",
+      "(20-30)% increased Mana Regeneration Rate",
+      "When a Party Member in your Presence Casts a Spell, you"
+    ],
+    "explicits": [
+      "Sacrifice 20% of Mana and they Leech that Mana"
+    ],
+    "tags": [
+      "grants_malice",
+      "grants_skill",
+      "mana",
+      "spell"
+    ],
+    "grantedSkills": [
+      {
+        "skillName": "Malice",
+        "minLevel": 1,
+        "maxLevel": 20
+      }
+    ],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "guiding_palm",
+    "name": "Guiding Palm",
+    "baseType": "Shrine Sceptre",
+    "itemClass": "sceptre",
+    "variants": [
+      {
+        "name": "Fire (Pre 0.2.1 )",
+        "mods": [
+          "Allies in your Presence deal (4-6) to (7-10) added Attack Fire Damage"
+        ]
+      },
+      {
+        "name": "Cold (Pre 0.2.1 )",
+        "mods": [
+          "Allies in your Presence deal (3-5) to (6-8) added Attack Cold Damage"
+        ]
+      },
+      {
+        "name": "Lightning (Pre 0.2.1 )",
+        "mods": [
+          "Allies in your Presence deal 1 to (10-15) added Attack Lightning Damage"
+        ]
+      },
+      {
+        "name": "Fire",
+        "mods": [
+          "Allies in your Presence deal (15-23) to (28-35) added Attack Fire Damage"
+        ]
+      },
+      {
+        "name": "Cold",
+        "mods": [
+          "Allies in your Presence deal (15-23) to (28-35) added Attack Cold Damage"
+        ]
+      },
+      {
+        "name": "Lightning",
+        "mods": [
+          "Allies in your Presence deal 1 to (56-70) added Attack Lightning Damage"
+        ]
+      }
+    ],
+    "implicits": [
+      "{variant:1,4}Grants Skill: Level (1-20) Purity of Fire",
+      "{variant:2,5}Grants Skill: Level (1-20) Purity of Ice",
+      "{variant:3,6}Grants Skill: Level (1-20) Purity of Lightning",
+      "50% of your Base Life Regeneration is granted to Allies in your Presence",
+      "+(5-10) to all Attributes"
+    ],
+    "explicits": [
+      "25% increased Light Radius"
+    ],
+    "tags": [
+      "attack",
+      "cold",
+      "damage",
+      "fire",
+      "grants_purity_of_fire",
+      "grants_purity_of_ice",
+      "grants_purity_of_lightning",
+      "grants_skill",
+      "life",
+      "lightning"
+    ],
+    "grantedSkills": [
+      {
+        "skillName": "Purity of Fire",
+        "minLevel": 1,
+        "maxLevel": 20
+      },
+      {
+        "skillName": "Purity of Ice",
+        "minLevel": 1,
+        "maxLevel": 20
+      },
+      {
+        "skillName": "Purity of Lightning",
+        "minLevel": 1,
+        "maxLevel": 20
+      }
+    ],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "guiding_palm_of_the_eye",
+    "name": "Guiding Palm of the Eye",
+    "baseType": "Shrine Sceptre",
+    "itemClass": "sceptre",
+    "requiredLevel": 65,
+    "league": "Dawn of the Hunt",
+    "variants": [],
+    "implicits": [
+      "Grants Skill: Level (1-20) Purity of Ice",
+      "Gain 25% of Damage as Extra Cold Damage",
+      "Allies in your Presence deal (15-23) to (28-35) added Attack Cold Damage",
+      "50% of your Base Life Regeneration is granted to Allies in your Presence",
+      "+(20-30) to Intelligence"
+    ],
+    "explicits": [
+      "25% increased Light Radius",
+      "Grants effect of Guided Freezing Shrine"
+    ],
+    "tags": [
+      "attack",
+      "cold",
+      "damage",
+      "grants_purity_of_ice",
+      "grants_skill",
+      "intelligence",
+      "life"
+    ],
+    "grantedSkills": [
+      {
+        "skillName": "Purity of Ice",
+        "minLevel": 1,
+        "maxLevel": 20
+      }
+    ],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "guiding_palm_of_the_heart",
+    "name": "Guiding Palm of the Heart",
+    "baseType": "Shrine Sceptre",
+    "itemClass": "sceptre",
+    "requiredLevel": 65,
+    "league": "Dawn of the Hunt",
+    "variants": [],
+    "implicits": [
+      "Grants Skill: Level (1-20) Purity of Fire",
+      "Gain 25% of Damage as Extra Fire Damage",
+      "Allies in your Presence deal (15-23) to (28-35) added Attack Fire Damage",
+      "50% of your Base Life Regeneration is granted to Allies in your Presence",
+      "+(20-30) to Strength"
+    ],
+    "explicits": [
+      "25% increased Light Radius",
+      "Grants effect of Guided Meteoric Shrine"
+    ],
+    "tags": [
+      "attack",
+      "damage",
+      "fire",
+      "grants_purity_of_fire",
+      "grants_skill",
+      "life",
+      "strength"
+    ],
+    "grantedSkills": [
+      {
+        "skillName": "Purity of Fire",
+        "minLevel": 1,
+        "maxLevel": 20
+      }
+    ],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "guiding_palm_of_the_mind",
+    "name": "Guiding Palm of the Mind",
+    "baseType": "Shrine Sceptre",
+    "itemClass": "sceptre",
+    "requiredLevel": 65,
+    "league": "Dawn of the Hunt",
+    "variants": [],
+    "implicits": [
+      "Grants Skill: Level (1-20) Purity of Lightning",
+      "Gain 25% of Damage as Extra Lightning Damage",
+      "Allies in your Presence deal 1 to (56-70) added Attack Lightning Damage",
+      "50% of your Base Life Regeneration is granted to Allies in your Presence",
+      "+(20-30) to Dexterity"
+    ],
+    "explicits": [
+      "25% increased Light Radius",
+      "Grants effect of Guided Tempest Shrine"
+    ],
+    "tags": [
+      "attack",
+      "damage",
+      "dexterity",
+      "grants_purity_of_lightning",
+      "grants_skill",
+      "life",
+      "lightning"
+    ],
+    "grantedSkills": [
+      {
+        "skillName": "Purity of Lightning",
+        "minLevel": 1,
+        "maxLevel": 20
+      }
+    ],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "palm_of_the_dreamer",
+    "name": "Palm of the Dreamer",
+    "baseType": "Shrine Sceptre",
+    "itemClass": "sceptre",
+    "requiredLevel": 65,
+    "league": "Dawn of the Hunt",
+    "variants": [],
+    "implicits": [
+      "Grants Skill: Level (1-20) Impurity",
+      "Allies in your Presence deal (13-17) to (25-37) added Attack Chaos Damage",
+      "+(7-13) to all Attributes",
+      "23% reduced Light Radius",
+      "(-13-13)% reduced Skill Effect Duration"
+    ],
+    "explicits": [
+      "Gain 27% of Damage as Extra Chaos Damage",
+      "Grants effect of Dreaming Gloom Shrine"
+    ],
+    "tags": [
+      "attack",
+      "chaos",
+      "damage",
+      "grants_impurity",
+      "grants_skill"
+    ],
+    "grantedSkills": [
+      {
+        "skillName": "Impurity",
+        "minLevel": 1,
+        "maxLevel": 20
+      }
+    ],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "sacred_flame",
+    "name": "Sacred Flame",
+    "baseType": "Shrine Sceptre",
+    "itemClass": "sceptre",
+    "source": "Drops from unique{Arbiter of Ash} in normal{The Burning Monolith}",
+    "variants": [],
+    "implicits": [
+      "Grants Skill: Level (1-20) Purity of Fire",
+      "Gain (40-60)% of Damage as Extra Fire Damage",
+      "Allies in your Presence Regenerate (2-3)% of their Maximum Life per second",
+      "Allies in your Presence Gain (20-30)% of Damage as Extra Fire Damage",
+      "Enemies in your Presence Resist Elemental Damage based on their Lowest Resistance"
+    ],
+    "explicits": [],
+    "tags": [
+      "damage",
+      "fire",
+      "grants_purity_of_fire",
+      "grants_skill",
+      "life",
+      "resistance"
+    ],
+    "grantedSkills": [
+      {
+        "skillName": "Purity of Fire",
+        "minLevel": 1,
+        "maxLevel": 20
+      }
+    ],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "calgyra_s_arc",
+    "name": "Calgyra's Arc",
+    "baseType": "Ornate Buckler",
+    "itemClass": "shield",
+    "league": "Dawn of the Hunt",
+    "variants": [],
+    "implicits": [
+      "Grants Skill: Parry",
+      "(60-100)% increased Evasion Rating",
+      "+(60-100) to maximum Mana",
+      "+(10-20) to Intelligence",
+      "Infinite Parry Range"
+    ],
+    "explicits": [
+      "50% increased Parried Debuff Duration"
+    ],
+    "tags": [
+      "evasion",
+      "grants_parry",
+      "grants_skill",
+      "intelligence",
+      "mana"
+    ],
+    "grantedSkills": [
+      {
+        "skillName": "Parry",
+        "minLevel": 1,
+        "maxLevel": 20
+      }
+    ],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "crest_of_ardura",
+    "name": "Crest of Ardura",
+    "baseType": "Jingling Crest Shield",
+    "itemClass": "shield",
+    "variants": [],
+    "implicits": [
+      "Grants Skill: Raise Shield",
+      "(60-100)% increased Armour and Energy Shield",
+      "+(10-20) to Intelligence",
+      "(30-50)% increased Mana Regeneration Rate",
+      "(30-50)% increased Cooldown Recovery Rate"
+    ],
+    "explicits": [],
+    "tags": [
+      "es",
+      "grants_raise_shield",
+      "grants_skill",
+      "intelligence",
+      "mana"
+    ],
+    "grantedSkills": [
+      {
+        "skillName": "Raise Shield",
+        "minLevel": 1,
+        "maxLevel": 20
+      }
+    ],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "dionadair",
+    "name": "Dionadair",
+    "baseType": "Splintered Tower Shield",
+    "itemClass": "shield",
+    "variants": [
+      {
+        "name": "Pre 0.1.1",
+        "mods": [
+          "30% increased Stun Threshold"
+        ]
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "(3-5) Life Regeneration per second",
+          "20% reduced Stun Threshold"
+        ]
+      }
+    ],
+    "implicits": [
+      "Grants Skill: Raise Shield",
+      "(60-80)% increased Armour",
+      "+(10-15) to Strength",
+      "Double Stun Threshold while Shield is Raised"
+    ],
+    "explicits": [],
+    "tags": [
+      "grants_raise_shield",
+      "grants_skill",
+      "life",
+      "strength"
+    ],
+    "grantedSkills": [
+      {
+        "skillName": "Raise Shield",
+        "minLevel": 1,
+        "maxLevel": 20
+      }
+    ],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "doomgate",
+    "name": "Doomgate",
+    "baseType": "Braced Tower Shield",
+    "itemClass": "shield",
+    "variants": [
+      {
+        "name": "Pre 0.1.1",
+        "mods": []
+      },
+      {
+        "name": "Pre 0.3.0",
+        "mods": []
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "(80-100)% increased Block chance",
+          "You take (25-40)% of damage from Blocked Hits"
+        ]
+      }
+    ],
+    "implicits": [
+      "Grants Skill: Raise Shield",
+      "{variant:1,2}80% increased Block chance",
+      "(100-150)% increased Armour",
+      "{variant:2,3}+(13-17)% to Chaos Resistance",
+      "{variant:1,2}You take 20% of damage from Blocked Hits"
+    ],
+    "explicits": [
+      "Enemies are Culled on Block"
+    ],
+    "tags": [
+      "chaos",
+      "damage",
+      "grants_raise_shield",
+      "grants_skill",
+      "resistance"
+    ],
+    "grantedSkills": [
+      {
+        "skillName": "Raise Shield",
+        "minLevel": 1,
+        "maxLevel": 20
+      }
+    ],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "dunkelhalt",
+    "name": "Dunkelhalt",
+    "baseType": "Leather Buckler",
+    "itemClass": "shield",
+    "league": "Dawn of the Hunt",
+    "variants": [
+      {
+        "name": "Pre 0.3.0",
+        "mods": [
+          "(30-50)% increased Block chance"
+        ]
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "(20-30)% increased Block chance"
+        ]
+      }
+    ],
+    "implicits": [
+      "Grants Skill: Parry",
+      "+(20-30) to Evasion Rating",
+      "You take 50% of damage from Blocked Hits",
+      "50% increased Parried Debuff Magnitude"
+    ],
+    "explicits": [],
+    "tags": [
+      "damage",
+      "evasion",
+      "grants_parry",
+      "grants_skill"
+    ],
+    "grantedSkills": [
+      {
+        "skillName": "Parry",
+        "minLevel": 1,
+        "maxLevel": 20
+      }
+    ],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "feathered_fortress",
+    "name": "Feathered Fortress",
+    "baseType": "Crescent Targe",
+    "itemClass": "shield",
+    "variants": [
+      {
+        "name": "Pre 0.1.1",
+        "mods": [
+          "+(10-20) to Strength",
+          "+(10-20) to Dexterity",
+          "+(10-20)% to Fire Resistance",
+          "+(10-20)% to Cold Resistance"
+        ]
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "+(20-30) to Strength",
+          "+(20-30) to Dexterity",
+          "+(20-30)% to Fire Resistance",
+          "+(20-30)% to Cold Resistance"
+        ]
+      }
+    ],
+    "implicits": [
+      "Grants Skill: Raise Shield",
+      "No Movement Speed Penalty while Shield is Raised"
+    ],
+    "explicits": [],
+    "tags": [
+      "cold",
+      "dexterity",
+      "fire",
+      "grants_raise_shield",
+      "grants_skill",
+      "resistance",
+      "speed",
+      "strength"
+    ],
+    "grantedSkills": [
+      {
+        "skillName": "Raise Shield",
+        "minLevel": 1,
+        "maxLevel": 20
+      }
+    ],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "kaltenhalt",
+    "name": "Kaltenhalt",
+    "baseType": "Ridged Buckler",
+    "itemClass": "shield",
+    "league": "Rise of the Abyssal",
+    "variants": [],
+    "implicits": [
+      "Grants Skill: Parry",
+      "(80-120)% increased Evasion Rating",
+      "+5% to Maximum Cold Resistance",
+      "+40% to Cold Resistance",
+      "Modifiers to Stun Buildup apply to Freeze Buildup instead for Parry"
+    ],
+    "explicits": [
+      "100% of Parry Physical Damage Converted to Cold Damage",
+      "25 to 35 Cold Thorns damage"
+    ],
+    "tags": [
+      "cold",
+      "damage",
+      "evasion",
+      "freeze",
+      "grants_parry",
+      "grants_skill",
+      "physical",
+      "resistance"
+    ],
+    "grantedSkills": [
+      {
+        "skillName": "Parry",
+        "minLevel": 1,
+        "maxLevel": 20
+      }
+    ],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "lycosidae",
+    "name": "Lycosidae",
+    "baseType": "Rampart Tower Shield",
+    "itemClass": "shield",
+    "variants": [
+      {
+        "name": "Pre 0.1.1",
+        "mods": [
+          "Blocking Damage Poisons the Enemy as though dealing 100 Base Chaos Damage"
+        ]
+      },
+      {
+        "name": "Pre 0.3.0",
+        "mods": []
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "(10-15)% increased Block chance"
+        ]
+      }
+    ],
+    "implicits": [
+      "Grants Skill: Raise Shield",
+      "{variant:1,2}(30-40)% increased Block chance",
+      "(60-100)% increased Armour",
+      "Accuracy Rating is Doubled",
+      "{variant:2,3}Blocking Damage Poisons the Enemy as though dealing 200 Base Chaos Damage"
+    ],
+    "explicits": [],
+    "tags": [
+      "chaos",
+      "damage",
+      "grants_raise_shield",
+      "grants_skill",
+      "poison"
+    ],
+    "grantedSkills": [
+      {
+        "skillName": "Raise Shield",
+        "minLevel": 1,
+        "maxLevel": 20
+      }
+    ],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "mahuxotl_s_machination",
+    "name": "Mahuxotl's Machination",
+    "baseType": "Omen Crest Shield",
+    "itemClass": "shield",
+    "source": "Drops from unique{Trialmaster} in normal{The Trial of Chaos}",
+    "variants": [
+      {
+        "name": "Pre 0.2.0",
+        "mods": [
+          "(333-666)% increased effect of Socketed Soul Cores"
+        ]
+      },
+      {
+        "name": "Pre 0.4.0",
+        "mods": [
+          "100% increased effect of Socketed Soul Cores"
+        ]
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "(66-333)% increased effect of Socketed Soul Cores"
+        ]
+      }
+    ],
+    "implicits": [
+      "Grants Skill: Raise Shield",
+      "(333-666)% increased Armour and Energy Shield",
+      "{variant:2,3}Everlasting Sacrifice"
+    ],
+    "explicits": [],
+    "tags": [
+      "es",
+      "grants_raise_shield",
+      "grants_skill"
+    ],
+    "grantedSkills": [
+      {
+        "skillName": "Raise Shield",
+        "minLevel": 1,
+        "maxLevel": 20
+      }
+    ],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "merit_of_service",
+    "name": "Merit of Service",
+    "baseType": "Pelage Targe",
+    "itemClass": "shield",
+    "variants": [
+      {
+        "name": "Pre 0.3.0",
+        "mods": [
+          "(30-50)% increased Block chance",
+          "+(15-30) to maximum Mana"
+        ]
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "(20-25)% increased Block chance"
+        ]
+      },
+      {
+        "name": "Pre 0.1.1",
+        "mods": [
+          "(10-15)% increased Block chance"
+        ]
+      }
+    ],
+    "implicits": [
+      "Grants Skill: Raise Shield",
+      "(60-80)% increased Armour and Evasion",
+      "+(60-80) to Stun Threshold",
+      "Allies in your Presence have Block Chance equal to yours",
+      "]],"
+    ],
+    "explicits": [
+      "-- Shield: Armour/Energy Shield",
+      "[[",
+      "Alkem Eira",
+      "Blazon Crest Shield",
+      "Grants Skill: Raise Shield",
+      "{variant:1,2}(30-40)% increased Block chance",
+      "(30-50)% increased Armour and Energy Shield",
+      "{variant:2,3}+(50-70) to maximum Mana",
+      "Damage Blocked is Recouped as Mana"
+    ],
+    "tags": [
+      "damage",
+      "es",
+      "evasion",
+      "grants_raise_shield",
+      "grants_skill",
+      "mana"
+    ],
+    "grantedSkills": [
+      {
+        "skillName": "Raise Shield",
+        "minLevel": 1,
+        "maxLevel": 20
+      },
+      {
+        "skillName": "Raise Shield",
+        "minLevel": 1,
+        "maxLevel": 20
+      }
+    ],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "nocturne",
+    "name": "Nocturne",
+    "baseType": "Wooden Buckler",
+    "itemClass": "shield",
+    "league": "Dawn of the Hunt",
+    "variants": [],
+    "implicits": [
+      "Grants Skill: Parry",
+      "+(60-80) to maximum Mana",
+      "+(10-15)% to all Elemental Resistances",
+      "20% increased Accuracy Rating",
+      "Parried enemies take more Spell Damage instead of more Attack Damage"
+    ],
+    "explicits": [
+      "100% increased Parried Debuff Duration"
+    ],
+    "tags": [
+      "attack",
+      "damage",
+      "grants_parry",
+      "grants_skill",
+      "mana",
+      "resistance",
+      "spell"
+    ],
+    "grantedSkills": [
+      {
+        "skillName": "Parry",
+        "minLevel": 1,
+        "maxLevel": 20
+      }
+    ],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "oaksworn",
+    "name": "Oaksworn",
+    "baseType": "Variant: Pre 0.2.0",
+    "itemClass": "shield",
+    "variants": [
+      {
+        "name": "Pre 0.3.0",
+        "mods": [
+          "+50 to Spirit"
+        ]
+      },
+      {
+        "name": "Current",
+        "mods": []
+      }
+    ],
+    "implicits": [
+      "Grants Skill: Raise Shield",
+      "{variant:1,2}(40-60)% increased Block chance",
+      "(80-120)% increased Armour and Energy Shield",
+      "+(17-23)% to Chaos Resistance",
+      "{variant:2,3}50% increased Life Regeneration rate"
+    ],
+    "explicits": [
+      "Sigil Crest Shield"
+    ],
+    "tags": [
+      "chaos",
+      "es",
+      "grants_raise_shield",
+      "grants_skill",
+      "life",
+      "resistance"
+    ],
+    "grantedSkills": [
+      {
+        "skillName": "Raise Shield",
+        "minLevel": 1,
+        "maxLevel": 20
+      }
+    ],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "prism_guardian",
+    "name": "Prism Guardian",
+    "baseType": "Sectarian Crest Shield",
+    "itemClass": "shield",
+    "requiredLevel": 65,
+    "league": "Dawn of the Hunt",
+    "variants": [
+      {
+        "name": "Pre 0.2.1",
+        "mods": [
+          "+1 to Maximum Spirit per 50 Maximum Life"
+        ]
+      },
+      {
+        "name": "Pre 0.4.0",
+        "mods": [
+          "+1 to Maximum Spirit per 25 Maximum Life"
+        ]
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "+50 to Spirit",
+          "1% increased Spirit Reservation Efficiency of Buff Skills per 100 Maximum Life"
+        ]
+      }
+    ],
+    "implicits": [
+      "Grants Skill: Raise Shield",
+      "(150-200)% increased Armour and Energy Shield",
+      "+(20-30) to Dexterity",
+      "+(10-20)% to all Elemental Resistances"
+    ],
+    "explicits": [],
+    "tags": [
+      "dexterity",
+      "es",
+      "grants_raise_shield",
+      "grants_skill",
+      "life",
+      "resistance"
+    ],
+    "grantedSkills": [
+      {
+        "skillName": "Raise Shield",
+        "minLevel": 1,
+        "maxLevel": 20
+      }
+    ],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "redblade_banner",
+    "name": "Redblade Banner",
+    "baseType": "Heraldric Tower Shield",
+    "itemClass": "shield",
+    "league": "Dawn of the Hunt",
+    "variants": [
+      {
+        "name": "Pre 0.3.0",
+        "mods": [
+          "(20-30)% increased Block chance"
+        ]
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "(10-15)% increased Block chance"
+        ]
+      }
+    ],
+    "implicits": [
+      "Grants Skill: Raise Shield",
+      "(60-100)% increased Armour",
+      "+(20-30) to Strength",
+      "+(100-150) to Stun Threshold",
+      "Enemies in your Presence count as having double Power"
+    ],
+    "explicits": [],
+    "tags": [
+      "grants_raise_shield",
+      "grants_skill",
+      "strength"
+    ],
+    "grantedSkills": [
+      {
+        "skillName": "Raise Shield",
+        "minLevel": 1,
+        "maxLevel": 20
+      }
+    ],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "rise_of_the_phoenix",
+    "name": "Rise of the Phoenix",
+    "baseType": "Omen Crest Shield",
+    "itemClass": "shield",
+    "variants": [],
+    "implicits": [
+      "Grants Skill: Raise Shield",
+      "+5% to Maximum Fire Resistance",
+      "+(20-25)% to Fire Resistance",
+      "+25% to Fire Resistance while on Low Life",
+      "Regenerate 3% of maximum Life per second"
+    ],
+    "explicits": [
+      "Regenerate 3% of maximum Life per second while on Low Life"
+    ],
+    "tags": [
+      "conditional",
+      "fire",
+      "grants_raise_shield",
+      "grants_skill",
+      "life",
+      "on_low_life",
+      "resistance"
+    ],
+    "grantedSkills": [
+      {
+        "skillName": "Raise Shield",
+        "minLevel": 1,
+        "maxLevel": 20
+      }
+    ],
+    "skillLevelBoosts": [],
+    "conditionalMods": [
+      {
+        "condition": "on_low_life",
+        "effect": "+25% to Fire Resistance while on Low Life",
+        "tags": [
+          "fire"
+        ]
+      },
+      {
+        "condition": "on_low_life",
+        "effect": "Regenerate 3% of maximum Life per second while on Low Life",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": "rondel_de_ezo",
+    "name": "Rondel de Ezo",
+    "baseType": "Plated Buckler",
+    "itemClass": "shield",
+    "league": "Dawn of the Hunt",
+    "variants": [],
+    "implicits": [
+      "Grants Skill: Parry",
+      "(50-150)% increased Evasion Rating",
+      "+(10-20) to Dexterity",
+      "5 Life Regeneration per second",
+      "100% increased Block chance against Projectiles"
+    ],
+    "explicits": [
+      "Curse Enemies with Enfeeble on Block"
+    ],
+    "tags": [
+      "curse",
+      "dexterity",
+      "evasion",
+      "grants_parry",
+      "grants_skill",
+      "life"
+    ],
+    "grantedSkills": [
+      {
+        "skillName": "Parry",
+        "minLevel": 1,
+        "maxLevel": 20
+      }
+    ],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "saffell_s_frame",
+    "name": "Saffell's Frame",
+    "baseType": "Emblem Crest Shield",
+    "itemClass": "shield",
+    "requiredLevel": 16,
+    "variants": [],
+    "implicits": [
+      "Grants Skill: Raise Shield",
+      "+(15-25)% to Fire Resistance",
+      "+(15-25)% to Cold Resistance",
+      "+(15-25)% to Lightning Resistance",
+      "Cannot Block"
+    ],
+    "explicits": [
+      "Modifiers to Maximum Block Chance instead apply to Maximum Resistances",
+      "]],",
+      "-- Shield: Evasion/Energy Shield",
+      "}"
+    ],
+    "tags": [
+      "cold",
+      "es",
+      "evasion",
+      "fire",
+      "grants_raise_shield",
+      "grants_skill",
+      "lightning",
+      "resistance"
+    ],
+    "grantedSkills": [
+      {
+        "skillName": "Raise Shield",
+        "minLevel": 1,
+        "maxLevel": 20
+      }
+    ],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "silverthorne",
+    "name": "Silverthorne",
+    "baseType": "Spiked Buckler",
+    "itemClass": "shield",
+    "league": "Dawn of the Hunt",
+    "variants": [],
+    "implicits": [
+      "Grants Skill: Parry",
+      "(50-80)% increased Evasion Rating",
+      "+(10-15)% to all Elemental Resistances",
+      "Parrying applies 10 Stacks of Critical Weakness",
+      "100% increased Parry Damage"
+    ],
+    "explicits": [],
+    "tags": [
+      "crit",
+      "damage",
+      "evasion",
+      "grants_parry",
+      "grants_skill",
+      "resistance"
+    ],
+    "grantedSkills": [
+      {
+        "skillName": "Parry",
+        "minLevel": 1,
+        "maxLevel": 20
+      }
+    ],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "sunsplinter",
+    "name": "Sunsplinter",
+    "baseType": "Array Buckler",
+    "itemClass": "shield",
+    "league": "Dawn of the Hunt",
+    "variants": [
+      {
+        "name": "Max Res: 1 Fire, 2 Cold, 3 Lightning",
+        "mods": [
+          "+1% to Maximum Fire Resistance",
+          "+2% to Maximum Cold Resistance",
+          "+3% to Maximum Lightning Resistance",
+          "(40-60)% increased Block chance"
+        ]
+      },
+      {
+        "name": "Max Res: 1 Fire, 3 Cold, 2 Lightning",
+        "mods": [
+          "+1% to Maximum Fire Resistance",
+          "+3% to Maximum Cold Resistance",
+          "+2% to Maximum Lightning Resistance",
+          "+(40-60) to maximum Life",
+          "+(40-60) to maximum Mana"
+        ]
+      },
+      {
+        "name": "Max Res: 2 Fire, 1 Cold, 3 Lightning",
+        "mods": [
+          "+2% to Maximum Fire Resistance",
+          "+1% to Maximum Cold Resistance",
+          "+3% to Maximum Lightning Resistance"
+        ]
+      },
+      {
+        "name": "Max Res: 2 Fire, 3 Cold, 1 Lightning",
+        "mods": [
+          "+2% to Maximum Fire Resistance",
+          "+3% to Maximum Cold Resistance",
+          "+1% to Maximum Lightning Resistance"
+        ]
+      },
+      {
+        "name": "Max Res: 3 Fire, 1 Cold, 2 Lightning",
+        "mods": [
+          "+3% to Maximum Fire Resistance",
+          "+1% to Maximum Cold Resistance",
+          "+2% to Maximum Lightning Resistance"
+        ]
+      },
+      {
+        "name": "Max Res: 3 Fire, 2 Cold, 1 Lightning",
+        "mods": [
+          "+3% to Maximum Fire Resistance",
+          "+2% to Maximum Cold Resistance",
+          "+1% to Maximum Lightning Resistance"
+        ]
+      },
+      {
+        "name": "Level: 2 Cold, 1 Fire, 3 Lightning",
+        "mods": [
+          "+2 to Level of all Cold Skills",
+          "+1 to Level of all Fire Skills",
+          "+3 to Level of all Lightning Skills"
+        ]
+      },
+      {
+        "name": "Level: 3 Cold, 1 Fire, 2 Lightning",
+        "mods": [
+          "+3 to Level of all Cold Skills",
+          "+1 to Level of all Fire Skills",
+          "+2 to Level of all Lightning Skills"
+        ]
+      },
+      {
+        "name": "Level: 1 Cold, 2 Fire, 3 Lightning",
+        "mods": [
+          "+1 to Level of all Cold Skills",
+          "+2 to Level of all Fire Skills",
+          "+3 to Level of all Lightning Skills"
+        ]
+      },
+      {
+        "name": "Level: 3 Cold, 2 Fire, 1 Lightning",
+        "mods": [
+          "+3 to Level of all Cold Skills",
+          "+2 to Level of all Fire Skills",
+          "+1 to Level of all Lightning Skills"
+        ]
+      },
+      {
+        "name": "Level: 1 Cold, 3 Fire, 2 Lightning",
+        "mods": [
+          "+1 to Level of all Cold Skills",
+          "+3 to Level of all Fire Skills",
+          "+2 to Level of all Lightning Skills"
+        ]
+      },
+      {
+        "name": "Level: 2 Cold, 3 Fire, 1 Lightning",
+        "mods": [
+          "+2 to Level of all Cold Skills",
+          "+3 to Level of all Fire Skills",
+          "+1 to Level of all Lightning Skills"
+        ]
+      },
+      {
+        "name": "Pre 0.1.1",
+        "mods": []
+      },
+      {
+        "name": "Current",
+        "mods": []
+      }
+    ],
+    "implicits": [
+      "Grants Skill: Parry",
+      "(100-300)% increased Evasion Rating",
+      "]],",
+      "-- Shield: Energy Shield",
+      "-- Shield: Armour/Evasion"
+    ],
+    "explicits": [
+      "Has Alt Variant: true",
+      "Selected Variant: 1",
+      "Selected Alt Variant: 7",
+      "[[",
+      "Arvil's Wheel",
+      "Hardwood Targe",
+      "Grants Skill: Raise Shield",
+      "(60-100)% increased Armour and Evasion",
+      "Lose 1% of maximum Life on Kill",
+      "Lose 1% of maximum Mana on Kill",
+      "(30-50)% increased Skill Effect Duration"
+    ],
+    "tags": [
+      "boosts_cold_skills",
+      "boosts_fire_skills",
+      "boosts_lightning_skills",
+      "boosts_skill_level",
+      "cold",
+      "conditional",
+      "es",
+      "evasion",
+      "fire",
+      "grants_parry",
+      "grants_raise_shield",
+      "grants_skill",
+      "life",
+      "lightning",
+      "mana",
+      "on_kill",
+      "resistance"
+    ],
+    "grantedSkills": [
+      {
+        "skillName": "Parry",
+        "minLevel": 1,
+        "maxLevel": 20
+      },
+      {
+        "skillName": "Raise Shield",
+        "minLevel": 1,
+        "maxLevel": 20
+      }
+    ],
+    "skillLevelBoosts": [
+      {
+        "skillTypes": [
+          "cold"
+        ],
+        "bonus": 2
+      },
+      {
+        "skillTypes": [
+          "cold"
+        ],
+        "bonus": 3
+      },
+      {
+        "skillTypes": [
+          "cold"
+        ],
+        "bonus": 1
+      },
+      {
+        "skillTypes": [
+          "cold"
+        ],
+        "bonus": 3
+      },
+      {
+        "skillTypes": [
+          "cold"
+        ],
+        "bonus": 1
+      },
+      {
+        "skillTypes": [
+          "cold"
+        ],
+        "bonus": 2
+      },
+      {
+        "skillTypes": [
+          "fire"
+        ],
+        "bonus": 1
+      },
+      {
+        "skillTypes": [
+          "fire"
+        ],
+        "bonus": 1
+      },
+      {
+        "skillTypes": [
+          "fire"
+        ],
+        "bonus": 2
+      },
+      {
+        "skillTypes": [
+          "fire"
+        ],
+        "bonus": 2
+      },
+      {
+        "skillTypes": [
+          "fire"
+        ],
+        "bonus": 3
+      },
+      {
+        "skillTypes": [
+          "fire"
+        ],
+        "bonus": 3
+      },
+      {
+        "skillTypes": [
+          "lightning"
+        ],
+        "bonus": 3
+      },
+      {
+        "skillTypes": [
+          "lightning"
+        ],
+        "bonus": 2
+      },
+      {
+        "skillTypes": [
+          "lightning"
+        ],
+        "bonus": 3
+      },
+      {
+        "skillTypes": [
+          "lightning"
+        ],
+        "bonus": 1
+      },
+      {
+        "skillTypes": [
+          "lightning"
+        ],
+        "bonus": 2
+      },
+      {
+        "skillTypes": [
+          "lightning"
+        ],
+        "bonus": 1
+      }
+    ],
+    "conditionalMods": [
+      {
+        "condition": "on_kill",
+        "effect": "Lose 1% of maximum Life on Kill",
+        "tags": []
+      },
+      {
+        "condition": "on_kill",
+        "effect": "Lose 1% of maximum Mana on Kill",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": "svalinn",
+    "name": "Svalinn",
+    "baseType": "Crucible Tower Shield",
+    "itemClass": "shield",
+    "source": "Drops from unique{Olroth, Origin of the Fall}",
+    "variants": [
+      {
+        "name": "Pre 0.3.0",
+        "mods": [
+          "(100-150)% increased Armour",
+          "-(20-10)% to maximum Block chance"
+        ]
+      },
+      {
+        "name": "Pre 0.4.0",
+        "mods": [
+          "(150-200)% increased Armour",
+          "You take (15-20)% of damage from Blocked Hits"
+        ]
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "(200-300)% increased Armour",
+          "You take (0-20)% of damage from Blocked Hits"
+        ]
+      }
+    ],
+    "implicits": [
+      "Grants Skill: Raise Shield",
+      "Grants Skill: Cast on Block",
+      "Chance to Block Damage is Lucky"
+    ],
+    "explicits": [],
+    "tags": [
+      "damage",
+      "grants_cast_on_block",
+      "grants_raise_shield",
+      "grants_skill"
+    ],
+    "grantedSkills": [
+      {
+        "skillName": "Raise Shield",
+        "minLevel": 1,
+        "maxLevel": 20
+      },
+      {
+        "skillName": "Cast on Block",
+        "minLevel": 1,
+        "maxLevel": 20
+      }
+    ],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "the_surrender",
+    "name": "The Surrender",
+    "baseType": "{variant:1}Stone Tower Shield",
+    "itemClass": "shield",
+    "variants": [
+      {
+        "name": "Pre 0.4.0",
+        "mods": []
+      },
+      {
+        "name": "Current",
+        "mods": []
+      }
+    ],
+    "implicits": [
+      "Grants Skill: Raise Shield",
+      "(40-60)% increased Block chance",
+      "(150-200)% increased Armour",
+      "+(150-200) to Stun Threshold",
+      "Recover 4% of maximum Life when you Block"
+    ],
+    "explicits": [
+      "Vaal Tower Shield"
+    ],
+    "tags": [
+      "grants_raise_shield",
+      "grants_skill",
+      "life"
+    ],
+    "grantedSkills": [
+      {
+        "skillName": "Raise Shield",
+        "minLevel": 1,
+        "maxLevel": 20
+      }
+    ],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "the_wailing_wall",
+    "name": "The Wailing Wall",
+    "baseType": "Effigial Tower Shield",
+    "itemClass": "shield",
+    "source": "No longer obtainable",
+    "variants": [],
+    "implicits": [
+      "Grants Skill: Raise Shield",
+      "10% reduced Movement Speed",
+      "(100-150)% increased Armour",
+      "+(100-150) to Stun Threshold",
+      "Cannot use Shield Skills"
+    ],
+    "explicits": [],
+    "tags": [
+      "grants_raise_shield",
+      "grants_skill",
+      "speed"
+    ],
+    "grantedSkills": [
+      {
+        "skillName": "Raise Shield",
+        "minLevel": 1,
+        "maxLevel": 20
+      }
+    ],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "window_to_paradise",
+    "name": "Window to Paradise",
+    "baseType": "Barricade Tower Shield",
+    "itemClass": "shield",
+    "league": "Dawn of the Hunt",
+    "variants": [],
+    "implicits": [
+      "Grants Skill: Raise Shield",
+      "(60-120)% increased Armour",
+      "+(60-100) to maximum Mana",
+      "+(10-15)% to all Elemental Resistances",
+      "Inflict Elemental Exposure to Enemies 3 metres in front of you"
+    ],
+    "explicits": [
+      "for 4 seconds, every 0.25 seconds while raised"
+    ],
+    "tags": [
+      "grants_raise_shield",
+      "grants_skill",
+      "mana",
+      "resistance"
+    ],
+    "grantedSkills": [
+      {
+        "skillName": "Raise Shield",
+        "minLevel": 1,
+        "maxLevel": 20
+      }
+    ],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "wulfsbane",
+    "name": "Wulfsbane",
+    "baseType": "Painted Tower Shield",
+    "itemClass": "shield",
+    "league": "Dawn of the Hunt",
+    "variants": [
+      {
+        "name": "Pre 0.3.0",
+        "mods": [
+          "(20-30)% increased Block chance"
+        ]
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "(10-15)% increased Block chance"
+        ]
+      }
+    ],
+    "implicits": [
+      "Grants Skill: Raise Shield",
+      "+(40-60) to maximum Life",
+      "+(10-15) to Strength",
+      "+(60-80) to Stun Threshold",
+      "Permanently Intimidate enemies on Block"
+    ],
+    "explicits": [
+      "]],",
+      "-- Shield: Evasion",
+      "[[",
+      "Bloodbarrier",
+      "Iron Buckler",
+      "Grants Skill: Parry",
+      "+(13-17)% to Chaos Resistance",
+      "(5-10) Life Regeneration per second",
+      "Inflict Corrupted Blood for 5 seconds on Block, dealing 50% of",
+      "your maximum Life as Physical damage per second"
+    ],
+    "tags": [
+      "chaos",
+      "damage",
+      "evasion",
+      "grants_parry",
+      "grants_raise_shield",
+      "grants_skill",
+      "life",
+      "physical",
+      "resistance",
+      "strength"
+    ],
+    "grantedSkills": [
+      {
+        "skillName": "Raise Shield",
+        "minLevel": 1,
+        "maxLevel": 20
+      },
+      {
+        "skillName": "Parry",
+        "minLevel": 1,
+        "maxLevel": 20
+      }
+    ],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "daevata_s_wind",
+    "name": "Daevata's Wind",
+    "baseType": "War Spear",
+    "itemClass": "spear",
+    "league": "Dawn of the Hunt",
+    "variants": [],
+    "implicits": [
+      "Grants Skill: Spear Throw",
+      "(25-35)% increased Projectile Speed with this Weapon",
+      "Adds (10-15) to (21-26) Physical Damage",
+      "+100 to Evasion Rating",
+      "(10-20)% increased Attack Speed"
+    ],
+    "explicits": [
+      "(30-60)% increased Melee Damage if you've dealt a Projectile Attack Hit in the past eight seconds",
+      "(30-60)% increased Projectile Damage if you've dealt a Melee Hit in the past eight seconds"
+    ],
+    "tags": [
+      "attack",
+      "damage",
+      "evasion",
+      "grants_skill",
+      "grants_spear_throw",
+      "physical",
+      "speed"
+    ],
+    "grantedSkills": [
+      {
+        "skillName": "Spear Throw",
+        "minLevel": 1,
+        "maxLevel": 20
+      }
+    ],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "saitha_s_spear",
+    "name": "Saitha's Spear",
+    "baseType": "Barbed Spear",
+    "itemClass": "spear",
+    "league": "Dawn of the Hunt",
+    "variants": [],
+    "implicits": [
+      "Grants Skill: Spear Throw",
+      "Adds (14-26) to (27-32) Physical Damage",
+      "Adds (33-41) to (47-53) Fire Damage",
+      "(15-25)% chance to cause Bleeding on Hit",
+      "Aggravating any Bleeding with this Weapon also Aggravates all Ignites on the target"
+    ],
+    "explicits": [
+      "(25-40)% chance to Aggravate Bleeding on Hit"
+    ],
+    "tags": [
+      "bleed",
+      "conditional",
+      "damage",
+      "fire",
+      "grants_skill",
+      "grants_spear_throw",
+      "ignite",
+      "on_hit",
+      "physical"
+    ],
+    "grantedSkills": [
+      {
+        "skillName": "Spear Throw",
+        "minLevel": 1,
+        "maxLevel": 20
+      }
+    ],
+    "skillLevelBoosts": [],
+    "conditionalMods": [
+      {
+        "condition": "on_hit",
+        "effect": "(15-25)% chance to cause Bleeding on Hit",
+        "tags": []
+      },
+      {
+        "condition": "on_hit",
+        "effect": "(25-40)% chance to Aggravate Bleeding on Hit",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": "skysliver",
+    "name": "Skysliver",
+    "baseType": "Winged Spear",
+    "itemClass": "spear",
+    "league": "Dawn of the Hunt",
+    "variants": [],
+    "implicits": [
+      "Grants Skill: Spear Throw",
+      "No Physical Damage",
+      "Adds 1 to (80-120) Lightning Damage",
+      "(15-30)% increased Attack Speed",
+      "(50-100)% increased chance to Shock"
+    ],
+    "explicits": [
+      "Rolls only the minimum or maximum Damage value for each Damage Type"
+    ],
+    "tags": [
+      "attack",
+      "damage",
+      "grants_skill",
+      "grants_spear_throw",
+      "lightning",
+      "physical",
+      "shock",
+      "speed"
+    ],
+    "grantedSkills": [
+      {
+        "skillName": "Spear Throw",
+        "minLevel": 1,
+        "maxLevel": 20
+      }
+    ],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "spire_of_ire",
+    "name": "Spire of Ire",
+    "baseType": "Helix Spear",
+    "itemClass": "spear",
+    "league": "Dawn of the Hunt",
+    "variants": [
+      {
+        "name": "Pre 0.2.1",
+        "mods": [
+          "Leeches (0.06-0.1)% of Physical Damage as Life",
+          "Adds (106-146) to (181-221) Chaos damage"
+        ]
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "Leeches (10-20)% of Physical Damage as Life",
+          "Adds (167-201) to (267-333) Chaos damage"
+        ]
+      }
+    ],
+    "implicits": [
+      "Grants Skill: Spear Throw",
+      "Grants Skill: Level (1-20) Chaotic Infusion",
+      "(15-20)% increased Attack Speed",
+      "When you Consume a Charge Trigger Chaotic Surge to gain 2 Chaos Surges",
+      "Life Leech recovers based on your Chaos damage instead of Physical damage"
+    ],
+    "explicits": [],
+    "tags": [
+      "attack",
+      "chaos",
+      "damage",
+      "grants_chaotic_infusion",
+      "grants_skill",
+      "grants_spear_throw",
+      "life",
+      "physical",
+      "speed"
+    ],
+    "grantedSkills": [
+      {
+        "skillName": "Spear Throw",
+        "minLevel": 1,
+        "maxLevel": 20
+      },
+      {
+        "skillName": "Chaotic Infusion",
+        "minLevel": 1,
+        "maxLevel": 20
+      }
+    ],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "splinter_of_lorrata",
+    "name": "Splinter of Lorrata",
+    "baseType": "Hardwood Spear",
+    "itemClass": "spear",
+    "league": "Dawn of the Hunt",
+    "variants": [
+      {
+        "name": "Pre 0.3.0",
+        "mods": []
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "Deal no Elemental Damage"
+        ]
+      }
+    ],
+    "implicits": [
+      "Grants Skill: Spear Throw",
+      "Adds (2-3) to (6-8) Physical Damage",
+      "20% increased Melee Strike Range with this weapon",
+      "Any number of Poisons from this Weapon can affect a target at the same time",
+      "Always Poison on Hit with this weapon"
+    ],
+    "explicits": [],
+    "tags": [
+      "conditional",
+      "damage",
+      "grants_skill",
+      "grants_spear_throw",
+      "on_hit",
+      "physical",
+      "poison"
+    ],
+    "grantedSkills": [
+      {
+        "skillName": "Spear Throw",
+        "minLevel": 1,
+        "maxLevel": 20
+      }
+    ],
+    "skillLevelBoosts": [],
+    "conditionalMods": [
+      {
+        "condition": "on_hit",
+        "effect": "Always Poison on Hit with this weapon",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": "tangletongue",
+    "name": "Tangletongue",
+    "baseType": "Forked Spear",
+    "itemClass": "spear",
+    "league": "Dawn of the Hunt",
+    "variants": [
+      {
+        "name": "Pre 0.3.0",
+        "mods": [
+          "+(10-20)% to Critical Hit Chance"
+        ]
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "+(5-8)% to Critical Hit Chance"
+        ]
+      }
+    ],
+    "implicits": [
+      "Grants Skill: Spear Throw",
+      "Adds (14-18) to (30-36) Physical Damage",
+      "+(15-25) to Intelligence",
+      "Bifurcates Critical Hits",
+      "10% of Skill Mana Costs Converted to Life Costs"
+    ],
+    "explicits": [],
+    "tags": [
+      "crit",
+      "damage",
+      "grants_skill",
+      "grants_spear_throw",
+      "intelligence",
+      "life",
+      "mana",
+      "physical"
+    ],
+    "grantedSkills": [
+      {
+        "skillName": "Spear Throw",
+        "minLevel": 1,
+        "maxLevel": 20
+      }
+    ],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "tyranny_s_grip",
+    "name": "Tyranny's Grip",
+    "baseType": "Ironhead Spear",
+    "itemClass": "spear",
+    "league": "Dawn of the Hunt",
+    "variants": [],
+    "implicits": [
+      "Grants Skill: Spear Throw",
+      "(150-200)% increased Physical Damage",
+      "(10-15)% reduced Attack Speed",
+      "+(15-30) to Strength",
+      "Strikes deal Splash Damage"
+    ],
+    "explicits": [
+      "Knocks Back Enemies on Hit",
+      "Cannot use Projectile Attacks"
+    ],
+    "tags": [
+      "attack",
+      "conditional",
+      "damage",
+      "grants_skill",
+      "grants_spear_throw",
+      "on_hit",
+      "physical",
+      "speed",
+      "strength"
+    ],
+    "grantedSkills": [
+      {
+        "skillName": "Spear Throw",
+        "minLevel": 1,
+        "maxLevel": 20
+      }
+    ],
+    "skillLevelBoosts": [],
+    "conditionalMods": [
+      {
+        "condition": "on_hit",
+        "effect": "Knocks Back Enemies on Hit",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": "collapsing_horizon",
+    "name": "Collapsing Horizon",
+    "baseType": "Wyrm Quarterstaff",
+    "itemClass": "staff",
+    "source": "Drops from unique{Kosis, The Revelation}",
+    "variants": [],
+    "implicits": [],
+    "explicits": [
+      "100% increased Elemental Damage with Attacks",
+      "+(5-10)% to Critical Hit Chance",
+      "+(2-4) to Level of all Elemental Skills",
+      "Trigger skills refund half of Energy spent"
+    ],
+    "tags": [
+      "attack",
+      "crit",
+      "damage"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "dusk_vigil",
+    "name": "Dusk Vigil",
+    "baseType": "Ashen Staff",
+    "itemClass": "staff",
+    "variants": [
+      {
+        "name": "Pre 0.4.0",
+        "mods": [
+          "(60-80)% increased Spell Damage"
+        ]
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "Gain (30-50)% of Damage as Extra Fire Damage",
+          "(80-120)% increased Spell Damage"
+        ]
+      }
+    ],
+    "implicits": [
+      "Grants Skill: Level (1-20) Firebolt",
+      "Grants Skill: Level (1-20) Ember Fusillade",
+      "Gain (5-10) Life per enemy killed",
+      "25% increased Mana Regeneration Rate",
+      "Trigger Ember Fusillade Skill on casting a Spell"
+    ],
+    "explicits": [],
+    "tags": [
+      "damage",
+      "fire",
+      "grants_ember_fusillade",
+      "grants_firebolt",
+      "grants_skill",
+      "life",
+      "mana",
+      "spell"
+    ],
+    "grantedSkills": [
+      {
+        "skillName": "Firebolt",
+        "minLevel": 1,
+        "maxLevel": 20
+      },
+      {
+        "skillName": "Ember Fusillade",
+        "minLevel": 1,
+        "maxLevel": 20
+      }
+    ],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "earthbound",
+    "name": "Earthbound",
+    "baseType": "Voltaic Staff",
+    "itemClass": "staff",
+    "variants": [
+      {
+        "name": "Pre 0.4.0",
+        "mods": [
+          "(80-120)% increased Lightning Damage"
+        ]
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "(80-120)% increased Spell Damage",
+          "(20-40)% increased chance to Shock"
+        ]
+      }
+    ],
+    "implicits": [
+      "Grants Skill: Level (1-20) Lightning Bolt",
+      "Grants Skill: Level (1-20) Spark",
+      "(10-20)% increased Cast Speed",
+      "(20-30)% increased Mana Regeneration Rate",
+      "Trigger Spark Skill on killing a Shocked Enemy"
+    ],
+    "explicits": [],
+    "tags": [
+      "conditional",
+      "damage",
+      "grants_lightning_bolt",
+      "grants_skill",
+      "grants_spark",
+      "lightning",
+      "mana",
+      "on_kill",
+      "shock",
+      "speed",
+      "spell"
+    ],
+    "grantedSkills": [
+      {
+        "skillName": "Lightning Bolt",
+        "minLevel": 1,
+        "maxLevel": 20
+      },
+      {
+        "skillName": "Spark",
+        "minLevel": 1,
+        "maxLevel": 20
+      }
+    ],
+    "skillLevelBoosts": [],
+    "conditionalMods": [
+      {
+        "condition": "on_kill",
+        "effect": "Trigger Spark Skill on killing a Shocked Enemy",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": "matsya",
+    "name": "Matsya",
+    "baseType": "Crescent Quarterstaff",
+    "itemClass": "staff",
+    "variants": [
+      {
+        "name": "Pre 0.1.1",
+        "mods": []
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "Adds (6-9) to (10-15) Cold Damage",
+          "Adds 1 to (19-29) Lightning Damage"
+        ]
+      }
+    ],
+    "implicits": [],
+    "explicits": [
+      "+(3-5)% to Critical Hit Chance",
+      "(15-20)% increased Attack Speed",
+      "(25-40)% increased Mana Regeneration Rate",
+      "Skills reserve 50% less Spirit"
+    ],
+    "tags": [
+      "attack",
+      "cold",
+      "crit",
+      "damage",
+      "lightning",
+      "mana",
+      "speed"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "nazir_s_judgement",
+    "name": "Nazir's Judgement",
+    "baseType": "Steelpoint Quarterstaff",
+    "itemClass": "staff",
+    "variants": [
+      {
+        "name": "Pre 0.1.1",
+        "mods": [
+          "(80-120)% increased Physical Damage"
+        ]
+      },
+      {
+        "name": "Pre 0.3.0",
+        "mods": []
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "(35-50)% increased Melee Damage against Heavy Stunned enemies"
+        ]
+      }
+    ],
+    "implicits": [],
+    "explicits": [
+      "{variant:2,3}Adds (30-36) to (75-81) Physical Damage",
+      "+(50-100) to Accuracy Rating",
+      "(10-20)% increased Stun Duration",
+      "Dazes on Hit"
+    ],
+    "tags": [
+      "conditional",
+      "damage",
+      "on_hit",
+      "physical"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": [
+      {
+        "condition": "on_hit",
+        "effect": "Dazes on Hit",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": "pillar_of_the_caged_god",
+    "name": "Pillar of the Caged God",
+    "baseType": "Variant: Pre 0.2.0",
+    "itemClass": "staff",
+    "variants": [
+      {
+        "name": "Current",
+        "mods": [
+          "2% increased Area of Effect for Attacks per 10 Intelligence",
+          "2% increased Attack Speed per 10 Dexterity"
+        ]
+      }
+    ],
+    "implicits": [
+      "16% increased Melee Strike Range with this weapon",
+      "10% increased Weapon Damage per 10 Strength"
+    ],
+    "explicits": [
+      "Long Quarterstaff"
+    ],
+    "tags": [
+      "attack",
+      "damage",
+      "dexterity",
+      "intelligence",
+      "speed",
+      "strength"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "sire_of_shards",
+    "name": "Sire of Shards",
+    "baseType": "Chiming Staff",
+    "itemClass": "staff",
+    "league": "Dawn of the Hunt",
+    "variants": [],
+    "implicits": [
+      "Grants Skill: Level (1-20) Sigil of Power",
+      "(80-120)% increased Spell Damage",
+      "(10-20)% increased Cast Speed",
+      "+(5-10)% to all Elemental Resistances",
+      "20% increased Light Radius"
+    ],
+    "explicits": [
+      "Spells fire 4 additional Projectiles",
+      "Spells fire Projectiles in a circle"
+    ],
+    "tags": [
+      "damage",
+      "fire",
+      "grants_sigil_of_power",
+      "grants_skill",
+      "resistance",
+      "speed",
+      "spell"
+    ],
+    "grantedSkills": [
+      {
+        "skillName": "Sigil of Power",
+        "minLevel": 1,
+        "maxLevel": 20
+      }
+    ],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "taryn_s_shiver",
+    "name": "Taryn's Shiver",
+    "baseType": "Gelid Staff",
+    "itemClass": "staff",
+    "variants": [
+      {
+        "name": "Pre 0.4.0",
+        "mods": [
+          "(80-120)% increased Cold Damage",
+          "100% increased Freeze Buildup",
+          "Enemies Frozen by you take 50% increased Damage"
+        ]
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "(80-120)% increased Spell Damage",
+          "30% increased Freeze Buildup",
+          "Enemies Frozen by you take 100% increased Damage"
+        ]
+      }
+    ],
+    "implicits": [
+      "Grants Skill: Level (1-20) Freezing Shards",
+      "(10-20)% increased Cast Speed"
+    ],
+    "explicits": [],
+    "tags": [
+      "cold",
+      "damage",
+      "freeze",
+      "grants_freezing_shards",
+      "grants_skill",
+      "speed",
+      "spell"
+    ],
+    "grantedSkills": [
+      {
+        "skillName": "Freezing Shards",
+        "minLevel": 1,
+        "maxLevel": 20
+      }
+    ],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "the_searing_touch",
+    "name": "The Searing Touch",
+    "baseType": "Pyrophyte Staff",
+    "itemClass": "staff",
+    "variants": [
+      {
+        "name": "Pre 0.4.0",
+        "mods": []
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "Ignites you inflict spread to other Enemies that stay within 1.5 metres for 1 second"
+        ]
+      }
+    ],
+    "implicits": [
+      "Grants Skill: Level (1-20) Living Bomb",
+      "(80-120)% increased Fire Damage",
+      "(10-20)% increased Cast Speed",
+      "100% increased Flammability Magnitude",
+      "100% increased Ignite Magnitude"
+    ],
+    "explicits": [],
+    "tags": [
+      "damage",
+      "fire",
+      "grants_living_bomb",
+      "grants_skill",
+      "ignite",
+      "speed"
+    ],
+    "grantedSkills": [
+      {
+        "skillName": "Living Bomb",
+        "minLevel": 1,
+        "maxLevel": 20
+      }
+    ],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "the_sentry",
+    "name": "The Sentry",
+    "baseType": "Gothic Quarterstaff",
+    "itemClass": "staff",
+    "variants": [
+      {
+        "name": "Pre 0.1.1",
+        "mods": [
+          "Adds (8-12) to (16-20) Fire Damage"
+        ]
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "No Physical Damage",
+          "Adds (25-32) to (40-50) Fire Damage",
+          "+(30-50) to Accuracy Rating"
+        ]
+      }
+    ],
+    "implicits": [],
+    "explicits": [
+      "+20% to Fire Resistance",
+      "100% increased Flammability Magnitude",
+      "30% increased Light Radius"
+    ],
+    "tags": [
+      "damage",
+      "fire",
+      "physical",
+      "resistance"
+    ],
+    "grantedSkills": [],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "the_unborn_lich",
+    "name": "The Unborn Lich",
+    "baseType": "Ravenous Staff",
+    "itemClass": "staff",
+    "league": "Rise of the Abyssal",
+    "variants": [
+      {
+        "name": "His Dark Horizon",
+        "mods": [
+          "Grants Skill: Level (1-20) His Dark Horizon"
+        ]
+      },
+      {
+        "name": "His Foul Emergence",
+        "mods": [
+          "Grants Skill: Level (1-20) His Foul Emergence"
+        ]
+      },
+      {
+        "name": "His Grave Command",
+        "mods": [
+          "Grants Skill: Level (1-20) His Grave Command"
+        ]
+      },
+      {
+        "name": "His Scattering Calamity",
+        "mods": [
+          "Grants Skill: Level (1-20) His Scattering Calamity"
+        ]
+      },
+      {
+        "name": "His Vile Intrusion",
+        "mods": [
+          "Grants Skill: Level (1-20) His Vile Intrusion"
+        ]
+      },
+      {
+        "name": "His Winnowing Flame",
+        "mods": [
+          "Grants Skill: Level (1-20) His Winnowing Flame"
+        ]
+      },
+      {
+        "name": "Elemental Damage and Ailment Duration",
+        "mods": [
+          "(10-20)% increased Duration of Elemental Ailments on Enemies",
+          "(100-160)% increased Elemental Damage"
+        ]
+      },
+      {
+        "name": "Spirit and Spirit Reservation Efficiency",
+        "mods": [
+          "+(40-60) to Spirit",
+          "(6-10)% increased Spirit Reservation Efficiency of Skills"
+        ]
+      },
+      {
+        "name": "Chaos Damage and Curse",
+        "mods": [
+          "(100-160)% increased Chaos Damage",
+          "Enemies you Curse have -(8-5)% to Chaos Resistance"
+        ]
+      },
+      {
+        "name": "Spell Physical Damage and Bleed Chance",
+        "mods": [
+          "(100-160)% increased Spell Physical Damage",
+          "(20-30)% chance to inflict Bleeding on Hit"
+        ]
+      },
+      {
+        "name": "Chaos Damage and Explode",
+        "mods": [
+          "(100-160)% increased Chaos Damage",
+          "Enemies you kill have a (5-10)% chance to explode, dealing a quarter of their maximum Life as Chaos damage"
+        ]
+      },
+      {
+        "name": "Unholy Might",
+        "mods": [
+          "(28-56)% increased Magnitude of Unholy Might buffs you grant",
+          "You have Unholy Might"
+        ]
+      }
+    ],
+    "implicits": [
+      "Grants Skill: Level (1-20) Feast of Flesh",
+      "(60-80)% increased Desecrated Modifier magnitudes"
+    ],
+    "explicits": [
+      "Has Alt Variant: true",
+      "Has Alt Variant Two: true",
+      "Has Alt Variant Three: true",
+      "Selected Variant: 7",
+      "Selected Alt Variant: 8",
+      "Selected Alt Variant Two: 9",
+      "Selected Alt Variant Three: 10"
+    ],
+    "tags": [
+      "bleed",
+      "chaos",
+      "conditional",
+      "curse",
+      "damage",
+      "grants_feast_of_flesh",
+      "grants_his_dark_horizon",
+      "grants_his_foul_emergence",
+      "grants_his_grave_command",
+      "grants_his_scattering_calamity",
+      "grants_his_vile_intrusion",
+      "grants_his_winnowing_flame",
+      "grants_skill",
+      "life",
+      "on_hit",
+      "physical",
+      "resistance",
+      "spell"
+    ],
+    "grantedSkills": [
+      {
+        "skillName": "Feast of Flesh",
+        "minLevel": 1,
+        "maxLevel": 20
+      },
+      {
+        "skillName": "His Dark Horizon",
+        "minLevel": 1,
+        "maxLevel": 20
+      },
+      {
+        "skillName": "His Foul Emergence",
+        "minLevel": 1,
+        "maxLevel": 20
+      },
+      {
+        "skillName": "His Grave Command",
+        "minLevel": 1,
+        "maxLevel": 20
+      },
+      {
+        "skillName": "His Scattering Calamity",
+        "minLevel": 1,
+        "maxLevel": 20
+      },
+      {
+        "skillName": "His Vile Intrusion",
+        "minLevel": 1,
+        "maxLevel": 20
+      },
+      {
+        "skillName": "His Winnowing Flame",
+        "minLevel": 1,
+        "maxLevel": 20
+      }
+    ],
+    "skillLevelBoosts": [],
+    "conditionalMods": [
+      {
+        "condition": "on_hit",
+        "effect": "(20-30)% chance to inflict Bleeding on Hit",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": "the_whispering_ice",
+    "name": "The Whispering Ice",
+    "baseType": "Permafrost Staff",
+    "itemClass": "staff",
+    "league": "Dawn of the Hunt",
+    "variants": [
+      {
+        "name": "Pre 0.4.0",
+        "mods": [
+          "+(2-4) to Level of all Cold Spell Skills",
+          "(5-15)% increased Intelligence",
+          "4% increased Spell Damage per 10 Intelligence",
+          "Inflict Elemental Exposure on Hit, lowering Total Elemental Resistances by (20-30)%",
+          "Adds (3-5) to (9-11) Physical Damage"
+        ]
+      },
+      {
+        "name": "Current",
+        "mods": [
+          "+(5-7) to Level of all Cold Spell Skills",
+          "(5-10)% increased Intelligence",
+          "2% increased Spell Damage per 10 Intelligence",
+          "Inflict Elemental Exposure on Hit, lowering Total Elemental Resistances by (50-60)%",
+          "Adds (8-12) to (16-18) Physical Damage"
+        ]
+      },
+      {
+        "name": "Pre 0.1.1",
+        "mods": []
+      }
+    ],
+    "implicits": [
+      "Grants Skill: Level (1-20) Heart of Ice",
+      "Grants Skill: Level (1-20) Icestorm",
+      "(10-20)% reduced Cast Speed",
+      "]],",
+      "-- Weapon: Warstaff"
+    ],
+    "explicits": [
+      "[[",
+      "The Blood Thorn",
+      "Wrapped Quarterstaff",
+      "+(10-15) to Strength",
+      "Causes Bleeding on Hit",
+      "(4-5) to (8-10) Physical Thorns damage"
+    ],
+    "tags": [
+      "bleed",
+      "cold",
+      "conditional",
+      "damage",
+      "grants_heart_of_ice",
+      "grants_icestorm",
+      "grants_skill",
+      "intelligence",
+      "on_hit",
+      "physical",
+      "resistance",
+      "speed",
+      "spell",
+      "strength"
+    ],
+    "grantedSkills": [
+      {
+        "skillName": "Heart of Ice",
+        "minLevel": 1,
+        "maxLevel": 20
+      },
+      {
+        "skillName": "Icestorm",
+        "minLevel": 1,
+        "maxLevel": 20
+      }
+    ],
+    "skillLevelBoosts": [],
+    "conditionalMods": [
+      {
+        "condition": "on_hit",
+        "effect": "Inflict Elemental Exposure on Hit, lowering Total Elemental Resistances by (20-30)%",
+        "tags": []
+      },
+      {
+        "condition": "on_hit",
+        "effect": "Inflict Elemental Exposure on Hit, lowering Total Elemental Resistances by (50-60)%",
+        "tags": []
+      },
+      {
+        "condition": "on_hit",
+        "effect": "Causes Bleeding on Hit",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": "cursecarver",
+    "name": "Cursecarver",
+    "baseType": "Acrid Wand",
+    "itemClass": "wand",
+    "requiredLevel": 33,
+    "league": "Dawn of the Hunt",
+    "variants": [
+      {
+        "name": "Elemental Weakness",
+        "mods": [
+          "+4 to Level of Elemental Weakness Skills"
+        ]
+      },
+      {
+        "name": "Vulnerability",
+        "mods": [
+          "+4 to Level of Vulnerability Skills"
+        ]
+      },
+      {
+        "name": "Despair",
+        "mods": [
+          "+4 to Level of Despair Skills"
+        ]
+      },
+      {
+        "name": "Enfeeble",
+        "mods": [
+          "+4 to Level of Enfeeble Skills"
+        ]
+      },
+      {
+        "name": "Temporal Chains",
+        "mods": [
+          "+4 to Level of Temporal Chains Skills"
+        ]
+      }
+    ],
+    "implicits": [
+      "Grants Skill: Level (1-20) Decompose",
+      "(80-100)% increased Spell Damage",
+      "(10-20)% increased Cast Speed",
+      "Lose 10 Life per enemy killed",
+      "(30-50)% increased Mana Regeneration Rate"
+    ],
+    "explicits": [],
+    "tags": [
+      "damage",
+      "grants_decompose",
+      "grants_skill",
+      "life",
+      "mana",
+      "speed",
+      "spell"
+    ],
+    "grantedSkills": [
+      {
+        "skillName": "Decompose",
+        "minLevel": 1,
+        "maxLevel": 20
+      }
+    ],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "enezun_s_charge",
+    "name": "Enezun's Charge",
+    "baseType": "Volatile Wand",
+    "itemClass": "wand",
+    "variants": [],
+    "implicits": [
+      "Grants Skill: Level (1-20) Volatile Dead",
+      "(80-100)% increased Spell Damage",
+      "(30-50)% increased Critical Hit Chance for Spells",
+      "Gain (10-15) Mana per enemy killed",
+      "25% chance to not destroy Corpses when Consuming Corpses"
+    ],
+    "explicits": [],
+    "tags": [
+      "crit",
+      "damage",
+      "grants_skill",
+      "grants_volatile_dead",
+      "mana",
+      "spell"
+    ],
+    "grantedSkills": [
+      {
+        "skillName": "Volatile Dead",
+        "minLevel": 1,
+        "maxLevel": 20
+      }
+    ],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "lifesprig",
+    "name": "Lifesprig",
+    "baseType": "Attuned Wand",
+    "itemClass": "wand",
+    "variants": [],
+    "implicits": [
+      "Grants Skill: Level (1-20) Mana Drain",
+      "+(10-20) to maximum Mana",
+      "+(1-3) to Level of all Spell Skills",
+      "(5-10)% increased Cast Speed",
+      "Leeches 1% of maximum Life when you Cast a Spell"
+    ],
+    "explicits": [],
+    "tags": [
+      "grants_mana_drain",
+      "grants_skill",
+      "life",
+      "mana",
+      "speed",
+      "spell"
+    ],
+    "grantedSkills": [
+      {
+        "skillName": "Mana Drain",
+        "minLevel": 1,
+        "maxLevel": 20
+      }
+    ],
+    "skillLevelBoosts": [],
+    "conditionalMods": []
+  },
+  {
+    "id": "sanguine_diviner",
+    "name": "Sanguine Diviner",
+    "baseType": "Bone Wand",
+    "itemClass": "wand",
+    "variants": [],
+    "implicits": [
+      "Grants Skill: Level (1-20) Bone Blast",
+      "(80-100)% increased Spell Damage",
+      "Gain (10-15) Life per enemy killed",
+      "25% chance to inflict Bleeding on Hit",
+      "25% of Spell Mana Cost Converted to Life Cost"
+    ],
+    "explicits": [],
+    "tags": [
+      "bleed",
+      "conditional",
+      "damage",
+      "grants_bone_blast",
+      "grants_skill",
+      "life",
+      "mana",
+      "on_hit",
+      "spell"
+    ],
+    "grantedSkills": [
+      {
+        "skillName": "Bone Blast",
+        "minLevel": 1,
+        "maxLevel": 20
+      }
+    ],
+    "skillLevelBoosts": [],
+    "conditionalMods": [
+      {
+        "condition": "on_hit",
+        "effect": "25% chance to inflict Bleeding on Hit",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": "the_wicked_quill",
+    "name": "The Wicked Quill",
+    "baseType": "Withered Wand",
+    "itemClass": "wand",
+    "league": "Dawn of the Hunt",
+    "variants": [],
+    "implicits": [
+      "Grants Skill: Level (1-20) Chaos Bolt",
+      "(60-100)% increased Spell Damage",
+      "+(60-100) to maximum Mana",
+      "+(7-13)% to Chaos Resistance",
+      "Spells have a 25% chance to inflict Withered for 4 seconds on Hit"
+    ],
+    "explicits": [],
+    "tags": [
+      "chaos",
+      "conditional",
+      "damage",
+      "grants_chaos_bolt",
+      "grants_skill",
+      "mana",
+      "on_hit",
+      "resistance",
+      "spell"
+    ],
+    "grantedSkills": [
+      {
+        "skillName": "Chaos Bolt",
+        "minLevel": 1,
+        "maxLevel": 20
+      }
+    ],
+    "skillLevelBoosts": [],
+    "conditionalMods": [
+      {
+        "condition": "on_hit",
+        "effect": "Spells have a 25% chance to inflict Withered for 4 seconds on Hit",
+        "tags": []
+      }
+    ]
+  }
+];
+
+// Helper functions
+export const getUniquesByClass = (itemClass: string) => 
+  POE2_UNIQUE_ITEMS.filter(i => i.itemClass === itemClass);
+
+export const getUniquesByTag = (tag: string) => 
+  POE2_UNIQUE_ITEMS.filter(i => i.tags.includes(tag));
+
+export const getUniquesByTags = (tags: string[]) => 
+  POE2_UNIQUE_ITEMS.filter(i => tags.some(tag => i.tags.includes(tag)));
+
+export const getLeagueUniques = (league: string) => 
+  POE2_UNIQUE_ITEMS.filter(i => i.league === league);
+
+export const getUniquesGrantingSkill = (skillName: string) =>
+  POE2_UNIQUE_ITEMS.filter(i => 
+    i.grantedSkills?.some(s => s.skillName.toLowerCase().includes(skillName.toLowerCase()))
+  );
+
+export const getUniquesBoostingSkillType = (skillType: string) =>
+  POE2_UNIQUE_ITEMS.filter(i => 
+    i.skillLevelBoosts?.some(b => b.skillTypes.includes(skillType.toLowerCase()))
+  );
+
+export const searchUniques = (query: string) => {
+  const lowerQuery = query.toLowerCase();
+  return POE2_UNIQUE_ITEMS.filter(i => 
+    i.name.toLowerCase().includes(lowerQuery) ||
+    i.baseType.toLowerCase().includes(lowerQuery) ||
+    i.explicits.some(mod => mod.toLowerCase().includes(lowerQuery))
+  );
+};

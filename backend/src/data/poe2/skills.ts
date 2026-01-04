@@ -1,0 +1,17404 @@
+// Auto-generated from PoB Gems.lua - DO NOT EDIT MANUALLY
+// Generated on: 2026-01-03T13:54:36.235Z
+
+export interface Skill {
+  id: string;
+  name: string;
+  type: 'Attack' | 'Spell' | 'Support' | 'Minion' | 'Buff' | 'Banner' | 'Mark' | 'Warcry' | 'Totem' | 'Shapeshift' | 'Unknown';
+  tags: string[];
+  tagString: string;
+  requirements: {
+    str: number;
+    dex: number;
+    int: number;
+  };
+  weaponRequirements?: string;
+  tier: number;
+  gemFamily?: string;
+}
+
+export const POE2_SKILLS: Skill[] = [
+  {
+    "id": "Metadata/Items/Gems/SkillGemAscendancyPoisonousConcoction",
+    "name": "Acidic Concoction",
+    "type": "Attack",
+    "tags": [
+      "grants_active_skill",
+      "attack",
+      "area",
+      "projectile",
+      "physical"
+    ],
+    "tagString": "AoE, Projectile, Physical",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 0
+    },
+    "weaponRequirements": "Unarmed",
+    "tier": 0
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemAncestralWarriorTotem",
+    "name": "Ancestral Warrior Totem",
+    "type": "Attack",
+    "tags": [
+      "strength",
+      "grants_active_skill",
+      "attack",
+      "totem",
+      "area",
+      "melee",
+      "duration",
+      "conditional",
+      "meta"
+    ],
+    "tagString": "Totem, AoE, Melee, Duration, Conditional, Meta",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "weaponRequirements": "One Hand Mace, Two Hand Mace",
+    "tier": 13
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemArmourBreaker",
+    "name": "Armour Breaker",
+    "type": "Attack",
+    "tags": [
+      "strength",
+      "grants_active_skill",
+      "attack",
+      "area",
+      "melee",
+      "strike",
+      "physical"
+    ],
+    "tagString": "AoE, Melee, Strike, Physical",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "weaponRequirements": "One Hand Mace, Two Hand Mace",
+    "tier": 3
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemArmourPiercingRounds",
+    "name": "Armour Piercing Rounds",
+    "type": "Attack",
+    "tags": [
+      "strength",
+      "dexterity",
+      "grants_active_skill",
+      "attack",
+      "ammunition",
+      "projectile",
+      "physical"
+    ],
+    "tagString": "Ammunition, Projectile, Physical",
+    "requirements": {
+      "str": 50,
+      "dex": 50,
+      "int": 0
+    },
+    "weaponRequirements": "Crossbow",
+    "tier": 1
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemArtilleryBallista",
+    "name": "Artillery Ballista",
+    "type": "Attack",
+    "tags": [
+      "strength",
+      "dexterity",
+      "grants_active_skill",
+      "attack",
+      "totem",
+      "area",
+      "projectile",
+      "sustained",
+      "duration"
+    ],
+    "tagString": "Totem, AoE, Projectile, Sustained, Duration",
+    "requirements": {
+      "str": 50,
+      "dex": 50,
+      "int": 0
+    },
+    "weaponRequirements": "Crossbow",
+    "tier": 7
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemAscendancyBleedingConcoction",
+    "name": "Bleeding Concoction",
+    "type": "Attack",
+    "tags": [
+      "grants_active_skill",
+      "attack",
+      "area",
+      "projectile",
+      "physical"
+    ],
+    "tagString": "AoE, Projectile, Physical",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 0
+    },
+    "weaponRequirements": "Unarmed",
+    "tier": 0
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemBloodHunt",
+    "name": "Blood Hunt",
+    "type": "Attack",
+    "tags": [
+      "dexterity",
+      "grants_active_skill",
+      "attack",
+      "area",
+      "melee",
+      "strike",
+      "physical",
+      "payoff"
+    ],
+    "tagString": "AoE, Melee, Strike, Physical, Payoff",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "weaponRequirements": "Spear",
+    "tier": 7
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemBoneshatter",
+    "name": "Boneshatter",
+    "type": "Attack",
+    "tags": [
+      "strength",
+      "grants_active_skill",
+      "attack",
+      "area",
+      "melee",
+      "strike"
+    ],
+    "tagString": "AoE, Melee, Strike",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "weaponRequirements": "One Hand Mace, Two Hand Mace",
+    "tier": 1
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemPlayerDefaultBow",
+    "name": "Bow Shot",
+    "type": "Attack",
+    "tags": [
+      "grants_active_skill",
+      "attack",
+      "projectile",
+      "barrageable"
+    ],
+    "tagString": "Projectile, Barrageable",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 0
+    },
+    "weaponRequirements": "Bow",
+    "tier": 0
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemExplodingPoisonToad",
+    "name": "Bursting Fen Toad",
+    "type": "Attack",
+    "tags": [
+      "grants_active_skill",
+      "attack",
+      "area",
+      "trigger",
+      "physical",
+      "chaos"
+    ],
+    "tagString": "AoE, Trigger, Physical, Chaos",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 0
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemClusterGrenade",
+    "name": "Cluster Grenade",
+    "type": "Attack",
+    "tags": [
+      "strength",
+      "dexterity",
+      "grants_active_skill",
+      "attack",
+      "area",
+      "projectile",
+      "grenade",
+      "fire"
+    ],
+    "tagString": "AoE, Projectile, Grenade, Fire",
+    "requirements": {
+      "str": 50,
+      "dex": 50,
+      "int": 0
+    },
+    "weaponRequirements": "Crossbow",
+    "tier": 13
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemWolfCrossSlash",
+    "name": "Cross Slash",
+    "type": "Attack",
+    "tags": [
+      "strength",
+      "intelligence",
+      "grants_active_skill",
+      "attack",
+      "shapeshift",
+      "wolf",
+      "area",
+      "melee"
+    ],
+    "tagString": "Shapeshift, Werewolf, AoE, Melee",
+    "requirements": {
+      "str": 50,
+      "dex": 0,
+      "int": 50
+    },
+    "weaponRequirements": "Talisman",
+    "tier": 7
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemPlayerDefaultCrossbow",
+    "name": "Crossbow Shot",
+    "type": "Attack",
+    "tags": [
+      "grants_active_skill",
+      "attack",
+      "area",
+      "ammunition",
+      "projectile"
+    ],
+    "tagString": "AoE, Ammunition, Projectile",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 0
+    },
+    "weaponRequirements": "Crossbow",
+    "tier": 0
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemCullTheWeak",
+    "name": "Cull The Weak",
+    "type": "Attack",
+    "tags": [
+      "dexterity",
+      "grants_active_skill",
+      "attack",
+      "area",
+      "melee",
+      "strike"
+    ],
+    "tagString": "AoE, Melee, Strike",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "weaponRequirements": "Spear",
+    "tier": 3
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemDetonateMinion",
+    "name": "Detonate Minion",
+    "type": "Attack",
+    "tags": [
+      "dexterity",
+      "grants_active_skill",
+      "attack",
+      "area",
+      "fire"
+    ],
+    "tagString": "AoE, Fire",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 0
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemDetonatingArrow",
+    "name": "Detonating Arrow",
+    "type": "Attack",
+    "tags": [
+      "dexterity",
+      "grants_active_skill",
+      "attack",
+      "area",
+      "projectile",
+      "fire",
+      "channelling",
+      "detonator",
+      "stages",
+      "barrageable"
+    ],
+    "tagString": "AoE, Projectile, Fire, Channelling, Detonator, Staged, Barrageable",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "weaponRequirements": "Bow",
+    "tier": 9
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemWyvernDevour",
+    "name": "Devour",
+    "type": "Attack",
+    "tags": [
+      "strength",
+      "intelligence",
+      "grants_active_skill",
+      "attack",
+      "shapeshift",
+      "wyvern",
+      "area",
+      "melee",
+      "slam"
+    ],
+    "tagString": "Shapeshift, Wyvern, AoE, Melee, Slam",
+    "requirements": {
+      "str": 50,
+      "dex": 0,
+      "int": 50
+    },
+    "weaponRequirements": "Talisman",
+    "tier": 5
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemDisengage",
+    "name": "Disengage",
+    "type": "Attack",
+    "tags": [
+      "dexterity",
+      "grants_active_skill",
+      "attack",
+      "area",
+      "melee",
+      "strike",
+      "travel"
+    ],
+    "tagString": "AoE, Melee, Strike, Travel",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "weaponRequirements": "Spear",
+    "tier": 1
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemEarthquake",
+    "name": "Earthquake",
+    "type": "Attack",
+    "tags": [
+      "strength",
+      "grants_active_skill",
+      "attack",
+      "area",
+      "melee",
+      "slam",
+      "duration"
+    ],
+    "tagString": "AoE, Melee, Slam, Duration",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "weaponRequirements": "One Hand Mace, Two Hand Mace",
+    "tier": 1
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemEarthshatter",
+    "name": "Earthshatter",
+    "type": "Attack",
+    "tags": [
+      "strength",
+      "grants_active_skill",
+      "attack",
+      "area",
+      "melee",
+      "slam",
+      "duration"
+    ],
+    "tagString": "AoE, Melee, Slam, Duration",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "weaponRequirements": "One Hand Mace, Two Hand Mace",
+    "tier": 7
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemElectrocutingArrow",
+    "name": "Electrocuting Arrow",
+    "type": "Attack",
+    "tags": [
+      "dexterity",
+      "grants_active_skill",
+      "attack",
+      "area",
+      "projectile",
+      "lightning",
+      "duration",
+      "barrageable"
+    ],
+    "tagString": "AoE, Projectile, Lightning, Duration, Barrageable",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "weaponRequirements": "Bow",
+    "tier": 5
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemElementalSundering",
+    "name": "Elemental Sundering",
+    "type": "Attack",
+    "tags": [
+      "dexterity",
+      "grants_active_skill",
+      "attack",
+      "area",
+      "melee",
+      "lightning",
+      "cold",
+      "fire",
+      "nova",
+      "payoff"
+    ],
+    "tagString": "AoE, Melee, Lightning, Cold, Fire, Nova, Payoff",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "weaponRequirements": "Spear",
+    "tier": 11
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemAscendancyTriggerElementalSurge",
+    "name": "Elemental Surge",
+    "type": "Attack",
+    "tags": [
+      "grants_active_skill",
+      "attack",
+      "area",
+      "trigger",
+      "lightning",
+      "cold",
+      "fire"
+    ],
+    "tagString": "AoE, Trigger, Lightning, Cold, Fire",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 0
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemEscapeShot",
+    "name": "Escape Shot",
+    "type": "Attack",
+    "tags": [
+      "dexterity",
+      "grants_active_skill",
+      "attack",
+      "area",
+      "projectile",
+      "trigger",
+      "cold"
+    ],
+    "tagString": "AoE, Projectile, Trigger, Cold",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "weaponRequirements": "Bow",
+    "tier": 1
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemAscendancyExplosiveConcoction",
+    "name": "Explosive Concoction",
+    "type": "Attack",
+    "tags": [
+      "grants_active_skill",
+      "attack",
+      "area",
+      "projectile",
+      "fire"
+    ],
+    "tagString": "AoE, Projectile, Fire",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 0
+    },
+    "weaponRequirements": "Unarmed",
+    "tier": 0
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemExplosiveGrenade",
+    "name": "Explosive Grenade",
+    "type": "Attack",
+    "tags": [
+      "strength",
+      "dexterity",
+      "grants_active_skill",
+      "attack",
+      "area",
+      "projectile",
+      "grenade",
+      "fire",
+      "detonator"
+    ],
+    "tagString": "AoE, Projectile, Grenade, Fire, Detonator",
+    "requirements": {
+      "str": 50,
+      "dex": 50,
+      "int": 0
+    },
+    "weaponRequirements": "Crossbow",
+    "tier": 1
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemExplosiveShot",
+    "name": "Explosive Shot",
+    "type": "Attack",
+    "tags": [
+      "strength",
+      "dexterity",
+      "grants_active_skill",
+      "attack",
+      "area",
+      "ammunition",
+      "projectile",
+      "fire",
+      "detonator"
+    ],
+    "tagString": "AoE, Ammunition, Projectile, Fire, Detonator",
+    "requirements": {
+      "str": 50,
+      "dex": 50,
+      "int": 0
+    },
+    "weaponRequirements": "Crossbow",
+    "tier": 7
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemExplosiveSpear",
+    "name": "Explosive Spear",
+    "type": "Attack",
+    "tags": [
+      "dexterity",
+      "grants_active_skill",
+      "attack",
+      "area",
+      "projectile",
+      "fire",
+      "duration",
+      "detonator",
+      "barrageable"
+    ],
+    "tagString": "AoE, Projectile, Fire, Duration, Detonator, Barrageable",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "weaponRequirements": "Spear",
+    "tier": 1
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemFallingThunder",
+    "name": "Falling Thunder",
+    "type": "Attack",
+    "tags": [
+      "dexterity",
+      "intelligence",
+      "grants_active_skill",
+      "attack",
+      "area",
+      "melee",
+      "slam",
+      "projectile",
+      "lightning"
+    ],
+    "tagString": "AoE, Melee, Slam, Projectile, Lightning",
+    "requirements": {
+      "str": 0,
+      "dex": 50,
+      "int": 50
+    },
+    "weaponRequirements": "Quarterstaff",
+    "tier": 1
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemFangsOfFrost",
+    "name": "Fangs of Frost",
+    "type": "Attack",
+    "tags": [
+      "dexterity",
+      "grants_active_skill",
+      "attack",
+      "area",
+      "melee",
+      "strike",
+      "cold"
+    ],
+    "tagString": "AoE, Melee, Strike, Cold",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "weaponRequirements": "Spear",
+    "tier": 3
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemWyvernFlameBreath",
+    "name": "Flame Breath",
+    "type": "Attack",
+    "tags": [
+      "strength",
+      "intelligence",
+      "grants_active_skill",
+      "attack",
+      "shapeshift",
+      "wyvern",
+      "area",
+      "sustained",
+      "fire",
+      "duration",
+      "channelling",
+      "detonator"
+    ],
+    "tagString": "Shapeshift, Wyvern, AoE, Sustained, Fire, Duration, Channelling, Detonator",
+    "requirements": {
+      "str": 50,
+      "dex": 0,
+      "int": 50
+    },
+    "weaponRequirements": "Talisman",
+    "tier": 13
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemFlashGrenade",
+    "name": "Flash Grenade",
+    "type": "Attack",
+    "tags": [
+      "strength",
+      "dexterity",
+      "grants_active_skill",
+      "attack",
+      "area",
+      "projectile",
+      "grenade"
+    ],
+    "tagString": "AoE, Projectile, Grenade",
+    "requirements": {
+      "str": 50,
+      "dex": 50,
+      "int": 0
+    },
+    "weaponRequirements": "Crossbow",
+    "tier": 3
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemFlickerStrike",
+    "name": "Flicker Strike",
+    "type": "Attack",
+    "tags": [
+      "dexterity",
+      "intelligence",
+      "grants_active_skill",
+      "attack",
+      "area",
+      "melee",
+      "strike"
+    ],
+    "tagString": "AoE, Melee, Strike",
+    "requirements": {
+      "str": 0,
+      "dex": 50,
+      "int": 50
+    },
+    "weaponRequirements": "Quarterstaff",
+    "tier": 13
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemForgeHammer",
+    "name": "Forge Hammer",
+    "type": "Attack",
+    "tags": [
+      "strength",
+      "grants_active_skill",
+      "attack",
+      "area",
+      "melee",
+      "slam",
+      "sustained",
+      "fire",
+      "duration"
+    ],
+    "tagString": "AoE, Melee, Slam, Sustained, Fire, Duration",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "weaponRequirements": "One Hand Mace, Two Hand Mace",
+    "tier": 9
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemFragmentationRounds",
+    "name": "Fragmentation Rounds",
+    "type": "Attack",
+    "tags": [
+      "strength",
+      "dexterity",
+      "grants_active_skill",
+      "attack",
+      "area",
+      "ammunition",
+      "projectile",
+      "payoff",
+      "merging"
+    ],
+    "tagString": "AoE, Ammunition, Projectile, Payoff, Merging",
+    "requirements": {
+      "str": 50,
+      "dex": 50,
+      "int": 0
+    },
+    "weaponRequirements": "Crossbow",
+    "tier": 1
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemFreezingSalvo",
+    "name": "Freezing Salvo",
+    "type": "Attack",
+    "tags": [
+      "dexterity",
+      "grants_active_skill",
+      "attack",
+      "area",
+      "projectile",
+      "cold"
+    ],
+    "tagString": "AoE, Projectile, Cold",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "weaponRequirements": "Bow",
+    "tier": 3
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemFrozenLocus",
+    "name": "Frozen Locus",
+    "type": "Attack",
+    "tags": [
+      "dexterity",
+      "intelligence",
+      "grants_active_skill",
+      "attack",
+      "area",
+      "melee",
+      "cold",
+      "duration"
+    ],
+    "tagString": "AoE, Melee, Cold, Duration",
+    "requirements": {
+      "str": 0,
+      "dex": 50,
+      "int": 50
+    },
+    "weaponRequirements": "Quarterstaff",
+    "tier": 1
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemAscendancyFulminatingConcoction",
+    "name": "Fulminating Concoction",
+    "type": "Attack",
+    "tags": [
+      "grants_active_skill",
+      "attack",
+      "area",
+      "projectile",
+      "lightning"
+    ],
+    "tagString": "AoE, Projectile, Lightning",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 0
+    },
+    "weaponRequirements": "Unarmed",
+    "tier": 0
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemFuriousSlam",
+    "name": "Furious Slam",
+    "type": "Attack",
+    "tags": [
+      "strength",
+      "intelligence",
+      "grants_active_skill",
+      "attack",
+      "shapeshift",
+      "bear",
+      "area",
+      "melee",
+      "slam"
+    ],
+    "tagString": "Shapeshift, Bear, AoE, Melee, Slam",
+    "requirements": {
+      "str": 50,
+      "dex": 0,
+      "int": 50
+    },
+    "weaponRequirements": "Talisman",
+    "tier": 1
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemBearFuryOfTheMountain",
+    "name": "Fury of the Mountain",
+    "type": "Attack",
+    "tags": [
+      "strength",
+      "intelligence",
+      "grants_active_skill",
+      "attack",
+      "shapeshift",
+      "bear",
+      "area",
+      "melee",
+      "slam",
+      "sustained",
+      "duration",
+      "channelling"
+    ],
+    "tagString": "Shapeshift, Bear, AoE, Melee, Slam, Sustained, Duration, Channelling",
+    "requirements": {
+      "str": 50,
+      "dex": 0,
+      "int": 50
+    },
+    "weaponRequirements": "Talisman",
+    "tier": 5
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemGalvanicShards",
+    "name": "Galvanic Shards",
+    "type": "Attack",
+    "tags": [
+      "strength",
+      "dexterity",
+      "grants_active_skill",
+      "attack",
+      "ammunition",
+      "projectile",
+      "lightning",
+      "chaining",
+      "merging"
+    ],
+    "tagString": "Ammunition, Projectile, Lightning, Chaining, Merging",
+    "requirements": {
+      "str": 50,
+      "dex": 50,
+      "int": 0
+    },
+    "weaponRequirements": "Crossbow",
+    "tier": 5
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemGasArrow",
+    "name": "Gas Arrow",
+    "type": "Attack",
+    "tags": [
+      "dexterity",
+      "grants_active_skill",
+      "attack",
+      "area",
+      "projectile",
+      "fire",
+      "chaos",
+      "duration",
+      "barrageable"
+    ],
+    "tagString": "AoE, Projectile, Fire, Chaos, Duration, Barrageable",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "weaponRequirements": "Bow",
+    "tier": 7
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemToxicGrenade",
+    "name": "Gas Grenade",
+    "type": "Attack",
+    "tags": [
+      "strength",
+      "dexterity",
+      "grants_active_skill",
+      "attack",
+      "area",
+      "projectile",
+      "grenade",
+      "fire",
+      "chaos",
+      "duration"
+    ],
+    "tagString": "AoE, Projectile, Grenade, Fire, Chaos, Duration",
+    "requirements": {
+      "str": 50,
+      "dex": 50,
+      "int": 0
+    },
+    "weaponRequirements": "Crossbow",
+    "tier": 5
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemGatheringStorm",
+    "name": "Gathering Storm",
+    "type": "Attack",
+    "tags": [
+      "dexterity",
+      "intelligence",
+      "grants_active_skill",
+      "attack",
+      "area",
+      "melee",
+      "lightning",
+      "duration",
+      "channelling",
+      "travel"
+    ],
+    "tagString": "AoE, Melee, Lightning, Duration, Channelling, Travel",
+    "requirements": {
+      "str": 0,
+      "dex": 50,
+      "int": 50
+    },
+    "weaponRequirements": "Quarterstaff",
+    "tier": 13
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemGeminiSurge",
+    "name": "Gemini Surge",
+    "type": "Attack",
+    "tags": [
+      "strength",
+      "dexterity",
+      "grants_active_skill",
+      "attack",
+      "area",
+      "trigger",
+      "cold",
+      "fire"
+    ],
+    "tagString": "AoE, Trigger, Cold, Fire",
+    "requirements": {
+      "str": 50,
+      "dex": 50,
+      "int": 0
+    },
+    "tier": 0
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemGlacialBolt",
+    "name": "Glacial Bolt",
+    "type": "Attack",
+    "tags": [
+      "strength",
+      "dexterity",
+      "grants_active_skill",
+      "attack",
+      "area",
+      "ammunition",
+      "projectile",
+      "cold",
+      "duration"
+    ],
+    "tagString": "AoE, Ammunition, Projectile, Cold, Duration",
+    "requirements": {
+      "str": 50,
+      "dex": 50,
+      "int": 0
+    },
+    "weaponRequirements": "Crossbow",
+    "tier": 7
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemGlacialCascade",
+    "name": "Glacial Cascade",
+    "type": "Attack",
+    "tags": [
+      "dexterity",
+      "intelligence",
+      "grants_active_skill",
+      "attack",
+      "area",
+      "melee",
+      "cold",
+      "payoff"
+    ],
+    "tagString": "AoE, Melee, Cold, Payoff",
+    "requirements": {
+      "str": 0,
+      "dex": 50,
+      "int": 50
+    },
+    "weaponRequirements": "Quarterstaff",
+    "tier": 1
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemGlacialLance",
+    "name": "Glacial Lance",
+    "type": "Attack",
+    "tags": [
+      "dexterity",
+      "grants_active_skill",
+      "attack",
+      "area",
+      "projectile",
+      "cold",
+      "duration",
+      "barrageable"
+    ],
+    "tagString": "AoE, Projectile, Cold, Duration, Barrageable",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "weaponRequirements": "Spear",
+    "tier": 7
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemHailstormRounds",
+    "name": "Hailstorm Rounds",
+    "type": "Attack",
+    "tags": [
+      "strength",
+      "dexterity",
+      "grants_active_skill",
+      "attack",
+      "area",
+      "ammunition",
+      "projectile",
+      "sustained",
+      "cold"
+    ],
+    "tagString": "AoE, Ammunition, Projectile, Sustained, Cold",
+    "requirements": {
+      "str": 50,
+      "dex": 50,
+      "int": 0
+    },
+    "weaponRequirements": "Crossbow",
+    "tier": 11
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemHammerOfTheGods",
+    "name": "Hammer of the Gods",
+    "type": "Attack",
+    "tags": [
+      "strength",
+      "grants_active_skill",
+      "attack",
+      "area",
+      "melee",
+      "slam",
+      "duration",
+      "conditional"
+    ],
+    "tagString": "AoE, Melee, Slam, Duration, Conditional",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "weaponRequirements": "One Hand Mace, Two Hand Mace",
+    "tier": 13
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemHandOfChayula",
+    "name": "Hand of Chayula",
+    "type": "Attack",
+    "tags": [
+      "dexterity",
+      "intelligence",
+      "grants_active_skill",
+      "attack",
+      "area",
+      "melee",
+      "strike",
+      "chaos",
+      "meta"
+    ],
+    "tagString": "AoE, Melee, Strike, Chaos, Meta",
+    "requirements": {
+      "str": 0,
+      "dex": 50,
+      "int": 50
+    },
+    "weaponRequirements": "Quarterstaff",
+    "tier": 9
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemHighVelocityRounds",
+    "name": "High Velocity Rounds",
+    "type": "Attack",
+    "tags": [
+      "strength",
+      "dexterity",
+      "grants_active_skill",
+      "attack",
+      "ammunition",
+      "projectile",
+      "physical",
+      "duration",
+      "payoff"
+    ],
+    "tagString": "Ammunition, Projectile, Physical, Duration, Payoff",
+    "requirements": {
+      "str": 50,
+      "dex": 50,
+      "int": 0
+    },
+    "weaponRequirements": "Crossbow",
+    "tier": 3
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemIceFragments",
+    "name": "Ice Fragments",
+    "type": "Attack",
+    "tags": [
+      "grants_active_skill",
+      "attack",
+      "area",
+      "projectile",
+      "trigger",
+      "cold"
+    ],
+    "tagString": "AoE, Projectile, Trigger, Cold",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 0
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemIceShards",
+    "name": "Ice Shards",
+    "type": "Attack",
+    "tags": [
+      "strength",
+      "dexterity",
+      "grants_active_skill",
+      "attack",
+      "area",
+      "ammunition",
+      "projectile",
+      "sustained",
+      "cold",
+      "hazard"
+    ],
+    "tagString": "AoE, Ammunition, Projectile, Sustained, Cold, Hazard",
+    "requirements": {
+      "str": 50,
+      "dex": 50,
+      "int": 0
+    },
+    "weaponRequirements": "Crossbow",
+    "tier": 5
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemIceShot",
+    "name": "Ice Shot",
+    "type": "Attack",
+    "tags": [
+      "dexterity",
+      "grants_active_skill",
+      "attack",
+      "projectile",
+      "cold",
+      "barrageable"
+    ],
+    "tagString": "Projectile, Cold, Barrageable",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "weaponRequirements": "Bow",
+    "tier": 9
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemIceStrike",
+    "name": "Ice Strike",
+    "type": "Attack",
+    "tags": [
+      "dexterity",
+      "intelligence",
+      "grants_active_skill",
+      "attack",
+      "area",
+      "melee",
+      "strike",
+      "cold"
+    ],
+    "tagString": "AoE, Melee, Strike, Cold",
+    "requirements": {
+      "str": 0,
+      "dex": 50,
+      "int": 50
+    },
+    "weaponRequirements": "Quarterstaff",
+    "tier": 5
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemIncendiaryShot",
+    "name": "Incendiary Shot",
+    "type": "Attack",
+    "tags": [
+      "strength",
+      "dexterity",
+      "grants_active_skill",
+      "attack",
+      "area",
+      "ammunition",
+      "projectile",
+      "fire",
+      "merging"
+    ],
+    "tagString": "AoE, Ammunition, Projectile, Fire, Merging",
+    "requirements": {
+      "str": 50,
+      "dex": 50,
+      "int": 0
+    },
+    "weaponRequirements": "Crossbow",
+    "tier": 3
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemKillingPalm",
+    "name": "Killing Palm",
+    "type": "Attack",
+    "tags": [
+      "dexterity",
+      "intelligence",
+      "grants_active_skill",
+      "attack",
+      "area",
+      "melee",
+      "strike",
+      "physical"
+    ],
+    "tagString": "AoE, Melee, Strike, Physical",
+    "requirements": {
+      "str": 0,
+      "dex": 50,
+      "int": 50
+    },
+    "weaponRequirements": "Quarterstaff",
+    "tier": 1
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemLeapSlam",
+    "name": "Leap Slam",
+    "type": "Attack",
+    "tags": [
+      "strength",
+      "grants_active_skill",
+      "attack",
+      "area",
+      "melee",
+      "slam",
+      "travel",
+      "payoff"
+    ],
+    "tagString": "AoE, Melee, Slam, Travel, Payoff",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "weaponRequirements": "One Hand Mace, Two Hand Mace",
+    "tier": 7
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemLightningArrow",
+    "name": "Lightning Arrow",
+    "type": "Attack",
+    "tags": [
+      "dexterity",
+      "grants_active_skill",
+      "attack",
+      "area",
+      "projectile",
+      "lightning",
+      "chaining",
+      "barrageable"
+    ],
+    "tagString": "AoE, Projectile, Lightning, Chaining, Barrageable",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "weaponRequirements": "Bow",
+    "tier": 1
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemLightningRod",
+    "name": "Lightning Rod",
+    "type": "Attack",
+    "tags": [
+      "dexterity",
+      "grants_active_skill",
+      "attack",
+      "area",
+      "projectile",
+      "sustained",
+      "lightning",
+      "duration",
+      "barrageable"
+    ],
+    "tagString": "AoE, Projectile, Sustained, Lightning, Duration, Barrageable",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "weaponRequirements": "Bow",
+    "tier": 1
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemLightningSpear",
+    "name": "Lightning Spear",
+    "type": "Attack",
+    "tags": [
+      "dexterity",
+      "grants_active_skill",
+      "attack",
+      "area",
+      "projectile",
+      "lightning",
+      "barrageable"
+    ],
+    "tagString": "AoE, Projectile, Lightning, Barrageable",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "weaponRequirements": "Spear",
+    "tier": 3
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemLunarAssault",
+    "name": "Lunar Assault",
+    "type": "Attack",
+    "tags": [
+      "strength",
+      "intelligence",
+      "grants_active_skill",
+      "attack",
+      "shapeshift",
+      "wolf",
+      "area",
+      "melee",
+      "strike",
+      "cold"
+    ],
+    "tagString": "Shapeshift, Werewolf, AoE, Melee, Strike, Cold",
+    "requirements": {
+      "str": 50,
+      "dex": 0,
+      "int": 50
+    },
+    "weaponRequirements": "Talisman",
+    "tier": 1
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemPlayerDefault1HMace",
+    "name": "Mace Strike",
+    "type": "Attack",
+    "tags": [
+      "grants_active_skill",
+      "attack",
+      "area",
+      "melee",
+      "strike"
+    ],
+    "tagString": "AoE, Melee, Strike",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 0
+    },
+    "weaponRequirements": "One Hand Mace",
+    "tier": 0
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemPlayerDefaultMaceMace",
+    "name": "Mace Strike",
+    "type": "Attack",
+    "tags": [
+      "grants_active_skill",
+      "attack",
+      "area",
+      "melee",
+      "strike"
+    ],
+    "tagString": "AoE, Melee, Strike",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 0
+    },
+    "weaponRequirements": "One Hand Mace, Two Hand Mace",
+    "tier": 0
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemPlayerDefault2HMace",
+    "name": "Mace Strike",
+    "type": "Attack",
+    "tags": [
+      "grants_active_skill",
+      "attack",
+      "area",
+      "melee",
+      "strike"
+    ],
+    "tagString": "AoE, Melee, Strike",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 0
+    },
+    "weaponRequirements": "Two Hand Mace",
+    "tier": 0
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemMagneticSalvo",
+    "name": "Magnetic Salvo",
+    "type": "Attack",
+    "tags": [
+      "dexterity",
+      "grants_active_skill",
+      "attack",
+      "area",
+      "projectile",
+      "lightning"
+    ],
+    "tagString": "AoE, Projectile, Lightning",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "weaponRequirements": "Bow",
+    "tier": 13
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemBearMaul",
+    "name": "Maul",
+    "type": "Attack",
+    "tags": [
+      "grants_active_skill",
+      "attack",
+      "shapeshift",
+      "bear",
+      "area",
+      "melee",
+      "strike"
+    ],
+    "tagString": "Shapeshift, Bear, AoE, Melee, Strike",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 0
+    },
+    "weaponRequirements": "Talisman",
+    "tier": 0
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemMoltenBlast",
+    "name": "Molten Blast",
+    "type": "Attack",
+    "tags": [
+      "strength",
+      "grants_active_skill",
+      "attack",
+      "area",
+      "projectile",
+      "fire"
+    ],
+    "tagString": "AoE, Projectile, Fire",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "weaponRequirements": "One Hand Mace, Two Hand Mace",
+    "tier": 5
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemMoltenCrash",
+    "name": "Molten Crash",
+    "type": "Attack",
+    "tags": [
+      "strength",
+      "intelligence",
+      "grants_active_skill",
+      "attack",
+      "shapeshift",
+      "bear",
+      "area",
+      "melee",
+      "slam",
+      "travel"
+    ],
+    "tagString": "Shapeshift, Bear, AoE, Melee, Slam, Travel",
+    "requirements": {
+      "str": 50,
+      "dex": 0,
+      "int": 50
+    },
+    "weaponRequirements": "Talisman",
+    "tier": 0
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemOilBarrage",
+    "name": "Oil Barrage",
+    "type": "Attack",
+    "tags": [
+      "strength",
+      "intelligence",
+      "grants_active_skill",
+      "attack",
+      "shapeshift",
+      "wyvern",
+      "area",
+      "projectile",
+      "sustained",
+      "channelling"
+    ],
+    "tagString": "Shapeshift, Wyvern, AoE, Projectile, Sustained, Channelling",
+    "requirements": {
+      "str": 50,
+      "dex": 0,
+      "int": 50
+    },
+    "weaponRequirements": "Talisman",
+    "tier": 9
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemOilGrenade",
+    "name": "Oil Grenade",
+    "type": "Attack",
+    "tags": [
+      "strength",
+      "dexterity",
+      "grants_active_skill",
+      "attack",
+      "area",
+      "projectile",
+      "grenade",
+      "fire",
+      "duration"
+    ],
+    "tagString": "AoE, Projectile, Grenade, Fire, Duration",
+    "requirements": {
+      "str": 50,
+      "dex": 50,
+      "int": 0
+    },
+    "weaponRequirements": "Crossbow",
+    "tier": 9
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemParry",
+    "name": "Parry",
+    "type": "Attack",
+    "tags": [
+      "grants_active_skill",
+      "attack",
+      "melee",
+      "physical",
+      "duration",
+      "channelling"
+    ],
+    "tagString": "Melee, Physical, Duration, Channelling",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 0
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemPerfectStrike",
+    "name": "Perfect Strike",
+    "type": "Attack",
+    "tags": [
+      "strength",
+      "grants_active_skill",
+      "attack",
+      "area",
+      "melee",
+      "strike",
+      "fire",
+      "channelling"
+    ],
+    "tagString": "AoE, Melee, Strike, Fire, Channelling",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "weaponRequirements": "One Hand Mace, Two Hand Mace",
+    "tier": 5
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemPermafrostBolts",
+    "name": "Permafrost Bolts",
+    "type": "Attack",
+    "tags": [
+      "strength",
+      "dexterity",
+      "grants_active_skill",
+      "attack",
+      "area",
+      "ammunition",
+      "projectile",
+      "cold",
+      "merging"
+    ],
+    "tagString": "AoE, Ammunition, Projectile, Cold, Merging",
+    "requirements": {
+      "str": 50,
+      "dex": 50,
+      "int": 0
+    },
+    "weaponRequirements": "Crossbow",
+    "tier": 1
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemPhantasmalArrowPlayer",
+    "name": "Phantasmal Arrow",
+    "type": "Attack",
+    "tags": [
+      "dexterity",
+      "grants_active_skill",
+      "attack",
+      "area",
+      "projectile",
+      "fire",
+      "duration",
+      "barrageable"
+    ],
+    "tagString": "AoE, Projectile, Fire, Duration, Barrageable",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "weaponRequirements": "Bow",
+    "tier": 0
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemPlasmaBlast",
+    "name": "Plasma Blast",
+    "type": "Attack",
+    "tags": [
+      "strength",
+      "dexterity",
+      "grants_active_skill",
+      "attack",
+      "area",
+      "ammunition",
+      "projectile",
+      "lightning",
+      "channelling"
+    ],
+    "tagString": "AoE, Ammunition, Projectile, Lightning, Channelling",
+    "requirements": {
+      "str": 50,
+      "dex": 50,
+      "int": 0
+    },
+    "weaponRequirements": "Crossbow",
+    "tier": 13
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemPoisonBurstArrow",
+    "name": "Poisonburst Arrow",
+    "type": "Attack",
+    "tags": [
+      "dexterity",
+      "grants_active_skill",
+      "attack",
+      "area",
+      "projectile",
+      "chaos",
+      "duration",
+      "barrageable"
+    ],
+    "tagString": "AoE, Projectile, Chaos, Duration, Barrageable",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "weaponRequirements": "Bow",
+    "tier": 1
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemWolfPounce",
+    "name": "Pounce",
+    "type": "Attack",
+    "tags": [
+      "strength",
+      "intelligence",
+      "grants_active_skill",
+      "attack",
+      "minion",
+      "shapeshift",
+      "wolf",
+      "area",
+      "melee",
+      "slam",
+      "trigger",
+      "mark",
+      "duration",
+      "travel",
+      "meta"
+    ],
+    "tagString": "Minion, Shapeshift, Werewolf, AoE, Melee, Slam, Trigger, Mark, Duration, Travel, Meta",
+    "requirements": {
+      "str": 50,
+      "dex": 0,
+      "int": 50
+    },
+    "weaponRequirements": "Talisman",
+    "tier": 3
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemPrimalStrikes",
+    "name": "Primal Strikes",
+    "type": "Attack",
+    "tags": [
+      "dexterity",
+      "grants_active_skill",
+      "attack",
+      "area",
+      "melee",
+      "strike",
+      "lightning",
+      "payoff"
+    ],
+    "tagString": "AoE, Melee, Strike, Lightning, Payoff",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "weaponRequirements": "Spear",
+    "tier": 7
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemPlayerDefaultQuarterstaff",
+    "name": "Quarterstaff Strike",
+    "type": "Attack",
+    "tags": [
+      "grants_active_skill",
+      "attack",
+      "area",
+      "melee",
+      "strike"
+    ],
+    "tagString": "AoE, Melee, Strike",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 0
+    },
+    "weaponRequirements": "Quarterstaff",
+    "tier": 0
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemRainOfArrows",
+    "name": "Rain of Arrows",
+    "type": "Attack",
+    "tags": [
+      "dexterity",
+      "grants_active_skill",
+      "attack",
+      "area",
+      "projectile",
+      "sustained"
+    ],
+    "tagString": "AoE, Projectile, Sustained",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "weaponRequirements": "Bow",
+    "tier": 9
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemShieldBlock",
+    "name": "Raise Shield",
+    "type": "Attack",
+    "tags": [
+      "grants_active_skill",
+      "attack",
+      "area",
+      "melee",
+      "physical",
+      "channelling"
+    ],
+    "tagString": "AoE, Melee, Physical, Channelling",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 0
+    },
+    "weaponRequirements": "Armoured Shield",
+    "tier": 0
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemRake",
+    "name": "Rake",
+    "type": "Attack",
+    "tags": [
+      "dexterity",
+      "grants_active_skill",
+      "attack",
+      "area",
+      "melee",
+      "strike",
+      "physical"
+    ],
+    "tagString": "AoE, Melee, Strike, Physical",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "weaponRequirements": "Spear",
+    "tier": 3
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemBearRampage",
+    "name": "Rampage",
+    "type": "Attack",
+    "tags": [
+      "strength",
+      "intelligence",
+      "grants_active_skill",
+      "attack",
+      "shapeshift",
+      "bear",
+      "area",
+      "melee",
+      "slam",
+      "sustained",
+      "channelling",
+      "travel"
+    ],
+    "tagString": "Shapeshift, Bear, AoE, Melee, Slam, Sustained, Channelling, Travel",
+    "requirements": {
+      "str": 50,
+      "dex": 0,
+      "int": 50
+    },
+    "weaponRequirements": "Talisman",
+    "tier": 11
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemRapidAssault",
+    "name": "Rapid Assault",
+    "type": "Attack",
+    "tags": [
+      "dexterity",
+      "grants_active_skill",
+      "attack",
+      "area",
+      "melee",
+      "strike",
+      "physical",
+      "duration"
+    ],
+    "tagString": "AoE, Melee, Strike, Physical, Duration",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "weaponRequirements": "Spear",
+    "tier": 5
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemRapidShot",
+    "name": "Rapid Shot",
+    "type": "Attack",
+    "tags": [
+      "strength",
+      "dexterity",
+      "grants_active_skill",
+      "attack",
+      "ammunition",
+      "projectile",
+      "fire"
+    ],
+    "tagString": "Ammunition, Projectile, Fire",
+    "requirements": {
+      "str": 50,
+      "dex": 50,
+      "int": 0
+    },
+    "weaponRequirements": "Crossbow",
+    "tier": 5
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemWyvernRend",
+    "name": "Rend",
+    "type": "Attack",
+    "tags": [
+      "grants_active_skill",
+      "attack",
+      "shapeshift",
+      "wyvern",
+      "area",
+      "melee",
+      "strike",
+      "duration"
+    ],
+    "tagString": "Shapeshift, Wyvern, AoE, Melee, Strike, Duration",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 0
+    },
+    "weaponRequirements": "Talisman",
+    "tier": 0
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemCrossbowRequiem",
+    "name": "Requiem",
+    "type": "Attack",
+    "tags": [
+      "strength",
+      "dexterity",
+      "grants_active_skill",
+      "attack",
+      "area",
+      "ammunition",
+      "projectile",
+      "cold",
+      "conditional"
+    ],
+    "tagString": "AoE, Ammunition, Projectile, Cold, Conditional",
+    "requirements": {
+      "str": 50,
+      "dex": 50,
+      "int": 0
+    },
+    "weaponRequirements": "Crossbow",
+    "tier": 0
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemResonatingShield",
+    "name": "Resonating Shield",
+    "type": "Attack",
+    "tags": [
+      "strength",
+      "grants_active_skill",
+      "attack",
+      "area",
+      "melee",
+      "sustained",
+      "physical",
+      "channelling"
+    ],
+    "tagString": "AoE, Melee, Sustained, Physical, Channelling",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "weaponRequirements": "Armoured Shield",
+    "tier": 5
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemRollingMagma",
+    "name": "Rolling Magma",
+    "type": "Attack",
+    "tags": [
+      "strength",
+      "intelligence",
+      "grants_active_skill",
+      "attack",
+      "shapeshift",
+      "wyvern",
+      "area",
+      "projectile",
+      "fire",
+      "detonator"
+    ],
+    "tagString": "Shapeshift, Wyvern, AoE, Projectile, Fire, Detonator",
+    "requirements": {
+      "str": 50,
+      "dex": 0,
+      "int": 50
+    },
+    "weaponRequirements": "Talisman",
+    "tier": 3
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemRollingSlam",
+    "name": "Rolling Slam",
+    "type": "Attack",
+    "tags": [
+      "strength",
+      "grants_active_skill",
+      "attack",
+      "area",
+      "melee",
+      "slam"
+    ],
+    "tagString": "AoE, Melee, Slam",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "weaponRequirements": "One Hand Mace, Two Hand Mace",
+    "tier": 1
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemAscendancyShatteringConcoction",
+    "name": "Shattering Concoction",
+    "type": "Attack",
+    "tags": [
+      "grants_active_skill",
+      "attack",
+      "area",
+      "projectile",
+      "cold"
+    ],
+    "tagString": "AoE, Projectile, Cold",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 0
+    },
+    "weaponRequirements": "Unarmed",
+    "tier": 0
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemShatteringPalm",
+    "name": "Shattering Palm",
+    "type": "Attack",
+    "tags": [
+      "dexterity",
+      "intelligence",
+      "grants_active_skill",
+      "attack",
+      "area",
+      "melee",
+      "strike",
+      "trigger",
+      "cold"
+    ],
+    "tagString": "AoE, Melee, Strike, Trigger, Cold",
+    "requirements": {
+      "str": 0,
+      "dex": 50,
+      "int": 50
+    },
+    "weaponRequirements": "Quarterstaff",
+    "tier": 11
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemShatteringSpite",
+    "name": "Shattering Spite",
+    "type": "Attack",
+    "tags": [
+      "strength",
+      "dexterity",
+      "grants_active_skill",
+      "attack",
+      "area",
+      "physical",
+      "lightning",
+      "fire"
+    ],
+    "tagString": "AoE, Physical, Lightning, Fire",
+    "requirements": {
+      "str": 25,
+      "dex": 75,
+      "int": 0
+    },
+    "weaponRequirements": "Spear",
+    "tier": 0
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemShieldCharge",
+    "name": "Shield Charge",
+    "type": "Attack",
+    "tags": [
+      "strength",
+      "grants_active_skill",
+      "attack",
+      "area",
+      "melee",
+      "physical",
+      "channelling",
+      "travel"
+    ],
+    "tagString": "AoE, Melee, Physical, Channelling, Travel",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "weaponRequirements": "Armoured Shield",
+    "tier": 3
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemShieldWall",
+    "name": "Shield Wall",
+    "type": "Attack",
+    "tags": [
+      "strength",
+      "grants_active_skill",
+      "attack",
+      "area",
+      "melee",
+      "physical",
+      "duration"
+    ],
+    "tagString": "AoE, Melee, Physical, Duration",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "weaponRequirements": "Armoured Shield",
+    "tier": 7
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemShockburstRounds",
+    "name": "Shockburst Rounds",
+    "type": "Attack",
+    "tags": [
+      "strength",
+      "dexterity",
+      "grants_active_skill",
+      "attack",
+      "area",
+      "ammunition",
+      "projectile",
+      "lightning",
+      "payoff"
+    ],
+    "tagString": "AoE, Ammunition, Projectile, Lightning, Payoff",
+    "requirements": {
+      "str": 50,
+      "dex": 50,
+      "int": 0
+    },
+    "weaponRequirements": "Crossbow",
+    "tier": 11
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemShockchainArrow",
+    "name": "Shockchain Arrow",
+    "type": "Attack",
+    "tags": [
+      "dexterity",
+      "grants_active_skill",
+      "attack",
+      "area",
+      "projectile",
+      "lightning",
+      "chaining",
+      "payoff",
+      "barrageable"
+    ],
+    "tagString": "AoE, Projectile, Lightning, Chaining, Payoff, Barrageable",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "weaponRequirements": "Bow",
+    "tier": 11
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemShockwaveTotem",
+    "name": "Shockwave Totem",
+    "type": "Attack",
+    "tags": [
+      "strength",
+      "grants_active_skill",
+      "attack",
+      "totem",
+      "area",
+      "melee",
+      "slam",
+      "duration",
+      "nova"
+    ],
+    "tagString": "Totem, AoE, Melee, Slam, Duration, Nova",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "weaponRequirements": "Any Martial Weapon",
+    "tier": 3
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemWolfShred",
+    "name": "Shred",
+    "type": "Attack",
+    "tags": [
+      "grants_active_skill",
+      "attack",
+      "shapeshift",
+      "wolf",
+      "area",
+      "melee",
+      "strike",
+      "projectile",
+      "trigger",
+      "cold",
+      "payoff"
+    ],
+    "tagString": "Shapeshift, Werewolf, AoE, Melee, Strike, Projectile, Trigger, Cold, Payoff",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 0
+    },
+    "weaponRequirements": "Talisman",
+    "tier": 0
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemSiegeBallista",
+    "name": "Siege Ballista",
+    "type": "Attack",
+    "tags": [
+      "strength",
+      "dexterity",
+      "grants_active_skill",
+      "attack",
+      "totem",
+      "area",
+      "projectile",
+      "fire",
+      "duration",
+      "barrageable"
+    ],
+    "tagString": "Totem, AoE, Projectile, Fire, Duration, Barrageable",
+    "requirements": {
+      "str": 50,
+      "dex": 50,
+      "int": 0
+    },
+    "weaponRequirements": "Crossbow",
+    "tier": 9
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemSiegeCascade",
+    "name": "Siege Cascade",
+    "type": "Attack",
+    "tags": [
+      "strength",
+      "dexterity",
+      "grants_active_skill",
+      "attack",
+      "area",
+      "ammunition",
+      "projectile",
+      "sustained"
+    ],
+    "tagString": "AoE, Ammunition, Projectile, Sustained",
+    "requirements": {
+      "str": 50,
+      "dex": 50,
+      "int": 0
+    },
+    "weaponRequirements": "Crossbow",
+    "tier": 13
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemSiphoningStrike",
+    "name": "Siphoning Strike",
+    "type": "Attack",
+    "tags": [
+      "dexterity",
+      "intelligence",
+      "grants_active_skill",
+      "attack",
+      "area",
+      "melee",
+      "strike",
+      "lightning",
+      "payoff"
+    ],
+    "tagString": "AoE, Melee, Strike, Lightning, Payoff",
+    "requirements": {
+      "str": 0,
+      "dex": 50,
+      "int": 50
+    },
+    "weaponRequirements": "Quarterstaff",
+    "tier": 7
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemSnipe",
+    "name": "Snipe",
+    "type": "Attack",
+    "tags": [
+      "dexterity",
+      "grants_active_skill",
+      "attack",
+      "area",
+      "projectile",
+      "cold",
+      "channelling",
+      "payoff",
+      "barrageable"
+    ],
+    "tagString": "AoE, Projectile, Cold, Channelling, Payoff, Barrageable",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "weaponRequirements": "Bow",
+    "tier": 3
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemSpearOfSolaris",
+    "name": "Spear of Solaris",
+    "type": "Attack",
+    "tags": [
+      "dexterity",
+      "grants_active_skill",
+      "attack",
+      "area",
+      "projectile",
+      "sustained",
+      "fire",
+      "conditional"
+    ],
+    "tagString": "AoE, Projectile, Sustained, Fire, Conditional",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "weaponRequirements": "Spear",
+    "tier": 13
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemPlayerDefaultSpear",
+    "name": "Spear Stab",
+    "type": "Attack",
+    "tags": [
+      "grants_active_skill",
+      "attack",
+      "area",
+      "melee",
+      "strike"
+    ],
+    "tagString": "AoE, Melee, Strike",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 0
+    },
+    "weaponRequirements": "Spear",
+    "tier": 0
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemPlayerDefaultSpearOffHand",
+    "name": "Spear Stab",
+    "type": "Attack",
+    "tags": [
+      "grants_active_skill",
+      "attack",
+      "area",
+      "melee",
+      "strike"
+    ],
+    "tagString": "AoE, Melee, Strike",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 0
+    },
+    "weaponRequirements": "Spear",
+    "tier": 0
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemPlayerDefaultSpearThrow",
+    "name": "Spear Throw",
+    "type": "Attack",
+    "tags": [
+      "grants_active_skill",
+      "attack",
+      "area",
+      "projectile",
+      "barrageable"
+    ],
+    "tagString": "AoE, Projectile, Barrageable",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 0
+    },
+    "weaponRequirements": "Spear",
+    "tier": 0
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemSpearfield",
+    "name": "Spearfield",
+    "type": "Attack",
+    "tags": [
+      "dexterity",
+      "grants_active_skill",
+      "attack",
+      "area",
+      "melee",
+      "sustained",
+      "duration",
+      "hazard"
+    ],
+    "tagString": "AoE, Melee, Sustained, Duration, Hazard",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "weaponRequirements": "Spear",
+    "tier": 5
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemSpiralVolley",
+    "name": "Spiral Volley",
+    "type": "Attack",
+    "tags": [
+      "dexterity",
+      "grants_active_skill",
+      "attack",
+      "projectile",
+      "sustained"
+    ],
+    "tagString": "Projectile, Sustained",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "weaponRequirements": "Bow",
+    "tier": 13
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemStaggeringPalm",
+    "name": "Staggering Palm",
+    "type": "Attack",
+    "tags": [
+      "dexterity",
+      "intelligence",
+      "grants_active_skill",
+      "attack",
+      "buff",
+      "area",
+      "melee",
+      "strike",
+      "projectile",
+      "physical",
+      "duration",
+      "wind"
+    ],
+    "tagString": "Buff, AoE, Melee, Strike, Projectile, Physical, Duration, Wind",
+    "requirements": {
+      "str": 0,
+      "dex": 50,
+      "int": 50
+    },
+    "weaponRequirements": "Quarterstaff",
+    "tier": 3
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemStampede",
+    "name": "Stampede",
+    "type": "Attack",
+    "tags": [
+      "strength",
+      "grants_active_skill",
+      "attack",
+      "area",
+      "melee",
+      "slam",
+      "duration",
+      "travel"
+    ],
+    "tagString": "AoE, Melee, Slam, Duration, Travel",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "weaponRequirements": "One Hand Mace, Two Hand Mace",
+    "tier": 11
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemStormLance",
+    "name": "Storm Lance",
+    "type": "Attack",
+    "tags": [
+      "dexterity",
+      "grants_active_skill",
+      "attack",
+      "area",
+      "projectile",
+      "sustained",
+      "lightning",
+      "duration",
+      "barrageable"
+    ],
+    "tagString": "AoE, Projectile, Sustained, Lightning, Duration, Barrageable",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "weaponRequirements": "Spear",
+    "tier": 5
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemStormWave",
+    "name": "Storm Wave",
+    "type": "Attack",
+    "tags": [
+      "dexterity",
+      "intelligence",
+      "grants_active_skill",
+      "attack",
+      "area",
+      "melee",
+      "lightning"
+    ],
+    "tagString": "AoE, Melee, Lightning",
+    "requirements": {
+      "str": 0,
+      "dex": 50,
+      "int": 50
+    },
+    "weaponRequirements": "Quarterstaff",
+    "tier": 7
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemStormblastBolts",
+    "name": "Stormblast Bolts",
+    "type": "Attack",
+    "tags": [
+      "strength",
+      "dexterity",
+      "grants_active_skill",
+      "attack",
+      "area",
+      "ammunition",
+      "projectile",
+      "lightning",
+      "duration"
+    ],
+    "tagString": "AoE, Ammunition, Projectile, Lightning, Duration",
+    "requirements": {
+      "str": 50,
+      "dex": 50,
+      "int": 0
+    },
+    "weaponRequirements": "Crossbow",
+    "tier": 9
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemStormcallerArrow",
+    "name": "Stormcaller Arrow",
+    "type": "Attack",
+    "tags": [
+      "dexterity",
+      "grants_active_skill",
+      "attack",
+      "area",
+      "projectile",
+      "lightning",
+      "duration",
+      "barrageable"
+    ],
+    "tagString": "AoE, Projectile, Lightning, Duration, Barrageable",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "weaponRequirements": "Bow",
+    "tier": 3
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemSunder",
+    "name": "Sunder",
+    "type": "Attack",
+    "tags": [
+      "strength",
+      "grants_active_skill",
+      "attack",
+      "area",
+      "melee",
+      "slam",
+      "duration",
+      "payoff"
+    ],
+    "tagString": "AoE, Melee, Slam, Duration, Payoff",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "weaponRequirements": "One Hand Mace, Two Hand Mace",
+    "tier": 9
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemSuperchargedSlam",
+    "name": "Supercharged Slam",
+    "type": "Attack",
+    "tags": [
+      "strength",
+      "grants_active_skill",
+      "attack",
+      "area",
+      "melee",
+      "slam",
+      "channelling",
+      "stages"
+    ],
+    "tagString": "AoE, Melee, Slam, Channelling, Staged",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "weaponRequirements": "Two Hand Mace",
+    "tier": 11
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemTemperWeapon",
+    "name": "Temper Weapon",
+    "type": "Attack",
+    "tags": [
+      "grants_active_skill",
+      "attack",
+      "buff",
+      "area",
+      "melee",
+      "trigger",
+      "fire",
+      "channelling"
+    ],
+    "tagString": "Buff, AoE, Melee, Trigger, Fire, Channelling",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 0
+    },
+    "weaponRequirements": "Any Melee Martial Weapon",
+    "tier": 0
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemTempestBell",
+    "name": "Tempest Bell",
+    "type": "Attack",
+    "tags": [
+      "dexterity",
+      "intelligence",
+      "grants_active_skill",
+      "attack",
+      "area",
+      "melee",
+      "sustained",
+      "duration",
+      "conditional"
+    ],
+    "tagString": "AoE, Melee, Sustained, Duration, Conditional",
+    "requirements": {
+      "str": 0,
+      "dex": 50,
+      "int": 50
+    },
+    "weaponRequirements": "Quarterstaff",
+    "tier": 3
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemTempestFlurry",
+    "name": "Tempest Flurry",
+    "type": "Attack",
+    "tags": [
+      "dexterity",
+      "intelligence",
+      "grants_active_skill",
+      "attack",
+      "area",
+      "melee",
+      "strike",
+      "lightning"
+    ],
+    "tagString": "AoE, Melee, Strike, Lightning",
+    "requirements": {
+      "str": 0,
+      "dex": 50,
+      "int": 50
+    },
+    "weaponRequirements": "Quarterstaff",
+    "tier": 5
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemThunderousLeap",
+    "name": "Thunderous Leap",
+    "type": "Attack",
+    "tags": [
+      "dexterity",
+      "grants_active_skill",
+      "attack",
+      "area",
+      "melee",
+      "slam",
+      "lightning",
+      "detonator",
+      "travel"
+    ],
+    "tagString": "AoE, Melee, Slam, Lightning, Detonator, Travel",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "weaponRequirements": "Spear",
+    "tier": 9
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemTornadoShot",
+    "name": "Tornado Shot",
+    "type": "Attack",
+    "tags": [
+      "dexterity",
+      "grants_active_skill",
+      "attack",
+      "area",
+      "projectile",
+      "physical",
+      "duration",
+      "barrageable",
+      "wind"
+    ],
+    "tagString": "AoE, Projectile, Physical, Duration, Barrageable, Wind",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "weaponRequirements": "Bow",
+    "tier": 11
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemToxicGrowth",
+    "name": "Toxic Growth",
+    "type": "Attack",
+    "tags": [
+      "dexterity",
+      "grants_active_skill",
+      "attack",
+      "area",
+      "projectile",
+      "chaos",
+      "barrageable",
+      "plant"
+    ],
+    "tagString": "AoE, Projectile, Chaos, Barrageable, Plant",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "weaponRequirements": "Bow",
+    "tier": 5
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemTrailOfCaltrops",
+    "name": "Trail of Caltrops",
+    "type": "Attack",
+    "tags": [
+      "dexterity",
+      "grants_active_skill",
+      "attack",
+      "buff",
+      "persistent",
+      "area",
+      "projectile",
+      "trigger",
+      "physical",
+      "duration",
+      "hazard"
+    ],
+    "tagString": "Buff, Persistent, AoE, Projectile, Trigger, Physical, Duration, Hazard",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 8
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemTwister",
+    "name": "Twister",
+    "type": "Attack",
+    "tags": [
+      "dexterity",
+      "grants_active_skill",
+      "attack",
+      "area",
+      "projectile",
+      "duration",
+      "barrageable",
+      "wind"
+    ],
+    "tagString": "AoE, Projectile, Duration, Barrageable, Wind",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "weaponRequirements": "Spear",
+    "tier": 1
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemVaultingImpact",
+    "name": "Vaulting Impact",
+    "type": "Attack",
+    "tags": [
+      "dexterity",
+      "intelligence",
+      "grants_active_skill",
+      "attack",
+      "area",
+      "melee",
+      "slam",
+      "physical",
+      "duration",
+      "travel",
+      "payoff"
+    ],
+    "tagString": "AoE, Melee, Slam, Physical, Duration, Travel, Payoff",
+    "requirements": {
+      "str": 0,
+      "dex": 50,
+      "int": 50
+    },
+    "weaponRequirements": "Quarterstaff",
+    "tier": 5
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemVineArrow",
+    "name": "Vine Arrow",
+    "type": "Attack",
+    "tags": [
+      "dexterity",
+      "grants_active_skill",
+      "attack",
+      "area",
+      "projectile",
+      "chaos",
+      "duration",
+      "barrageable",
+      "plant"
+    ],
+    "tagString": "AoE, Projectile, Chaos, Duration, Barrageable, Plant",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "weaponRequirements": "Bow",
+    "tier": 3
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemVoidIllusion",
+    "name": "Void Illusion",
+    "type": "Attack",
+    "tags": [
+      "grants_active_skill",
+      "attack",
+      "buff",
+      "persistent",
+      "area",
+      "trigger",
+      "duration"
+    ],
+    "tagString": "Buff, Persistent, AoE, Trigger, Duration",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 0
+    },
+    "weaponRequirements": "Any Martial Weapon, Unarmed",
+    "tier": 0
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemVolcanicFissure",
+    "name": "Volcanic Fissure",
+    "type": "Attack",
+    "tags": [
+      "strength",
+      "grants_active_skill",
+      "attack",
+      "area",
+      "melee",
+      "slam",
+      "sustained",
+      "fire",
+      "duration"
+    ],
+    "tagString": "AoE, Melee, Slam, Sustained, Fire, Duration",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "weaponRequirements": "One Hand Mace, Two Hand Mace",
+    "tier": 7
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemShockGrenade",
+    "name": "Voltaic Grenade",
+    "type": "Attack",
+    "tags": [
+      "strength",
+      "dexterity",
+      "grants_active_skill",
+      "attack",
+      "area",
+      "projectile",
+      "grenade",
+      "lightning",
+      "duration"
+    ],
+    "tagString": "AoE, Projectile, Grenade, Lightning, Duration",
+    "requirements": {
+      "str": 50,
+      "dex": 50,
+      "int": 0
+    },
+    "weaponRequirements": "Crossbow",
+    "tier": 7
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemWalkingCalamity",
+    "name": "Walking Calamity",
+    "type": "Attack",
+    "tags": [
+      "strength",
+      "intelligence",
+      "grants_active_skill",
+      "attack",
+      "shapeshift",
+      "buff",
+      "bear",
+      "area",
+      "trigger",
+      "fire",
+      "duration",
+      "conditional"
+    ],
+    "tagString": "Shapeshift, Buff, Bear, AoE, Trigger, Fire, Duration, Conditional",
+    "requirements": {
+      "str": 50,
+      "dex": 0,
+      "int": 50
+    },
+    "weaponRequirements": "Talisman",
+    "tier": 13
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemWaveOfFrost",
+    "name": "Wave of Frost",
+    "type": "Attack",
+    "tags": [
+      "dexterity",
+      "intelligence",
+      "grants_active_skill",
+      "attack",
+      "area",
+      "melee",
+      "cold"
+    ],
+    "tagString": "AoE, Melee, Cold",
+    "requirements": {
+      "str": 0,
+      "dex": 50,
+      "int": 50
+    },
+    "weaponRequirements": "Quarterstaff",
+    "tier": 7
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemWhirlingAssault",
+    "name": "Whirling Assault",
+    "type": "Attack",
+    "tags": [
+      "dexterity",
+      "intelligence",
+      "grants_active_skill",
+      "attack",
+      "area",
+      "melee",
+      "strike"
+    ],
+    "tagString": "AoE, Melee, Strike",
+    "requirements": {
+      "str": 0,
+      "dex": 50,
+      "int": 50
+    },
+    "weaponRequirements": "Quarterstaff",
+    "tier": 11
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemWhirlingSlash",
+    "name": "Whirling Slash",
+    "type": "Attack",
+    "tags": [
+      "dexterity",
+      "grants_active_skill",
+      "attack",
+      "area",
+      "melee",
+      "strike",
+      "stages",
+      "wind"
+    ],
+    "tagString": "AoE, Melee, Strike, Staged, Wind",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "weaponRequirements": "Spear",
+    "tier": 1
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemWhirlwindLance",
+    "name": "Whirlwind Lance",
+    "type": "Attack",
+    "tags": [
+      "dexterity",
+      "grants_active_skill",
+      "attack",
+      "area",
+      "projectile",
+      "duration",
+      "barrageable",
+      "wind"
+    ],
+    "tagString": "AoE, Projectile, Duration, Barrageable, Wind",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "weaponRequirements": "Spear",
+    "tier": 11
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemWindBlast",
+    "name": "Wind Blast",
+    "type": "Attack",
+    "tags": [
+      "dexterity",
+      "intelligence",
+      "grants_active_skill",
+      "attack",
+      "area",
+      "melee",
+      "wind"
+    ],
+    "tagString": "AoE, Melee, Wind",
+    "requirements": {
+      "str": 0,
+      "dex": 50,
+      "int": 50
+    },
+    "weaponRequirements": "Quarterstaff",
+    "tier": 3
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemWindSerpentsFury",
+    "name": "Wind Serpent's Fury",
+    "type": "Attack",
+    "tags": [
+      "dexterity",
+      "grants_active_skill",
+      "attack",
+      "area",
+      "melee",
+      "sustained",
+      "conditional",
+      "wind"
+    ],
+    "tagString": "AoE, Melee, Sustained, Conditional, Wind",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "weaponRequirements": "Spear",
+    "tier": 13
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemWingBlast",
+    "name": "Wing Blast",
+    "type": "Attack",
+    "tags": [
+      "strength",
+      "intelligence",
+      "grants_active_skill",
+      "attack",
+      "shapeshift",
+      "wyvern",
+      "area",
+      "melee",
+      "wind"
+    ],
+    "tagString": "Shapeshift, Wyvern, AoE, Melee, Wind",
+    "requirements": {
+      "str": 50,
+      "dex": 0,
+      "int": 50
+    },
+    "weaponRequirements": "Talisman",
+    "tier": 3
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemDefianceBanner",
+    "name": "Defiance Banner",
+    "type": "Banner",
+    "tags": [
+      "strength",
+      "dexterity",
+      "grants_active_skill",
+      "banner",
+      "buff",
+      "persistent",
+      "area",
+      "aura",
+      "duration",
+      "conditional"
+    ],
+    "tagString": "Buff, Persistent, AoE, Aura, Duration, Conditional",
+    "requirements": {
+      "str": 50,
+      "dex": 50,
+      "int": 0
+    },
+    "tier": 8
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemDreadBanner",
+    "name": "Dread Banner",
+    "type": "Banner",
+    "tags": [
+      "strength",
+      "dexterity",
+      "grants_active_skill",
+      "banner",
+      "buff",
+      "persistent",
+      "area",
+      "aura",
+      "duration",
+      "conditional"
+    ],
+    "tagString": "Buff, Persistent, AoE, Aura, Duration, Conditional",
+    "requirements": {
+      "str": 50,
+      "dex": 50,
+      "int": 0
+    },
+    "tier": 14
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemWarBanner",
+    "name": "War Banner",
+    "type": "Banner",
+    "tags": [
+      "strength",
+      "dexterity",
+      "grants_active_skill",
+      "banner",
+      "buff",
+      "persistent",
+      "area",
+      "aura",
+      "duration",
+      "conditional"
+    ],
+    "tagString": "Buff, Persistent, AoE, Aura, Duration, Conditional",
+    "requirements": {
+      "str": 50,
+      "dex": 50,
+      "int": 0
+    },
+    "tier": 4
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemAlchemistsBoon",
+    "name": "Alchemist's Boon",
+    "type": "Buff",
+    "tags": [
+      "dexterity",
+      "grants_active_skill",
+      "buff",
+      "persistent",
+      "aura"
+    ],
+    "tagString": "Persistent, Aura",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 14
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemAscendancyAlignFate",
+    "name": "Align Fate",
+    "type": "Buff",
+    "tags": [
+      "grants_active_skill",
+      "buff",
+      "persistent"
+    ],
+    "tagString": "Persistent",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 0
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemApocalypse",
+    "name": "Apocalypse",
+    "type": "Buff",
+    "tags": [
+      "buff",
+      "grants_active_skill",
+      "spell",
+      "area",
+      "trigger",
+      "lightning",
+      "cold",
+      "fire",
+      "duration",
+      "conditional",
+      "storm"
+    ],
+    "tagString": "Spell, AoE, Trigger, Lightning, Cold, Fire, Duration, Conditional, Storm",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 0
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemArchmage",
+    "name": "Archmage",
+    "type": "Buff",
+    "tags": [
+      "intelligence",
+      "grants_active_skill",
+      "buff",
+      "persistent",
+      "lightning"
+    ],
+    "tagString": "Persistent, Lightning",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 14
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemArcticArmour",
+    "name": "Arctic Armour",
+    "type": "Buff",
+    "tags": [
+      "buff",
+      "intelligence",
+      "grants_active_skill",
+      "spell",
+      "persistent",
+      "sustained",
+      "cold",
+      "stages"
+    ],
+    "tagString": "Spell, Persistent, Sustained, Cold, Staged",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 4
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemAttrition",
+    "name": "Attrition",
+    "type": "Buff",
+    "tags": [
+      "strength",
+      "dexterity",
+      "grants_active_skill",
+      "buff",
+      "persistent"
+    ],
+    "tagString": "Persistent",
+    "requirements": {
+      "str": 50,
+      "dex": 50,
+      "int": 0
+    },
+    "tier": 4
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemBarkskin",
+    "name": "Barkskin",
+    "type": "Buff",
+    "tags": [
+      "strength",
+      "intelligence",
+      "grants_active_skill",
+      "buff",
+      "persistent",
+      "duration"
+    ],
+    "tagString": "Persistent, Duration",
+    "requirements": {
+      "str": 50,
+      "dex": 0,
+      "int": 50
+    },
+    "tier": 8
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemBarrierInvocation",
+    "name": "Barrier Invocation",
+    "type": "Buff",
+    "tags": [
+      "dexterity",
+      "intelligence",
+      "grants_active_skill",
+      "buff",
+      "persistent",
+      "trigger",
+      "invocation",
+      "meta"
+    ],
+    "tagString": "Persistent, Trigger, Invocation, Meta",
+    "requirements": {
+      "str": 0,
+      "dex": 50,
+      "int": 50
+    },
+    "tier": 8
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemBerserk",
+    "name": "Berserk",
+    "type": "Buff",
+    "tags": [
+      "strength",
+      "grants_active_skill",
+      "buff",
+      "persistent"
+    ],
+    "tagString": "Persistent",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 14
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemBlackPowderBlitzReservation",
+    "name": "Black Powder Blitz",
+    "type": "Buff",
+    "tags": [
+      "buff",
+      "strength",
+      "dexterity",
+      "grants_active_skill",
+      "persistent",
+      "area",
+      "physical",
+      "fire",
+      "detonator",
+      "travel"
+    ],
+    "tagString": "Persistent, AoE, Physical, Fire, Detonator, Travel",
+    "requirements": {
+      "str": 50,
+      "dex": 50,
+      "int": 0
+    },
+    "tier": 0
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemBlasphemy",
+    "name": "Blasphemy",
+    "type": "Buff",
+    "tags": [
+      "intelligence",
+      "grants_active_skill",
+      "buff",
+      "persistent",
+      "area",
+      "aura",
+      "meta"
+    ],
+    "tagString": "Persistent, AoE, Aura, Meta",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 8
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemBlinkReservation",
+    "name": "Blink",
+    "type": "Buff",
+    "tags": [
+      "buff",
+      "intelligence",
+      "grants_active_skill",
+      "spell",
+      "persistent",
+      "travel"
+    ],
+    "tagString": "Spell, Persistent, Travel",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 8
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemBloodBoil",
+    "name": "Blood Boil",
+    "type": "Buff",
+    "tags": [
+      "grants_active_skill",
+      "buff",
+      "persistent",
+      "area",
+      "physical",
+      "duration"
+    ],
+    "tagString": "Persistent, AoE, Physical, Duration",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 0
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemBriarpatch",
+    "name": "Briarpatch",
+    "type": "Buff",
+    "tags": [
+      "buff",
+      "strength",
+      "intelligence",
+      "grants_active_skill",
+      "spell",
+      "persistent",
+      "area",
+      "sustained",
+      "physical",
+      "duration",
+      "plant"
+    ],
+    "tagString": "Spell, Persistent, AoE, Sustained, Physical, Duration, Plant",
+    "requirements": {
+      "str": 50,
+      "dex": 0,
+      "int": 50
+    },
+    "tier": 4
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemMetaDeadeyeMarks",
+    "name": "Called Shots",
+    "type": "Buff",
+    "tags": [
+      "grants_active_skill",
+      "buff",
+      "persistent",
+      "area",
+      "meta"
+    ],
+    "tagString": "Persistent, AoE, Meta",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 0
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemCastOnBlock",
+    "name": "Cast on Block",
+    "type": "Buff",
+    "tags": [
+      "buff",
+      "strength",
+      "intelligence",
+      "grants_active_skill",
+      "persistent",
+      "trigger",
+      "meta"
+    ],
+    "tagString": "Persistent, Trigger, Meta",
+    "requirements": {
+      "str": 50,
+      "dex": 0,
+      "int": 50
+    },
+    "tier": 0
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemCastOnCharmUse",
+    "name": "Cast on Charm Use",
+    "type": "Buff",
+    "tags": [
+      "grants_active_skill",
+      "buff",
+      "persistent",
+      "trigger",
+      "meta"
+    ],
+    "tagString": "Persistent, Trigger, Meta",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 0
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemCastOnCriticalStrike",
+    "name": "Cast on Critical",
+    "type": "Buff",
+    "tags": [
+      "intelligence",
+      "grants_active_skill",
+      "buff",
+      "persistent",
+      "trigger",
+      "meta"
+    ],
+    "tagString": "Persistent, Trigger, Meta",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 14
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemCastOnDodge",
+    "name": "Cast on Dodge",
+    "type": "Buff",
+    "tags": [
+      "dexterity",
+      "intelligence",
+      "grants_active_skill",
+      "buff",
+      "persistent",
+      "trigger",
+      "meta"
+    ],
+    "tagString": "Persistent, Trigger, Meta",
+    "requirements": {
+      "str": 0,
+      "dex": 50,
+      "int": 50
+    },
+    "tier": 14
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemCastOnElementalAilment",
+    "name": "Cast on Elemental Ailment",
+    "type": "Buff",
+    "tags": [
+      "intelligence",
+      "grants_active_skill",
+      "buff",
+      "persistent",
+      "trigger",
+      "lightning",
+      "cold",
+      "fire",
+      "meta"
+    ],
+    "tagString": "Persistent, Trigger, Lightning, Cold, Fire, Meta",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 14
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemCastOnMeleeKill",
+    "name": "Cast on Melee Kill",
+    "type": "Buff",
+    "tags": [
+      "strength",
+      "intelligence",
+      "grants_active_skill",
+      "buff",
+      "persistent",
+      "trigger",
+      "meta"
+    ],
+    "tagString": "Persistent, Trigger, Meta",
+    "requirements": {
+      "str": 50,
+      "dex": 0,
+      "int": 50
+    },
+    "tier": 0
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemCastOnMeleeStun",
+    "name": "Cast on Melee Stun",
+    "type": "Buff",
+    "tags": [
+      "strength",
+      "grants_active_skill",
+      "buff",
+      "persistent",
+      "trigger",
+      "meta"
+    ],
+    "tagString": "Persistent, Trigger, Meta",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 0
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemCastOnMinionDeath",
+    "name": "Cast on Minion Death",
+    "type": "Buff",
+    "tags": [
+      "buff",
+      "intelligence",
+      "grants_active_skill",
+      "minion",
+      "persistent",
+      "trigger",
+      "meta"
+    ],
+    "tagString": "Minion, Persistent, Trigger, Meta",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 8
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemChargeRegulation",
+    "name": "Charge Regulation",
+    "type": "Buff",
+    "tags": [
+      "dexterity",
+      "intelligence",
+      "grants_active_skill",
+      "buff",
+      "persistent"
+    ],
+    "tagString": "Persistent",
+    "requirements": {
+      "str": 0,
+      "dex": 50,
+      "int": 50
+    },
+    "tier": 14
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemCombatFrenzy",
+    "name": "Combat Frenzy",
+    "type": "Buff",
+    "tags": [
+      "dexterity",
+      "grants_active_skill",
+      "buff",
+      "persistent"
+    ],
+    "tagString": "Persistent",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 8
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemCracklingPalm",
+    "name": "Crackling Palm",
+    "type": "Buff",
+    "tags": [
+      "buff",
+      "dexterity",
+      "intelligence",
+      "grants_active_skill",
+      "attack",
+      "persistent",
+      "area",
+      "lightning"
+    ],
+    "tagString": "Attack, Persistent, AoE, Lightning",
+    "requirements": {
+      "str": 0,
+      "dex": 50,
+      "int": 50
+    },
+    "weaponRequirements": "Unarmed",
+    "tier": 0
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemCastCurseOnBlock",
+    "name": "Curse on Block",
+    "type": "Buff",
+    "tags": [
+      "buff",
+      "dexterity",
+      "intelligence",
+      "grants_active_skill",
+      "persistent",
+      "trigger",
+      "meta"
+    ],
+    "tagString": "Persistent, Trigger, Meta",
+    "requirements": {
+      "str": 0,
+      "dex": 50,
+      "int": 50
+    },
+    "tier": 0
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemDiscipline",
+    "name": "Discipline",
+    "type": "Buff",
+    "tags": [
+      "strength",
+      "intelligence",
+      "grants_active_skill",
+      "buff",
+      "persistent",
+      "aura"
+    ],
+    "tagString": "Persistent, Aura",
+    "requirements": {
+      "str": 25,
+      "dex": 0,
+      "int": 75
+    },
+    "tier": 0
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemElementalConflux",
+    "name": "Elemental Conflux",
+    "type": "Buff",
+    "tags": [
+      "intelligence",
+      "grants_active_skill",
+      "buff",
+      "persistent",
+      "lightning",
+      "cold",
+      "fire",
+      "duration"
+    ],
+    "tagString": "Persistent, Lightning, Cold, Fire, Duration",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 14
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemElementalInvocation",
+    "name": "Elemental Invocation",
+    "type": "Buff",
+    "tags": [
+      "dexterity",
+      "intelligence",
+      "grants_active_skill",
+      "buff",
+      "persistent",
+      "trigger",
+      "lightning",
+      "cold",
+      "fire",
+      "invocation",
+      "meta"
+    ],
+    "tagString": "Persistent, Trigger, Lightning, Cold, Fire, Invocation, Meta",
+    "requirements": {
+      "str": 0,
+      "dex": 50,
+      "int": 50
+    },
+    "tier": 8
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemEmergencyReload",
+    "name": "Emergency Reload",
+    "type": "Buff",
+    "tags": [
+      "strength",
+      "dexterity",
+      "grants_active_skill",
+      "buff",
+      "duration"
+    ],
+    "tagString": "Duration",
+    "requirements": {
+      "str": 50,
+      "dex": 50,
+      "int": 0
+    },
+    "weaponRequirements": "Crossbow",
+    "tier": 11
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemEternalRage",
+    "name": "Eternal Rage",
+    "type": "Buff",
+    "tags": [
+      "strength",
+      "grants_active_skill",
+      "buff",
+      "persistent"
+    ],
+    "tagString": "Persistent",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 14
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemFeralInvocation",
+    "name": "Feral Invocation",
+    "type": "Buff",
+    "tags": [
+      "strength",
+      "intelligence",
+      "grants_active_skill",
+      "buff",
+      "persistent",
+      "invocation",
+      "meta"
+    ],
+    "tagString": "Persistent, Invocation, Meta",
+    "requirements": {
+      "str": 50,
+      "dex": 0,
+      "int": 50
+    },
+    "weaponRequirements": "Talisman",
+    "tier": 14
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemCastFireSpellOnHit",
+    "name": "Fire Spell on Hit",
+    "type": "Buff",
+    "tags": [
+      "grants_active_skill",
+      "buff",
+      "persistent",
+      "trigger",
+      "fire",
+      "meta"
+    ],
+    "tagString": "Persistent, Trigger, Fire, Meta",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 0
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemFulmination",
+    "name": "Fulmination",
+    "type": "Buff",
+    "tags": [
+      "intelligence",
+      "grants_active_skill",
+      "buff",
+      "persistent",
+      "aura",
+      "lightning"
+    ],
+    "tagString": "Persistent, Aura, Lightning",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 0
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemFuturePast",
+    "name": "Future-Past",
+    "type": "Buff",
+    "tags": [
+      "buff",
+      "grants_active_skill",
+      "persistent",
+      "duration"
+    ],
+    "tagString": "Persistent, Duration",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 0
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemGalvanicField",
+    "name": "Galvanic Field",
+    "type": "Buff",
+    "tags": [
+      "buff",
+      "intelligence",
+      "grants_active_skill",
+      "spell",
+      "area",
+      "sustained",
+      "lightning",
+      "duration",
+      "chaining",
+      "orb"
+    ],
+    "tagString": "Spell, AoE, Sustained, Lightning, Duration, Chaining, Orb",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 0
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemGhostDance",
+    "name": "Ghost Dance",
+    "type": "Buff",
+    "tags": [
+      "dexterity",
+      "intelligence",
+      "grants_active_skill",
+      "buff",
+      "persistent",
+      "duration"
+    ],
+    "tagString": "Persistent, Duration",
+    "requirements": {
+      "str": 0,
+      "dex": 50,
+      "int": 50
+    },
+    "tier": 4
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemGrimFeast",
+    "name": "Grim Feast",
+    "type": "Buff",
+    "tags": [
+      "buff",
+      "intelligence",
+      "grants_active_skill",
+      "spell",
+      "minion",
+      "persistent",
+      "remnant"
+    ],
+    "tagString": "Spell, Minion, Persistent, Remnant",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 4
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemHeraldOfAsh",
+    "name": "Herald of Ash",
+    "type": "Buff",
+    "tags": [
+      "strength",
+      "grants_active_skill",
+      "buff",
+      "persistent",
+      "area",
+      "fire",
+      "duration",
+      "herald"
+    ],
+    "tagString": "Persistent, AoE, Fire, Duration, Herald",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "weaponRequirements": "Any Martial Weapon",
+    "tier": 4
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemHeraldOfBlood",
+    "name": "Herald of Blood",
+    "type": "Buff",
+    "tags": [
+      "buff",
+      "strength",
+      "dexterity",
+      "grants_active_skill",
+      "attack",
+      "persistent",
+      "area",
+      "physical",
+      "herald",
+      "payoff"
+    ],
+    "tagString": "Attack, Persistent, AoE, Physical, Herald, Payoff",
+    "requirements": {
+      "str": 50,
+      "dex": 50,
+      "int": 0
+    },
+    "weaponRequirements": "Any Martial Weapon",
+    "tier": 4
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemHeraldOfIce",
+    "name": "Herald of Ice",
+    "type": "Buff",
+    "tags": [
+      "buff",
+      "dexterity",
+      "intelligence",
+      "grants_active_skill",
+      "attack",
+      "persistent",
+      "area",
+      "cold",
+      "herald",
+      "payoff"
+    ],
+    "tagString": "Attack, Persistent, AoE, Cold, Herald, Payoff",
+    "requirements": {
+      "str": 0,
+      "dex": 50,
+      "int": 50
+    },
+    "weaponRequirements": "Any Martial Weapon",
+    "tier": 4
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemHeraldOfPlague",
+    "name": "Herald of Plague",
+    "type": "Buff",
+    "tags": [
+      "dexterity",
+      "grants_active_skill",
+      "buff",
+      "persistent",
+      "chaos",
+      "herald"
+    ],
+    "tagString": "Persistent, Chaos, Herald",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "weaponRequirements": "Any Martial Weapon",
+    "tier": 8
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemHeraldOfThunder",
+    "name": "Herald of Thunder",
+    "type": "Buff",
+    "tags": [
+      "buff",
+      "dexterity",
+      "grants_active_skill",
+      "attack",
+      "persistent",
+      "area",
+      "lightning",
+      "herald",
+      "payoff"
+    ],
+    "tagString": "Attack, Persistent, AoE, Lightning, Herald, Payoff",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "weaponRequirements": "Any Martial Weapon",
+    "tier": 4
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemImpurity",
+    "name": "Impurity",
+    "type": "Buff",
+    "tags": [
+      "strength",
+      "intelligence",
+      "grants_active_skill",
+      "buff",
+      "persistent",
+      "aura",
+      "chaos"
+    ],
+    "tagString": "Persistent, Aura, Chaos",
+    "requirements": {
+      "str": 25,
+      "dex": 0,
+      "int": 75
+    },
+    "tier": 0
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemIntoTheBreach",
+    "name": "Into the Breach",
+    "type": "Buff",
+    "tags": [
+      "grants_active_skill",
+      "buff",
+      "persistent",
+      "remnant"
+    ],
+    "tagString": "Persistent, Remnant",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 0
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemIronWard",
+    "name": "Iron Ward",
+    "type": "Buff",
+    "tags": [
+      "strength",
+      "grants_active_skill",
+      "buff",
+      "persistent",
+      "area",
+      "physical",
+      "nova"
+    ],
+    "tagString": "Persistent, AoE, Physical, Nova",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 4
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemAscendancyLifeRemnants",
+    "name": "Life Remnants",
+    "type": "Buff",
+    "tags": [
+      "grants_active_skill",
+      "buff",
+      "persistent",
+      "remnant"
+    ],
+    "tagString": "Persistent, Remnant",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 0
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemLingeringIllusion",
+    "name": "Lingering Illusion",
+    "type": "Buff",
+    "tags": [
+      "dexterity",
+      "intelligence",
+      "grants_active_skill",
+      "buff",
+      "persistent",
+      "duration",
+      "remnant"
+    ],
+    "tagString": "Persistent, Duration, Remnant",
+    "requirements": {
+      "str": 0,
+      "dex": 50,
+      "int": 50
+    },
+    "tier": 8
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemMagmaBarrier",
+    "name": "Magma Barrier",
+    "type": "Buff",
+    "tags": [
+      "buff",
+      "strength",
+      "grants_active_skill",
+      "attack",
+      "persistent",
+      "area",
+      "melee",
+      "trigger",
+      "fire"
+    ],
+    "tagString": "Attack, Persistent, AoE, Melee, Trigger, Fire",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 4
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemMalice",
+    "name": "Malice",
+    "type": "Buff",
+    "tags": [
+      "strength",
+      "intelligence",
+      "grants_active_skill",
+      "buff",
+      "persistent",
+      "aura",
+      "duration"
+    ],
+    "tagString": "Persistent, Aura, Duration",
+    "requirements": {
+      "str": 25,
+      "dex": 0,
+      "int": 75
+    },
+    "tier": 0
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemManaRemnants",
+    "name": "Mana Remnants",
+    "type": "Buff",
+    "tags": [
+      "intelligence",
+      "grants_active_skill",
+      "buff",
+      "persistent",
+      "remnant"
+    ],
+    "tagString": "Persistent, Remnant",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 4
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemMantraOfDestruction",
+    "name": "Mantra of Destruction",
+    "type": "Buff",
+    "tags": [
+      "dexterity",
+      "intelligence",
+      "grants_active_skill",
+      "buff",
+      "chaos",
+      "duration",
+      "conditional"
+    ],
+    "tagString": "Chaos, Duration, Conditional",
+    "requirements": {
+      "str": 0,
+      "dex": 50,
+      "int": 50
+    },
+    "weaponRequirements": "Quarterstaff",
+    "tier": 9
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemMirageArcher",
+    "name": "Mirage Archer",
+    "type": "Buff",
+    "tags": [
+      "buff",
+      "dexterity",
+      "grants_active_skill",
+      "persistent",
+      "trigger",
+      "duration",
+      "meta"
+    ],
+    "tagString": "Persistent, Trigger, Duration, Meta",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "weaponRequirements": "Spear, Bow, Crossbow",
+    "tier": 8
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemMirrorOfRefraction",
+    "name": "Mirror of Refraction",
+    "type": "Buff",
+    "tags": [
+      "intelligence",
+      "grants_active_skill",
+      "buff",
+      "persistent",
+      "duration"
+    ],
+    "tagString": "Persistent, Duration",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 0
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemOverwhelmingPresence",
+    "name": "Overwhelming Presence",
+    "type": "Buff",
+    "tags": [
+      "strength",
+      "grants_active_skill",
+      "buff",
+      "persistent",
+      "aura"
+    ],
+    "tagString": "Persistent, Aura",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 8
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemPlagueBearer",
+    "name": "Plague Bearer",
+    "type": "Buff",
+    "tags": [
+      "dexterity",
+      "grants_active_skill",
+      "buff",
+      "persistent",
+      "area",
+      "physical",
+      "chaos",
+      "nova"
+    ],
+    "tagString": "Persistent, AoE, Physical, Chaos, Nova",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 4
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemPurityOfFire",
+    "name": "Purity of Fire",
+    "type": "Buff",
+    "tags": [
+      "strength",
+      "intelligence",
+      "grants_active_skill",
+      "buff",
+      "persistent",
+      "aura",
+      "fire"
+    ],
+    "tagString": "Persistent, Aura, Fire",
+    "requirements": {
+      "str": 25,
+      "dex": 0,
+      "int": 75
+    },
+    "tier": 0
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemPurityOfIce",
+    "name": "Purity of Ice",
+    "type": "Buff",
+    "tags": [
+      "strength",
+      "intelligence",
+      "grants_active_skill",
+      "buff",
+      "persistent",
+      "aura",
+      "cold"
+    ],
+    "tagString": "Persistent, Aura, Cold",
+    "requirements": {
+      "str": 25,
+      "dex": 0,
+      "int": 75
+    },
+    "tier": 0
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemPurityOfLightning",
+    "name": "Purity of Lightning",
+    "type": "Buff",
+    "tags": [
+      "strength",
+      "intelligence",
+      "grants_active_skill",
+      "buff",
+      "persistent",
+      "aura",
+      "lightning"
+    ],
+    "tagString": "Persistent, Aura, Lightning",
+    "requirements": {
+      "str": 25,
+      "dex": 0,
+      "int": 75
+    },
+    "tier": 0
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemRagingSpirits",
+    "name": "Raging Spirits",
+    "type": "Buff",
+    "tags": [
+      "buff",
+      "intelligence",
+      "grants_active_skill",
+      "minion",
+      "persistent",
+      "fire",
+      "duration"
+    ],
+    "tagString": "Minion, Persistent, Fire, Duration",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 4
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemRavenousSwarm",
+    "name": "Ravenous Swarm",
+    "type": "Buff",
+    "tags": [
+      "buff",
+      "intelligence",
+      "grants_active_skill",
+      "minion",
+      "persistent",
+      "physical",
+      "chaos",
+      "duration"
+    ],
+    "tagString": "Minion, Persistent, Physical, Chaos, Duration",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 4
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemReapersInvocation",
+    "name": "Reaper's Invocation",
+    "type": "Buff",
+    "tags": [
+      "dexterity",
+      "intelligence",
+      "grants_active_skill",
+      "buff",
+      "persistent",
+      "trigger",
+      "invocation",
+      "meta"
+    ],
+    "tagString": "Persistent, Trigger, Invocation, Meta",
+    "requirements": {
+      "str": 0,
+      "dex": 50,
+      "int": 50
+    },
+    "tier": 14
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemRitualSacrifice",
+    "name": "Ritual Sacrifice",
+    "type": "Buff",
+    "tags": [
+      "grants_active_skill",
+      "buff",
+      "duration"
+    ],
+    "tagString": "Duration",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 0
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemSacrifice",
+    "name": "Sacrifice",
+    "type": "Buff",
+    "tags": [
+      "buff",
+      "intelligence",
+      "grants_active_skill",
+      "minion",
+      "persistent"
+    ],
+    "tagString": "Minion, Persistent",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 14
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemScavengedPlating",
+    "name": "Scavenged Plating",
+    "type": "Buff",
+    "tags": [
+      "strength",
+      "grants_active_skill",
+      "buff",
+      "persistent",
+      "physical",
+      "duration"
+    ],
+    "tagString": "Persistent, Physical, Duration",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 4
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemShardScavenger",
+    "name": "Shard Scavenger",
+    "type": "Buff",
+    "tags": [
+      "strength",
+      "dexterity",
+      "grants_active_skill",
+      "buff",
+      "persistent",
+      "physical",
+      "lightning",
+      "cold",
+      "fire",
+      "duration"
+    ],
+    "tagString": "Persistent, Physical, Lightning, Cold, Fire, Duration",
+    "requirements": {
+      "str": 50,
+      "dex": 50,
+      "int": 0
+    },
+    "weaponRequirements": "Crossbow",
+    "tier": 8
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemSiphonElements",
+    "name": "Siphon Elements",
+    "type": "Buff",
+    "tags": [
+      "intelligence",
+      "grants_active_skill",
+      "buff",
+      "persistent",
+      "lightning",
+      "cold",
+      "fire",
+      "remnant"
+    ],
+    "tagString": "Persistent, Lightning, Cold, Fire, Remnant",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 8
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemSpellslinger",
+    "name": "Spellslinger",
+    "type": "Buff",
+    "tags": [
+      "intelligence",
+      "grants_active_skill",
+      "buff",
+      "persistent",
+      "trigger",
+      "invocation",
+      "meta"
+    ],
+    "tagString": "Persistent, Trigger, Invocation, Meta",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 0
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemCastLightningSpellOnHit",
+    "name": "Thundergod's Wrath",
+    "type": "Buff",
+    "tags": [
+      "strength",
+      "intelligence",
+      "grants_active_skill",
+      "buff",
+      "persistent",
+      "trigger",
+      "lightning",
+      "meta"
+    ],
+    "tagString": "Persistent, Trigger, Lightning, Meta",
+    "requirements": {
+      "str": 50,
+      "dex": 0,
+      "int": 50
+    },
+    "tier": 0
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemTimeOfNeed",
+    "name": "Time of Need",
+    "type": "Buff",
+    "tags": [
+      "strength",
+      "intelligence",
+      "grants_active_skill",
+      "buff",
+      "persistent",
+      "duration"
+    ],
+    "tagString": "Persistent, Duration",
+    "requirements": {
+      "str": 75,
+      "dex": 0,
+      "int": 25
+    },
+    "tier": 8
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemToxicDomain",
+    "name": "Toxic Domain",
+    "type": "Buff",
+    "tags": [
+      "buff",
+      "dexterity",
+      "grants_active_skill",
+      "attack",
+      "area",
+      "physical",
+      "chaos",
+      "duration",
+      "plant"
+    ],
+    "tagString": "Attack, AoE, Physical, Chaos, Duration, Plant",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "weaponRequirements": "Spear, Bow, Crossbow",
+    "tier": 13
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemTrinity",
+    "name": "Trinity",
+    "type": "Buff",
+    "tags": [
+      "dexterity",
+      "intelligence",
+      "grants_active_skill",
+      "buff",
+      "persistent",
+      "lightning",
+      "cold",
+      "fire"
+    ],
+    "tagString": "Persistent, Lightning, Cold, Fire",
+    "requirements": {
+      "str": 0,
+      "dex": 50,
+      "int": 50
+    },
+    "tier": 14
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemAscendancyUnboundAvatar",
+    "name": "Unbound Avatar",
+    "type": "Buff",
+    "tags": [
+      "grants_active_skill",
+      "buff",
+      "lightning",
+      "cold",
+      "fire",
+      "duration",
+      "conditional"
+    ],
+    "tagString": "Lightning, Cold, Fire, Duration, Conditional",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 0
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemWindDancer",
+    "name": "Wind Dancer",
+    "type": "Buff",
+    "tags": [
+      "buff",
+      "dexterity",
+      "grants_active_skill",
+      "attack",
+      "persistent",
+      "area",
+      "melee",
+      "trigger",
+      "stages"
+    ],
+    "tagString": "Attack, Persistent, AoE, Melee, Trigger, Staged",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "weaponRequirements": "Any Martial Weapon",
+    "tier": 4
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemWitheringPresence",
+    "name": "Withering Presence",
+    "type": "Buff",
+    "tags": [
+      "intelligence",
+      "grants_active_skill",
+      "buff",
+      "persistent",
+      "aura",
+      "chaos",
+      "duration"
+    ],
+    "tagString": "Persistent, Aura, Chaos, Duration",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 4
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemBloodhoundsMark",
+    "name": "Bloodhound's Mark",
+    "type": "Mark",
+    "tags": [
+      "mark",
+      "dexterity",
+      "grants_active_skill",
+      "attack",
+      "area",
+      "trigger",
+      "physical",
+      "duration",
+      "payoff"
+    ],
+    "tagString": "Attack, AoE, Trigger, Physical, Duration, Payoff",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 9
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemFreezingMark",
+    "name": "Freezing Mark",
+    "type": "Mark",
+    "tags": [
+      "mark",
+      "dexterity",
+      "intelligence",
+      "grants_active_skill",
+      "buff",
+      "cold",
+      "duration"
+    ],
+    "tagString": "Buff, Cold, Duration",
+    "requirements": {
+      "str": 0,
+      "dex": 50,
+      "int": 50
+    },
+    "tier": 7
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemSnipersMark",
+    "name": "Sniper's Mark",
+    "type": "Mark",
+    "tags": [
+      "dexterity",
+      "grants_active_skill",
+      "mark",
+      "duration"
+    ],
+    "tagString": "Duration",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 7
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemVoltaicMark",
+    "name": "Voltaic Mark",
+    "type": "Mark",
+    "tags": [
+      "mark",
+      "dexterity",
+      "grants_active_skill",
+      "buff",
+      "lightning",
+      "duration"
+    ],
+    "tagString": "Buff, Lightning, Duration",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 7
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemAncestralSpriits",
+    "name": "Ancestral Spirits",
+    "type": "Minion",
+    "tags": [
+      "grants_active_skill",
+      "minion",
+      "trigger",
+      "duration"
+    ],
+    "tagString": "Trigger, Duration",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 0
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemBoneOffering",
+    "name": "Bone Offering",
+    "type": "Minion",
+    "tags": [
+      "intelligence",
+      "grants_active_skill",
+      "minion",
+      "buff",
+      "area",
+      "physical",
+      "duration"
+    ],
+    "tagString": "Buff, AoE, Physical, Duration",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 11
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemHyenaCackle",
+    "name": "Cackling Companions",
+    "type": "Minion",
+    "tags": [
+      "strength",
+      "intelligence",
+      "grants_active_skill",
+      "minion",
+      "companion",
+      "persistent",
+      "physical"
+    ],
+    "tagString": "Companion, Persistent, Physical",
+    "requirements": {
+      "str": 50,
+      "dex": 0,
+      "int": 50
+    },
+    "tier": 0
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemSummonBeast",
+    "name": "Companion: {0}",
+    "type": "Minion",
+    "tags": [
+      "dexterity",
+      "grants_active_skill",
+      "minion",
+      "companion",
+      "persistent"
+    ],
+    "tagString": "Companion, Persistent",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 0
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemAscendancySummonSandDjinn",
+    "name": "Kelari, the Tainted Sands",
+    "type": "Minion",
+    "tags": [
+      "grants_active_skill",
+      "minion",
+      "persistent",
+      "command",
+      "physical"
+    ],
+    "tagString": "Persistent, Command, Physical",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 0
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemAscendancyCorpseBeetles",
+    "name": "Kelari's Malediction",
+    "type": "Minion",
+    "tags": [
+      "grants_active_skill",
+      "minion",
+      "persistent",
+      "command",
+      "duration"
+    ],
+    "tagString": "Persistent, Command, Duration",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 0
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemManifestWeapon",
+    "name": "Manifest Weapon",
+    "type": "Minion",
+    "tags": [
+      "grants_active_skill",
+      "minion",
+      "companion",
+      "persistent"
+    ],
+    "tagString": "Companion, Persistent",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 0
+    },
+    "weaponRequirements": "Any Melee Martial Weapon",
+    "tier": 0
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemAscendancySummonWaterDjinn",
+    "name": "Navira, the Last Mirage",
+    "type": "Minion",
+    "tags": [
+      "grants_active_skill",
+      "minion",
+      "persistent",
+      "command",
+      "cold"
+    ],
+    "tagString": "Persistent, Command, Cold",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 0
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemPainOffering",
+    "name": "Pain Offering",
+    "type": "Minion",
+    "tags": [
+      "intelligence",
+      "grants_active_skill",
+      "minion",
+      "buff",
+      "area",
+      "duration",
+      "barrageable"
+    ],
+    "tagString": "Buff, AoE, Duration, Barrageable",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 5
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemRaiseZombie",
+    "name": "Raise Zombie",
+    "type": "Minion",
+    "tags": [
+      "intelligence",
+      "grants_active_skill",
+      "minion",
+      "physical",
+      "duration"
+    ],
+    "tagString": "Physical, Duration",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 5
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemRhoaMount",
+    "name": "Rhoa Mount",
+    "type": "Minion",
+    "tags": [
+      "dexterity",
+      "grants_active_skill",
+      "minion",
+      "buff",
+      "companion",
+      "persistent"
+    ],
+    "tagString": "Buff, Companion, Persistent",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 14
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemAscendancySummonFireDjinn",
+    "name": "Ruzhan, the Blazing Sword",
+    "type": "Minion",
+    "tags": [
+      "grants_active_skill",
+      "minion",
+      "persistent",
+      "command",
+      "fire"
+    ],
+    "tagString": "Persistent, Command, Fire",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 0
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemSkeletalArsonist",
+    "name": "Skeletal Arsonist",
+    "type": "Minion",
+    "tags": [
+      "intelligence",
+      "grants_active_skill",
+      "minion",
+      "persistent",
+      "fire",
+      "detonator"
+    ],
+    "tagString": "Persistent, Fire, Detonator",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 3
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemSkeletalBrute",
+    "name": "Skeletal Brute",
+    "type": "Minion",
+    "tags": [
+      "intelligence",
+      "grants_active_skill",
+      "minion",
+      "warcry",
+      "persistent",
+      "physical",
+      "payoff"
+    ],
+    "tagString": "Warcry, Persistent, Physical, Payoff",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 13
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemSkeletalCleric",
+    "name": "Skeletal Cleric",
+    "type": "Minion",
+    "tags": [
+      "intelligence",
+      "grants_active_skill",
+      "minion",
+      "persistent"
+    ],
+    "tagString": "Persistent",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 13
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemSkeletalFrostMage",
+    "name": "Skeletal Frost Mage",
+    "type": "Minion",
+    "tags": [
+      "intelligence",
+      "grants_active_skill",
+      "minion",
+      "persistent",
+      "cold"
+    ],
+    "tagString": "Persistent, Cold",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 5
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemSkeletalReaver",
+    "name": "Skeletal Reaver",
+    "type": "Minion",
+    "tags": [
+      "intelligence",
+      "grants_active_skill",
+      "minion",
+      "persistent",
+      "physical"
+    ],
+    "tagString": "Persistent, Physical",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 9
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemSkeletalSniper",
+    "name": "Skeletal Sniper",
+    "type": "Minion",
+    "tags": [
+      "intelligence",
+      "grants_active_skill",
+      "minion",
+      "persistent",
+      "physical",
+      "fire",
+      "chaos"
+    ],
+    "tagString": "Persistent, Physical, Fire, Chaos",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 0
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemSkeletalSniper",
+    "name": "Skeletal Sniper",
+    "type": "Minion",
+    "tags": [
+      "intelligence",
+      "grants_active_skill",
+      "minion",
+      "persistent",
+      "physical",
+      "fire",
+      "chaos"
+    ],
+    "tagString": "Persistent, Physical, Fire, Chaos",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 1
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemSkeletalStormMage",
+    "name": "Skeletal Storm Mage",
+    "type": "Minion",
+    "tags": [
+      "intelligence",
+      "grants_active_skill",
+      "minion",
+      "persistent",
+      "lightning"
+    ],
+    "tagString": "Persistent, Lightning",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 11
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemSkeletalWarrior",
+    "name": "Skeletal Warrior",
+    "type": "Minion",
+    "tags": [
+      "intelligence",
+      "grants_active_skill",
+      "minion",
+      "persistent",
+      "physical"
+    ],
+    "tagString": "Persistent, Physical",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 0
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemSoulOffering",
+    "name": "Soul Offering",
+    "type": "Minion",
+    "tags": [
+      "intelligence",
+      "grants_active_skill",
+      "minion",
+      "buff",
+      "duration"
+    ],
+    "tagString": "Buff, Duration",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 13
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemSummonSpectre",
+    "name": "Spectre: {0}",
+    "type": "Minion",
+    "tags": [
+      "intelligence",
+      "grants_active_skill",
+      "minion",
+      "persistent"
+    ],
+    "tagString": "Persistent",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 0
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemAscendancySummonInfernalHound",
+    "name": "Summon Infernal Hound",
+    "type": "Minion",
+    "tags": [
+      "grants_active_skill",
+      "minion",
+      "companion",
+      "persistent",
+      "fire"
+    ],
+    "tagString": "Companion, Persistent, Fire",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 0
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemSupportingFire",
+    "name": "Supporting Fire",
+    "type": "Minion",
+    "tags": [
+      "grants_active_skill",
+      "minion",
+      "persistent"
+    ],
+    "tagString": "Persistent",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 0
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemTameBeast",
+    "name": "Tame Beast",
+    "type": "Minion",
+    "tags": [
+      "dexterity",
+      "grants_active_skill",
+      "minion",
+      "companion",
+      "persistent",
+      "duration"
+    ],
+    "tagString": "Companion, Persistent, Duration",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 9
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemWolfPack",
+    "name": "Wolf Pack",
+    "type": "Minion",
+    "tags": [
+      "strength",
+      "intelligence",
+      "grants_active_skill",
+      "minion",
+      "companion",
+      "persistent",
+      "physical"
+    ],
+    "tagString": "Companion, Persistent, Physical",
+    "requirements": {
+      "str": 50,
+      "dex": 0,
+      "int": 50
+    },
+    "tier": 8
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemDemonForm",
+    "name": "Demon Form",
+    "type": "Shapeshift",
+    "tags": [
+      "grants_active_skill",
+      "shapeshift",
+      "buff"
+    ],
+    "tagString": "Buff",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 0
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemArc",
+    "name": "Arc",
+    "type": "Spell",
+    "tags": [
+      "intelligence",
+      "grants_active_skill",
+      "spell",
+      "projectile",
+      "lightning",
+      "chaining"
+    ],
+    "tagString": "Projectile, Lightning, Chaining",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 5
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemBallLightning",
+    "name": "Ball Lightning",
+    "type": "Spell",
+    "tags": [
+      "intelligence",
+      "grants_active_skill",
+      "spell",
+      "area",
+      "projectile",
+      "sustained",
+      "lightning",
+      "duration",
+      "chaining"
+    ],
+    "tagString": "AoE, Projectile, Sustained, Lightning, Duration, Chaining",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 11
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemBarrage",
+    "name": "Barrage",
+    "type": "Spell",
+    "tags": [
+      "dexterity",
+      "grants_active_skill",
+      "spell",
+      "buff",
+      "duration"
+    ],
+    "tagString": "Buff, Duration",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "weaponRequirements": "Spear, Bow",
+    "tier": 5
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemBoneBlast",
+    "name": "Bone Blast",
+    "type": "Spell",
+    "tags": [
+      "intelligence",
+      "grants_active_skill",
+      "spell",
+      "area",
+      "physical",
+      "duration"
+    ],
+    "tagString": "AoE, Physical, Duration",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 0
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemBoneCage",
+    "name": "Bone Cage",
+    "type": "Spell",
+    "tags": [
+      "intelligence",
+      "grants_active_skill",
+      "spell",
+      "area",
+      "physical",
+      "duration",
+      "nova"
+    ],
+    "tagString": "AoE, Physical, Duration, Nova",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 3
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemBonestorm",
+    "name": "Bonestorm",
+    "type": "Spell",
+    "tags": [
+      "intelligence",
+      "grants_active_skill",
+      "spell",
+      "area",
+      "projectile",
+      "sustained",
+      "physical",
+      "channelling"
+    ],
+    "tagString": "AoE, Projectile, Sustained, Physical, Channelling",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 5
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemChaosbolt",
+    "name": "Chaos Bolt",
+    "type": "Spell",
+    "tags": [
+      "intelligence",
+      "grants_active_skill",
+      "spell",
+      "projectile",
+      "chaos"
+    ],
+    "tagString": "Projectile, Chaos",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 0
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemChargedStaff",
+    "name": "Charged Staff",
+    "type": "Spell",
+    "tags": [
+      "dexterity",
+      "intelligence",
+      "grants_active_skill",
+      "spell",
+      "attack",
+      "buff",
+      "area",
+      "lightning",
+      "duration",
+      "conditional"
+    ],
+    "tagString": "Attack, Buff, AoE, Lightning, Duration, Conditional",
+    "requirements": {
+      "str": 0,
+      "dex": 50,
+      "int": 50
+    },
+    "weaponRequirements": "Quarterstaff",
+    "tier": 9
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemComet",
+    "name": "Comet",
+    "type": "Spell",
+    "tags": [
+      "intelligence",
+      "grants_active_skill",
+      "spell",
+      "area",
+      "cold"
+    ],
+    "tagString": "AoE, Cold",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 11
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemConductivity",
+    "name": "Conductivity",
+    "type": "Spell",
+    "tags": [
+      "intelligence",
+      "grants_active_skill",
+      "spell",
+      "area",
+      "lightning",
+      "duration",
+      "curse"
+    ],
+    "tagString": "AoE, Lightning, Duration, Curse",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 0
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemStaffConsecrate",
+    "name": "Consecrate",
+    "type": "Spell",
+    "tags": [
+      "strength",
+      "intelligence",
+      "grants_active_skill",
+      "spell",
+      "area",
+      "duration",
+      "nova"
+    ],
+    "tagString": "AoE, Duration, Nova",
+    "requirements": {
+      "str": 50,
+      "dex": 0,
+      "int": 50
+    },
+    "tier": 0
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemContagion",
+    "name": "Contagion",
+    "type": "Spell",
+    "tags": [
+      "intelligence",
+      "grants_active_skill",
+      "spell",
+      "area",
+      "chaos",
+      "duration"
+    ],
+    "tagString": "AoE, Chaos, Duration",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 1
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemConvalescence",
+    "name": "Convalescence",
+    "type": "Spell",
+    "tags": [
+      "intelligence",
+      "grants_active_skill",
+      "spell",
+      "buff",
+      "persistent",
+      "duration"
+    ],
+    "tagString": "Buff, Persistent, Duration",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 4
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemDarkEffigy",
+    "name": "Dark Effigy",
+    "type": "Spell",
+    "tags": [
+      "intelligence",
+      "grants_active_skill",
+      "spell",
+      "totem",
+      "area",
+      "projectile",
+      "chaos",
+      "duration"
+    ],
+    "tagString": "Totem, AoE, Projectile, Chaos, Duration",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 9
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemCorpseCloud",
+    "name": "Decompose",
+    "type": "Spell",
+    "tags": [
+      "intelligence",
+      "grants_active_skill",
+      "spell",
+      "area",
+      "fire",
+      "chaos",
+      "duration"
+    ],
+    "tagString": "AoE, Fire, Chaos, Duration",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 0
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemDespair",
+    "name": "Despair",
+    "type": "Spell",
+    "tags": [
+      "intelligence",
+      "grants_active_skill",
+      "spell",
+      "area",
+      "chaos",
+      "duration",
+      "curse"
+    ],
+    "tagString": "AoE, Chaos, Duration, Curse",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 9
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemDetonateDead",
+    "name": "Detonate Dead",
+    "type": "Spell",
+    "tags": [
+      "intelligence",
+      "grants_active_skill",
+      "spell",
+      "area",
+      "physical",
+      "fire",
+      "detonator"
+    ],
+    "tagString": "AoE, Physical, Fire, Detonator",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 7
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemAscendancyElementalExpression",
+    "name": "Elemental Expression",
+    "type": "Spell",
+    "tags": [
+      "grants_active_skill",
+      "spell",
+      "area",
+      "projectile",
+      "trigger",
+      "lightning",
+      "cold",
+      "fire",
+      "chaining"
+    ],
+    "tagString": "AoE, Projectile, Trigger, Lightning, Cold, Fire, Chaining",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 0
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemAscendancyElementalStorm",
+    "name": "Elemental Storm",
+    "type": "Spell",
+    "tags": [
+      "grants_active_skill",
+      "spell",
+      "area",
+      "trigger",
+      "lightning",
+      "cold",
+      "fire",
+      "duration",
+      "orb"
+    ],
+    "tagString": "AoE, Trigger, Lightning, Cold, Fire, Duration, Orb",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 0
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemElementalWeakness",
+    "name": "Elemental Weakness",
+    "type": "Spell",
+    "tags": [
+      "intelligence",
+      "grants_active_skill",
+      "spell",
+      "area",
+      "lightning",
+      "cold",
+      "fire",
+      "duration",
+      "curse"
+    ],
+    "tagString": "AoE, Lightning, Cold, Fire, Duration, Curse",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 7
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemEmberFusillade",
+    "name": "Ember Fusillade",
+    "type": "Spell",
+    "tags": [
+      "intelligence",
+      "grants_active_skill",
+      "spell",
+      "area",
+      "projectile",
+      "fire",
+      "duration"
+    ],
+    "tagString": "AoE, Projectile, Fire, Duration",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 5
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemAscendancyEncasedInJade",
+    "name": "Encase in Jade",
+    "type": "Spell",
+    "tags": [
+      "grants_active_skill",
+      "spell",
+      "buff",
+      "physical",
+      "duration"
+    ],
+    "tagString": "Buff, Physical, Duration",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 0
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemEnfeeble",
+    "name": "Enfeeble",
+    "type": "Spell",
+    "tags": [
+      "intelligence",
+      "grants_active_skill",
+      "spell",
+      "area",
+      "duration",
+      "curse"
+    ],
+    "tagString": "AoE, Duration, Curse",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 3
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemEntangle",
+    "name": "Entangle",
+    "type": "Spell",
+    "tags": [
+      "strength",
+      "intelligence",
+      "grants_active_skill",
+      "spell",
+      "area",
+      "sustained",
+      "physical",
+      "duration",
+      "plant"
+    ],
+    "tagString": "AoE, Sustained, Physical, Duration, Plant",
+    "requirements": {
+      "str": 50,
+      "dex": 0,
+      "int": 50
+    },
+    "tier": 1
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemEssenceDrain",
+    "name": "Essence Drain",
+    "type": "Spell",
+    "tags": [
+      "intelligence",
+      "grants_active_skill",
+      "spell",
+      "projectile",
+      "chaos",
+      "duration"
+    ],
+    "tagString": "Projectile, Chaos, Duration",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 3
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemExsanguinate",
+    "name": "Exsanguinate",
+    "type": "Spell",
+    "tags": [
+      "intelligence",
+      "grants_active_skill",
+      "spell",
+      "physical",
+      "duration",
+      "chaining"
+    ],
+    "tagString": "Physical, Duration, Chaining",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 0
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemEyeOfWinter",
+    "name": "Eye of Winter",
+    "type": "Spell",
+    "tags": [
+      "intelligence",
+      "grants_active_skill",
+      "spell",
+      "projectile",
+      "cold"
+    ],
+    "tagString": "Projectile, Cold",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 13
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemFeastOfFlesh",
+    "name": "Feast of Flesh",
+    "type": "Spell",
+    "tags": [
+      "intelligence",
+      "grants_active_skill",
+      "spell",
+      "buff",
+      "area",
+      "nova"
+    ],
+    "tagString": "Buff, AoE, Nova",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 0
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemFireball",
+    "name": "Fireball",
+    "type": "Spell",
+    "tags": [
+      "intelligence",
+      "grants_active_skill",
+      "spell",
+      "area",
+      "projectile",
+      "fire"
+    ],
+    "tagString": "AoE, Projectile, Fire",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 3
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemFirebolt",
+    "name": "Firebolt",
+    "type": "Spell",
+    "tags": [
+      "intelligence",
+      "grants_active_skill",
+      "spell",
+      "area",
+      "projectile",
+      "fire"
+    ],
+    "tagString": "AoE, Projectile, Fire",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 0
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemFirestorm",
+    "name": "Firestorm",
+    "type": "Spell",
+    "tags": [
+      "intelligence",
+      "grants_active_skill",
+      "spell",
+      "area",
+      "sustained",
+      "fire",
+      "duration",
+      "storm"
+    ],
+    "tagString": "AoE, Sustained, Fire, Duration, Storm",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 11
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemFlameWall",
+    "name": "Flame Wall",
+    "type": "Spell",
+    "tags": [
+      "intelligence",
+      "grants_active_skill",
+      "spell",
+      "area",
+      "fire",
+      "duration"
+    ],
+    "tagString": "AoE, Fire, Duration",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 1
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemFlameblast",
+    "name": "Flameblast",
+    "type": "Spell",
+    "tags": [
+      "intelligence",
+      "grants_active_skill",
+      "spell",
+      "area",
+      "fire",
+      "channelling",
+      "nova",
+      "stages"
+    ],
+    "tagString": "AoE, Fire, Channelling, Nova, Staged",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 13
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemFlammability",
+    "name": "Flammability",
+    "type": "Spell",
+    "tags": [
+      "intelligence",
+      "grants_active_skill",
+      "spell",
+      "area",
+      "fire",
+      "duration",
+      "curse"
+    ],
+    "tagString": "AoE, Fire, Duration, Curse",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 0
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemFreezingShards",
+    "name": "Freezing Shards",
+    "type": "Spell",
+    "tags": [
+      "intelligence",
+      "grants_active_skill",
+      "spell",
+      "projectile",
+      "cold"
+    ],
+    "tagString": "Projectile, Cold",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 0
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemFrostBomb",
+    "name": "Frost Bomb",
+    "type": "Spell",
+    "tags": [
+      "intelligence",
+      "grants_active_skill",
+      "spell",
+      "area",
+      "cold",
+      "duration",
+      "orb",
+      "remnant"
+    ],
+    "tagString": "AoE, Cold, Duration, Orb, Remnant",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 1
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemFrostDarts",
+    "name": "Frost Darts",
+    "type": "Spell",
+    "tags": [
+      "intelligence",
+      "grants_active_skill",
+      "spell",
+      "area",
+      "projectile",
+      "cold",
+      "payoff"
+    ],
+    "tagString": "AoE, Projectile, Cold, Payoff",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 3
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemFrostWall",
+    "name": "Frost Wall",
+    "type": "Spell",
+    "tags": [
+      "intelligence",
+      "grants_active_skill",
+      "spell",
+      "area",
+      "cold",
+      "duration"
+    ],
+    "tagString": "AoE, Cold, Duration",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 9
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemFrostBolt",
+    "name": "Frostbolt",
+    "type": "Spell",
+    "tags": [
+      "intelligence",
+      "grants_active_skill",
+      "spell",
+      "area",
+      "projectile",
+      "cold"
+    ],
+    "tagString": "AoE, Projectile, Cold",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 5
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemHeartOfIce",
+    "name": "Heart of Ice",
+    "type": "Spell",
+    "tags": [
+      "intelligence",
+      "grants_active_skill",
+      "spell",
+      "buff",
+      "persistent",
+      "aura",
+      "cold"
+    ],
+    "tagString": "Buff, Persistent, Aura, Cold",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 0
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemHexblast",
+    "name": "Hexblast",
+    "type": "Spell",
+    "tags": [
+      "intelligence",
+      "grants_active_skill",
+      "spell",
+      "area",
+      "chaos",
+      "payoff"
+    ],
+    "tagString": "AoE, Chaos, Payoff",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 11
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemHisFoulEmergence",
+    "name": "His Foul Emergence",
+    "type": "Spell",
+    "tags": [
+      "intelligence",
+      "grants_active_skill",
+      "spell",
+      "area",
+      "physical",
+      "chaos",
+      "duration"
+    ],
+    "tagString": "AoE, Physical, Chaos, Duration",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 0
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemScatteringCalamity",
+    "name": "His Scattering Calamity",
+    "type": "Spell",
+    "tags": [
+      "intelligence",
+      "grants_active_skill",
+      "spell",
+      "area",
+      "projectile",
+      "lightning",
+      "duration"
+    ],
+    "tagString": "AoE, Projectile, Lightning, Duration",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 0
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemVileDisruption",
+    "name": "His Vile Intrusion",
+    "type": "Spell",
+    "tags": [
+      "intelligence",
+      "grants_active_skill",
+      "spell",
+      "area",
+      "physical",
+      "duration"
+    ],
+    "tagString": "AoE, Physical, Duration",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 0
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemHisWinnowingFlame",
+    "name": "His Winnowing Flame",
+    "type": "Spell",
+    "tags": [
+      "intelligence",
+      "grants_active_skill",
+      "spell",
+      "area",
+      "trigger",
+      "fire",
+      "payoff"
+    ],
+    "tagString": "AoE, Trigger, Fire, Payoff",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 0
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemHypothermia",
+    "name": "Hypothermia",
+    "type": "Spell",
+    "tags": [
+      "intelligence",
+      "grants_active_skill",
+      "spell",
+      "area",
+      "cold",
+      "duration",
+      "curse"
+    ],
+    "tagString": "AoE, Cold, Duration, Curse",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 0
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemIceNova",
+    "name": "Ice Nova",
+    "type": "Spell",
+    "tags": [
+      "intelligence",
+      "grants_active_skill",
+      "spell",
+      "area",
+      "cold",
+      "duration",
+      "nova"
+    ],
+    "tagString": "AoE, Cold, Duration, Nova",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 1
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemIceTippedArrows",
+    "name": "Ice-Tipped Arrows",
+    "type": "Spell",
+    "tags": [
+      "dexterity",
+      "grants_active_skill",
+      "spell",
+      "attack",
+      "buff",
+      "area",
+      "projectile",
+      "trigger",
+      "cold",
+      "duration"
+    ],
+    "tagString": "Attack, Buff, AoE, Projectile, Trigger, Cold, Duration",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "weaponRequirements": "Spear, Bow",
+    "tier": 5
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemIcestorm",
+    "name": "Icestorm",
+    "type": "Spell",
+    "tags": [
+      "intelligence",
+      "grants_active_skill",
+      "spell",
+      "area",
+      "sustained",
+      "cold",
+      "duration",
+      "payoff",
+      "storm"
+    ],
+    "tagString": "AoE, Sustained, Cold, Duration, Payoff, Storm",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 0
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemIncinerate",
+    "name": "Incinerate",
+    "type": "Spell",
+    "tags": [
+      "intelligence",
+      "grants_active_skill",
+      "spell",
+      "area",
+      "sustained",
+      "fire",
+      "duration",
+      "channelling"
+    ],
+    "tagString": "AoE, Sustained, Fire, Duration, Channelling",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 9
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemInevitableAgony",
+    "name": "Inevitable Agony",
+    "type": "Spell",
+    "tags": [
+      "grants_active_skill",
+      "spell",
+      "area",
+      "duration",
+      "curse"
+    ],
+    "tagString": "AoE, Duration, Curse",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 0
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemLightningBolt",
+    "name": "Lightning Bolt",
+    "type": "Spell",
+    "tags": [
+      "intelligence",
+      "grants_active_skill",
+      "spell",
+      "area",
+      "lightning"
+    ],
+    "tagString": "AoE, Lightning",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 0
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemUniqueBreachLightningBolt",
+    "name": "Lightning Bolt",
+    "type": "Spell",
+    "tags": [
+      "intelligence",
+      "grants_active_skill",
+      "spell",
+      "area",
+      "trigger",
+      "lightning"
+    ],
+    "tagString": "AoE, Trigger, Lightning",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 0
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemLightningConduit",
+    "name": "Lightning Conduit",
+    "type": "Spell",
+    "tags": [
+      "intelligence",
+      "grants_active_skill",
+      "spell",
+      "area",
+      "lightning"
+    ],
+    "tagString": "AoE, Lightning",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 13
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemLightningWarp",
+    "name": "Lightning Warp",
+    "type": "Spell",
+    "tags": [
+      "intelligence",
+      "grants_active_skill",
+      "spell",
+      "area",
+      "lightning",
+      "duration",
+      "remnant"
+    ],
+    "tagString": "AoE, Lightning, Duration, Remnant",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 9
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemLivingBombPlayer",
+    "name": "Living Bomb",
+    "type": "Spell",
+    "tags": [
+      "intelligence",
+      "grants_active_skill",
+      "spell",
+      "area",
+      "fire",
+      "duration",
+      "remnant"
+    ],
+    "tagString": "AoE, Fire, Duration, Remnant",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 3
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemManaDrain",
+    "name": "Mana Drain",
+    "type": "Spell",
+    "tags": [
+      "intelligence",
+      "grants_active_skill",
+      "spell"
+    ],
+    "tagString": "",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 0
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemManaTempest",
+    "name": "Mana Tempest",
+    "type": "Spell",
+    "tags": [
+      "intelligence",
+      "grants_active_skill",
+      "spell",
+      "buff",
+      "lightning",
+      "storm"
+    ],
+    "tagString": "Buff, Lightning, Storm",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 7
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemAscendancyMeditate",
+    "name": "Meditate",
+    "type": "Spell",
+    "tags": [
+      "grants_active_skill",
+      "spell",
+      "channelling"
+    ],
+    "tagString": "Channelling",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 0
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemAscendancyMomentOfVulnerability",
+    "name": "Moment of Vulnerability",
+    "type": "Spell",
+    "tags": [
+      "grants_active_skill",
+      "spell",
+      "area",
+      "nova"
+    ],
+    "tagString": "AoE, Nova",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 0
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemOrbOfStorms",
+    "name": "Orb of Storms",
+    "type": "Spell",
+    "tags": [
+      "intelligence",
+      "grants_active_skill",
+      "spell",
+      "area",
+      "sustained",
+      "lightning",
+      "duration",
+      "chaining",
+      "orb",
+      "remnant"
+    ],
+    "tagString": "AoE, Sustained, Lightning, Duration, Chaining, Orb, Remnant",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 3
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemPinnacleOfPower",
+    "name": "Pinnacle of Power",
+    "type": "Spell",
+    "tags": [
+      "grants_active_skill",
+      "spell",
+      "buff",
+      "lightning",
+      "cold",
+      "fire",
+      "duration",
+      "conditional"
+    ],
+    "tagString": "Buff, Lightning, Cold, Fire, Duration, Conditional",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 0
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemPowerSiphon",
+    "name": "Power Siphon",
+    "type": "Spell",
+    "tags": [
+      "intelligence",
+      "grants_active_skill",
+      "spell",
+      "physical"
+    ],
+    "tagString": "Physical",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 0
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemProfaneRitual",
+    "name": "Profane Ritual",
+    "type": "Spell",
+    "tags": [
+      "intelligence",
+      "grants_active_skill",
+      "spell",
+      "area",
+      "chaos",
+      "duration"
+    ],
+    "tagString": "AoE, Chaos, Duration",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 7
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemReap",
+    "name": "Reap",
+    "type": "Spell",
+    "tags": [
+      "intelligence",
+      "grants_active_skill",
+      "spell",
+      "area",
+      "physical",
+      "duration"
+    ],
+    "tagString": "AoE, Physical, Duration",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 0
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemSigilOfPower",
+    "name": "Sigil of Power",
+    "type": "Spell",
+    "tags": [
+      "intelligence",
+      "grants_active_skill",
+      "spell",
+      "area",
+      "duration",
+      "stages"
+    ],
+    "tagString": "AoE, Duration, Staged",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 0
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemSnap",
+    "name": "Snap",
+    "type": "Spell",
+    "tags": [
+      "intelligence",
+      "grants_active_skill",
+      "spell",
+      "area",
+      "lightning",
+      "cold",
+      "fire",
+      "payoff",
+      "remnant"
+    ],
+    "tagString": "AoE, Lightning, Cold, Fire, Payoff, Remnant",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 5
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemSolarOrb",
+    "name": "Solar Orb",
+    "type": "Spell",
+    "tags": [
+      "intelligence",
+      "grants_active_skill",
+      "spell",
+      "area",
+      "sustained",
+      "fire",
+      "duration",
+      "orb"
+    ],
+    "tagString": "AoE, Sustained, Fire, Duration, Orb",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 0
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemSorceryWard",
+    "name": "Sorcery Ward",
+    "type": "Spell",
+    "tags": [
+      "grants_active_skill",
+      "spell",
+      "buff",
+      "persistent",
+      "lightning",
+      "cold",
+      "fire"
+    ],
+    "tagString": "Buff, Persistent, Lightning, Cold, Fire",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 0
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemSoulrend",
+    "name": "Soulrend",
+    "type": "Spell",
+    "tags": [
+      "intelligence",
+      "grants_active_skill",
+      "spell",
+      "projectile",
+      "chaos",
+      "duration"
+    ],
+    "tagString": "Projectile, Chaos, Duration",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 0
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemSpark",
+    "name": "Spark",
+    "type": "Spell",
+    "tags": [
+      "intelligence",
+      "grants_active_skill",
+      "spell",
+      "projectile",
+      "lightning",
+      "duration"
+    ],
+    "tagString": "Projectile, Lightning, Duration",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 1
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemMetaSpellTotem",
+    "name": "Spell Totem",
+    "type": "Spell",
+    "tags": [
+      "strength",
+      "intelligence",
+      "grants_active_skill",
+      "spell",
+      "totem",
+      "duration",
+      "conditional",
+      "meta"
+    ],
+    "tagString": "Totem, Duration, Conditional, Meta",
+    "requirements": {
+      "str": 50,
+      "dex": 0,
+      "int": 50
+    },
+    "tier": 7
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemTemporalChains",
+    "name": "Temporal Chains",
+    "type": "Spell",
+    "tags": [
+      "intelligence",
+      "grants_active_skill",
+      "spell",
+      "area",
+      "duration",
+      "curse"
+    ],
+    "tagString": "AoE, Duration, Curse",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 7
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemTemporalRift",
+    "name": "Temporal Rift",
+    "type": "Spell",
+    "tags": [
+      "grants_active_skill",
+      "spell",
+      "buff",
+      "persistent"
+    ],
+    "tagString": "Buff, Persistent",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 0
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemThrashingVines",
+    "name": "Thrashing Vines",
+    "type": "Spell",
+    "tags": [
+      "strength",
+      "intelligence",
+      "grants_active_skill",
+      "spell",
+      "area",
+      "sustained",
+      "physical",
+      "duration",
+      "plant"
+    ],
+    "tagString": "AoE, Sustained, Physical, Duration, Plant",
+    "requirements": {
+      "str": 50,
+      "dex": 0,
+      "int": 50
+    },
+    "tier": 9
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemThunderstorm",
+    "name": "Thunderstorm",
+    "type": "Spell",
+    "tags": [
+      "strength",
+      "intelligence",
+      "grants_active_skill",
+      "spell",
+      "area",
+      "sustained",
+      "lightning",
+      "duration",
+      "storm"
+    ],
+    "tagString": "AoE, Sustained, Lightning, Duration, Storm",
+    "requirements": {
+      "str": 50,
+      "dex": 0,
+      "int": 50
+    },
+    "tier": 5
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemTimeFreeze",
+    "name": "Time Freeze",
+    "type": "Spell",
+    "tags": [
+      "grants_active_skill",
+      "spell",
+      "area",
+      "duration"
+    ],
+    "tagString": "AoE, Duration",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 0
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemTimeSnap",
+    "name": "Time Snap",
+    "type": "Spell",
+    "tags": [
+      "grants_active_skill",
+      "spell"
+    ],
+    "tagString": "",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 0
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemTornado",
+    "name": "Tornado",
+    "type": "Spell",
+    "tags": [
+      "strength",
+      "intelligence",
+      "grants_active_skill",
+      "spell",
+      "area",
+      "physical",
+      "duration",
+      "wind",
+      "storm"
+    ],
+    "tagString": "AoE, Physical, Duration, Wind, Storm",
+    "requirements": {
+      "str": 50,
+      "dex": 0,
+      "int": 50
+    },
+    "tier": 11
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemUnearth",
+    "name": "Unearth",
+    "type": "Spell",
+    "tags": [
+      "intelligence",
+      "grants_active_skill",
+      "spell",
+      "minion",
+      "area",
+      "physical",
+      "duration"
+    ],
+    "tagString": "Minion, AoE, Physical, Duration",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 1
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemUnleash",
+    "name": "Unleash",
+    "type": "Spell",
+    "tags": [
+      "intelligence",
+      "grants_active_skill",
+      "spell",
+      "buff",
+      "duration"
+    ],
+    "tagString": "Buff, Duration",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 0
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemValakosCharge",
+    "name": "Valako's Charge",
+    "type": "Spell",
+    "tags": [
+      "strength",
+      "dexterity",
+      "grants_active_skill",
+      "spell",
+      "area",
+      "trigger",
+      "lightning",
+      "chaining"
+    ],
+    "tagString": "AoE, Trigger, Lightning, Chaining",
+    "requirements": {
+      "str": 50,
+      "dex": 50,
+      "int": 0
+    },
+    "tier": 0
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemVolatileDead",
+    "name": "Volatile Dead",
+    "type": "Spell",
+    "tags": [
+      "intelligence",
+      "grants_active_skill",
+      "spell",
+      "area",
+      "fire"
+    ],
+    "tagString": "AoE, Fire",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 0
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemVolcano",
+    "name": "Volcano",
+    "type": "Spell",
+    "tags": [
+      "strength",
+      "intelligence",
+      "grants_active_skill",
+      "spell",
+      "area",
+      "projectile",
+      "sustained",
+      "fire",
+      "duration",
+      "channelling"
+    ],
+    "tagString": "AoE, Projectile, Sustained, Fire, Duration, Channelling",
+    "requirements": {
+      "str": 50,
+      "dex": 0,
+      "int": 50
+    },
+    "tier": 1
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemVulnerability",
+    "name": "Vulnerability",
+    "type": "Spell",
+    "tags": [
+      "intelligence",
+      "grants_active_skill",
+      "spell",
+      "area",
+      "physical",
+      "duration",
+      "curse"
+    ],
+    "tagString": "AoE, Physical, Duration, Curse",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 7
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemWither",
+    "name": "Wither",
+    "type": "Spell",
+    "tags": [
+      "intelligence",
+      "grants_active_skill",
+      "spell",
+      "area",
+      "chaos",
+      "duration",
+      "channelling"
+    ],
+    "tagString": "AoE, Chaos, Duration, Channelling",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 0
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemAbidingHexSupport",
+    "name": "Abiding Hex",
+    "type": "Support",
+    "tags": [
+      "support",
+      "curse"
+    ],
+    "tagString": "Curse",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 2,
+    "gemFamily": "Abiding Hex"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemExplosiveGrowthSupport",
+    "name": "Accelerated Growth",
+    "type": "Support",
+    "tags": [
+      "support",
+      "grants_active_skill",
+      "spell",
+      "area",
+      "trigger",
+      "plant"
+    ],
+    "tagString": "Spell, AoE, Trigger, Plant",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 2,
+    "gemFamily": "Accelerated Growth"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemExplosiveGrowthSupportTwo",
+    "name": "Accelerated Growth II",
+    "type": "Support",
+    "tags": [
+      "support",
+      "grants_active_skill",
+      "spell",
+      "area",
+      "trigger",
+      "plant"
+    ],
+    "tagString": "Spell, AoE, Trigger, Plant",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 5,
+    "gemFamily": "Accelerated Growth"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemAcrimonySupport",
+    "name": "Acrimony",
+    "type": "Support",
+    "tags": [
+      "support"
+    ],
+    "tagString": "",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 2,
+    "gemFamily": "Acrimony"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemAdhesiveGrenadesSupport",
+    "name": "Adhesive Grenades I",
+    "type": "Support",
+    "tags": [
+      "support",
+      "grenade"
+    ],
+    "tagString": "Grenade",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 2,
+    "gemFamily": "Adhesive Grenades"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemAdhesiveGrenadesSupportTwo",
+    "name": "Adhesive Grenades II",
+    "type": "Support",
+    "tags": [
+      "support",
+      "grenade"
+    ],
+    "tagString": "Grenade",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 3,
+    "gemFamily": "Adhesive Grenades"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemAdhesiveGrenadesSupportThree",
+    "name": "Adhesive Grenades III",
+    "type": "Support",
+    "tags": [
+      "support",
+      "grenade"
+    ],
+    "tagString": "Grenade",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 0,
+    "gemFamily": "Adhesive Grenades"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemAdmixtureSupport",
+    "name": "Admixture",
+    "type": "Support",
+    "tags": [
+      "support",
+      "physical",
+      "chaos"
+    ],
+    "tagString": "Physical, Chaos",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 2,
+    "gemFamily": "Admixture"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemAdvancingStormSupport",
+    "name": "Advancing Storm",
+    "type": "Support",
+    "tags": [
+      "support",
+      "spell",
+      "storm"
+    ],
+    "tagString": "Spell, Storm",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 4,
+    "gemFamily": "Advancing Storm"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemAftershockChanceSupport",
+    "name": "Aftershock I",
+    "type": "Support",
+    "tags": [
+      "support",
+      "attack",
+      "melee",
+      "slam"
+    ],
+    "tagString": "Attack, Melee, Slam",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 2,
+    "gemFamily": "Aftershock"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemAftershockChanceSupportTwo",
+    "name": "Aftershock II",
+    "type": "Support",
+    "tags": [
+      "support",
+      "attack",
+      "melee",
+      "slam"
+    ],
+    "tagString": "Attack, Melee, Slam",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 4,
+    "gemFamily": "Aftershock"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemAftershockChanceSupportThree",
+    "name": "Aftershock III",
+    "type": "Support",
+    "tags": [
+      "support",
+      "attack",
+      "melee",
+      "slam"
+    ],
+    "tagString": "Attack, Melee, Slam",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 0,
+    "gemFamily": "Aftershock"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemAhnsCitadelSupport",
+    "name": "Ahn's Citadel",
+    "type": "Support",
+    "tags": [
+      "support",
+      "lineage"
+    ],
+    "tagString": "Lineage",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 0,
+    "gemFamily": "Fortress"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemAilithLineageSupport",
+    "name": "Ailith's Chimes",
+    "type": "Support",
+    "tags": [
+      "support",
+      "lineage"
+    ],
+    "tagString": "Lineage",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 0,
+    "gemFamily": "Ailith's Chimes"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemAlignmentSupport",
+    "name": "Alignment I",
+    "type": "Support",
+    "tags": [
+      "support",
+      "attack",
+      "projectile"
+    ],
+    "tagString": "Attack, Projectile",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 3,
+    "gemFamily": "Alignment"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemAlignmentSupportTwo",
+    "name": "Alignment II",
+    "type": "Support",
+    "tags": [
+      "support",
+      "attack",
+      "projectile"
+    ],
+    "tagString": "Attack, Projectile",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 4,
+    "gemFamily": "Alignment"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemAlignmentSupportThree",
+    "name": "Alignment III",
+    "type": "Support",
+    "tags": [
+      "support",
+      "attack",
+      "projectile"
+    ],
+    "tagString": "Attack, Projectile",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 5,
+    "gemFamily": "Alignment, Additional Projectiles"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemAmanamusTitheSupport",
+    "name": "Amanamu's Tithe",
+    "type": "Support",
+    "tags": [
+      "support",
+      "lineage",
+      "minion",
+      "persistent"
+    ],
+    "tagString": "Lineage, Minion, Persistent",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 0,
+    "gemFamily": "Amanamu's Tithe"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemAmbrosiaSupport",
+    "name": "Ambrosia",
+    "type": "Support",
+    "tags": [
+      "support"
+    ],
+    "tagString": "",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 2,
+    "gemFamily": "Ambrosia"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemAmbrosiaSupportTwo",
+    "name": "Ambrosia II",
+    "type": "Support",
+    "tags": [
+      "support"
+    ],
+    "tagString": "",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 3,
+    "gemFamily": "Ambrosia"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemAmbushSupport",
+    "name": "Ambush",
+    "type": "Support",
+    "tags": [
+      "support"
+    ],
+    "tagString": "",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 1,
+    "gemFamily": "Ambush"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemAmmoConservationSupport",
+    "name": "Ammo Conservation I",
+    "type": "Support",
+    "tags": [
+      "support",
+      "ammunition",
+      "projectile"
+    ],
+    "tagString": "Ammunition, Projectile",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 2,
+    "gemFamily": "Ammo Conservation"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemAmmoConservationSupportTwo",
+    "name": "Ammo Conservation II",
+    "type": "Support",
+    "tags": [
+      "support",
+      "ammunition",
+      "projectile"
+    ],
+    "tagString": "Ammunition, Projectile",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 4,
+    "gemFamily": "Ammo Conservation"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemAmmoConservationSupportThree",
+    "name": "Ammo Conservation III",
+    "type": "Support",
+    "tags": [
+      "support",
+      "ammunition",
+      "projectile"
+    ],
+    "tagString": "Ammunition, Projectile",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 5,
+    "gemFamily": "Ammo Conservation"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemAncestralAidSupport",
+    "name": "Ancestral Aid",
+    "type": "Support",
+    "tags": [
+      "support",
+      "attack",
+      "melee",
+      "strike",
+      "conditional"
+    ],
+    "tagString": "Attack, Melee, Strike, Conditional",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 0,
+    "gemFamily": "Ancestral Call"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemAncestralCallSupport",
+    "name": "Ancestral Call I",
+    "type": "Support",
+    "tags": [
+      "support",
+      "attack",
+      "melee",
+      "strike"
+    ],
+    "tagString": "Attack, Melee, Strike",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 4,
+    "gemFamily": "Ancestral Call"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemAncestralCallSupportTwo",
+    "name": "Ancestral Call II",
+    "type": "Support",
+    "tags": [
+      "support",
+      "attack",
+      "melee",
+      "strike"
+    ],
+    "tagString": "Attack, Melee, Strike",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 5,
+    "gemFamily": "Ancestral Call"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemAncestralCallSupportThree",
+    "name": "Ancestral Call III",
+    "type": "Support",
+    "tags": [
+      "support",
+      "attack",
+      "melee",
+      "strike"
+    ],
+    "tagString": "Attack, Melee, Strike",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 0,
+    "gemFamily": "Ancestral Call"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemArakaalisLustSupport",
+    "name": "Arakaali's Lust",
+    "type": "Support",
+    "tags": [
+      "support",
+      "lineage"
+    ],
+    "tagString": "Lineage",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 0,
+    "gemFamily": "Arakaali's Lust"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemArbitersIngitionSupport",
+    "name": "Arbiter's Ignition",
+    "type": "Support",
+    "tags": [
+      "support",
+      "lineage",
+      "spell",
+      "fire"
+    ],
+    "tagString": "Lineage, Spell, Fire",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 0,
+    "gemFamily": "Arbiter's Ignition"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemArcaneSurgeSupport",
+    "name": "Arcane Surge",
+    "type": "Support",
+    "tags": [
+      "support",
+      "spell",
+      "duration"
+    ],
+    "tagString": "Spell, Duration",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 1,
+    "gemFamily": "Arcane Surge"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemAmmoConservationSupportFour",
+    "name": "Arjun's Medal",
+    "type": "Support",
+    "tags": [
+      "support",
+      "lineage",
+      "ammunition",
+      "projectile"
+    ],
+    "tagString": "Lineage, Ammunition, Projectile",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 0,
+    "gemFamily": "Ammo Conservation"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemArmourBreakSupport",
+    "name": "Armour Break I",
+    "type": "Support",
+    "tags": [
+      "support",
+      "physical"
+    ],
+    "tagString": "Physical",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 2,
+    "gemFamily": "Armour Break"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemArmourBreakSupportTwo",
+    "name": "Armour Break II",
+    "type": "Support",
+    "tags": [
+      "support",
+      "physical"
+    ],
+    "tagString": "Physical",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 3,
+    "gemFamily": "Armour Break"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemArmourBreakSupportThree",
+    "name": "Armour Break III",
+    "type": "Support",
+    "tags": [
+      "support",
+      "physical"
+    ],
+    "tagString": "Physical",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 4,
+    "gemFamily": "Armour Break"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemArmourDemolisherSupport",
+    "name": "Armour Demolisher I",
+    "type": "Support",
+    "tags": [
+      "support"
+    ],
+    "tagString": "",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 1,
+    "gemFamily": "Armour Demolisher"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemArmourDemolisherSupportTwo",
+    "name": "Armour Demolisher II",
+    "type": "Support",
+    "tags": [
+      "support"
+    ],
+    "tagString": "",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 3,
+    "gemFamily": "Armour Demolisher"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemArmourExplosionSupport",
+    "name": "Armour Explosion",
+    "type": "Support",
+    "tags": [
+      "support",
+      "grants_active_skill",
+      "attack",
+      "warcry",
+      "area",
+      "trigger",
+      "fire",
+      "payoff"
+    ],
+    "tagString": "Attack, Warcry, AoE, Trigger, Fire, Payoff",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 1,
+    "gemFamily": "Armour Explosion"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemArmsLengthSupport",
+    "name": "Arms Length",
+    "type": "Support",
+    "tags": [
+      "support"
+    ],
+    "tagString": "",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 0,
+    "gemFamily": "Arms' Length"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemAstralProjectionSupport",
+    "name": "Astral Projection",
+    "type": "Support",
+    "tags": [
+      "support"
+    ],
+    "tagString": "",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 3,
+    "gemFamily": "Astral Projection"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemAtaluiBloodlettingSupport",
+    "name": "Atalui's Bloodletting",
+    "type": "Support",
+    "tags": [
+      "support",
+      "lineage",
+      "physical"
+    ],
+    "tagString": "Lineage, Physical",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 0,
+    "gemFamily": "Lifetap"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemAtzirisAllureSupport",
+    "name": "Atziri's Allure",
+    "type": "Support",
+    "tags": [
+      "support",
+      "lineage",
+      "curse"
+    ],
+    "tagString": "Lineage, Curse",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 0,
+    "gemFamily": "Atziri's Allure"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemAtzirisImpatienceSupport",
+    "name": "Atziri's Impatience",
+    "type": "Support",
+    "tags": [
+      "support",
+      "lineage"
+    ],
+    "tagString": "Lineage",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 0,
+    "gemFamily": "Cooldown Recovery"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemAutoReloadSupport",
+    "name": "Auto Reload",
+    "type": "Support",
+    "tags": [
+      "support",
+      "ammunition",
+      "projectile"
+    ],
+    "tagString": "Ammunition, Projectile",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 0,
+    "gemFamily": "Auto Reload"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemBarbsSupport",
+    "name": "Barbs I",
+    "type": "Support",
+    "tags": [
+      "support",
+      "attack",
+      "melee",
+      "strike"
+    ],
+    "tagString": "Attack, Melee, Strike",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 3,
+    "gemFamily": "Barbs"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemBarbsSupportTwo",
+    "name": "Barbs II",
+    "type": "Support",
+    "tags": [
+      "support",
+      "attack",
+      "melee",
+      "strike"
+    ],
+    "tagString": "Attack, Melee, Strike",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 5,
+    "gemFamily": "Barbs"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemBarbsSupportThree",
+    "name": "Barbs III",
+    "type": "Support",
+    "tags": [
+      "support",
+      "attack",
+      "melee",
+      "strike"
+    ],
+    "tagString": "Attack, Melee, Strike",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 5,
+    "gemFamily": "Barbs"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemBattershoutSupport",
+    "name": "Battershout",
+    "type": "Support",
+    "tags": [
+      "support",
+      "grants_active_skill",
+      "warcry",
+      "area",
+      "trigger",
+      "physical",
+      "payoff"
+    ],
+    "tagString": "Warcry, AoE, Trigger, Physical, Payoff",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 1,
+    "gemFamily": "Battershout"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemBeheadSupport",
+    "name": "Behead I",
+    "type": "Support",
+    "tags": [
+      "support",
+      "attack",
+      "melee",
+      "strike"
+    ],
+    "tagString": "Attack, Melee, Strike",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 2,
+    "gemFamily": "Behead"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemBeheadSupportTwo",
+    "name": "Behead II",
+    "type": "Support",
+    "tags": [
+      "support",
+      "attack",
+      "melee",
+      "strike"
+    ],
+    "tagString": "Attack, Melee, Strike",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 3,
+    "gemFamily": "Behead"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemBhatairsVengeanceSupport",
+    "name": "Bhatair's Vengeance",
+    "type": "Support",
+    "tags": [
+      "support",
+      "attack",
+      "warcry",
+      "cold",
+      "duration"
+    ],
+    "tagString": "Attack, Warcry, Cold, Duration",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 0,
+    "gemFamily": "Ice Bite"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemBiddingSupport",
+    "name": "Bidding I",
+    "type": "Support",
+    "tags": [
+      "support",
+      "minion",
+      "command"
+    ],
+    "tagString": "Minion, Command",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 2,
+    "gemFamily": "Bidding"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemBiddingSupportTwo",
+    "name": "Bidding II",
+    "type": "Support",
+    "tags": [
+      "support",
+      "minion",
+      "command"
+    ],
+    "tagString": "Minion, Command",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 4,
+    "gemFamily": "Bidding"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemBiddingSupportThree",
+    "name": "Bidding III",
+    "type": "Support",
+    "tags": [
+      "support",
+      "minion",
+      "command"
+    ],
+    "tagString": "Minion, Command",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 5,
+    "gemFamily": "Bidding"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemBitingFrostSupport",
+    "name": "Biting Frost I",
+    "type": "Support",
+    "tags": [
+      "support",
+      "cold",
+      "payoff"
+    ],
+    "tagString": "Cold, Payoff",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 3,
+    "gemFamily": "Biting Frost"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemBitingFrostSupportTwo",
+    "name": "Biting Frost II",
+    "type": "Support",
+    "tags": [
+      "support",
+      "cold",
+      "payoff"
+    ],
+    "tagString": "Cold, Payoff",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 5,
+    "gemFamily": "Biting Frost"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemBlazingCriticalSupport",
+    "name": "Blazing Critical",
+    "type": "Support",
+    "tags": [
+      "support",
+      "attack",
+      "fire",
+      "duration"
+    ],
+    "tagString": "Attack, Fire, Duration",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 4,
+    "gemFamily": "Blazing Critical"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemBleedSupport",
+    "name": "Bleed I",
+    "type": "Support",
+    "tags": [
+      "support",
+      "physical"
+    ],
+    "tagString": "Physical",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 1,
+    "gemFamily": "Bleed"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemBleedSupportTwo",
+    "name": "Bleed II",
+    "type": "Support",
+    "tags": [
+      "support",
+      "physical"
+    ],
+    "tagString": "Physical",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 3,
+    "gemFamily": "Bleed"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemBleedSupportThree",
+    "name": "Bleed III",
+    "type": "Support",
+    "tags": [
+      "support",
+      "physical"
+    ],
+    "tagString": "Physical",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 5,
+    "gemFamily": "Bleed"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemBleedSupportFour",
+    "name": "Bleed IV",
+    "type": "Support",
+    "tags": [
+      "support",
+      "physical"
+    ],
+    "tagString": "Physical",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 5,
+    "gemFamily": "Bleed"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemBlindSupport",
+    "name": "Blind I",
+    "type": "Support",
+    "tags": [
+      "support"
+    ],
+    "tagString": "",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 2,
+    "gemFamily": "Blind"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemBlindSupportTwo",
+    "name": "Blind II",
+    "type": "Support",
+    "tags": [
+      "support"
+    ],
+    "tagString": "",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 5,
+    "gemFamily": "Blind"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemBlindsideSupport",
+    "name": "Blindside",
+    "type": "Support",
+    "tags": [
+      "support"
+    ],
+    "tagString": "",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 1,
+    "gemFamily": "Blindside"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemBloodlustSupport",
+    "name": "Bloodlust",
+    "type": "Support",
+    "tags": [
+      "support",
+      "attack",
+      "melee",
+      "physical"
+    ],
+    "tagString": "Attack, Melee, Physical",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 0,
+    "gemFamily": "Bloodlust"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemBoneShrapnelSupport",
+    "name": "Bone Shrapnel",
+    "type": "Support",
+    "tags": [
+      "support",
+      "grants_active_skill",
+      "area",
+      "trigger",
+      "physical"
+    ],
+    "tagString": "AoE, Trigger, Physical",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 2,
+    "gemFamily": "Bone Shrapnel"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemBoundlessEnergySupport",
+    "name": "Boundless Energy I",
+    "type": "Support",
+    "tags": [
+      "support"
+    ],
+    "tagString": "",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 2,
+    "gemFamily": "Boundless Energy"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemBoundlessEnergySupportTwo",
+    "name": "Boundless Energy II",
+    "type": "Support",
+    "tags": [
+      "support"
+    ],
+    "tagString": "",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 4,
+    "gemFamily": "Boundless Energy"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemBountySupport",
+    "name": "Bounty I",
+    "type": "Support",
+    "tags": [
+      "support"
+    ],
+    "tagString": "",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 2,
+    "gemFamily": "Bounty"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemBountySupportTwo",
+    "name": "Bounty II",
+    "type": "Support",
+    "tags": [
+      "support"
+    ],
+    "tagString": "",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 4,
+    "gemFamily": "Bounty"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemBrambleslamSupport",
+    "name": "Brambleslam",
+    "type": "Support",
+    "tags": [
+      "support",
+      "grants_active_skill",
+      "attack",
+      "area",
+      "melee",
+      "slam",
+      "trigger",
+      "physical",
+      "hazard",
+      "plant"
+    ],
+    "tagString": "Attack, AoE, Melee, Slam, Trigger, Physical, Hazard, Plant",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 5,
+    "gemFamily": "Brambleslam"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemBranchingFissuresSupport",
+    "name": "Branching Fissures I",
+    "type": "Support",
+    "tags": [
+      "support"
+    ],
+    "tagString": "",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 3,
+    "gemFamily": "Fissures"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemBranchingFissuresSupportTwo",
+    "name": "Branching Fissures II",
+    "type": "Support",
+    "tags": [
+      "support"
+    ],
+    "tagString": "",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 5,
+    "gemFamily": "Fissures"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemEnduranceChargeOnArmourBreakSupport",
+    "name": "Break Endurance",
+    "type": "Support",
+    "tags": [
+      "support"
+    ],
+    "tagString": "",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 0,
+    "gemFamily": "Break Endurance"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemDazedBreakSupport",
+    "name": "Break Posture",
+    "type": "Support",
+    "tags": [
+      "support",
+      "attack"
+    ],
+    "tagString": "Attack",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 0,
+    "gemFamily": "Break Posture"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemBrinkSupport",
+    "name": "Brink I",
+    "type": "Support",
+    "tags": [
+      "support",
+      "attack",
+      "melee"
+    ],
+    "tagString": "Attack, Melee",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 2,
+    "gemFamily": "Brink"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemBrinkSupportTwo",
+    "name": "Brink II",
+    "type": "Support",
+    "tags": [
+      "support",
+      "attack",
+      "melee"
+    ],
+    "tagString": "Attack, Melee",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 3,
+    "gemFamily": "Brink"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemBrittleArmourSupport",
+    "name": "Brittle Armour",
+    "type": "Support",
+    "tags": [
+      "support",
+      "physical",
+      "cold"
+    ],
+    "tagString": "Physical, Cold",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 3,
+    "gemFamily": "Armour Break"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemBrutalitySupport",
+    "name": "Brutality I",
+    "type": "Support",
+    "tags": [
+      "support",
+      "physical"
+    ],
+    "tagString": "Physical",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 1,
+    "gemFamily": "Brutality"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemBrutalitySupportTwo",
+    "name": "Brutality II",
+    "type": "Support",
+    "tags": [
+      "support",
+      "physical"
+    ],
+    "tagString": "Physical",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 2,
+    "gemFamily": "Brutality"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemBrutalitySupportThree",
+    "name": "Brutality III",
+    "type": "Support",
+    "tags": [
+      "support",
+      "physical"
+    ],
+    "tagString": "Physical",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 5,
+    "gemFamily": "Brutality"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemBrutusBrainSupport",
+    "name": "Brutus' Brain",
+    "type": "Support",
+    "tags": [
+      "support",
+      "lineage",
+      "minion"
+    ],
+    "tagString": "Lineage, Minion",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 0,
+    "gemFamily": "Meat Shield"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemBurgeonSupport",
+    "name": "Burgeon I",
+    "type": "Support",
+    "tags": [
+      "support",
+      "channelling"
+    ],
+    "tagString": "Channelling",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 1,
+    "gemFamily": "Burgeon"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemBurgeonSupportTwo",
+    "name": "Burgeon II",
+    "type": "Support",
+    "tags": [
+      "support",
+      "channelling"
+    ],
+    "tagString": "Channelling",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 4,
+    "gemFamily": "Burgeon"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemBurningRunesSupport",
+    "name": "Burning Inscription",
+    "type": "Support",
+    "tags": [
+      "support",
+      "grants_active_skill",
+      "area",
+      "trigger",
+      "fire"
+    ],
+    "tagString": "AoE, Trigger, Fire",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 4,
+    "gemFamily": "Burning Inscription"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemSupportBurstingPlague",
+    "name": "Bursting Plague",
+    "type": "Support",
+    "tags": [
+      "support",
+      "grants_active_skill",
+      "area",
+      "trigger",
+      "physical",
+      "chaos"
+    ],
+    "tagString": "AoE, Trigger, Physical, Chaos",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 2,
+    "gemFamily": "Bursting Plague"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemCadenceSupport",
+    "name": "Cadence",
+    "type": "Support",
+    "tags": [
+      "support",
+      "attack"
+    ],
+    "tagString": "Attack",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 2,
+    "gemFamily": "Cadence"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemCaltropsSupport",
+    "name": "Caltrops",
+    "type": "Support",
+    "tags": [
+      "support",
+      "grants_active_skill",
+      "attack",
+      "area",
+      "projectile",
+      "trigger",
+      "duration",
+      "hazard"
+    ],
+    "tagString": "Attack, AoE, Projectile, Trigger, Duration, Hazard",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 3,
+    "gemFamily": "Caltrops"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemCannibalismSupport",
+    "name": "Cannibalism I",
+    "type": "Support",
+    "tags": [
+      "support",
+      "buff",
+      "persistent"
+    ],
+    "tagString": "Buff, Persistent",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 3,
+    "gemFamily": "Cannibalism"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemCannibalismSupportTwo",
+    "name": "Cannibalism II",
+    "type": "Support",
+    "tags": [
+      "support",
+      "buff",
+      "persistent"
+    ],
+    "tagString": "Buff, Persistent",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 4,
+    "gemFamily": "Cannibalism"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemCatalysingElementsSupport",
+    "name": "Catalysing Elements",
+    "type": "Support",
+    "tags": [
+      "support",
+      "grants_active_skill",
+      "spell",
+      "area",
+      "trigger",
+      "lightning",
+      "cold",
+      "fire"
+    ],
+    "tagString": "Spell, AoE, Trigger, Lightning, Cold, Fire",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 5,
+    "gemFamily": "Elemental Discharge"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemCatharsisSupport",
+    "name": "Catharsis",
+    "type": "Support",
+    "tags": [
+      "support",
+      "physical",
+      "chaos",
+      "conditional"
+    ],
+    "tagString": "Physical, Chaos, Conditional",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 2,
+    "gemFamily": "Catharsis"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemChainSupport",
+    "name": "Chain I",
+    "type": "Support",
+    "tags": [
+      "support",
+      "projectile",
+      "chaining"
+    ],
+    "tagString": "Projectile, Chaining",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 1,
+    "gemFamily": "Chain"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemChainSupportTwo",
+    "name": "Chain II",
+    "type": "Support",
+    "tags": [
+      "support",
+      "projectile",
+      "chaining"
+    ],
+    "tagString": "Projectile, Chaining",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 2,
+    "gemFamily": "Chain"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemChainSupportThree",
+    "name": "Chain III",
+    "type": "Support",
+    "tags": [
+      "support",
+      "projectile",
+      "chaining"
+    ],
+    "tagString": "Projectile, Chaining",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 5,
+    "gemFamily": "Chain"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemAddedChaosDamageSupport",
+    "name": "Chaos Attunement",
+    "type": "Support",
+    "tags": [
+      "support",
+      "attack",
+      "chaos"
+    ],
+    "tagString": "Attack, Chaos",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 3,
+    "gemFamily": "Chaos Attunement"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemChaosMasterySupport",
+    "name": "Chaos Mastery",
+    "type": "Support",
+    "tags": [
+      "support",
+      "chaos"
+    ],
+    "tagString": "Chaos",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 5,
+    "gemFamily": "Mastery"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemChaoticFreezeSupport",
+    "name": "Chaotic Freeze",
+    "type": "Support",
+    "tags": [
+      "support",
+      "spell",
+      "chaos"
+    ],
+    "tagString": "Spell, Chaos",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 3,
+    "gemFamily": "Chaotic Freeze"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemChargeProfusionSupport",
+    "name": "Charge Profusion I",
+    "type": "Support",
+    "tags": [
+      "support"
+    ],
+    "tagString": "",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 1,
+    "gemFamily": "Charge Profusion"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemChargeProfusionSupportTwo",
+    "name": "Charge Profusion II",
+    "type": "Support",
+    "tags": [
+      "support"
+    ],
+    "tagString": "",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 5,
+    "gemFamily": "Charge Profusion"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemChargedMarkSupport",
+    "name": "Charged Mark",
+    "type": "Support",
+    "tags": [
+      "support",
+      "grants_active_skill",
+      "spell",
+      "area",
+      "trigger",
+      "mark",
+      "duration"
+    ],
+    "tagString": "Spell, AoE, Trigger, Mark, Duration",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 5,
+    "gemFamily": "Charged Mark"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemChargedShotsSupport",
+    "name": "Charged Shots I",
+    "type": "Support",
+    "tags": [
+      "support",
+      "attack",
+      "projectile"
+    ],
+    "tagString": "Attack, Projectile",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 3,
+    "gemFamily": "Charged Shots"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemChargedShotsSupportTwo",
+    "name": "Charged Shots II",
+    "type": "Support",
+    "tags": [
+      "support",
+      "attack",
+      "projectile"
+    ],
+    "tagString": "Attack, Projectile",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 5,
+    "gemFamily": "Charged Shots"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemCharmBountySupport",
+    "name": "Charm Bounty",
+    "type": "Support",
+    "tags": [
+      "support"
+    ],
+    "tagString": "",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 0,
+    "gemFamily": "Bounty"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemCirelsCultivationSupport",
+    "name": "Cirel's Cultivation",
+    "type": "Support",
+    "tags": [
+      "support",
+      "lineage",
+      "totem"
+    ],
+    "tagString": "Lineage, Totem",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 0,
+    "gemFamily": "Totemic Control"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemClaritySupport",
+    "name": "Clarity I",
+    "type": "Support",
+    "tags": [
+      "support",
+      "buff",
+      "persistent"
+    ],
+    "tagString": "Buff, Persistent",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 1,
+    "gemFamily": "Clarity"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemClaritySupportTwo",
+    "name": "Clarity II",
+    "type": "Support",
+    "tags": [
+      "support",
+      "buff",
+      "persistent"
+    ],
+    "tagString": "Buff, Persistent",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 4,
+    "gemFamily": "Clarity"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemClashSupport",
+    "name": "Clash",
+    "type": "Support",
+    "tags": [
+      "support",
+      "attack",
+      "melee"
+    ],
+    "tagString": "Attack, Melee",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 3,
+    "gemFamily": "Clash"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemCloseCombatSupport",
+    "name": "Close Combat I",
+    "type": "Support",
+    "tags": [
+      "support",
+      "attack"
+    ],
+    "tagString": "Attack",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 3,
+    "gemFamily": "Close Combat"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemCloseCombatSupportTwo",
+    "name": "Close Combat II",
+    "type": "Support",
+    "tags": [
+      "support",
+      "attack"
+    ],
+    "tagString": "Attack",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 5,
+    "gemFamily": "Close Combat"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemAddedColdDamageSupport",
+    "name": "Cold Attunement",
+    "type": "Support",
+    "tags": [
+      "support",
+      "attack",
+      "cold"
+    ],
+    "tagString": "Attack, Cold",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 1,
+    "gemFamily": "Cold Attunement"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemColdExposureSupport",
+    "name": "Cold Exposure",
+    "type": "Support",
+    "tags": [
+      "support",
+      "cold",
+      "duration"
+    ],
+    "tagString": "Cold, Duration",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 4,
+    "gemFamily": "Cold Exposure"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemColdMasterySupport",
+    "name": "Cold Mastery",
+    "type": "Support",
+    "tags": [
+      "support",
+      "cold"
+    ],
+    "tagString": "Cold",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 5,
+    "gemFamily": "Mastery"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemColdPenetrationSupport",
+    "name": "Cold Penetration",
+    "type": "Support",
+    "tags": [
+      "support",
+      "cold"
+    ],
+    "tagString": "Cold",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 2,
+    "gemFamily": "Cold Penetration"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemComboFinisherSupport",
+    "name": "Combo Finisher I",
+    "type": "Support",
+    "tags": [
+      "support",
+      "attack",
+      "melee",
+      "strike",
+      "conditional"
+    ],
+    "tagString": "Attack, Melee, Strike, Conditional",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 1,
+    "gemFamily": "Combo Finisher"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemComboFinisherSupportTwo",
+    "name": "Combo Finisher II",
+    "type": "Support",
+    "tags": [
+      "support",
+      "attack",
+      "melee",
+      "strike",
+      "conditional"
+    ],
+    "tagString": "Attack, Melee, Strike, Conditional",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 3,
+    "gemFamily": "Combo Finisher"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemCommandmentSupport",
+    "name": "Commandment",
+    "type": "Support",
+    "tags": [
+      "support",
+      "minion",
+      "command"
+    ],
+    "tagString": "Minion, Command",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 0,
+    "gemFamily": "Commandment"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemCommiserateSupport",
+    "name": "Commiserate",
+    "type": "Support",
+    "tags": [
+      "support"
+    ],
+    "tagString": "",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 2,
+    "gemFamily": "Commiserate"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemCompressedDurationSupport",
+    "name": "Compressed Duration I",
+    "type": "Support",
+    "tags": [
+      "support",
+      "duration"
+    ],
+    "tagString": "Duration",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 1,
+    "gemFamily": "Compressed Duration"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemCompressedDurationSupportTwo",
+    "name": "Compressed Duration II",
+    "type": "Support",
+    "tags": [
+      "support",
+      "duration"
+    ],
+    "tagString": "Duration",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 3,
+    "gemFamily": "Compressed Duration"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemConcentratedAreaSupport",
+    "name": "Concentrated Area",
+    "type": "Support",
+    "tags": [
+      "support",
+      "area"
+    ],
+    "tagString": "AoE",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 1,
+    "gemFamily": "Concentrated Area"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemConcoctSupport",
+    "name": "Concoct I",
+    "type": "Support",
+    "tags": [
+      "support"
+    ],
+    "tagString": "",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 2,
+    "gemFamily": "Concoct"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemConcoctSupportTwo",
+    "name": "Concoct II",
+    "type": "Support",
+    "tags": [
+      "support"
+    ],
+    "tagString": "",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 4,
+    "gemFamily": "Concoct"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemConcussiveSpellsSupport",
+    "name": "Concussive Spells",
+    "type": "Support",
+    "tags": [
+      "support",
+      "spell",
+      "physical"
+    ],
+    "tagString": "Spell, Physical",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 4,
+    "gemFamily": "Concussive Spells"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemConsideredCastingSupport",
+    "name": "Considered Casting",
+    "type": "Support",
+    "tags": [
+      "support",
+      "spell"
+    ],
+    "tagString": "Spell",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 2,
+    "gemFamily": "Considered Casting"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemControlledDestructionSupport",
+    "name": "Controlled Destruction",
+    "type": "Support",
+    "tags": [
+      "support",
+      "spell"
+    ],
+    "tagString": "Spell",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 1,
+    "gemFamily": "Controlled Destruction"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemControlledHazardSupport",
+    "name": "Controlled Hazard",
+    "type": "Support",
+    "tags": [
+      "support",
+      "hazard"
+    ],
+    "tagString": "Hazard",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 4,
+    "gemFamily": "Delayed Reaction"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemCoolHeadedSupport",
+    "name": "Cool Headed",
+    "type": "Support",
+    "tags": [
+      "support",
+      "buff",
+      "persistent"
+    ],
+    "tagString": "Buff, Persistent",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 3,
+    "gemFamily": "Cool Headed"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemCooldownRecoverySupport",
+    "name": "Cooldown Recovery I",
+    "type": "Support",
+    "tags": [
+      "support"
+    ],
+    "tagString": "",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 3,
+    "gemFamily": "Cooldown Recovery"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemCooldownRecoverySupportTwo",
+    "name": "Cooldown Recovery II",
+    "type": "Support",
+    "tags": [
+      "support"
+    ],
+    "tagString": "",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 4,
+    "gemFamily": "Cooldown Recovery"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemCorpseConservationSupport",
+    "name": "Corpse Conservation",
+    "type": "Support",
+    "tags": [
+      "support"
+    ],
+    "tagString": "",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 3,
+    "gemFamily": "Corpse Conservation"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemCorrosion",
+    "name": "Corrosion",
+    "type": "Support",
+    "tags": [
+      "support",
+      "physical",
+      "chaos"
+    ],
+    "tagString": "Physical, Chaos",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 1,
+    "gemFamily": "Corrosion"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemCorruptingCrySupport",
+    "name": "Corrupting Cry I",
+    "type": "Support",
+    "tags": [
+      "support",
+      "warcry",
+      "physical",
+      "duration"
+    ],
+    "tagString": "Warcry, Physical, Duration",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 3,
+    "gemFamily": "Corrupting Cry"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemCorruptingCrySupportTwo",
+    "name": "Corrupting Cry II",
+    "type": "Support",
+    "tags": [
+      "support",
+      "warcry",
+      "physical",
+      "duration"
+    ],
+    "tagString": "Warcry, Physical, Duration",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 5,
+    "gemFamily": "Corrupting Cry"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemDeadlyCurrentSupport",
+    "name": "Coursing Current",
+    "type": "Support",
+    "tags": [
+      "support",
+      "grants_active_skill",
+      "spell",
+      "projectile",
+      "trigger",
+      "lightning",
+      "chaining"
+    ],
+    "tagString": "Spell, Projectile, Trigger, Lightning, Chaining",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 1,
+    "gemFamily": "Coursing Current"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemCracklingBarrierSupport",
+    "name": "Crackling Barrier",
+    "type": "Support",
+    "tags": [
+      "support",
+      "lightning",
+      "channelling"
+    ],
+    "tagString": "Lightning, Channelling",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 2,
+    "gemFamily": "Crackling Barrier"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemCraterSupport",
+    "name": "Crater",
+    "type": "Support",
+    "tags": [
+      "support",
+      "grants_active_skill",
+      "attack",
+      "area",
+      "melee",
+      "trigger",
+      "fire",
+      "duration"
+    ],
+    "tagString": "Attack, AoE, Melee, Trigger, Fire, Duration",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 2,
+    "gemFamily": "Crater"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemCrazedMinionsSupport",
+    "name": "Crazed Minions",
+    "type": "Support",
+    "tags": [
+      "support",
+      "minion",
+      "persistent"
+    ],
+    "tagString": "Minion, Persistent",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 4,
+    "gemFamily": "Crazed Minions"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemCreepingChillSupport",
+    "name": "Creeping Chill",
+    "type": "Support",
+    "tags": [
+      "support",
+      "grants_active_skill",
+      "area",
+      "trigger",
+      "cold"
+    ],
+    "tagString": "AoE, Trigger, Cold",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 1,
+    "gemFamily": "Creeping Chill"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemCrescendoSupport",
+    "name": "Crescendo I",
+    "type": "Support",
+    "tags": [
+      "support",
+      "attack",
+      "melee",
+      "strike"
+    ],
+    "tagString": "Attack, Melee, Strike",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 1,
+    "gemFamily": "Crescendo"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemCrescendoSupportTwo",
+    "name": "Crescendo II",
+    "type": "Support",
+    "tags": [
+      "support",
+      "attack",
+      "melee",
+      "strike"
+    ],
+    "tagString": "Attack, Melee, Strike",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 4,
+    "gemFamily": "Crescendo"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemCrescendoSupportThree",
+    "name": "Crescendo III",
+    "type": "Support",
+    "tags": [
+      "support",
+      "attack",
+      "melee",
+      "strike"
+    ],
+    "tagString": "Attack, Melee, Strike",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 5,
+    "gemFamily": "Crescendo"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemCrystallineShardsSupport",
+    "name": "Crystalline Shards",
+    "type": "Support",
+    "tags": [
+      "support"
+    ],
+    "tagString": "",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 1,
+    "gemFamily": "Crystalline Shards"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemCullingStrikeSupport",
+    "name": "Culling Strike I",
+    "type": "Support",
+    "tags": [
+      "support",
+      "attack"
+    ],
+    "tagString": "Attack",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 4,
+    "gemFamily": "Culling Strike"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemCullingStrikeSupportTwo",
+    "name": "Culling Strike II",
+    "type": "Support",
+    "tags": [
+      "support",
+      "attack"
+    ],
+    "tagString": "Attack",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 5,
+    "gemFamily": "Culling Strike"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemCulminationSupport",
+    "name": "Culmination I",
+    "type": "Support",
+    "tags": [
+      "support",
+      "attack",
+      "melee",
+      "conditional"
+    ],
+    "tagString": "Attack, Melee, Conditional",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 3,
+    "gemFamily": "Culmination"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemCulminationSupportTwo",
+    "name": "Culmination II",
+    "type": "Support",
+    "tags": [
+      "support",
+      "attack",
+      "melee",
+      "conditional"
+    ],
+    "tagString": "Attack, Melee, Conditional",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 5,
+    "gemFamily": "Culmination"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemCursedGroundSupport",
+    "name": "Cursed Ground",
+    "type": "Support",
+    "tags": [
+      "support",
+      "curse"
+    ],
+    "tagString": "Curse",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 3,
+    "gemFamily": "Cursed Ground"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemDanseMacabreSupport",
+    "name": "Danse Macabre",
+    "type": "Support",
+    "tags": [
+      "support"
+    ],
+    "tagString": "",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 2,
+    "gemFamily": "Danse Macabre"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemDaressosPassionSupport",
+    "name": "Daresso's Passion",
+    "type": "Support",
+    "tags": [
+      "support",
+      "banner",
+      "lineage"
+    ],
+    "tagString": "Banner, Lineage",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 0,
+    "gemFamily": "Daresso's Passion"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemDauntlessSupport",
+    "name": "Dauntless",
+    "type": "Support",
+    "tags": [
+      "support",
+      "conditional"
+    ],
+    "tagString": "Conditional",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 0,
+    "gemFamily": "Dauntless"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemDazeSupport",
+    "name": "Daze",
+    "type": "Support",
+    "tags": [
+      "support",
+      "attack",
+      "physical"
+    ],
+    "tagString": "Attack, Physical",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 0,
+    "gemFamily": "Discombobulate"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemDazingCrySupport",
+    "name": "Dazing Cry",
+    "type": "Support",
+    "tags": [
+      "support",
+      "warcry"
+    ],
+    "tagString": "Warcry",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 0,
+    "gemFamily": "Dazing Cry"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemDazzleSupport",
+    "name": "Dazzle",
+    "type": "Support",
+    "tags": [
+      "support",
+      "attack"
+    ],
+    "tagString": "Attack",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 0,
+    "gemFamily": "Dazzle"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemDeadlyHeraldsSupport",
+    "name": "Deadly Herald",
+    "type": "Support",
+    "tags": [
+      "support",
+      "herald"
+    ],
+    "tagString": "Herald",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 3,
+    "gemFamily": "Deadly Heralds"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemDeadlyPoisonSupport",
+    "name": "Deadly Poison I",
+    "type": "Support",
+    "tags": [
+      "support",
+      "chaos"
+    ],
+    "tagString": "Chaos",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 2,
+    "gemFamily": "Deadly Poison"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemDeadlyPoisonSupportTwo",
+    "name": "Deadly Poison II",
+    "type": "Support",
+    "tags": [
+      "support",
+      "chaos"
+    ],
+    "tagString": "Chaos",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 4,
+    "gemFamily": "Deadly Poison"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemDeathmarchSupport",
+    "name": "Deathmarch",
+    "type": "Support",
+    "tags": [
+      "support",
+      "minion",
+      "persistent"
+    ],
+    "tagString": "Minion, Persistent",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 2,
+    "gemFamily": "Deathmarch"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemDecayingHexSupport",
+    "name": "Decaying Hex",
+    "type": "Support",
+    "tags": [
+      "support",
+      "chaos",
+      "curse"
+    ],
+    "tagString": "Chaos, Curse",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 3,
+    "gemFamily": "Decaying Hex"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemDeepCutsSupport",
+    "name": "Deep Cuts I",
+    "type": "Support",
+    "tags": [
+      "support",
+      "physical"
+    ],
+    "tagString": "Physical",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 3,
+    "gemFamily": "Deep Cuts"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemDeepCutsSupportTwo",
+    "name": "Deep Cuts II",
+    "type": "Support",
+    "tags": [
+      "support",
+      "physical"
+    ],
+    "tagString": "Physical",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 5,
+    "gemFamily": "Deep Cuts"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemLastingFrostSupport",
+    "name": "Deep Freeze",
+    "type": "Support",
+    "tags": [
+      "support",
+      "cold"
+    ],
+    "tagString": "Cold",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 1,
+    "gemFamily": "Deep Freeze"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemDefySupport",
+    "name": "Defy I",
+    "type": "Support",
+    "tags": [
+      "support",
+      "attack"
+    ],
+    "tagString": "Attack",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 2,
+    "gemFamily": "Defy"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemDefySupportTwo",
+    "name": "Defy II",
+    "type": "Support",
+    "tags": [
+      "support",
+      "attack"
+    ],
+    "tagString": "Attack",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 5,
+    "gemFamily": "Defy"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemDelayedGratificationSupport",
+    "name": "Delayed Gratification",
+    "type": "Support",
+    "tags": [
+      "support"
+    ],
+    "tagString": "",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 2,
+    "gemFamily": "Delayed Gratification"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemDelayedReactionSupport",
+    "name": "Delayed Reaction",
+    "type": "Support",
+    "tags": [
+      "support",
+      "hazard"
+    ],
+    "tagString": "Hazard",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 4,
+    "gemFamily": "Delayed Reaction"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemDeliberationSupport",
+    "name": "Deliberation",
+    "type": "Support",
+    "tags": [
+      "support"
+    ],
+    "tagString": "",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 3,
+    "gemFamily": "Deliberation"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemDerangeSupport",
+    "name": "Derange",
+    "type": "Support",
+    "tags": [
+      "support"
+    ],
+    "tagString": "",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 4,
+    "gemFamily": "Derange"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemDesperationSupport",
+    "name": "Desperation",
+    "type": "Support",
+    "tags": [
+      "support",
+      "attack",
+      "melee"
+    ],
+    "tagString": "Attack, Melee",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 0,
+    "gemFamily": "Desperation"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemDevastateSupport",
+    "name": "Devastate",
+    "type": "Support",
+    "tags": [
+      "support"
+    ],
+    "tagString": "",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 0,
+    "gemFamily": "Devastate"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemDiallasDesireSupport",
+    "name": "Dialla's Desire",
+    "type": "Support",
+    "tags": [
+      "support",
+      "lineage"
+    ],
+    "tagString": "Lineage",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 0,
+    "gemFamily": "Dialla's Desire"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemDirestrikeSupport",
+    "name": "Direstrike I",
+    "type": "Support",
+    "tags": [
+      "support",
+      "buff",
+      "persistent"
+    ],
+    "tagString": "Buff, Persistent",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 2,
+    "gemFamily": "Direstrike"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemDirestrikeSupportTwo",
+    "name": "Direstrike II",
+    "type": "Support",
+    "tags": [
+      "support",
+      "buff",
+      "persistent"
+    ],
+    "tagString": "Buff, Persistent",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 4,
+    "gemFamily": "Direstrike"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemDoedresUndoingSupport",
+    "name": "Doedre's Undoing",
+    "type": "Support",
+    "tags": [
+      "support",
+      "grants_active_skill",
+      "lineage",
+      "spell",
+      "area",
+      "trigger",
+      "chaos",
+      "curse",
+      "hazard"
+    ],
+    "tagString": "Lineage, Spell, AoE, Trigger, Chaos, Curse, Hazard",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 0,
+    "gemFamily": "Cursed Ground"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemPietysMercySupport",
+    "name": "Dominus' Grasp",
+    "type": "Support",
+    "tags": [
+      "support",
+      "lineage",
+      "projectile",
+      "chaining"
+    ],
+    "tagString": "Lineage, Projectile, Chaining",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 0,
+    "gemFamily": "Dominus' Grasp"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemDoubleBarrelSupport",
+    "name": "Double Barrel I",
+    "type": "Support",
+    "tags": [
+      "support",
+      "ammunition",
+      "projectile"
+    ],
+    "tagString": "Ammunition, Projectile",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 1,
+    "gemFamily": "Double Barrel"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemDoubleBarrelSupportTwo",
+    "name": "Double Barrel II",
+    "type": "Support",
+    "tags": [
+      "support",
+      "ammunition",
+      "projectile"
+    ],
+    "tagString": "Ammunition, Projectile",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 2,
+    "gemFamily": "Double Barrel"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemDoubleBarrelSupportThree",
+    "name": "Double Barrel III",
+    "type": "Support",
+    "tags": [
+      "support",
+      "ammunition",
+      "projectile"
+    ],
+    "tagString": "Ammunition, Projectile",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 5,
+    "gemFamily": "Double Barrel"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemDrainedAilmentSupport",
+    "name": "Drain Ailments",
+    "type": "Support",
+    "tags": [
+      "support",
+      "spell"
+    ],
+    "tagString": "Spell",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 3,
+    "gemFamily": "Drain Ailments"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemDurabilitySupport",
+    "name": "Durability",
+    "type": "Support",
+    "tags": [
+      "support"
+    ],
+    "tagString": "",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 2,
+    "gemFamily": "Durability"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemEchoingCrySupport",
+    "name": "Echoing Cry",
+    "type": "Support",
+    "tags": [
+      "support",
+      "warcry",
+      "area"
+    ],
+    "tagString": "Warcry, AoE",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 4,
+    "gemFamily": "Echoing Cry"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemEfficiencySupport",
+    "name": "Efficiency I",
+    "type": "Support",
+    "tags": [
+      "support"
+    ],
+    "tagString": "",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 1,
+    "gemFamily": "Efficiency"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemEfficiencySupportTwo",
+    "name": "Efficiency II",
+    "type": "Support",
+    "tags": [
+      "support"
+    ],
+    "tagString": "",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 4,
+    "gemFamily": "Efficiency"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemEinharsBeastriteSupport",
+    "name": "Einhar's Beastrite",
+    "type": "Support",
+    "tags": [
+      "support",
+      "lineage",
+      "attack",
+      "melee",
+      "strike"
+    ],
+    "tagString": "Lineage, Attack, Melee, Strike",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 0,
+    "gemFamily": "Behead"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemElectrocuteSupport",
+    "name": "Electrocute",
+    "type": "Support",
+    "tags": [
+      "support",
+      "lightning"
+    ],
+    "tagString": "Lightning",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 2,
+    "gemFamily": "Electrocute"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemShockingRiftSupport",
+    "name": "Electromagnetism",
+    "type": "Support",
+    "tags": [
+      "support",
+      "grants_active_skill",
+      "spell",
+      "area",
+      "trigger",
+      "sustained",
+      "lightning",
+      "payoff"
+    ],
+    "tagString": "Spell, AoE, Trigger, Sustained, Lightning, Payoff",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 3,
+    "gemFamily": "Electromagnetism"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemElementalArmamentSupport",
+    "name": "Elemental Armament I",
+    "type": "Support",
+    "tags": [
+      "support",
+      "attack"
+    ],
+    "tagString": "Attack",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 1,
+    "gemFamily": "Elemental Armament"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemElementalArmamentSupportTwo",
+    "name": "Elemental Armament II",
+    "type": "Support",
+    "tags": [
+      "support",
+      "attack"
+    ],
+    "tagString": "Attack",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 2,
+    "gemFamily": "Elemental Armament"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemElementalArmamentSupportThree",
+    "name": "Elemental Armament III",
+    "type": "Support",
+    "tags": [
+      "support",
+      "attack"
+    ],
+    "tagString": "Attack",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 5,
+    "gemFamily": "Elemental Armament"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemElementalArmySupport",
+    "name": "Elemental Army",
+    "type": "Support",
+    "tags": [
+      "support",
+      "minion"
+    ],
+    "tagString": "Minion",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 1,
+    "gemFamily": "Elemental Army"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemElementalDischarge",
+    "name": "Elemental Discharge",
+    "type": "Support",
+    "tags": [
+      "support",
+      "grants_active_skill",
+      "spell",
+      "area",
+      "trigger",
+      "lightning",
+      "cold",
+      "fire",
+      "payoff"
+    ],
+    "tagString": "Spell, AoE, Trigger, Lightning, Cold, Fire, Payoff",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 3,
+    "gemFamily": "Elemental Discharge"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemElementalFocusSupport",
+    "name": "Elemental Focus",
+    "type": "Support",
+    "tags": [
+      "support"
+    ],
+    "tagString": "",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 3,
+    "gemFamily": "Elemental Focus"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemEmbitterSupport",
+    "name": "Embitter",
+    "type": "Support",
+    "tags": [
+      "support",
+      "cold"
+    ],
+    "tagString": "Cold",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 2,
+    "gemFamily": "Embitter"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemEncroachingGroundSupport",
+    "name": "Encroaching Ground",
+    "type": "Support",
+    "tags": [
+      "support",
+      "area"
+    ],
+    "tagString": "AoE",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 2,
+    "gemFamily": "Encroaching Ground"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemHeavyStunEnduranceSupportOne",
+    "name": "Enduring Impact I",
+    "type": "Support",
+    "tags": [
+      "support"
+    ],
+    "tagString": "",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 1,
+    "gemFamily": "Enduring Impact"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemHeavyStunEnduranceSupportTwo",
+    "name": "Enduring Impact II",
+    "type": "Support",
+    "tags": [
+      "support"
+    ],
+    "tagString": "",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 4,
+    "gemFamily": "Enduring Impact"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemEnergyBarrierSupport",
+    "name": "Energy Barrier",
+    "type": "Support",
+    "tags": [
+      "support"
+    ],
+    "tagString": "",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 0,
+    "gemFamily": "Energy Barrier"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemEnergyCapacitorSupport",
+    "name": "Energy Capacitor",
+    "type": "Support",
+    "tags": [
+      "support"
+    ],
+    "tagString": "",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 3,
+    "gemFamily": "Energy Capacitor"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemEnergyRetentionSupport",
+    "name": "Energy Retention",
+    "type": "Support",
+    "tags": [
+      "support",
+      "trigger"
+    ],
+    "tagString": "Trigger",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 3,
+    "gemFamily": "Energy Retention"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemEnragedWarcrySupport",
+    "name": "Enraged Warcry I",
+    "type": "Support",
+    "tags": [
+      "support",
+      "warcry"
+    ],
+    "tagString": "Warcry",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 4,
+    "gemFamily": "Enraged Warcry"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemEnragedWarcrySupportTwo",
+    "name": "Enraged Warcry II",
+    "type": "Support",
+    "tags": [
+      "support",
+      "warcry"
+    ],
+    "tagString": "Warcry",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 5,
+    "gemFamily": "Enraged Warcry"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemEscalatingPoisonSupport",
+    "name": "Escalating Poison",
+    "type": "Support",
+    "tags": [
+      "support",
+      "chaos"
+    ],
+    "tagString": "Chaos",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 1,
+    "gemFamily": "Escalating Poison"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemEshsRadianceSupport",
+    "name": "Esh's Radiance",
+    "type": "Support",
+    "tags": [
+      "support",
+      "lineage",
+      "lightning",
+      "chaos"
+    ],
+    "tagString": "Lineage, Lightning, Chaos",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 0,
+    "gemFamily": "Breachlord"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemEssenceHarvestSupport",
+    "name": "Essence Harvest",
+    "type": "Support",
+    "tags": [
+      "support",
+      "minion",
+      "persistent"
+    ],
+    "tagString": "Minion, Persistent",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 3,
+    "gemFamily": "Essence Harvest"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemIgniteDurationSupport",
+    "name": "Eternal Flame I",
+    "type": "Support",
+    "tags": [
+      "support",
+      "fire"
+    ],
+    "tagString": "Fire",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 1,
+    "gemFamily": "Eternal Flame"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemIgniteDurationSupportTwo",
+    "name": "Eternal Flame II",
+    "type": "Support",
+    "tags": [
+      "support",
+      "fire"
+    ],
+    "tagString": "Fire",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 3,
+    "gemFamily": "Eternal Flame"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemIgniteDurationSupportThree",
+    "name": "Eternal Flame III",
+    "type": "Support",
+    "tags": [
+      "support",
+      "fire"
+    ],
+    "tagString": "Fire",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 4,
+    "gemFamily": "Eternal Flame"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemExciseSupport",
+    "name": "Excise",
+    "type": "Support",
+    "tags": [
+      "support"
+    ],
+    "tagString": "",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 2,
+    "gemFamily": "Grants Cooldown"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemExcoriateSupport",
+    "name": "Excoriate",
+    "type": "Support",
+    "tags": [
+      "support",
+      "attack",
+      "melee"
+    ],
+    "tagString": "Attack, Melee",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 0,
+    "gemFamily": "Excoriate"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemExecrateSupport",
+    "name": "Execrate",
+    "type": "Support",
+    "tags": [
+      "support"
+    ],
+    "tagString": "",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 3,
+    "gemFamily": "Grants Cooldown"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemExecuteSupport",
+    "name": "Execute I",
+    "type": "Support",
+    "tags": [
+      "support"
+    ],
+    "tagString": "",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 1,
+    "gemFamily": "Execute"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemExecuteSupportTwo",
+    "name": "Execute II",
+    "type": "Support",
+    "tags": [
+      "support"
+    ],
+    "tagString": "",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 4,
+    "gemFamily": "Execute"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemExecuteSupportThree",
+    "name": "Execute III",
+    "type": "Support",
+    "tags": [
+      "support"
+    ],
+    "tagString": "",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 5,
+    "gemFamily": "Execute"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemExpanseSupport",
+    "name": "Expanse",
+    "type": "Support",
+    "tags": [
+      "support",
+      "area"
+    ],
+    "tagString": "AoE",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 1,
+    "gemFamily": "Grants Cooldown"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemExploitWeaknessSupport",
+    "name": "Exploit Weakness",
+    "type": "Support",
+    "tags": [
+      "support",
+      "payoff"
+    ],
+    "tagString": "Payoff",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 2,
+    "gemFamily": "Exploit Weakness"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemExposingCrySupport",
+    "name": "Exposing Cry",
+    "type": "Support",
+    "tags": [
+      "support",
+      "warcry",
+      "duration"
+    ],
+    "tagString": "Warcry, Duration",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 4,
+    "gemFamily": "Exposing Cry"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemExtractionSupport",
+    "name": "Extraction",
+    "type": "Support",
+    "tags": [
+      "support",
+      "spell",
+      "chaos"
+    ],
+    "tagString": "Spell, Chaos",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 3,
+    "gemFamily": "Extraction"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemFanTheFlamesSupport",
+    "name": "Fan The Flames",
+    "type": "Support",
+    "tags": [
+      "support",
+      "grants_active_skill",
+      "attack",
+      "area",
+      "trigger",
+      "fire"
+    ],
+    "tagString": "Attack, AoE, Trigger, Fire",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 2,
+    "gemFamily": "Fan The Flames"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemFanTheFlamesSupportTwo",
+    "name": "Fan The Flames II",
+    "type": "Support",
+    "tags": [
+      "support",
+      "grants_active_skill",
+      "attack",
+      "area",
+      "trigger",
+      "fire"
+    ],
+    "tagString": "Attack, AoE, Trigger, Fire",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 4,
+    "gemFamily": "Fan The Flames"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemFeedingFrenzySupport",
+    "name": "Feeding Frenzy I",
+    "type": "Support",
+    "tags": [
+      "support",
+      "minion"
+    ],
+    "tagString": "Minion",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 3,
+    "gemFamily": "Feeding Frenzy"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemFeedingFrenzySupportTwo",
+    "name": "Feeding Frenzy II",
+    "type": "Support",
+    "tags": [
+      "support",
+      "minion"
+    ],
+    "tagString": "Minion",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 4,
+    "gemFamily": "Feeding Frenzy"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemFerocitySupport",
+    "name": "Ferocity",
+    "type": "Support",
+    "tags": [
+      "support"
+    ],
+    "tagString": "",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 0,
+    "gemFamily": "Ferocity"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemFieryDeathSupport",
+    "name": "Fiery Death",
+    "type": "Support",
+    "tags": [
+      "support",
+      "grants_active_skill",
+      "spell",
+      "area",
+      "trigger",
+      "fire"
+    ],
+    "tagString": "Spell, AoE, Trigger, Fire",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 2,
+    "gemFamily": "Fiery Death"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemAddedFireDamageSupport",
+    "name": "Fire Attunement",
+    "type": "Support",
+    "tags": [
+      "support",
+      "attack",
+      "fire"
+    ],
+    "tagString": "Attack, Fire",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 1,
+    "gemFamily": "Fire Attunement"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemFireExposureSupport",
+    "name": "Fire Exposure",
+    "type": "Support",
+    "tags": [
+      "support",
+      "fire",
+      "duration"
+    ],
+    "tagString": "Fire, Duration",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 4,
+    "gemFamily": "Fire Exposure"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemFireMasterySupport",
+    "name": "Fire Mastery",
+    "type": "Support",
+    "tags": [
+      "support",
+      "fire"
+    ],
+    "tagString": "Fire",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 5,
+    "gemFamily": "Mastery"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemFirePenetrationSupport",
+    "name": "Fire Penetration I",
+    "type": "Support",
+    "tags": [
+      "support",
+      "fire"
+    ],
+    "tagString": "Fire",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 2,
+    "gemFamily": "Fire Penetration"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemFirePenetrationSupportTwo",
+    "name": "Fire Penetration II",
+    "type": "Support",
+    "tags": [
+      "support",
+      "fire"
+    ],
+    "tagString": "Fire",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 5,
+    "gemFamily": "Fire Penetration"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemFirstBloodSupport",
+    "name": "First Blood",
+    "type": "Support",
+    "tags": [
+      "support",
+      "attack",
+      "physical"
+    ],
+    "tagString": "Attack, Physical",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 0,
+    "gemFamily": "First Blood"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemFistOfWarSupport",
+    "name": "Fist of War I",
+    "type": "Support",
+    "tags": [
+      "support",
+      "attack",
+      "melee",
+      "slam"
+    ],
+    "tagString": "Attack, Melee, Slam",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 1,
+    "gemFamily": "Fist of War"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemFistOfWarSupportTwo",
+    "name": "Fist of War II",
+    "type": "Support",
+    "tags": [
+      "support",
+      "attack",
+      "melee",
+      "slam"
+    ],
+    "tagString": "Attack, Melee, Slam",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 3,
+    "gemFamily": "Fist of War"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemFistOfWarSupportThree",
+    "name": "Fist of War III",
+    "type": "Support",
+    "tags": [
+      "support",
+      "attack",
+      "melee",
+      "slam"
+    ],
+    "tagString": "Attack, Melee, Slam",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 5,
+    "gemFamily": "Fist of War"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemFlamePillarSupport",
+    "name": "Flame Pillar",
+    "type": "Support",
+    "tags": [
+      "support",
+      "grants_active_skill",
+      "area",
+      "trigger",
+      "fire"
+    ],
+    "tagString": "AoE, Trigger, Fire",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 0,
+    "gemFamily": "Flame Pillar"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemFlamepierceSupport",
+    "name": "Flamepierce",
+    "type": "Support",
+    "tags": [
+      "support",
+      "projectile",
+      "fire"
+    ],
+    "tagString": "Projectile, Fire",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 0,
+    "gemFamily": "Flamepierce"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemFlowSupport",
+    "name": "Flow",
+    "type": "Support",
+    "tags": [
+      "support"
+    ],
+    "tagString": "",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 0,
+    "gemFamily": "Flow"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemFlukeSupport",
+    "name": "Fluke",
+    "type": "Support",
+    "tags": [
+      "support",
+      "trigger"
+    ],
+    "tagString": "Trigger",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 3,
+    "gemFamily": "Fluke"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemFocusedCurseSupport",
+    "name": "Focused Curse",
+    "type": "Support",
+    "tags": [
+      "support",
+      "curse"
+    ],
+    "tagString": "Curse",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 2,
+    "gemFamily": "Focused Curse"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemBloodFountainSupport",
+    "name": "Font of Blood",
+    "type": "Support",
+    "tags": [
+      "support",
+      "totem"
+    ],
+    "tagString": "Totem",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 2,
+    "gemFamily": "Font"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemManaFountainSupport",
+    "name": "Font of Mana",
+    "type": "Support",
+    "tags": [
+      "support",
+      "totem"
+    ],
+    "tagString": "Totem",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 2,
+    "gemFamily": "Font"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemForkSupport",
+    "name": "Fork",
+    "type": "Support",
+    "tags": [
+      "support",
+      "projectile"
+    ],
+    "tagString": "Projectile",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 3,
+    "gemFamily": "Fork"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemWallFortress",
+    "name": "Fortress I",
+    "type": "Support",
+    "tags": [
+      "support"
+    ],
+    "tagString": "",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 1,
+    "gemFamily": "Fortress"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemWallFortressTwo",
+    "name": "Fortress II",
+    "type": "Support",
+    "tags": [
+      "support"
+    ],
+    "tagString": "",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 3,
+    "gemFamily": "Fortress"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemFreezeSupport",
+    "name": "Freeze",
+    "type": "Support",
+    "tags": [
+      "support",
+      "cold"
+    ],
+    "tagString": "Cold",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 2,
+    "gemFamily": "Freeze"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemFreezeForkSupport",
+    "name": "Freezefork",
+    "type": "Support",
+    "tags": [
+      "support",
+      "projectile",
+      "cold"
+    ],
+    "tagString": "Projectile, Cold",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 0,
+    "gemFamily": "Freezefork"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemFrenziedRiposteSupport",
+    "name": "Frenzied Riposte",
+    "type": "Support",
+    "tags": [
+      "support",
+      "attack"
+    ],
+    "tagString": "Attack",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 2,
+    "gemFamily": "Retort"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemFreshClipSupport",
+    "name": "Fresh Clip I",
+    "type": "Support",
+    "tags": [
+      "support"
+    ],
+    "tagString": "",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 2,
+    "gemFamily": "Fresh Clip"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemFreshClipSupportTwo",
+    "name": "Fresh Clip II",
+    "type": "Support",
+    "tags": [
+      "support"
+    ],
+    "tagString": "",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 4,
+    "gemFamily": "Fresh Clip"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemChillingIceSupport",
+    "name": "Frost Nexus",
+    "type": "Support",
+    "tags": [
+      "support",
+      "area",
+      "cold"
+    ],
+    "tagString": "AoE, Cold",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 2,
+    "gemFamily": "Frost Nexus"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemFrostfireSupport",
+    "name": "Frostfire",
+    "type": "Support",
+    "tags": [
+      "support",
+      "cold",
+      "fire",
+      "payoff"
+    ],
+    "tagString": "Cold, Fire, Payoff",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 3,
+    "gemFamily": "Frostfire"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemFrozenSpiteSupport",
+    "name": "Frozen Spite",
+    "type": "Support",
+    "tags": [
+      "support",
+      "grants_active_skill",
+      "area",
+      "projectile",
+      "trigger",
+      "cold"
+    ],
+    "tagString": "AoE, Projectile, Trigger, Cold",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 2,
+    "gemFamily": "Frozen Spite"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemGambleshotSupport",
+    "name": "Gambleshot",
+    "type": "Support",
+    "tags": [
+      "support",
+      "projectile"
+    ],
+    "tagString": "Projectile",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 3,
+    "gemFamily": "Gambleshot"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemGarukhansResolveSupport",
+    "name": "Garukhan's Resolve",
+    "type": "Support",
+    "tags": [
+      "support",
+      "lineage",
+      "attack"
+    ],
+    "tagString": "Lineage, Attack",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 0,
+    "gemFamily": "Garukhan's Resolve"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemGlacierSupport",
+    "name": "Glacier",
+    "type": "Support",
+    "tags": [
+      "support"
+    ],
+    "tagString": "",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 2,
+    "gemFamily": "Glacier"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemHaemocrystalsSupport",
+    "name": "Haemocrystals",
+    "type": "Support",
+    "tags": [
+      "support",
+      "grants_active_skill",
+      "attack",
+      "area",
+      "trigger",
+      "physical"
+    ],
+    "tagString": "Attack, AoE, Trigger, Physical",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 3,
+    "gemFamily": "Haemocrystals"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemHardyTotemsSupport",
+    "name": "Hardy Totems I",
+    "type": "Support",
+    "tags": [
+      "support",
+      "totem"
+    ],
+    "tagString": "Totem",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 2,
+    "gemFamily": "Hardy Totems"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemHardyTotemsSupportTwo",
+    "name": "Hardy Totems II",
+    "type": "Support",
+    "tags": [
+      "support",
+      "totem"
+    ],
+    "tagString": "Totem",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 4,
+    "gemFamily": "Hardy Totems"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemFleetingRemnantsSupport",
+    "name": "Harmonic Remnants I",
+    "type": "Support",
+    "tags": [
+      "support",
+      "remnant"
+    ],
+    "tagString": "Remnant",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 2,
+    "gemFamily": "Harmonic Remnants"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemFleetingRemnantsSupportTwo",
+    "name": "Harmonic Remnants II",
+    "type": "Support",
+    "tags": [
+      "support",
+      "remnant"
+    ],
+    "tagString": "Remnant",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 3,
+    "gemFamily": "Harmonic Remnants"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemHayoxisFulminationSupport",
+    "name": "Hayoxi's Fulmination",
+    "type": "Support",
+    "tags": [
+      "support",
+      "grants_active_skill",
+      "lineage",
+      "spell",
+      "area",
+      "trigger",
+      "physical",
+      "lightning",
+      "cold",
+      "fire",
+      "chaos",
+      "curse"
+    ],
+    "tagString": "Lineage, Spell, AoE, Trigger, Physical, Lightning, Cold, Fire, Chaos, Curse",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 0,
+    "gemFamily": "Cursed Ground"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemMeleePhysicalDamageSupport",
+    "name": "Heavy Swing",
+    "type": "Support",
+    "tags": [
+      "support",
+      "attack",
+      "melee",
+      "physical"
+    ],
+    "tagString": "Attack, Melee, Physical",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 4,
+    "gemFamily": "Heavy Swing"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemHeftSupport",
+    "name": "Heft",
+    "type": "Support",
+    "tags": [
+      "support",
+      "physical"
+    ],
+    "tagString": "Physical",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 5,
+    "gemFamily": "Heft"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemHeightenedAccuracySupport",
+    "name": "Heightened Accuracy I",
+    "type": "Support",
+    "tags": [
+      "support",
+      "attack"
+    ],
+    "tagString": "Attack",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 1,
+    "gemFamily": "Heightened Accuracy"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemHeightenedAccuracySupportTwo",
+    "name": "Heightened Accuracy II",
+    "type": "Support",
+    "tags": [
+      "support",
+      "attack"
+    ],
+    "tagString": "Attack",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 3,
+    "gemFamily": "Heightened Accuracy"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemHeightenedChargesSupport",
+    "name": "Heightened Charges",
+    "type": "Support",
+    "tags": [
+      "support"
+    ],
+    "tagString": "",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 2,
+    "gemFamily": "Twofold"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemCurseEffectSupport",
+    "name": "Heightened Curse",
+    "type": "Support",
+    "tags": [
+      "support",
+      "curse"
+    ],
+    "tagString": "Curse",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 1,
+    "gemFamily": "Heightened Curse"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemHerbalismSupport",
+    "name": "Herbalism I",
+    "type": "Support",
+    "tags": [
+      "support",
+      "buff",
+      "persistent"
+    ],
+    "tagString": "Buff, Persistent",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 2,
+    "gemFamily": "Herbalism"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemHerbalismSupportTwo",
+    "name": "Herbalism II",
+    "type": "Support",
+    "tags": [
+      "support",
+      "buff",
+      "persistent"
+    ],
+    "tagString": "Buff, Persistent",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 4,
+    "gemFamily": "Herbalism"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemHexBloomSupport",
+    "name": "Hex Bloom",
+    "type": "Support",
+    "tags": [
+      "support",
+      "area",
+      "curse"
+    ],
+    "tagString": "AoE, Curse",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 3,
+    "gemFamily": "Hex Bloom"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemHinderSupport",
+    "name": "Hinder",
+    "type": "Support",
+    "tags": [
+      "support",
+      "spell",
+      "chaos"
+    ],
+    "tagString": "Spell, Chaos",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 0,
+    "gemFamily": "Hinder"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemHitAndRunSupport",
+    "name": "Hit and Run",
+    "type": "Support",
+    "tags": [
+      "support",
+      "attack",
+      "conditional"
+    ],
+    "tagString": "Attack, Conditional",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 4,
+    "gemFamily": "Hit and Run"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemHobbleSupport",
+    "name": "Hobble",
+    "type": "Support",
+    "tags": [
+      "support",
+      "physical"
+    ],
+    "tagString": "Physical",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 0,
+    "gemFamily": "Hobble"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemHolyDescentSupport",
+    "name": "Holy Descent",
+    "type": "Support",
+    "tags": [
+      "support",
+      "area",
+      "duration"
+    ],
+    "tagString": "AoE, Duration",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 5,
+    "gemFamily": "Holy Descent"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemHourglassSupport",
+    "name": "Hourglass",
+    "type": "Support",
+    "tags": [
+      "support"
+    ],
+    "tagString": "",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 1,
+    "gemFamily": "Grants Cooldown"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemHulkingMinionsSupport",
+    "name": "Hulking Minions",
+    "type": "Support",
+    "tags": [
+      "support",
+      "minion",
+      "persistent"
+    ],
+    "tagString": "Minion, Persistent",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 4,
+    "gemFamily": "Hulking Minions"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemIceBiteSupport",
+    "name": "Ice Bite I",
+    "type": "Support",
+    "tags": [
+      "support",
+      "attack",
+      "warcry",
+      "cold",
+      "duration"
+    ],
+    "tagString": "Attack, Warcry, Cold, Duration",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 1,
+    "gemFamily": "Ice Bite"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemIceBiteSupportTwo",
+    "name": "Ice Bite II",
+    "type": "Support",
+    "tags": [
+      "support",
+      "attack",
+      "warcry",
+      "cold",
+      "duration"
+    ],
+    "tagString": "Attack, Warcry, Cold, Duration",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 3,
+    "gemFamily": "Ice Bite"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemIcicleSupport",
+    "name": "Icicle",
+    "type": "Support",
+    "tags": [
+      "support"
+    ],
+    "tagString": "",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 2,
+    "gemFamily": "Icicle"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemIgniteSupport",
+    "name": "Ignite I",
+    "type": "Support",
+    "tags": [
+      "support",
+      "fire"
+    ],
+    "tagString": "Fire",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 1,
+    "gemFamily": "Ignite"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemIgniteSupportTwo",
+    "name": "Ignite II",
+    "type": "Support",
+    "tags": [
+      "support",
+      "fire"
+    ],
+    "tagString": "Fire",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 3,
+    "gemFamily": "Ignite"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemIgniteSupportThree",
+    "name": "Ignite III",
+    "type": "Support",
+    "tags": [
+      "support",
+      "fire"
+    ],
+    "tagString": "Fire",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 5,
+    "gemFamily": "Ignite"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemImmolateSupport",
+    "name": "Immolate",
+    "type": "Support",
+    "tags": [
+      "support",
+      "fire",
+      "payoff"
+    ],
+    "tagString": "Fire, Payoff",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 3,
+    "gemFamily": "Immolate"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemImpactShockwaveSupport",
+    "name": "Impact Shockwave",
+    "type": "Support",
+    "tags": [
+      "support",
+      "attack",
+      "area",
+      "melee",
+      "strike"
+    ],
+    "tagString": "Attack, AoE, Melee, Strike",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 1,
+    "gemFamily": "Impact Shockwave"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemImpaleSupport",
+    "name": "Impale",
+    "type": "Support",
+    "tags": [
+      "support",
+      "attack",
+      "physical"
+    ],
+    "tagString": "Attack, Physical",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 4,
+    "gemFamily": "Impale"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemImpendingDoomSupport",
+    "name": "Impending Doom",
+    "type": "Support",
+    "tags": [
+      "support",
+      "grants_active_skill",
+      "spell",
+      "area",
+      "trigger",
+      "chaos"
+    ],
+    "tagString": "Spell, AoE, Trigger, Chaos",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 1,
+    "gemFamily": "Impending Doom"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemIncisionSupport",
+    "name": "Incision",
+    "type": "Support",
+    "tags": [
+      "support",
+      "attack",
+      "physical"
+    ],
+    "tagString": "Attack, Physical",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 4,
+    "gemFamily": "Incision"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemInevitableCriticalsSupport",
+    "name": "Inexorable Critical I",
+    "type": "Support",
+    "tags": [
+      "support"
+    ],
+    "tagString": "",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 3,
+    "gemFamily": "Inexorable Critical"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemInevitableCriticalsSupportTwo",
+    "name": "Inexorable Critical II",
+    "type": "Support",
+    "tags": [
+      "support"
+    ],
+    "tagString": "",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 4,
+    "gemFamily": "Inexorable Critical"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemInfernalLegionSupport",
+    "name": "Infernal Legion I",
+    "type": "Support",
+    "tags": [
+      "support",
+      "minion",
+      "area",
+      "fire"
+    ],
+    "tagString": "Minion, AoE, Fire",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 2,
+    "gemFamily": "Infernal Legion"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemInfernalLegionSupportTwo",
+    "name": "Infernal Legion II",
+    "type": "Support",
+    "tags": [
+      "support",
+      "minion",
+      "area",
+      "fire"
+    ],
+    "tagString": "Minion, AoE, Fire",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 4,
+    "gemFamily": "Infernal Legion"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemInfernalLegionSupportThree",
+    "name": "Infernal Legion III",
+    "type": "Support",
+    "tags": [
+      "support",
+      "minion",
+      "area",
+      "fire"
+    ],
+    "tagString": "Minion, AoE, Fire",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 5,
+    "gemFamily": "Infernal Legion"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemChargeInhibitionSupport",
+    "name": "Inhibitor",
+    "type": "Support",
+    "tags": [
+      "support",
+      "spell"
+    ],
+    "tagString": "Spell",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 2,
+    "gemFamily": "Inhibitor"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemInnervateSupport",
+    "name": "Innervate",
+    "type": "Support",
+    "tags": [
+      "support",
+      "attack",
+      "lightning",
+      "duration"
+    ],
+    "tagString": "Attack, Lightning, Duration",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 1,
+    "gemFamily": "Innervate"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemIntenseAgonySupport",
+    "name": "Intense Agony",
+    "type": "Support",
+    "tags": [
+      "support",
+      "spell",
+      "duration"
+    ],
+    "tagString": "Spell, Duration",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 2,
+    "gemFamily": "Intense Agony"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemFlukeSupportTwo",
+    "name": "Ixchel's Torment",
+    "type": "Support",
+    "tags": [
+      "support",
+      "lineage",
+      "trigger"
+    ],
+    "tagString": "Lineage, Trigger",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 0,
+    "gemFamily": "Fluke"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemJaggedGroundSupport",
+    "name": "Jagged Ground I",
+    "type": "Support",
+    "tags": [
+      "support",
+      "attack",
+      "area",
+      "melee",
+      "slam",
+      "duration"
+    ],
+    "tagString": "Attack, AoE, Melee, Slam, Duration",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 2,
+    "gemFamily": "Jagged Ground"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemJaggedGroundSupportTwo",
+    "name": "Jagged Ground II",
+    "type": "Support",
+    "tags": [
+      "support",
+      "attack",
+      "area",
+      "melee",
+      "slam",
+      "duration"
+    ],
+    "tagString": "Attack, AoE, Melee, Slam, Duration",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 5,
+    "gemFamily": "Jagged Ground"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemKalisasCrescendoSupport",
+    "name": "Kalisa's Crescendo",
+    "type": "Support",
+    "tags": [
+      "support",
+      "lineage"
+    ],
+    "tagString": "Lineage",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 0,
+    "gemFamily": "Kalisa's Crescendo"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemKaomsMadnessSupport",
+    "name": "Kaom's Madness",
+    "type": "Support",
+    "tags": [
+      "support",
+      "lineage",
+      "attack",
+      "melee"
+    ],
+    "tagString": "Lineage, Attack, Melee",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 0,
+    "gemFamily": "Fissures"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemKhatalsRejuvenationSupport",
+    "name": "Khatal's Rejuvenation",
+    "type": "Support",
+    "tags": [
+      "support",
+      "lineage",
+      "remnant"
+    ],
+    "tagString": "Lineage, Remnant",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 0,
+    "gemFamily": "Khatal's Rejuvenation"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemKnockbackSupport",
+    "name": "Knockback",
+    "type": "Support",
+    "tags": [
+      "support"
+    ],
+    "tagString": "",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 3,
+    "gemFamily": "Knockback"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemKulemaksDominionSupport",
+    "name": "Kulemak's Dominion",
+    "type": "Support",
+    "tags": [
+      "support",
+      "lineage"
+    ],
+    "tagString": "Lineage",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 0,
+    "gemFamily": "Kulemak's Dominion"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemKurgalsLeashSupport",
+    "name": "Kurgal's Leash",
+    "type": "Support",
+    "tags": [
+      "support",
+      "lineage",
+      "minion",
+      "chaos"
+    ],
+    "tagString": "Lineage, Minion, Chaos",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 0,
+    "gemFamily": "Blackblood"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemLastGaspSupport",
+    "name": "Last Gasp",
+    "type": "Support",
+    "tags": [
+      "support",
+      "minion",
+      "persistent",
+      "duration"
+    ],
+    "tagString": "Minion, Persistent, Duration",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 1,
+    "gemFamily": "Last Gasp"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemLastingGroundSupport",
+    "name": "Lasting Ground",
+    "type": "Support",
+    "tags": [
+      "support"
+    ],
+    "tagString": "",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 0,
+    "gemFamily": "Lasting Ground"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemLastingShockSupport",
+    "name": "Lasting Shock",
+    "type": "Support",
+    "tags": [
+      "support",
+      "lightning"
+    ],
+    "tagString": "Lightning",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 2,
+    "gemFamily": "Lasting Shock"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemLeverageSupport",
+    "name": "Leverage",
+    "type": "Support",
+    "tags": [
+      "support"
+    ],
+    "tagString": "",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 0,
+    "gemFamily": "Leverage"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemLifeFlaskSupport",
+    "name": "Life Bounty",
+    "type": "Support",
+    "tags": [
+      "support"
+    ],
+    "tagString": "",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 0,
+    "gemFamily": "Bounty"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemLifeOnCullSupport",
+    "name": "Life Drain",
+    "type": "Support",
+    "tags": [
+      "support"
+    ],
+    "tagString": "",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 1,
+    "gemFamily": "Life Drain"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemLifeLeechSupport",
+    "name": "Life Leech I",
+    "type": "Support",
+    "tags": [
+      "support",
+      "attack",
+      "physical"
+    ],
+    "tagString": "Attack, Physical",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 2,
+    "gemFamily": "Life Leech"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemLifeLeechSupportTwo",
+    "name": "Life Leech II",
+    "type": "Support",
+    "tags": [
+      "support",
+      "attack",
+      "physical"
+    ],
+    "tagString": "Attack, Physical",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 3,
+    "gemFamily": "Life Leech"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemLifeLeechSupportThree",
+    "name": "Life Leech III",
+    "type": "Support",
+    "tags": [
+      "support",
+      "attack",
+      "physical"
+    ],
+    "tagString": "Attack, Physical",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 5,
+    "gemFamily": "Life Leech"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemBloodMagicSupport",
+    "name": "Lifetap",
+    "type": "Support",
+    "tags": [
+      "support"
+    ],
+    "tagString": "",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 2,
+    "gemFamily": "Lifetap"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemAddedLightningDamageSupport",
+    "name": "Lightning Attunement",
+    "type": "Support",
+    "tags": [
+      "support",
+      "attack",
+      "lightning"
+    ],
+    "tagString": "Attack, Lightning",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 1,
+    "gemFamily": "Lightning Attunement"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemLightningExposureSupport",
+    "name": "Lightning Exposure",
+    "type": "Support",
+    "tags": [
+      "support",
+      "lightning",
+      "duration"
+    ],
+    "tagString": "Lightning, Duration",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 4,
+    "gemFamily": "Lightning Exposure"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemLightningMasterySupport",
+    "name": "Lightning Mastery",
+    "type": "Support",
+    "tags": [
+      "support",
+      "lightning"
+    ],
+    "tagString": "Lightning",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 5,
+    "gemFamily": "Mastery"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemLightningPenetrationSupport",
+    "name": "Lightning Penetration",
+    "type": "Support",
+    "tags": [
+      "support",
+      "lightning"
+    ],
+    "tagString": "Lightning",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 2,
+    "gemFamily": "Lightning Penetration"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemLivingLightningSupport",
+    "name": "Living Lightning",
+    "type": "Support",
+    "tags": [
+      "support",
+      "grants_active_skill",
+      "minion",
+      "trigger",
+      "lightning",
+      "duration"
+    ],
+    "tagString": "Minion, Trigger, Lightning, Duration",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 2,
+    "gemFamily": "Living Lightning"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemLivingLightningSupportTwo",
+    "name": "Living Lightning II",
+    "type": "Support",
+    "tags": [
+      "support",
+      "grants_active_skill",
+      "minion",
+      "trigger",
+      "lightning",
+      "duration"
+    ],
+    "tagString": "Minion, Trigger, Lightning, Duration",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 4,
+    "gemFamily": "Living Lightning"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemLockdownSupport",
+    "name": "Lockdown",
+    "type": "Support",
+    "tags": [
+      "support"
+    ],
+    "tagString": "",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 0,
+    "gemFamily": "Lockdown"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemLongFuseSupport",
+    "name": "Long Fuse I",
+    "type": "Support",
+    "tags": [
+      "support"
+    ],
+    "tagString": "",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 4,
+    "gemFamily": "Long Fuse"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemLongFuseSupportTwo",
+    "name": "Long Fuse II",
+    "type": "Support",
+    "tags": [
+      "support"
+    ],
+    "tagString": "",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 5,
+    "gemFamily": "Long Fuse"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemFarCombatSupport",
+    "name": "Longshot I",
+    "type": "Support",
+    "tags": [
+      "support",
+      "attack"
+    ],
+    "tagString": "Attack",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 2,
+    "gemFamily": "Longshot"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemFarCombatSupportTwo",
+    "name": "Longshot II",
+    "type": "Support",
+    "tags": [
+      "support",
+      "attack"
+    ],
+    "tagString": "Attack",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 3,
+    "gemFamily": "Longshot"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemLoyaltySupport",
+    "name": "Loyalty",
+    "type": "Support",
+    "tags": [
+      "support",
+      "minion"
+    ],
+    "tagString": "Minion",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 2,
+    "gemFamily": "Loyalty"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemMagneticRemnantsSupport",
+    "name": "Magnetic Remnants",
+    "type": "Support",
+    "tags": [
+      "support"
+    ],
+    "tagString": "",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 0,
+    "gemFamily": "Magnetism"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemMagnifiedAreaSupport",
+    "name": "Magnified Area I",
+    "type": "Support",
+    "tags": [
+      "support",
+      "area"
+    ],
+    "tagString": "AoE",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 1,
+    "gemFamily": "Increased Area of Effect"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemMagnifiedAreaSupportTwo",
+    "name": "Magnified Area II",
+    "type": "Support",
+    "tags": [
+      "support",
+      "area"
+    ],
+    "tagString": "AoE",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 3,
+    "gemFamily": "Increased Area of Effect"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemMaimSupport",
+    "name": "Maim",
+    "type": "Support",
+    "tags": [
+      "support",
+      "attack"
+    ],
+    "tagString": "Attack",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 2,
+    "gemFamily": "Maim"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemMaladySupport",
+    "name": "Malady",
+    "type": "Support",
+    "tags": [
+      "support"
+    ],
+    "tagString": "",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 0,
+    "gemFamily": "Malady"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemManaFlaskSupport",
+    "name": "Mana Bounty",
+    "type": "Support",
+    "tags": [
+      "support"
+    ],
+    "tagString": "",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 0,
+    "gemFamily": "Bounty"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemManaFlareSupport",
+    "name": "Mana Flare",
+    "type": "Support",
+    "tags": [
+      "support",
+      "grants_active_skill",
+      "spell",
+      "area",
+      "trigger",
+      "fire"
+    ],
+    "tagString": "Spell, AoE, Trigger, Fire",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 2,
+    "gemFamily": "Mana Flare"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemManaLeechSupport",
+    "name": "Mana Leech",
+    "type": "Support",
+    "tags": [
+      "support",
+      "attack",
+      "physical"
+    ],
+    "tagString": "Attack, Physical",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 2,
+    "gemFamily": "Mana Leech"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemMarkForDeathSupport",
+    "name": "Mark for Death",
+    "type": "Support",
+    "tags": [
+      "support",
+      "mark",
+      "physical"
+    ],
+    "tagString": "Mark, Physical",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 2,
+    "gemFamily": "Mark for Death"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemMarkForDeathSupportTwo",
+    "name": "Mark for Death II",
+    "type": "Support",
+    "tags": [
+      "support",
+      "mark",
+      "physical"
+    ],
+    "tagString": "Mark, Physical",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 4,
+    "gemFamily": "Mark for Death"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemMarkOfSiphoningSupport",
+    "name": "Mark of Siphoning",
+    "type": "Support",
+    "tags": [
+      "support",
+      "mark"
+    ],
+    "tagString": "Mark",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 1,
+    "gemFamily": "Mark of Siphoning"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemMarkOfSiphoningSupportTwo",
+    "name": "Mark of Siphoning II",
+    "type": "Support",
+    "tags": [
+      "support",
+      "mark"
+    ],
+    "tagString": "Mark",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 4,
+    "gemFamily": "Mark of Siphoning"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemMeatShieldSupport",
+    "name": "Meat Shield I",
+    "type": "Support",
+    "tags": [
+      "support",
+      "minion"
+    ],
+    "tagString": "Minion",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 1,
+    "gemFamily": "Meat Shield"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemMeatShieldSupportTwo",
+    "name": "Meat Shield II",
+    "type": "Support",
+    "tags": [
+      "support",
+      "minion"
+    ],
+    "tagString": "Minion",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 3,
+    "gemFamily": "Meat Shield"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemMinionInstabilitySupport",
+    "name": "Minion Instability",
+    "type": "Support",
+    "tags": [
+      "support",
+      "minion",
+      "fire"
+    ],
+    "tagString": "Minion, Fire",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 2,
+    "gemFamily": "Minion Instability"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemMinionMasterySupport",
+    "name": "Minion Mastery",
+    "type": "Support",
+    "tags": [
+      "support",
+      "minion"
+    ],
+    "tagString": "Minion",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 5,
+    "gemFamily": "Mastery"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemMinionPactSupport",
+    "name": "Minion Pact I",
+    "type": "Support",
+    "tags": [
+      "support",
+      "minion"
+    ],
+    "tagString": "Minion",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 1,
+    "gemFamily": "Minion Pact"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemMinionPactSupportTwo",
+    "name": "Minion Pact II",
+    "type": "Support",
+    "tags": [
+      "support",
+      "minion"
+    ],
+    "tagString": "Minion",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 4,
+    "gemFamily": "Minion Pact"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemMobilitySupport",
+    "name": "Mobility",
+    "type": "Support",
+    "tags": [
+      "support"
+    ],
+    "tagString": "",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 3,
+    "gemFamily": "Mobility"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemMomentumSupport",
+    "name": "Momentum",
+    "type": "Support",
+    "tags": [
+      "support"
+    ],
+    "tagString": "",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 2,
+    "gemFamily": "Momentum"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemMorganasTempestSupport",
+    "name": "Morgana's Tempest",
+    "type": "Support",
+    "tags": [
+      "support",
+      "lineage",
+      "spell",
+      "storm"
+    ],
+    "tagString": "Lineage, Spell, Storm",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 0,
+    "gemFamily": "Advancing Storm, Overabundance"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemMultishotSupport",
+    "name": "Multishot I",
+    "type": "Support",
+    "tags": [
+      "support",
+      "projectile"
+    ],
+    "tagString": "Projectile",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 1,
+    "gemFamily": "Additional Projectiles"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemMultishotSupportTwo",
+    "name": "Multishot II",
+    "type": "Support",
+    "tags": [
+      "support",
+      "projectile"
+    ],
+    "tagString": "Projectile",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 2,
+    "gemFamily": "Additional Projectiles"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemEmpoweredCullSupport",
+    "name": "Murderous Intent",
+    "type": "Support",
+    "tags": [
+      "support"
+    ],
+    "tagString": "",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 0,
+    "gemFamily": "Murderous Intent"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemMusterSupport",
+    "name": "Muster",
+    "type": "Support",
+    "tags": [
+      "support",
+      "minion"
+    ],
+    "tagString": "Minion",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 3,
+    "gemFamily": "Muster"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemMysticismSupport",
+    "name": "Mysticism I",
+    "type": "Support",
+    "tags": [
+      "support",
+      "buff",
+      "persistent"
+    ],
+    "tagString": "Buff, Persistent",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 2,
+    "gemFamily": "Mysticism"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemMysticismSupportTwo",
+    "name": "Mysticism II",
+    "type": "Support",
+    "tags": [
+      "support",
+      "buff",
+      "persistent"
+    ],
+    "tagString": "Buff, Persistent",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 4,
+    "gemFamily": "Mysticism"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemNadirSupport",
+    "name": "Nadir",
+    "type": "Support",
+    "tags": [
+      "support",
+      "stages"
+    ],
+    "tagString": "Staged",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 0,
+    "gemFamily": "Nadir"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemNeuralOverload",
+    "name": "Neural Overload",
+    "type": "Support",
+    "tags": [
+      "support",
+      "lightning"
+    ],
+    "tagString": "Lightning",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 3,
+    "gemFamily": "Electrocute"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemNimbleReloadSupport",
+    "name": "Nimble Reload",
+    "type": "Support",
+    "tags": [
+      "support",
+      "ammunition",
+      "projectile"
+    ],
+    "tagString": "Ammunition, Projectile",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 4,
+    "gemFamily": "Nimble Reload"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemNovaProjectilesSupport",
+    "name": "Nova Projectiles I",
+    "type": "Support",
+    "tags": [
+      "support",
+      "projectile"
+    ],
+    "tagString": "Projectile",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 2,
+    "gemFamily": "Nova Projectiles"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemNovaProjectilesTwoSupport",
+    "name": "Nova Projectiles II",
+    "type": "Support",
+    "tags": [
+      "support",
+      "projectile"
+    ],
+    "tagString": "Projectile",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 4,
+    "gemFamily": "Additional Projectiles, Nova Projectiles"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemOisinsOathSupport",
+    "name": "Oisín's Oath",
+    "type": "Support",
+    "tags": [
+      "support",
+      "lineage",
+      "spell"
+    ],
+    "tagString": "Lineage, Spell",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 0,
+    "gemFamily": "Mana Leech"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemOpeningMoveSupport",
+    "name": "Opening Move",
+    "type": "Support",
+    "tags": [
+      "support"
+    ],
+    "tagString": "",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 1,
+    "gemFamily": "Opening Move"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemOutmaneuverSupport",
+    "name": "Outmaneuver",
+    "type": "Support",
+    "tags": [
+      "support",
+      "physical"
+    ],
+    "tagString": "Physical",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 0,
+    "gemFamily": "Outmaneuver"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemIncreaseLimitSupport",
+    "name": "Overabundance I",
+    "type": "Support",
+    "tags": [
+      "support"
+    ],
+    "tagString": "",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 1,
+    "gemFamily": "Overabundance"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemIncreaseLimitSupportTwo",
+    "name": "Overabundance II",
+    "type": "Support",
+    "tags": [
+      "support"
+    ],
+    "tagString": "",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 4,
+    "gemFamily": "Overabundance"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemIncreaseLimitSupportThree",
+    "name": "Overabundance III",
+    "type": "Support",
+    "tags": [
+      "support",
+      "curse"
+    ],
+    "tagString": "Curse",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 0,
+    "gemFamily": "Overabundance"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemOverchargeSupport",
+    "name": "Overcharge",
+    "type": "Support",
+    "tags": [
+      "support",
+      "lightning"
+    ],
+    "tagString": "Lightning",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 4,
+    "gemFamily": "Overcharge"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemOverextendSupport",
+    "name": "Overextend",
+    "type": "Support",
+    "tags": [
+      "support",
+      "attack"
+    ],
+    "tagString": "Attack",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 2,
+    "gemFamily": "Overextend"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemOverreachSupport",
+    "name": "Overreach",
+    "type": "Support",
+    "tags": [
+      "support",
+      "attack",
+      "area"
+    ],
+    "tagString": "Attack, AoE",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 2,
+    "gemFamily": "Increased Area of Effect"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemCorruptingCrySupportThree",
+    "name": "Paquate's Pact",
+    "type": "Support",
+    "tags": [
+      "support",
+      "lineage",
+      "warcry",
+      "physical",
+      "duration"
+    ],
+    "tagString": "Lineage, Warcry, Physical, Duration",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 0,
+    "gemFamily": "Corrupting Cry"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemPayloadSupport",
+    "name": "Payload",
+    "type": "Support",
+    "tags": [
+      "support",
+      "grenade"
+    ],
+    "tagString": "Grenade",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 4,
+    "gemFamily": "Payload"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemPerfectEnduranceSupport",
+    "name": "Perfected Endurance",
+    "type": "Support",
+    "tags": [
+      "support",
+      "channelling"
+    ],
+    "tagString": "Channelling",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 4,
+    "gemFamily": "Perfected Endurance"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemPerfectionSupport",
+    "name": "Perfection",
+    "type": "Support",
+    "tags": [
+      "support"
+    ],
+    "tagString": "",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 4,
+    "gemFamily": "Perfection"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemPerpetualCharge",
+    "name": "Perpetual Charge",
+    "type": "Support",
+    "tags": [
+      "support"
+    ],
+    "tagString": "",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 1,
+    "gemFamily": "Perpetual Charge"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemPersistentGroundSupport",
+    "name": "Persistent Ground I",
+    "type": "Support",
+    "tags": [
+      "support"
+    ],
+    "tagString": "",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 2,
+    "gemFamily": "Persistent Ground"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemPersistentGroundSupportTwo",
+    "name": "Persistent Ground II",
+    "type": "Support",
+    "tags": [
+      "support"
+    ],
+    "tagString": "",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 3,
+    "gemFamily": "Persistent Ground"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemPersistentGroundSupportThree",
+    "name": "Persistent Ground III",
+    "type": "Support",
+    "tags": [
+      "support"
+    ],
+    "tagString": "",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 5,
+    "gemFamily": "Persistent Ground"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemPhysicalMasterySupport",
+    "name": "Physical Mastery",
+    "type": "Support",
+    "tags": [
+      "support",
+      "physical"
+    ],
+    "tagString": "Physical",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 5,
+    "gemFamily": "Mastery"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemPierceSupport",
+    "name": "Pierce I",
+    "type": "Support",
+    "tags": [
+      "support",
+      "projectile"
+    ],
+    "tagString": "Projectile",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 1,
+    "gemFamily": "Pierce"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemPierceSupportTwo",
+    "name": "Pierce II",
+    "type": "Support",
+    "tags": [
+      "support",
+      "projectile"
+    ],
+    "tagString": "Projectile",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 3,
+    "gemFamily": "Pierce"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemPierceSupportThree",
+    "name": "Pierce III",
+    "type": "Support",
+    "tags": [
+      "support",
+      "projectile"
+    ],
+    "tagString": "Projectile",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 5,
+    "gemFamily": "Pierce"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemPinSupport",
+    "name": "Pin I",
+    "type": "Support",
+    "tags": [
+      "support",
+      "physical"
+    ],
+    "tagString": "Physical",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 1,
+    "gemFamily": "Pin"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemPinSupportTwo",
+    "name": "Pin II",
+    "type": "Support",
+    "tags": [
+      "support",
+      "physical"
+    ],
+    "tagString": "Physical",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 2,
+    "gemFamily": "Pin"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemPinSupportThree",
+    "name": "Pin III",
+    "type": "Support",
+    "tags": [
+      "support",
+      "physical"
+    ],
+    "tagString": "Physical",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 5,
+    "gemFamily": "Pin"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemPinpointCritical",
+    "name": "Pinpoint Critical",
+    "type": "Support",
+    "tags": [
+      "support"
+    ],
+    "tagString": "",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 2,
+    "gemFamily": "Pinpoint Critical"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemPoisonSupport",
+    "name": "Poison I",
+    "type": "Support",
+    "tags": [
+      "support",
+      "chaos"
+    ],
+    "tagString": "Chaos",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 1,
+    "gemFamily": "Poison"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemPoisonSupportTwo",
+    "name": "Poison II",
+    "type": "Support",
+    "tags": [
+      "support",
+      "chaos"
+    ],
+    "tagString": "Chaos",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 3,
+    "gemFamily": "Poison"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemPoisonSupportThree",
+    "name": "Poison III",
+    "type": "Support",
+    "tags": [
+      "support",
+      "chaos"
+    ],
+    "tagString": "Chaos",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 5,
+    "gemFamily": "Poison"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemPoisonSporesSupport",
+    "name": "Poison Spores",
+    "type": "Support",
+    "tags": [
+      "support",
+      "grants_active_skill",
+      "attack",
+      "buff",
+      "area",
+      "trigger",
+      "physical",
+      "chaos",
+      "duration",
+      "plant"
+    ],
+    "tagString": "Attack, Buff, AoE, Trigger, Physical, Chaos, Duration, Plant",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 3,
+    "gemFamily": "Poison Spores"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemPotentExposureSupport",
+    "name": "Potent Exposure",
+    "type": "Support",
+    "tags": [
+      "support",
+      "spell"
+    ],
+    "tagString": "Spell",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 2,
+    "gemFamily": "Potent Exposure"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemPotentialSupport",
+    "name": "Potential",
+    "type": "Support",
+    "tags": [
+      "support"
+    ],
+    "tagString": "",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 0,
+    "gemFamily": "Potential"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemPracticalMagicSupport",
+    "name": "Practical Magic I",
+    "type": "Support",
+    "tags": [
+      "support",
+      "spell",
+      "duration"
+    ],
+    "tagString": "Spell, Duration",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 3,
+    "gemFamily": "Practical Magic"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemPracticalMagicSupportTwo",
+    "name": "Practical Magic II",
+    "type": "Support",
+    "tags": [
+      "support",
+      "spell",
+      "duration"
+    ],
+    "tagString": "Spell, Duration",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 5,
+    "gemFamily": "Practical Magic"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemPracticedComboSupport",
+    "name": "Practiced Combo",
+    "type": "Support",
+    "tags": [
+      "support",
+      "attack",
+      "melee",
+      "strike"
+    ],
+    "tagString": "Attack, Melee, Strike",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 3,
+    "gemFamily": "Practiced Combo"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemPrecisionSupport",
+    "name": "Precision I",
+    "type": "Support",
+    "tags": [
+      "support",
+      "buff",
+      "persistent"
+    ],
+    "tagString": "Buff, Persistent",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 1,
+    "gemFamily": "Precision"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemPrecisionSupportTwo",
+    "name": "Precision II",
+    "type": "Support",
+    "tags": [
+      "support",
+      "buff",
+      "persistent"
+    ],
+    "tagString": "Buff, Persistent",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 4,
+    "gemFamily": "Precision"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemEmpoweredDamageSupport",
+    "name": "Premeditation",
+    "type": "Support",
+    "tags": [
+      "support"
+    ],
+    "tagString": "",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 0,
+    "gemFamily": "Premeditation"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemProfanitySupport",
+    "name": "Profanity I",
+    "type": "Support",
+    "tags": [
+      "support",
+      "chaos"
+    ],
+    "tagString": "Chaos",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 1,
+    "gemFamily": "Profanity"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemProfanitySupportTwo",
+    "name": "Profanity II",
+    "type": "Support",
+    "tags": [
+      "support",
+      "chaos"
+    ],
+    "tagString": "Chaos",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 5,
+    "gemFamily": "Profanity"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemProjectileAccelerationSupport",
+    "name": "Projectile Acceleration I",
+    "type": "Support",
+    "tags": [
+      "support",
+      "projectile"
+    ],
+    "tagString": "Projectile",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 1,
+    "gemFamily": "Projectile Speed"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemProjectileAccelerationSupportTwo",
+    "name": "Projectile Acceleration II",
+    "type": "Support",
+    "tags": [
+      "support",
+      "projectile"
+    ],
+    "tagString": "Projectile",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 4,
+    "gemFamily": "Projectile Speed"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemProjectileAccelerationSupportThree",
+    "name": "Projectile Acceleration III",
+    "type": "Support",
+    "tags": [
+      "support",
+      "projectile"
+    ],
+    "tagString": "Projectile",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 5,
+    "gemFamily": "Projectile Speed"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemProjectileDecelerationSupport",
+    "name": "Projectile Deceleration I",
+    "type": "Support",
+    "tags": [
+      "support",
+      "projectile"
+    ],
+    "tagString": "Projectile",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 1,
+    "gemFamily": "Projectile Speed"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemProjectileDecelerationSupportTwo",
+    "name": "Projectile Deceleration II",
+    "type": "Support",
+    "tags": [
+      "support",
+      "projectile"
+    ],
+    "tagString": "Projectile",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 3,
+    "gemFamily": "Projectile Speed"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemProlongedDurationSupport",
+    "name": "Prolonged Duration I",
+    "type": "Support",
+    "tags": [
+      "support",
+      "duration"
+    ],
+    "tagString": "Duration",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 1,
+    "gemFamily": "Prolonged Duration"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemProlongedDurationSupportTwo",
+    "name": "Prolonged Duration II",
+    "type": "Support",
+    "tags": [
+      "support",
+      "duration"
+    ],
+    "tagString": "Duration",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 3,
+    "gemFamily": "Prolonged Duration"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemProlongedDurationSupportThree",
+    "name": "Prolonged Duration III",
+    "type": "Support",
+    "tags": [
+      "support",
+      "duration"
+    ],
+    "tagString": "Duration",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 0,
+    "gemFamily": "Prolonged Duration"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemPunchThroughSupport",
+    "name": "Punch Through",
+    "type": "Support",
+    "tags": [
+      "support",
+      "attack",
+      "melee"
+    ],
+    "tagString": "Attack, Melee",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 3,
+    "gemFamily": "Punch Through"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemPursuitSupport",
+    "name": "Pursuit I",
+    "type": "Support",
+    "tags": [
+      "support",
+      "attack",
+      "melee"
+    ],
+    "tagString": "Attack, Melee",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 1,
+    "gemFamily": "Pursuit"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemPursuitSupportTwo",
+    "name": "Pursuit II",
+    "type": "Support",
+    "tags": [
+      "support",
+      "attack",
+      "melee"
+    ],
+    "tagString": "Attack, Melee",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 3,
+    "gemFamily": "Pursuit"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemPursuitSupportThree",
+    "name": "Pursuit III",
+    "type": "Support",
+    "tags": [
+      "support",
+      "attack",
+      "melee"
+    ],
+    "tagString": "Attack, Melee",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 5,
+    "gemFamily": "Pursuit"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemQuillburstSupport",
+    "name": "Quill Burst",
+    "type": "Support",
+    "tags": [
+      "support",
+      "grants_active_skill",
+      "attack",
+      "area",
+      "melee",
+      "trigger",
+      "physical"
+    ],
+    "tagString": "Attack, AoE, Melee, Trigger, Physical",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 3,
+    "gemFamily": "Quill Burst"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemRageSupport",
+    "name": "Rage I",
+    "type": "Support",
+    "tags": [
+      "support",
+      "attack",
+      "melee"
+    ],
+    "tagString": "Attack, Melee",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 1,
+    "gemFamily": "Rage"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemRageSupportTwo",
+    "name": "Rage II",
+    "type": "Support",
+    "tags": [
+      "support",
+      "attack",
+      "melee"
+    ],
+    "tagString": "Attack, Melee",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 4,
+    "gemFamily": "Rage"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemRageSupportThree",
+    "name": "Rage III",
+    "type": "Support",
+    "tags": [
+      "support",
+      "attack",
+      "melee"
+    ],
+    "tagString": "Attack, Melee",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 5,
+    "gemFamily": "Rage"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemRageforgedSupport",
+    "name": "Rageforged I",
+    "type": "Support",
+    "tags": [
+      "support"
+    ],
+    "tagString": "",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 4,
+    "gemFamily": "Rageforged"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemRageforgedSupportTwo",
+    "name": "Rageforged II",
+    "type": "Support",
+    "tags": [
+      "support"
+    ],
+    "tagString": "",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 5,
+    "gemFamily": "Rageforged"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemRagingCrySupport",
+    "name": "Raging Cry",
+    "type": "Support",
+    "tags": [
+      "support",
+      "warcry"
+    ],
+    "tagString": "Warcry",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 2,
+    "gemFamily": "Raging Cry"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemRakiatasFlowSupport",
+    "name": "Rakiata's Flow",
+    "type": "Support",
+    "tags": [
+      "support",
+      "lineage"
+    ],
+    "tagString": "Lineage",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 0,
+    "gemFamily": "Rakiata's Flow"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemRallySupport",
+    "name": "Rally",
+    "type": "Support",
+    "tags": [
+      "support",
+      "attack",
+      "melee"
+    ],
+    "tagString": "Attack, Melee",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 0,
+    "gemFamily": "Rally"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemRapidAttacksSupport",
+    "name": "Rapid Attacks I",
+    "type": "Support",
+    "tags": [
+      "support",
+      "attack"
+    ],
+    "tagString": "Attack",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 1,
+    "gemFamily": "Rapid Attacks"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemRapidAttacksSupportTwo",
+    "name": "Rapid Attacks II",
+    "type": "Support",
+    "tags": [
+      "support",
+      "attack"
+    ],
+    "tagString": "Attack",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 4,
+    "gemFamily": "Rapid Attacks"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemRapidAttacksSupportThree",
+    "name": "Rapid Attacks III",
+    "type": "Support",
+    "tags": [
+      "support",
+      "attack"
+    ],
+    "tagString": "Attack",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 5,
+    "gemFamily": "Rapid Attacks"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemRapidCastingSupport",
+    "name": "Rapid Casting I",
+    "type": "Support",
+    "tags": [
+      "support",
+      "spell"
+    ],
+    "tagString": "Spell",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 1,
+    "gemFamily": "Rapid Casting"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemRapidCastingSupportTwo",
+    "name": "Rapid Casting II",
+    "type": "Support",
+    "tags": [
+      "support",
+      "spell"
+    ],
+    "tagString": "Spell",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 4,
+    "gemFamily": "Rapid Casting"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemRapidCastingSupportThree",
+    "name": "Rapid Casting III",
+    "type": "Support",
+    "tags": [
+      "support",
+      "spell"
+    ],
+    "tagString": "Spell",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 5,
+    "gemFamily": "Rapid Casting"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemCombatReloadSupport",
+    "name": "Ratha's Assault",
+    "type": "Support",
+    "tags": [
+      "support",
+      "lineage",
+      "ammunition",
+      "projectile"
+    ],
+    "tagString": "Lineage, Ammunition, Projectile",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 0,
+    "gemFamily": "Double Barrel, Rapid Attacks"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemRearmSupport",
+    "name": "Rearm I",
+    "type": "Support",
+    "tags": [
+      "support",
+      "hazard"
+    ],
+    "tagString": "Hazard",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 3,
+    "gemFamily": "Rearm"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemRearmSupportTwo",
+    "name": "Rearm II",
+    "type": "Support",
+    "tags": [
+      "support",
+      "hazard"
+    ],
+    "tagString": "Hazard",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 5,
+    "gemFamily": "Rearm"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemRefractionSupport",
+    "name": "Refraction I",
+    "type": "Support",
+    "tags": [
+      "support",
+      "buff",
+      "persistent"
+    ],
+    "tagString": "Buff, Persistent",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 2,
+    "gemFamily": "Refraction"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemRefractionSupportTwo",
+    "name": "Refraction II",
+    "type": "Support",
+    "tags": [
+      "support",
+      "buff",
+      "persistent"
+    ],
+    "tagString": "Buff, Persistent",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 3,
+    "gemFamily": "Refraction"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemRefractionSupportThree",
+    "name": "Refraction III",
+    "type": "Support",
+    "tags": [
+      "support",
+      "buff",
+      "persistent"
+    ],
+    "tagString": "Buff, Persistent",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 5,
+    "gemFamily": "Refraction"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemReinforcedTotemsSupport",
+    "name": "Reinforced Totems I",
+    "type": "Support",
+    "tags": [
+      "support",
+      "totem"
+    ],
+    "tagString": "Totem",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 3,
+    "gemFamily": "Reinforced Totems"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemReinforcedTotemsSupportTwo",
+    "name": "Reinforced Totems II",
+    "type": "Support",
+    "tags": [
+      "support",
+      "totem"
+    ],
+    "tagString": "Totem",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 5,
+    "gemFamily": "Reinforced Totems"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemRelentlessRageSupport",
+    "name": "Relentless Rage",
+    "type": "Support",
+    "tags": [
+      "support"
+    ],
+    "tagString": "",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 0,
+    "gemFamily": "Relentless Rage"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemRemnantPotencySupport",
+    "name": "Remnant Potency I",
+    "type": "Support",
+    "tags": [
+      "support",
+      "remnant"
+    ],
+    "tagString": "Remnant",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 2,
+    "gemFamily": "Remnant Potency"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemRemnantPotencySupportTwo",
+    "name": "Remnant Potency II",
+    "type": "Support",
+    "tags": [
+      "support",
+      "remnant"
+    ],
+    "tagString": "Remnant",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 3,
+    "gemFamily": "Remnant Potency"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemRemnantPotencySupportThree",
+    "name": "Remnant Potency III",
+    "type": "Support",
+    "tags": [
+      "support",
+      "remnant"
+    ],
+    "tagString": "Remnant",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 4,
+    "gemFamily": "Remnant Potency"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemRendingApexSupport",
+    "name": "Rending Apex",
+    "type": "Support",
+    "tags": [
+      "support",
+      "attack",
+      "melee",
+      "strike"
+    ],
+    "tagString": "Attack, Melee, Strike",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 3,
+    "gemFamily": "Rending Apex"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemRetaliateSupport",
+    "name": "Retaliate I",
+    "type": "Support",
+    "tags": [
+      "support",
+      "attack",
+      "melee"
+    ],
+    "tagString": "Attack, Melee",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 2,
+    "gemFamily": "Retaliate"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemRetaliateSupportTwo",
+    "name": "Retaliate II",
+    "type": "Support",
+    "tags": [
+      "support",
+      "attack",
+      "melee"
+    ],
+    "tagString": "Attack, Melee",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 4,
+    "gemFamily": "Retaliate"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemRetreatSupport",
+    "name": "Retreat I",
+    "type": "Support",
+    "tags": [
+      "support",
+      "projectile"
+    ],
+    "tagString": "Projectile",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 1,
+    "gemFamily": "Retreat"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemRetreatSupportTwo",
+    "name": "Retreat II",
+    "type": "Support",
+    "tags": [
+      "support",
+      "projectile"
+    ],
+    "tagString": "Projectile",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 3,
+    "gemFamily": "Retreat"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemRetreatSupportThree",
+    "name": "Retreat III",
+    "type": "Support",
+    "tags": [
+      "support",
+      "projectile"
+    ],
+    "tagString": "Projectile",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 5,
+    "gemFamily": "Retreat"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemReverberateSupport",
+    "name": "Reverberate",
+    "type": "Support",
+    "tags": [
+      "support",
+      "attack",
+      "melee",
+      "slam"
+    ],
+    "tagString": "Attack, Melee, Slam",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 0,
+    "gemFamily": "Reverberate"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemTerrainChainSupport",
+    "name": "Ricochet I",
+    "type": "Support",
+    "tags": [
+      "support",
+      "projectile"
+    ],
+    "tagString": "Projectile",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 2,
+    "gemFamily": "Ricochet"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemTerrainChainSupportTwo",
+    "name": "Ricochet II",
+    "type": "Support",
+    "tags": [
+      "support",
+      "projectile"
+    ],
+    "tagString": "Projectile",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 4,
+    "gemFamily": "Ricochet"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemRigwaldsFerocitySupport",
+    "name": "Rigwald's Ferocity",
+    "type": "Support",
+    "tags": [
+      "support",
+      "lineage",
+      "attack"
+    ],
+    "tagString": "Lineage, Attack",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 0,
+    "gemFamily": "Rigwald's Ferocity"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemRimeSupport",
+    "name": "Rime",
+    "type": "Support",
+    "tags": [
+      "support",
+      "cold"
+    ],
+    "tagString": "Cold",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 0,
+    "gemFamily": "Rime"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemRipSupport",
+    "name": "Rip",
+    "type": "Support",
+    "tags": [
+      "support",
+      "attack",
+      "melee",
+      "physical",
+      "duration",
+      "remnant"
+    ],
+    "tagString": "Attack, Melee, Physical, Duration, Remnant",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 3,
+    "gemFamily": "Rip"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemTempestuousTempoSupport",
+    "name": "Rising Tempest",
+    "type": "Support",
+    "tags": [
+      "support"
+    ],
+    "tagString": "",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 2,
+    "gemFamily": "Rising Tempest"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemRitualisticCurseSupport",
+    "name": "Ritualistic Curse",
+    "type": "Support",
+    "tags": [
+      "support",
+      "area",
+      "curse"
+    ],
+    "tagString": "AoE, Curse",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 3,
+    "gemFamily": "Ritualistic Curse"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemRuptureSupport",
+    "name": "Rupture",
+    "type": "Support",
+    "tags": [
+      "support",
+      "physical"
+    ],
+    "tagString": "Physical",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 3,
+    "gemFamily": "Rupture"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemRustedSpikesSupport",
+    "name": "Rusted Spikes",
+    "type": "Support",
+    "tags": [
+      "support"
+    ],
+    "tagString": "",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 0,
+    "gemFamily": "Rusted Spikes"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemRuthlessSupport",
+    "name": "Ruthless",
+    "type": "Support",
+    "tags": [
+      "support"
+    ],
+    "tagString": "",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 0,
+    "gemFamily": "Ruthless"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemSacrificialLambSupport",
+    "name": "Sacrificial Lamb I",
+    "type": "Support",
+    "tags": [
+      "support",
+      "minion"
+    ],
+    "tagString": "Minion",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 1,
+    "gemFamily": "Sacrificial Lamb"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemSacrificialLambSupportTwo",
+    "name": "Sacrificial Lamb II",
+    "type": "Support",
+    "tags": [
+      "support",
+      "minion"
+    ],
+    "tagString": "Minion",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 3,
+    "gemFamily": "Sacrificial Lamb"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemSacrificialOfferingSupport",
+    "name": "Sacrificial Offering",
+    "type": "Support",
+    "tags": [
+      "support"
+    ],
+    "tagString": "",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 3,
+    "gemFamily": "Sacrificial Offering"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemSalvoSupport",
+    "name": "Salvo",
+    "type": "Support",
+    "tags": [
+      "support",
+      "attack",
+      "projectile"
+    ],
+    "tagString": "Attack, Projectile",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 3,
+    "gemFamily": "Additional Projectiles"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemDeadlyIgnitesSupport",
+    "name": "Searing Flame I",
+    "type": "Support",
+    "tags": [
+      "support",
+      "fire"
+    ],
+    "tagString": "Fire",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 3,
+    "gemFamily": "Searing Flame"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemDeadlyIgnitesSupportTwo",
+    "name": "Searing Flame II",
+    "type": "Support",
+    "tags": [
+      "support",
+      "fire"
+    ],
+    "tagString": "Fire",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 4,
+    "gemFamily": "Searing Flame"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemSecondWindSupport",
+    "name": "Second Wind I",
+    "type": "Support",
+    "tags": [
+      "support"
+    ],
+    "tagString": "",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 2,
+    "gemFamily": "Second Wind"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemSecondWindSupportTwo",
+    "name": "Second Wind II",
+    "type": "Support",
+    "tags": [
+      "support"
+    ],
+    "tagString": "",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 4,
+    "gemFamily": "Second Wind"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemSecondWindSupportThree",
+    "name": "Second Wind III",
+    "type": "Support",
+    "tags": [
+      "support"
+    ],
+    "tagString": "",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 5,
+    "gemFamily": "Second Wind"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemSeeRedSupport",
+    "name": "See Red",
+    "type": "Support",
+    "tags": [
+      "support",
+      "attack",
+      "physical"
+    ],
+    "tagString": "Attack, Physical",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 0,
+    "gemFamily": "See Red"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemSelflessRemnantsSupport",
+    "name": "Selfless Remnants",
+    "type": "Support",
+    "tags": [
+      "support",
+      "remnant"
+    ],
+    "tagString": "Remnant",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 2,
+    "gemFamily": "Selfless Remnants"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemShockSupport",
+    "name": "Shock",
+    "type": "Support",
+    "tags": [
+      "support",
+      "lightning"
+    ],
+    "tagString": "Lightning",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 1,
+    "gemFamily": "Shock"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemShockConductionSupport",
+    "name": "Shock Conduction I",
+    "type": "Support",
+    "tags": [
+      "support",
+      "area",
+      "lightning"
+    ],
+    "tagString": "AoE, Lightning",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 2,
+    "gemFamily": "Shock Conduction"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemShockConductionSupportTwo",
+    "name": "Shock Conduction II",
+    "type": "Support",
+    "tags": [
+      "support",
+      "area",
+      "lightning"
+    ],
+    "tagString": "AoE, Lightning",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 5,
+    "gemFamily": "Shock Conduction"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemEnergyShieldOnShockKillSupport",
+    "name": "Shock Siphon",
+    "type": "Support",
+    "tags": [
+      "support",
+      "lightning"
+    ],
+    "tagString": "Lightning",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 0,
+    "gemFamily": "Shock Siphon"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemShockingLeapSupport",
+    "name": "Shocking Leap",
+    "type": "Support",
+    "tags": [
+      "support",
+      "area",
+      "duration"
+    ],
+    "tagString": "AoE, Duration",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 2,
+    "gemFamily": "Shocking Leap"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemShortFuseSupport",
+    "name": "Short Fuse I",
+    "type": "Support",
+    "tags": [
+      "support"
+    ],
+    "tagString": "",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 2,
+    "gemFamily": "Short Fuse"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemShortFuseSupportTwo",
+    "name": "Short Fuse II",
+    "type": "Support",
+    "tags": [
+      "support"
+    ],
+    "tagString": "",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 4,
+    "gemFamily": "Short Fuse"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemWildshardsSupportThree",
+    "name": "Sione's Temper",
+    "type": "Support",
+    "tags": [
+      "support",
+      "lineage",
+      "spell",
+      "projectile"
+    ],
+    "tagString": "Lineage, Spell, Projectile",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 0,
+    "gemFamily": "Additional Projectiles"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemSkitteringStoneSupport",
+    "name": "Skittering Stone I",
+    "type": "Support",
+    "tags": [
+      "support",
+      "grants_active_skill",
+      "minion",
+      "trigger",
+      "physical",
+      "duration"
+    ],
+    "tagString": "Minion, Trigger, Physical, Duration",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 2,
+    "gemFamily": "Skittering Stone"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemSkitteringStoneSupportTwo",
+    "name": "Skittering Stone II",
+    "type": "Support",
+    "tags": [
+      "support",
+      "grants_active_skill",
+      "minion",
+      "trigger",
+      "physical",
+      "duration"
+    ],
+    "tagString": "Minion, Trigger, Physical, Duration",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 4,
+    "gemFamily": "Skittering Stone"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemSlowPotencySupport",
+    "name": "Slow Potency",
+    "type": "Support",
+    "tags": [
+      "support",
+      "spell"
+    ],
+    "tagString": "Spell",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 1,
+    "gemFamily": "Encumbrance"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemManaOnCullSupport",
+    "name": "Soul Drain",
+    "type": "Support",
+    "tags": [
+      "support"
+    ],
+    "tagString": "",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 3,
+    "gemFamily": "Soul Drain"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemSparSupport",
+    "name": "Spar",
+    "type": "Support",
+    "tags": [
+      "support",
+      "attack",
+      "melee"
+    ],
+    "tagString": "Attack, Melee",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 0,
+    "gemFamily": "Spar"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemSpectralVolleySupport",
+    "name": "Spectral Volley",
+    "type": "Support",
+    "tags": [
+      "support",
+      "attack",
+      "projectile"
+    ],
+    "tagString": "Attack, Projectile",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 4,
+    "gemFamily": "Spectral Volley"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemSpellCascadeSupport",
+    "name": "Spell Cascade",
+    "type": "Support",
+    "tags": [
+      "support",
+      "area"
+    ],
+    "tagString": "AoE",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 1,
+    "gemFamily": "Spell Cascade"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemSpellEchoSupport",
+    "name": "Spell Echo",
+    "type": "Support",
+    "tags": [
+      "support",
+      "spell",
+      "area"
+    ],
+    "tagString": "Spell, AoE",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 2,
+    "gemFamily": "Spell Echo"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemSplinteringTotemSupport",
+    "name": "Splinter Totem I",
+    "type": "Support",
+    "tags": [
+      "support",
+      "totem"
+    ],
+    "tagString": "Totem",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 3,
+    "gemFamily": "Totemic Control"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemSplinteringTotemSupportTwo",
+    "name": "Splinter Totem II",
+    "type": "Support",
+    "tags": [
+      "support",
+      "totem"
+    ],
+    "tagString": "Totem",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 5,
+    "gemFamily": "Totemic Control"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemStaticShocksSupport",
+    "name": "Static Shocks",
+    "type": "Support",
+    "tags": [
+      "support",
+      "grants_active_skill",
+      "spell",
+      "area",
+      "trigger",
+      "sustained",
+      "lightning",
+      "duration"
+    ],
+    "tagString": "Spell, AoE, Trigger, Sustained, Lightning, Duration",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 3,
+    "gemFamily": "Static Shocks"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemSteadfastSupport",
+    "name": "Steadfast I",
+    "type": "Support",
+    "tags": [
+      "support",
+      "channelling"
+    ],
+    "tagString": "Channelling",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 1,
+    "gemFamily": "Steadfast"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemSteadfastSupportTwo",
+    "name": "Steadfast II",
+    "type": "Support",
+    "tags": [
+      "support",
+      "channelling"
+    ],
+    "tagString": "Channelling",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 3,
+    "gemFamily": "Steadfast"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemStoicismSupport",
+    "name": "Stoicism I",
+    "type": "Support",
+    "tags": [
+      "support"
+    ],
+    "tagString": "",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 3,
+    "gemFamily": "Stoicism"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemStoicismSupportTwo",
+    "name": "Stoicism II",
+    "type": "Support",
+    "tags": [
+      "support"
+    ],
+    "tagString": "",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 5,
+    "gemFamily": "Stoicism"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemStompingGroundSupport",
+    "name": "Stomping Ground",
+    "type": "Support",
+    "tags": [
+      "support",
+      "grants_active_skill",
+      "attack",
+      "area",
+      "trigger"
+    ],
+    "tagString": "Attack, AoE, Trigger",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 1,
+    "gemFamily": "Stomping Ground"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemStormchainSupport",
+    "name": "Stormchain",
+    "type": "Support",
+    "tags": [
+      "support",
+      "projectile",
+      "lightning",
+      "chaining"
+    ],
+    "tagString": "Projectile, Lightning, Chaining",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 0,
+    "gemFamily": "Stormchain"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemStormfireSupport",
+    "name": "Stormfire",
+    "type": "Support",
+    "tags": [
+      "support",
+      "lightning",
+      "fire"
+    ],
+    "tagString": "Lightning, Fire",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 3,
+    "gemFamily": "Stormfire"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemStreamlinedRoundsSupport",
+    "name": "Streamlined Rounds",
+    "type": "Support",
+    "tags": [
+      "support",
+      "ammunition",
+      "projectile"
+    ],
+    "tagString": "Ammunition, Projectile",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 3,
+    "gemFamily": "Streamlined Rounds"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemStrongHeartedSupport",
+    "name": "Strong Hearted",
+    "type": "Support",
+    "tags": [
+      "support",
+      "buff",
+      "persistent"
+    ],
+    "tagString": "Buff, Persistent",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 3,
+    "gemFamily": "Strong Hearted"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemStunSupport",
+    "name": "Stun I",
+    "type": "Support",
+    "tags": [
+      "support"
+    ],
+    "tagString": "",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 2,
+    "gemFamily": "Stun"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemStunSupportTwo",
+    "name": "Stun II",
+    "type": "Support",
+    "tags": [
+      "support"
+    ],
+    "tagString": "",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 4,
+    "gemFamily": "Stun"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemStunSupportThree",
+    "name": "Stun III",
+    "type": "Support",
+    "tags": [
+      "support"
+    ],
+    "tagString": "",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 5,
+    "gemFamily": "Stun"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemIncreasedCriticalDamageSupport",
+    "name": "Supercritical",
+    "type": "Support",
+    "tags": [
+      "support"
+    ],
+    "tagString": "",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 3,
+    "gemFamily": "Supercritical"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemSwiftAfflictionSupport",
+    "name": "Swift Affliction I",
+    "type": "Support",
+    "tags": [
+      "support",
+      "duration"
+    ],
+    "tagString": "Duration",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 1,
+    "gemFamily": "Swift Affliction"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemSwiftAfflictionSupportTwo",
+    "name": "Swift Affliction II",
+    "type": "Support",
+    "tags": [
+      "support",
+      "duration"
+    ],
+    "tagString": "Duration",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 3,
+    "gemFamily": "Swift Affliction"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemSwiftAfflictionSupportThree",
+    "name": "Swift Affliction III",
+    "type": "Support",
+    "tags": [
+      "support",
+      "duration"
+    ],
+    "tagString": "Duration",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 5,
+    "gemFamily": "Swift Affliction"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemSyzygySupport",
+    "name": "Syzygy",
+    "type": "Support",
+    "tags": [
+      "support",
+      "attack",
+      "melee",
+      "slam",
+      "fire"
+    ],
+    "tagString": "Attack, Melee, Slam, Fire",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 4,
+    "gemFamily": "Syzygy"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemTacatisIreSupport",
+    "name": "Tacati's Ire",
+    "type": "Support",
+    "tags": [
+      "support",
+      "lineage",
+      "chaos"
+    ],
+    "tagString": "Lineage, Chaos",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 0,
+    "gemFamily": "Tacati's Ire"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemTasaliosRhythmSupport",
+    "name": "Tasalio's Rhythm",
+    "type": "Support",
+    "tags": [
+      "support",
+      "lineage"
+    ],
+    "tagString": "Lineage",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 0,
+    "gemFamily": "Perfection"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemHardyTotemsSupportThree",
+    "name": "Tawhoa's Tending",
+    "type": "Support",
+    "tags": [
+      "support",
+      "grants_active_skill",
+      "lineage",
+      "totem",
+      "area",
+      "trigger",
+      "physical"
+    ],
+    "tagString": "Lineage, Totem, AoE, Trigger, Physical",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 0,
+    "gemFamily": "Hardy Totems"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemTearSupport",
+    "name": "Tear",
+    "type": "Support",
+    "tags": [
+      "support",
+      "attack",
+      "melee",
+      "physical"
+    ],
+    "tagString": "Attack, Melee, Physical",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 3,
+    "gemFamily": "Tear"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemTecrodsRevengeSupport",
+    "name": "Tecrod's Revenge",
+    "type": "Support",
+    "tags": [
+      "support",
+      "lineage",
+      "minion",
+      "persistent",
+      "duration"
+    ],
+    "tagString": "Lineage, Minion, Persistent, Duration",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 0,
+    "gemFamily": "Last Gasp"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemSlamAftershocksSupport",
+    "name": "Tectonic Slams",
+    "type": "Support",
+    "tags": [
+      "support",
+      "attack",
+      "melee",
+      "slam"
+    ],
+    "tagString": "Attack, Melee, Slam",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 2,
+    "gemFamily": "Aftershock"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemThornskinSupport",
+    "name": "Thornskin I",
+    "type": "Support",
+    "tags": [
+      "support",
+      "buff",
+      "persistent"
+    ],
+    "tagString": "Buff, Persistent",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 2,
+    "gemFamily": "Thornskin"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemThornskinSupportTwo",
+    "name": "Thornskin II",
+    "type": "Support",
+    "tags": [
+      "support",
+      "buff",
+      "persistent"
+    ],
+    "tagString": "Buff, Persistent",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 4,
+    "gemFamily": "Thornskin"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemThrillOfTheKillSupport",
+    "name": "Thrill of the Kill",
+    "type": "Support",
+    "tags": [
+      "support",
+      "attack",
+      "lightning",
+      "duration"
+    ],
+    "tagString": "Attack, Lightning, Duration",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 1,
+    "gemFamily": "Thrill of the Kill"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemThrillOfTheKillSupportTwo",
+    "name": "Thrill of the Kill II",
+    "type": "Support",
+    "tags": [
+      "support",
+      "attack",
+      "lightning",
+      "duration"
+    ],
+    "tagString": "Attack, Lightning, Duration",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 3,
+    "gemFamily": "Thrill of the Kill"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemTirelessSupport",
+    "name": "Tireless",
+    "type": "Support",
+    "tags": [
+      "support",
+      "warcry"
+    ],
+    "tagString": "Warcry",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 1,
+    "gemFamily": "Tireless"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemTremorsSupport",
+    "name": "Tremors",
+    "type": "Support",
+    "tags": [
+      "support",
+      "attack",
+      "melee",
+      "slam"
+    ],
+    "tagString": "Attack, Melee, Slam",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 0,
+    "gemFamily": "Tremors"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemTulsStillnessSupport",
+    "name": "Tul's Stillness",
+    "type": "Support",
+    "tags": [
+      "support",
+      "lineage",
+      "cold",
+      "chaos"
+    ],
+    "tagString": "Lineage, Cold, Chaos",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 0,
+    "gemFamily": "Breachlord"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemTumultSupport",
+    "name": "Tumult",
+    "type": "Support",
+    "tags": [
+      "support",
+      "physical"
+    ],
+    "tagString": "Physical",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 0,
+    "gemFamily": "Tumult"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemUhtredAugurySupport",
+    "name": "Uhtred's Augury",
+    "type": "Support",
+    "tags": [
+      "support",
+      "lineage"
+    ],
+    "tagString": "Lineage",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 0,
+    "gemFamily": "Uhtred of Kalguur"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemUhtredExodusSupport",
+    "name": "Uhtred's Exodus",
+    "type": "Support",
+    "tags": [
+      "support",
+      "lineage"
+    ],
+    "tagString": "Lineage",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 0,
+    "gemFamily": "Uhtred of Kalguur"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemUhtredOmenSupport",
+    "name": "Uhtred's Omen",
+    "type": "Support",
+    "tags": [
+      "support",
+      "lineage"
+    ],
+    "tagString": "Lineage",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 0,
+    "gemFamily": "Uhtred of Kalguur"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemUnabatingSupport",
+    "name": "Unabating",
+    "type": "Support",
+    "tags": [
+      "support",
+      "attack"
+    ],
+    "tagString": "Attack",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 0,
+    "gemFamily": "Unabating"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemUnbendingSupport",
+    "name": "Unbending",
+    "type": "Support",
+    "tags": [
+      "support",
+      "spell"
+    ],
+    "tagString": "Spell",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 0,
+    "gemFamily": "Unbending"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemUnbreakableSupport",
+    "name": "Unbreakable",
+    "type": "Support",
+    "tags": [
+      "support"
+    ],
+    "tagString": "",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 0,
+    "gemFamily": "Unbreakable"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemUndermineSupport",
+    "name": "Undermine",
+    "type": "Support",
+    "tags": [
+      "support",
+      "physical"
+    ],
+    "tagString": "Physical",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 0,
+    "gemFamily": "Undermine"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemUnerringPowerSupport",
+    "name": "Unerring Power",
+    "type": "Support",
+    "tags": [
+      "support",
+      "attack"
+    ],
+    "tagString": "Attack",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 0,
+    "gemFamily": "Unerring Power"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemUnleashSupport",
+    "name": "Unleash",
+    "type": "Support",
+    "tags": [
+      "support",
+      "spell"
+    ],
+    "tagString": "Spell",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 1,
+    "gemFamily": "Seal"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemUnsteadyTempoSupport",
+    "name": "Unsteady Tempo",
+    "type": "Support",
+    "tags": [
+      "support",
+      "attack",
+      "melee"
+    ],
+    "tagString": "Attack, Melee",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 0,
+    "gemFamily": "Unsteady Tempo"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemUntouchableSupport",
+    "name": "Untouchable",
+    "type": "Support",
+    "tags": [
+      "support",
+      "attack"
+    ],
+    "tagString": "Attack",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 0,
+    "gemFamily": "Untouchable"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemUnyieldingSupport",
+    "name": "Unyielding",
+    "type": "Support",
+    "tags": [
+      "support",
+      "attack",
+      "melee"
+    ],
+    "tagString": "Attack, Melee",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 0,
+    "gemFamily": "Unyielding"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemUpheavalSupport",
+    "name": "Upheaval I",
+    "type": "Support",
+    "tags": [
+      "support"
+    ],
+    "tagString": "",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 1,
+    "gemFamily": "Fissures"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemUpheavalSupportTwo",
+    "name": "Upheaval II",
+    "type": "Support",
+    "tags": [
+      "support"
+    ],
+    "tagString": "",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 5,
+    "gemFamily": "Fissures"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemUpwellingSupport",
+    "name": "Upwelling I",
+    "type": "Support",
+    "tags": [
+      "support",
+      "buff",
+      "persistent"
+    ],
+    "tagString": "Buff, Persistent",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 2,
+    "gemFamily": "Upwellling"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemUpwellingSupportTwo",
+    "name": "Upwelling II",
+    "type": "Support",
+    "tags": [
+      "support",
+      "buff",
+      "persistent"
+    ],
+    "tagString": "Buff, Persistent",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 4,
+    "gemFamily": "Upwellling"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemUrgentTotemsSupport",
+    "name": "Urgent Totems I",
+    "type": "Support",
+    "tags": [
+      "support",
+      "totem"
+    ],
+    "tagString": "Totem",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 2,
+    "gemFamily": "Urgent Totems"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemUrgentTotemsSupportTwo",
+    "name": "Urgent Totems II",
+    "type": "Support",
+    "tags": [
+      "support",
+      "totem"
+    ],
+    "tagString": "Totem",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 3,
+    "gemFamily": "Urgent Totems"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemUrgentTotemsSupportThree",
+    "name": "Urgent Totems III",
+    "type": "Support",
+    "tags": [
+      "support",
+      "totem"
+    ],
+    "tagString": "Totem",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 4,
+    "gemFamily": "Urgent Totems"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemUruksSmeltingSupport",
+    "name": "Uruk's Smelting",
+    "type": "Support",
+    "tags": [
+      "support",
+      "lineage",
+      "physical"
+    ],
+    "tagString": "Lineage, Physical",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 0,
+    "gemFamily": "Armour Demolisher"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemUulNetolsEmbraceSupport",
+    "name": "Uul-Netol's Embrace",
+    "type": "Support",
+    "tags": [
+      "support",
+      "lineage",
+      "physical",
+      "chaos"
+    ],
+    "tagString": "Lineage, Physical, Chaos",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 0,
+    "gemFamily": "Breachlord"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemVanguardSupport",
+    "name": "Vanguard I",
+    "type": "Support",
+    "tags": [
+      "support"
+    ],
+    "tagString": "",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 1,
+    "gemFamily": "Vanguard"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemVanguardSupportTwo",
+    "name": "Vanguard II",
+    "type": "Support",
+    "tags": [
+      "support"
+    ],
+    "tagString": "",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 2,
+    "gemFamily": "Vanguard"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemVarashtasBlessingSupport",
+    "name": "Varashta's Blessing",
+    "type": "Support",
+    "tags": [
+      "support",
+      "lineage"
+    ],
+    "tagString": "Lineage",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 0,
+    "gemFamily": "Varashta's Blessing"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemVerglasSupport",
+    "name": "Verglas",
+    "type": "Support",
+    "tags": [
+      "support",
+      "cold"
+    ],
+    "tagString": "Cold",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 3,
+    "gemFamily": "Verglas"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemVilentasPropulsionSupport",
+    "name": "Vilenta's Propulsion",
+    "type": "Support",
+    "tags": [
+      "support",
+      "lineage",
+      "spell",
+      "projectile"
+    ],
+    "tagString": "Lineage, Spell, Projectile",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 0,
+    "gemFamily": "Projectile Speed"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemVitalitySupport",
+    "name": "Vitality I",
+    "type": "Support",
+    "tags": [
+      "support",
+      "buff",
+      "persistent"
+    ],
+    "tagString": "Buff, Persistent",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 1,
+    "gemFamily": "Vitality"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemVitalitySupportTwo",
+    "name": "Vitality II",
+    "type": "Support",
+    "tags": [
+      "support",
+      "buff",
+      "persistent"
+    ],
+    "tagString": "Buff, Persistent",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 4,
+    "gemFamily": "Vitality"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemVolatilePowerSupport",
+    "name": "Volatile Power",
+    "type": "Support",
+    "tags": [
+      "support",
+      "physical",
+      "chaos"
+    ],
+    "tagString": "Physical, Chaos",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 0,
+    "gemFamily": "Volatile Power"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemVolatilitySupport",
+    "name": "Volatility",
+    "type": "Support",
+    "tags": [
+      "support",
+      "physical",
+      "chaos"
+    ],
+    "tagString": "Physical, Chaos",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 3,
+    "gemFamily": "Volatility"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemVolcanicEruptionSupport",
+    "name": "Volcanic Eruption",
+    "type": "Support",
+    "tags": [
+      "support",
+      "grants_active_skill",
+      "attack",
+      "area",
+      "melee",
+      "strike",
+      "projectile",
+      "trigger",
+      "fire"
+    ],
+    "tagString": "Attack, AoE, Melee, Strike, Projectile, Trigger, Fire",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 2,
+    "gemFamily": "Volcanic Eruption"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemVoltSupport",
+    "name": "Volt",
+    "type": "Support",
+    "tags": [
+      "support",
+      "attack",
+      "projectile",
+      "lightning",
+      "chaining"
+    ],
+    "tagString": "Attack, Projectile, Lightning, Chaining",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 2,
+    "gemFamily": "Volt"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemWarmBloodedSupport",
+    "name": "Warm Blooded",
+    "type": "Support",
+    "tags": [
+      "support",
+      "buff",
+      "persistent"
+    ],
+    "tagString": "Buff, Persistent",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 3,
+    "gemFamily": "Warm Blooded"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemWildfireSupport",
+    "name": "Wildfire",
+    "type": "Support",
+    "tags": [
+      "support",
+      "area",
+      "fire"
+    ],
+    "tagString": "AoE, Fire",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 2,
+    "gemFamily": "Wildfire"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemWildshardsSupport",
+    "name": "Wildshards I",
+    "type": "Support",
+    "tags": [
+      "support",
+      "spell",
+      "projectile"
+    ],
+    "tagString": "Spell, Projectile",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 3,
+    "gemFamily": "Additional Projectiles"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemWildshardsSupportTwo",
+    "name": "Wildshards II",
+    "type": "Support",
+    "tags": [
+      "support",
+      "spell",
+      "projectile"
+    ],
+    "tagString": "Spell, Projectile",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 5,
+    "gemFamily": "Additional Projectiles"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemKnockbackWaveSupport",
+    "name": "Wind Wave",
+    "type": "Support",
+    "tags": [
+      "support",
+      "grants_active_skill",
+      "area",
+      "trigger"
+    ],
+    "tagString": "AoE, Trigger",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 0,
+    "gemFamily": "Wind Wave"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemWindowOfOpportunitySupport",
+    "name": "Window of Opportunity I",
+    "type": "Support",
+    "tags": [
+      "support",
+      "channelling"
+    ],
+    "tagString": "Channelling",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 1,
+    "gemFamily": "Window of Opportunity"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemWindowOfOpportunitySupportTwo",
+    "name": "Window of Opportunity II",
+    "type": "Support",
+    "tags": [
+      "support",
+      "channelling"
+    ],
+    "tagString": "Channelling",
+    "requirements": {
+      "str": 0,
+      "dex": 100,
+      "int": 0
+    },
+    "tier": 5,
+    "gemFamily": "Window of Opportunity"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemWitheringTouchSupport",
+    "name": "Withering Touch",
+    "type": "Support",
+    "tags": [
+      "support",
+      "chaos",
+      "duration"
+    ],
+    "tagString": "Chaos, Duration",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 1,
+    "gemFamily": "Withering Touch"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemXibaquasRendingSupport",
+    "name": "Xibaqua's Rending",
+    "type": "Support",
+    "tags": [
+      "support",
+      "grants_active_skill",
+      "lineage",
+      "area",
+      "trigger",
+      "fire"
+    ],
+    "tagString": "Lineage, AoE, Trigger, Fire",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 0,
+    "gemFamily": "Xibaqua's Rending"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemXophsPyreSupport",
+    "name": "Xoph's Pyre",
+    "type": "Support",
+    "tags": [
+      "support",
+      "lineage",
+      "fire",
+      "chaos"
+    ],
+    "tagString": "Lineage, Fire, Chaos",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 0,
+    "gemFamily": "Breachlord"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemZarokhsRefrainSupport",
+    "name": "Zarokh's Refrain",
+    "type": "Support",
+    "tags": [
+      "support",
+      "lineage",
+      "spell",
+      "area"
+    ],
+    "tagString": "Lineage, Spell, AoE",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 0,
+    "gemFamily": "Spell Echo"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemZarokhsRevoltSupport",
+    "name": "Zarokh's Revolt",
+    "type": "Support",
+    "tags": [
+      "support",
+      "spell"
+    ],
+    "tagString": "Spell",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 0,
+    "gemFamily": "Seal"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemZenithSupport",
+    "name": "Zenith I",
+    "type": "Support",
+    "tags": [
+      "support",
+      "spell"
+    ],
+    "tagString": "Spell",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 1,
+    "gemFamily": "Zenith"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemZenithSupportTwo",
+    "name": "Zenith II",
+    "type": "Support",
+    "tags": [
+      "support",
+      "spell"
+    ],
+    "tagString": "Spell",
+    "requirements": {
+      "str": 0,
+      "dex": 0,
+      "int": 100
+    },
+    "tier": 3,
+    "gemFamily": "Zenith"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemZerphisLegacySupport",
+    "name": "Zerphi's Infamy",
+    "type": "Support",
+    "tags": [
+      "support",
+      "lineage",
+      "warcry",
+      "area"
+    ],
+    "tagString": "Lineage, Warcry, AoE",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 0,
+    "gemFamily": "Zerphi's Legacy"
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemMortarCannon",
+    "name": "Mortar Cannon",
+    "type": "Totem",
+    "tags": [
+      "strength",
+      "dexterity",
+      "grants_active_skill",
+      "totem",
+      "grenade",
+      "duration",
+      "meta"
+    ],
+    "tagString": "Grenade, Duration, Meta",
+    "requirements": {
+      "str": 50,
+      "dex": 50,
+      "int": 0
+    },
+    "weaponRequirements": "Crossbow",
+    "tier": 11
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemAncestralCry",
+    "name": "Ancestral Cry",
+    "type": "Warcry",
+    "tags": [
+      "warcry",
+      "strength",
+      "grants_active_skill",
+      "attack",
+      "buff",
+      "area",
+      "melee",
+      "slam",
+      "projectile",
+      "trigger",
+      "fire",
+      "duration",
+      "nova",
+      "conditional"
+    ],
+    "tagString": "Attack, Buff, AoE, Melee, Slam, Projectile, Trigger, Fire, Duration, Nova, Conditional",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "weaponRequirements": "Any Melee Martial Weapon or Unarmed",
+    "tier": 13
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemWolfArcticHowl",
+    "name": "Arctic Howl",
+    "type": "Warcry",
+    "tags": [
+      "strength",
+      "intelligence",
+      "grants_active_skill",
+      "warcry",
+      "shapeshift",
+      "buff",
+      "wolf",
+      "area",
+      "cold",
+      "duration",
+      "nova"
+    ],
+    "tagString": "Shapeshift, Buff, Werewolf, AoE, Cold, Duration, Nova",
+    "requirements": {
+      "str": 50,
+      "dex": 0,
+      "int": 50
+    },
+    "weaponRequirements": "Talisman",
+    "tier": 5
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemFerociousRoar",
+    "name": "Ferocious Roar",
+    "type": "Warcry",
+    "tags": [
+      "strength",
+      "intelligence",
+      "grants_active_skill",
+      "warcry",
+      "shapeshift",
+      "bear",
+      "area",
+      "nova",
+      "meta"
+    ],
+    "tagString": "Shapeshift, Bear, AoE, Nova, Meta",
+    "requirements": {
+      "str": 50,
+      "dex": 0,
+      "int": 50
+    },
+    "weaponRequirements": "Talisman",
+    "tier": 7
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemFortifyingCry",
+    "name": "Fortifying Cry",
+    "type": "Warcry",
+    "tags": [
+      "warcry",
+      "strength",
+      "grants_active_skill",
+      "attack",
+      "area",
+      "melee",
+      "trigger",
+      "physical",
+      "duration",
+      "nova"
+    ],
+    "tagString": "Attack, AoE, Melee, Trigger, Physical, Duration, Nova",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "weaponRequirements": "Armoured Shield",
+    "tier": 9
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemInfernallCry",
+    "name": "Infernal Cry",
+    "type": "Warcry",
+    "tags": [
+      "strength",
+      "grants_active_skill",
+      "warcry",
+      "area",
+      "trigger",
+      "fire",
+      "duration",
+      "nova"
+    ],
+    "tagString": "AoE, Trigger, Fire, Duration, Nova",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 3
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemWolfLunarBlessing",
+    "name": "Lunar Blessing",
+    "type": "Warcry",
+    "tags": [
+      "warcry",
+      "strength",
+      "intelligence",
+      "grants_active_skill",
+      "attack",
+      "shapeshift",
+      "buff",
+      "wolf",
+      "area",
+      "melee",
+      "trigger",
+      "cold",
+      "duration"
+    ],
+    "tagString": "Attack, Shapeshift, Buff, Werewolf, AoE, Melee, Trigger, Cold, Duration",
+    "requirements": {
+      "str": 50,
+      "dex": 0,
+      "int": 50
+    },
+    "weaponRequirements": "Talisman",
+    "tier": 13
+  },
+  {
+    "id": "Metadata/Items/Gems/SkillGemSeismicCry",
+    "name": "Seismic Cry",
+    "type": "Warcry",
+    "tags": [
+      "strength",
+      "grants_active_skill",
+      "warcry",
+      "area",
+      "physical",
+      "nova"
+    ],
+    "tagString": "AoE, Physical, Nova",
+    "requirements": {
+      "str": 100,
+      "dex": 0,
+      "int": 0
+    },
+    "tier": 11
+  }
+];
+
+// Helper functions
+export const getSkillsByType = (type: string) => 
+  POE2_SKILLS.filter(s => s.type === type);
+
+export const getActiveSkills = () => 
+  POE2_SKILLS.filter(s => s.type === 'Attack' || s.type === 'Spell');
+
+export const getSupportGems = () => 
+  POE2_SKILLS.filter(s => s.type === 'Support');
+
+export const getSkillsByTag = (tag: string) => 
+  POE2_SKILLS.filter(s => s.tags.includes(tag.toLowerCase()));
+
+export const getSkillsForClass = (primaryAttr: 'str' | 'dex' | 'int') => {
+  const attrMap = { str: 'requirements.str', dex: 'requirements.dex', int: 'requirements.int' };
+  return POE2_SKILLS.filter(s => {
+    const reqs = s.requirements;
+    return reqs[primaryAttr] === 100 || 
+           (reqs[primaryAttr] >= 50 && Object.values(reqs).filter(v => v > 0).length > 1);
+  });
+};

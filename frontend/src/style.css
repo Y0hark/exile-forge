@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Eternal Empire Color Palette */
+  --color-eternal-black: #1a1a2e;
+  --color-eternal-gold: #d4af37;
+  --color-eternal-red: #8b0000;
+  
+  /* Backgrounds */
+  --color-bg-primary: #0f0f1e;
+  --color-bg-secondary: #1a1a2e;
+  --color-bg-surface: #2d2d44;
+  --color-bg-elevated: #3a3a52;
+  
+  /* Borders */
+  --color-border-primary: #4a4a66;
+  --color-border-accent: #d4af37;
+  --color-border-danger: #ff6b6b;
+  
+  /* Text */
+  --color-text-primary: #e0e0e0;
+  --color-text-secondary: #a0a0b0;
+  --color-text-disabled: #6a6a7e;
+  
+  /* Status */
+  --color-success: #51cf66;
+  --color-warning: #ffa500;
+  --color-error: #ff6b6b;
+  --color-info: #6ec6ff;
+  
+  /* Spacing */
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+  --space-2xl: 48px;
+  
+  /* Transitions */
+  --transition-fast: 150ms ease;
+  --transition-normal: 250ms ease;
+  --transition-slow: 350ms ease;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background-color: var(--color-bg-primary);
+  color: var(--color-text-primary);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3 {
+  font-family: 'Cinzel', serif;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 3.5rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+code {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* Button styles */
+.btn {
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all var(--transition-normal);
+  border: 2px solid transparent;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.btn-primary {
+  background-color: var(--color-eternal-gold);
+  color: var(--color-eternal-black);
+  border-color: var(--color-eternal-gold);
+}
+
+.btn-primary:hover {
+  background-color: #e8c547;
+  box-shadow: 0 4px 12px rgba(212, 175, 55, 0.3);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: var(--color-eternal-gold);
+  border-color: var(--color-eternal-gold);
+}
+
+.btn-secondary:hover {
+  background-color: rgba(212, 175, 55, 0.1);
+}
+
+.btn-danger {
+  background-color: var(--color-error);
+  color: white;
+  border-color: var(--color-error);
+}
+
+.btn-danger:hover {
+  background-color: #ff8585;
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Card styles */
+.card {
+  background-color: var(--color-bg-surface);
+  border: 2px solid var(--color-border-primary);
+  border-radius: 8px;
+  padding: 24px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: all var(--transition-normal);
+}
+
+.card:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  transform: translateY(-2px);
+}
+
+.card-accent {
+  border-left: 4px solid var(--color-eternal-gold);
+}
+
+/* Input styles */
+.input {
+  background-color: var(--color-bg-surface);
+  border: 2px solid var(--color-border-primary);
+  border-radius: 6px;
+  padding: 12px 16px;
+  font-size: 16px;
+  color: var(--color-text-primary);
+  transition: all var(--transition-fast);
+  width: 100%;
+}
+
+.input::placeholder {
+  color: var(--color-text-disabled);
+}
+
+.input:focus {
+  outline: none;
+  border-color: var(--color-eternal-gold);
+  box-shadow: 0 0 0 2px rgba(212, 175, 55, 0.2);
+}
+
+.input:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.input-error {
+  border-color: var(--color-error);
+}
+
+/* Loading spinner */
+.spinner {
+  border: 4px solid var(--color-border-primary);
+  border-top: 4px solid var(--color-eternal-gold);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Fade animation */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Utility classes */
+.fade-in {
+  animation: fadeIn var(--transition-normal);
+}
+
+.slide-in-up {
+  animation: slideInUp var(--transition-normal);
+}

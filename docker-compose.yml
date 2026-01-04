@@ -1,0 +1,65 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:15-alpine
+    container_name: exileforge-postgres
+    environment:
+      POSTGRES_DB: exileforge
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: password
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./database/schema.sql:/docker-entrypoint-initdb.d/init.sql
+    ports:
+      - "5432:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U admin -d exileforge"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - exileforge-network
+
+  backend:
+    build: ./backend
+    container_name: exileforge-backend
+    environment:
+      DATABASE_URL: postgresql://admin:password@postgres:5432/exileforge
+      OPENROUTER_API_KEY: ${OPENROUTER_API_KEY}
+      JWT_SECRET: ${JWT_SECRET:-default-secret-change-me}
+      NODE_ENV: development
+      PORT: 3000
+    ports:
+      - "3000:3000"
+    depends_on:
+      postgres:
+        condition: service_healthy
+    volumes:
+      - ./backend/src:/app/src
+      - ./backend/package.json:/app/package.json
+    networks:
+      - exileforge-network
+    restart: unless-stopped
+
+  frontend:
+    build: ./frontend
+    container_name: exileforge-frontend
+    environment:
+      VITE_API_URL: http://localhost:3000
+    ports:
+      - "5173:5173"
+    volumes:
+      - ./frontend/src:/app/src
+      - ./frontend/index.html:/app/index.html
+      - ./frontend/package.json:/app/package.json
+    networks:
+      - exileforge-network
+    restart: unless-stopped
+
+volumes:
+  postgres_data:
+
+networks:
+  exileforge-network:
+    driver: bridge

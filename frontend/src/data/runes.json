@@ -1,0 +1,2409 @@
+[
+  {
+    "name": "Hayoxi's Soul Core of Heatproofing",
+    "slots": {
+      "helmet": {
+        "stats": [
+          "+40% of Armour also applies to Cold Damage"
+        ]
+      }
+    },
+    "tags": [
+      "cold",
+      "armour"
+    ]
+  },
+  {
+    "name": "Zalatl's Soul Core of Insulation",
+    "slots": {
+      "boots": {
+        "stats": [
+          "+40% of Armour also applies to Lightning Damage"
+        ]
+      }
+    },
+    "tags": [
+      "lightning",
+      "armour"
+    ]
+  },
+  {
+    "name": "Topotante's Soul Core of Dampening",
+    "slots": {
+      "gloves": {
+        "stats": [
+          "+40% of Armour also applies to Fire Damage"
+        ]
+      }
+    },
+    "tags": [
+      "fire",
+      "armour"
+    ]
+  },
+  {
+    "name": "Atmohua's Soul Core of Retreat",
+    "slots": {
+      "body armour": {
+        "stats": [
+          "30% faster start of Energy Shield Recharge"
+        ]
+      },
+      "focus": {
+        "stats": [
+          "30% faster start of Energy Shield Recharge"
+        ]
+      }
+    },
+    "tags": [
+      "es"
+    ]
+  },
+  {
+    "name": "Quipolatl's Soul Core of Flow",
+    "slots": {
+      "helmet": {
+        "stats": [
+          "8% increased Skill Effect Duration",
+          "8% increased Cooldown Recovery Rate"
+        ]
+      }
+    },
+    "tags": []
+  },
+  {
+    "name": "Tzamoto's Soul Core of Ferocity",
+    "slots": {
+      "helmet": {
+        "stats": [
+          "+4 to Maximum Rage"
+        ]
+      }
+    },
+    "tags": []
+  },
+  {
+    "name": "Uromoti's Soul Core of Attenuation",
+    "slots": {
+      "boots": {
+        "stats": [
+          "15% increased Curse Duration",
+          "15% increased Poison Duration"
+        ]
+      }
+    },
+    "tags": [
+      "chaos"
+    ]
+  },
+  {
+    "name": "Opiloti's Soul Core of Assault",
+    "slots": {
+      "weapon": {
+        "stats": [
+          "50% chance when you gain a Frenzy Charge to gain an additional Frenzy Charge"
+        ]
+      },
+      "caster": {
+        "stats": [
+          "50% chance when you gain a Frenzy Charge to gain an additional Frenzy Charge"
+        ]
+      }
+    },
+    "tags": []
+  },
+  {
+    "name": "Guatelitzi's Soul Core of Endurance",
+    "slots": {
+      "weapon": {
+        "stats": [
+          "50% chance when you gain an Endurance Charge to gain an additional Endurance Charge"
+        ]
+      },
+      "caster": {
+        "stats": [
+          "50% chance when you gain an Endurance Charge to gain an additional Endurance Charge"
+        ]
+      }
+    },
+    "tags": []
+  },
+  {
+    "name": "Xopec's Soul Core of Power",
+    "slots": {
+      "weapon": {
+        "stats": [
+          "50% chance when you gain a Power Charge to gain an additional Power Charge"
+        ]
+      },
+      "caster": {
+        "stats": [
+          "50% chance when you gain a Power Charge to gain an additional Power Charge"
+        ]
+      }
+    },
+    "tags": []
+  },
+  {
+    "name": "Estazunti's Soul Core of Convalescence",
+    "slots": {
+      "boots": {
+        "stats": [
+          "12% increased speed of Recoup Effects"
+        ]
+      },
+      "helmet": {
+        "stats": [
+          "8% of Damage taken Recouped as Life"
+        ]
+      }
+    },
+    "tags": [
+      "life"
+    ]
+  },
+  {
+    "name": "Tacati's Soul Core of Affliction",
+    "slots": {
+      "helmet": {
+        "stats": [
+          "Enemies you Curse have -5% to Chaos Resistance"
+        ]
+      }
+    },
+    "tags": [
+      "chaos",
+      "resistance"
+    ]
+  },
+  {
+    "name": "Cholotl's Soul Core of War",
+    "slots": {
+      "bow": {
+        "stats": [
+          "20% increased Projectile Speed"
+        ]
+      }
+    },
+    "tags": []
+  },
+  {
+    "name": "Citaqualotl's Soul Core of Foulness",
+    "slots": {
+      "weapon": {
+        "stats": [
+          "Adds 19 to 29 Chaos damage"
+        ]
+      }
+    },
+    "tags": [
+      "chaos"
+    ]
+  },
+  {
+    "name": "Xipocado's Soul Core of Dominion",
+    "slots": {
+      "caster": {
+        "stats": [
+          "Minions deal 40% increased Damage with Command Skills"
+        ]
+      },
+      "sceptre": {
+        "stats": [
+          "Minions deal 40% increased Damage with Command Skills"
+        ]
+      }
+    },
+    "tags": [
+      "minion"
+    ]
+  },
+  {
+    "name": "Soul Core of Tacati",
+    "slots": {
+      "weapon": {
+        "stats": [
+          "15% chance to Poison on Hit with this weapon"
+        ]
+      },
+      "armour": {
+        "stats": [
+          "+11% to Chaos Resistance"
+        ]
+      }
+    },
+    "tags": [
+      "chaos",
+      "resistance"
+    ]
+  },
+  {
+    "name": "Soul Core of Opiloti",
+    "slots": {
+      "weapon": {
+        "stats": [
+          "15% chance to cause Bleeding on Hit"
+        ]
+      },
+      "helmet": {
+        "stats": [
+          "20% increased Charm Charges gained"
+        ]
+      }
+    },
+    "tags": []
+  },
+  {
+    "name": "Soul Core of Jiquani",
+    "slots": {
+      "weapon": {
+        "stats": [
+          "Recover 2% of maximum Life on Kill"
+        ]
+      },
+      "body armour": {
+        "stats": [
+          "3% increased maximum Life"
+        ]
+      }
+    },
+    "tags": [
+      "life"
+    ]
+  },
+  {
+    "name": "Soul Core of Zalatl",
+    "slots": {
+      "weapon": {
+        "stats": [
+          "Recover 2% of maximum Mana on Kill"
+        ]
+      },
+      "helmet": {
+        "stats": [
+          "3% increased maximum Mana"
+        ]
+      }
+    },
+    "tags": [
+      "mana"
+    ]
+  },
+  {
+    "name": "Soul Core of Citaqualotl",
+    "slots": {
+      "weapon": {
+        "stats": [
+          "30% increased Elemental Damage with Attacks"
+        ]
+      },
+      "armour": {
+        "stats": [
+          "+5% to all Elemental Resistances"
+        ]
+      }
+    },
+    "tags": [
+      "resistance"
+    ]
+  },
+  {
+    "name": "Soul Core of Puhuarte",
+    "slots": {
+      "weapon": {
+        "stats": [
+          "30% increased Flammability Magnitude"
+        ]
+      },
+      "gloves": {
+        "stats": [
+          "+1% to Maximum Fire Resistance"
+        ]
+      }
+    },
+    "tags": [
+      "fire",
+      "resistance"
+    ]
+  },
+  {
+    "name": "Soul Core of Tzamoto",
+    "slots": {
+      "weapon": {
+        "stats": [
+          "30% increased Freeze Buildup"
+        ]
+      },
+      "helmet": {
+        "stats": [
+          "+1% to Maximum Cold Resistance"
+        ]
+      }
+    },
+    "tags": [
+      "cold",
+      "resistance"
+    ]
+  },
+  {
+    "name": "Soul Core of Xopec",
+    "slots": {
+      "weapon": {
+        "stats": [
+          "30% increased chance to Shock"
+        ]
+      },
+      "boots": {
+        "stats": [
+          "+1% to Maximum Lightning Resistance"
+        ]
+      }
+    },
+    "tags": [
+      "lightning",
+      "resistance"
+    ]
+  },
+  {
+    "name": "Soul Core of Azcapa",
+    "slots": {
+      "weapon": {
+        "stats": [
+          "+15 to Spirit"
+        ]
+      },
+      "gloves": {
+        "stats": [
+          "10% increased Quantity of Gold Dropped by Slain Enemies"
+        ]
+      }
+    },
+    "tags": [
+      "spirit"
+    ]
+  },
+  {
+    "name": "Soul Core of Topotante",
+    "slots": {
+      "weapon": {
+        "stats": [
+          "Attacks with this Weapon Penetrate 15% Elemental Resistances"
+        ]
+      },
+      "boots": {
+        "stats": [
+          "25% increased Elemental Ailment Threshold"
+        ]
+      }
+    },
+    "tags": [
+      "resistance"
+    ]
+  },
+  {
+    "name": "Soul Core of Quipolatl",
+    "slots": {
+      "weapon": {
+        "stats": [
+          "5% increased Attack Speed"
+        ]
+      },
+      "boots": {
+        "stats": [
+          "15% reduced Slowing Potency of Debuffs on You"
+        ]
+      }
+    },
+    "tags": []
+  },
+  {
+    "name": "Soul Core of Ticaba",
+    "slots": {
+      "weapon": {
+        "stats": [
+          "+5% to Critical Damage Bonus"
+        ]
+      },
+      "body armour": {
+        "stats": [
+          "Hits against you have 20% reduced Critical Damage Bonus"
+        ]
+      },
+      "shield": {
+        "stats": [
+          "Hits against you have 20% reduced Critical Damage Bonus"
+        ]
+      }
+    },
+    "tags": [
+      "crit"
+    ]
+  },
+  {
+    "name": "Soul Core of Atmohua",
+    "slots": {
+      "weapon": {
+        "stats": [
+          "Convert 20% of Requirements to Strength"
+        ]
+      },
+      "armour": {
+        "stats": [
+          "Convert 20% of Requirements to Strength"
+        ]
+      }
+    },
+    "tags": []
+  },
+  {
+    "name": "Soul Core of Cholotl",
+    "slots": {
+      "weapon": {
+        "stats": [
+          "Convert 20% of Requirements to Dexterity"
+        ]
+      },
+      "armour": {
+        "stats": [
+          "Convert 20% of Requirements to Dexterity"
+        ]
+      }
+    },
+    "tags": []
+  },
+  {
+    "name": "Soul Core of Zantipi",
+    "slots": {
+      "weapon": {
+        "stats": [
+          "Convert 20% of Requirements to Intelligence"
+        ]
+      },
+      "armour": {
+        "stats": [
+          "Convert 20% of Requirements to Intelligence"
+        ]
+      }
+    },
+    "tags": []
+  },
+  {
+    "name": "Amanamu's Gaze",
+    "slots": {
+      "helmet": {
+        "stats": [
+          "Remove a Damaging Ailment when you use a Command Skill"
+        ]
+      },
+      "body armour": {
+        "stats": [
+          "+2 to Armour per 1 Spirit"
+        ]
+      },
+      "boots": {
+        "stats": [
+          "1% increased Movement Speed per 15 Spirit, up to a maximum of 40%",
+          "Other Modifiers to Movement Speed except for Sprinting do not apply"
+        ]
+      }
+    },
+    "tags": [
+      "mana",
+      "armour",
+      "spirit",
+      "minion"
+    ]
+  },
+  {
+    "name": "Kurgal's Gaze",
+    "slots": {
+      "helmet": {
+        "stats": [
+          "Increases and Reductions to Life Regeneration Rate also apply to Mana Regeneration Rate"
+        ]
+      },
+      "gloves": {
+        "stats": [
+          "40% increased effect of Arcane Surge on you"
+        ]
+      },
+      "boots": {
+        "stats": [
+          "15% increased Mana Cost Efficiency if you haven't Dodge Rolled Recently"
+        ]
+      }
+    },
+    "tags": [
+      "life",
+      "mana"
+    ]
+  },
+  {
+    "name": "Tecrod's Gaze",
+    "slots": {
+      "body armour": {
+        "stats": [
+          "Regenerate 1.5% of maximum Life per second"
+        ]
+      },
+      "gloves": {
+        "stats": [
+          "25% increased Life Cost Efficiency"
+        ]
+      },
+      "boots": {
+        "stats": [
+          "10% increased Movement Speed when on Low Life"
+        ]
+      }
+    },
+    "tags": [
+      "life"
+    ]
+  },
+  {
+    "name": "Ulaman's Gaze",
+    "slots": {
+      "helmet": {
+        "stats": [
+          "+1 to Accuracy Rating per 1 Item Evasion Rating on Equipped Helmet"
+        ]
+      },
+      "gloves": {
+        "stats": [
+          "Critical Hit chance is Lucky against Parried enemies"
+        ]
+      },
+      "body armour": {
+        "stats": [
+          "Prevent +3% of Damage from Deflected Hits"
+        ]
+      }
+    },
+    "tags": [
+      "evasion",
+      "crit"
+    ]
+  },
+  {
+    "name": "Desert Rune",
+    "slots": {
+      "weapon": {
+        "stats": [
+          "Adds 7 to 11 Fire Damage",
+          "Bonded: 25% increased Ignite Magnitude"
+        ]
+      },
+      "caster": {
+        "stats": [
+          "Gain 8% of Damage as Extra Fire Damage",
+          "Bonded: 25% increased Ignite Magnitude"
+        ]
+      },
+      "armour": {
+        "stats": [
+          "+12% to Fire Resistance",
+          "Bonded: +10 to maximum Life",
+          "Bonded: +10 to maximum Mana"
+        ]
+      }
+    },
+    "tags": [
+      "fire",
+      "life",
+      "mana",
+      "resistance"
+    ]
+  },
+  {
+    "name": "Glacial Rune",
+    "slots": {
+      "weapon": {
+        "stats": [
+          "Adds 6 to 10 Cold Damage",
+          "Bonded: 30% increased Freeze Buildup"
+        ]
+      },
+      "caster": {
+        "stats": [
+          "Gain 8% of Damage as Extra Cold Damage",
+          "Bonded: 30% increased Freeze Buildup"
+        ]
+      },
+      "armour": {
+        "stats": [
+          "+12% to Cold Resistance",
+          "Bonded: +10 to maximum Life",
+          "Bonded: +10 to maximum Mana"
+        ]
+      }
+    },
+    "tags": [
+      "cold",
+      "life",
+      "mana",
+      "resistance"
+    ]
+  },
+  {
+    "name": "Storm Rune",
+    "slots": {
+      "weapon": {
+        "stats": [
+          "Adds 1 to 20 Lightning Damage",
+          "Bonded: 30% increased Magnitude of Shock you inflict"
+        ]
+      },
+      "caster": {
+        "stats": [
+          "Gain 8% of Damage as Extra Lightning Damage",
+          "Bonded: 30% increased Magnitude of Shock you inflict"
+        ]
+      },
+      "armour": {
+        "stats": [
+          "+12% to Lightning Resistance",
+          "Bonded: +10 to maximum Life",
+          "Bonded: +10 to maximum Mana"
+        ]
+      }
+    },
+    "tags": [
+      "lightning",
+      "life",
+      "mana",
+      "resistance"
+    ]
+  },
+  {
+    "name": "Iron Rune",
+    "slots": {
+      "weapon": {
+        "stats": [
+          "16% increased Physical Damage",
+          "Bonded: 20% increased effect of Fully Broken Armour"
+        ]
+      },
+      "caster": {
+        "stats": [
+          "25% increased Spell Damage",
+          "Bonded: Break Armour on Critical Hit with Spells equal to 12% of Physical Damage dealt"
+        ]
+      },
+      "armour": {
+        "stats": [
+          "16% increased Armour, Evasion and Energy Shield",
+          "Bonded: +10 to maximum Life",
+          "Bonded: +10 to maximum Mana"
+        ]
+      }
+    },
+    "tags": [
+      "physical",
+      "life",
+      "mana",
+      "es",
+      "armour",
+      "evasion",
+      "crit"
+    ]
+  },
+  {
+    "name": "Body Rune",
+    "slots": {
+      "weapon": {
+        "stats": [
+          "Leeches 2.5% of Physical Damage as Life",
+          "Bonded: 5% increased maximum Life"
+        ]
+      },
+      "caster": {
+        "stats": [
+          "+30 to maximum Energy Shield",
+          "Bonded: 5% increased maximum Life"
+        ]
+      },
+      "armour": {
+        "stats": [
+          "+30 to maximum Life",
+          "Bonded: +10 to maximum Life",
+          "Bonded: +10 to maximum Mana"
+        ]
+      }
+    },
+    "tags": [
+      "physical",
+      "life",
+      "mana",
+      "es"
+    ]
+  },
+  {
+    "name": "Mind Rune",
+    "slots": {
+      "weapon": {
+        "stats": [
+          "Leeches 2% of Physical Damage as Mana",
+          "Bonded: 5% increased maximum Mana"
+        ]
+      },
+      "caster": {
+        "stats": [
+          "+40 to maximum Mana",
+          "Bonded: 5% increased maximum Mana"
+        ]
+      },
+      "armour": {
+        "stats": [
+          "+25 to maximum Mana",
+          "Bonded: +10 to maximum Life",
+          "Bonded: +10 to maximum Mana"
+        ]
+      }
+    },
+    "tags": [
+      "physical",
+      "life",
+      "mana"
+    ]
+  },
+  {
+    "name": "Rebirth Rune",
+    "slots": {
+      "weapon": {
+        "stats": [
+          "Gain 20 Life per enemy killed",
+          "Bonded: Regenerate 0.4% of maximum Life per second"
+        ]
+      },
+      "caster": {
+        "stats": [
+          "15% increased Energy Shield Recharge Rate",
+          "Bonded: 8% of Damage taken Recouped as Life"
+        ]
+      },
+      "armour": {
+        "stats": [
+          "Regenerate 0.3% of maximum Life per second",
+          "Bonded: +10 to maximum Life",
+          "Bonded: +10 to maximum Mana"
+        ]
+      }
+    },
+    "tags": [
+      "life",
+      "mana",
+      "es"
+    ]
+  },
+  {
+    "name": "Inspiration Rune",
+    "slots": {
+      "weapon": {
+        "stats": [
+          "Gain 16 Mana per enemy killed",
+          "Bonded: 12% of Skill Mana Costs Converted to Life Costs"
+        ]
+      },
+      "caster": {
+        "stats": [
+          "20% increased Mana Regeneration Rate",
+          "Bonded: 16% increased Mana Cost Efficiency"
+        ]
+      },
+      "armour": {
+        "stats": [
+          "15% increased Mana Regeneration Rate",
+          "Bonded: +10 to maximum Life",
+          "Bonded: +10 to maximum Mana"
+        ]
+      }
+    },
+    "tags": [
+      "life",
+      "mana"
+    ]
+  },
+  {
+    "name": "Stone Rune",
+    "slots": {
+      "weapon": {
+        "stats": [
+          "Causes 25% increased Stun Buildup",
+          "Bonded: 40% increased Damage against Immobilised Enemies"
+        ]
+      },
+      "caster": {
+        "stats": [
+          "Gain additional Stun Threshold equal to 12% of maximum Energy Shield",
+          "Bonded: 30% increased Immobilisation buildup"
+        ]
+      },
+      "armour": {
+        "stats": [
+          "+60 to Stun Threshold",
+          "Bonded: +10 to maximum Life",
+          "Bonded: +10 to maximum Mana"
+        ]
+      }
+    },
+    "tags": [
+      "life",
+      "mana",
+      "es"
+    ]
+  },
+  {
+    "name": "Vision Rune",
+    "slots": {
+      "weapon": {
+        "stats": [
+          "+80 to Accuracy Rating",
+          "Bonded: Attacks have +1% to Critical Hit Chance"
+        ]
+      },
+      "caster": {
+        "stats": [
+          "20% increased Critical Hit Chance for Spells",
+          "Bonded: 25% increased Critical Damage Bonus"
+        ]
+      },
+      "armour": {
+        "stats": [
+          "10% increased Life and Mana Recovery from Flasks",
+          "Bonded: +10 to maximum Life",
+          "Bonded: +10 to maximum Mana"
+        ]
+      }
+    },
+    "tags": [
+      "life",
+      "mana",
+      "crit"
+    ]
+  },
+  {
+    "name": "Lesser Desert Rune",
+    "slots": {
+      "weapon": {
+        "stats": [
+          "Adds 4 to 6 Fire Damage",
+          "Bonded: 25% increased Ignite Magnitude"
+        ]
+      },
+      "caster": {
+        "stats": [
+          "Gain 6% of Damage as Extra Fire Damage",
+          "Bonded: 25% increased Ignite Magnitude"
+        ]
+      },
+      "armour": {
+        "stats": [
+          "+10% to Fire Resistance",
+          "Bonded: +10 to maximum Life",
+          "Bonded: +10 to maximum Mana"
+        ]
+      }
+    },
+    "tags": [
+      "fire",
+      "life",
+      "mana",
+      "resistance"
+    ]
+  },
+  {
+    "name": "Lesser Glacial Rune",
+    "slots": {
+      "weapon": {
+        "stats": [
+          "Adds 3 to 5 Cold Damage",
+          "Bonded: 30% increased Freeze Buildup"
+        ]
+      },
+      "caster": {
+        "stats": [
+          "Gain 6% of Damage as Extra Cold Damage",
+          "Bonded: 30% increased Freeze Buildup"
+        ]
+      },
+      "armour": {
+        "stats": [
+          "+10% to Cold Resistance",
+          "Bonded: +10 to maximum Life",
+          "Bonded: +10 to maximum Mana"
+        ]
+      }
+    },
+    "tags": [
+      "cold",
+      "life",
+      "mana",
+      "resistance"
+    ]
+  },
+  {
+    "name": "Lesser Storm Rune",
+    "slots": {
+      "weapon": {
+        "stats": [
+          "Adds 1 to 10 Lightning Damage",
+          "Bonded: 30% increased Magnitude of Shock you inflict"
+        ]
+      },
+      "caster": {
+        "stats": [
+          "Gain 6% of Damage as Extra Lightning Damage",
+          "Bonded: 30% increased Magnitude of Shock you inflict"
+        ]
+      },
+      "armour": {
+        "stats": [
+          "+10% to Lightning Resistance",
+          "Bonded: +10 to maximum Life",
+          "Bonded: +10 to maximum Mana"
+        ]
+      }
+    },
+    "tags": [
+      "lightning",
+      "life",
+      "mana",
+      "resistance"
+    ]
+  },
+  {
+    "name": "Lesser Iron Rune",
+    "slots": {
+      "weapon": {
+        "stats": [
+          "14% increased Physical Damage",
+          "Bonded: 20% increased effect of Fully Broken Armour"
+        ]
+      },
+      "caster": {
+        "stats": [
+          "20% increased Spell Damage",
+          "Bonded: Break Armour on Critical Hit with Spells equal to 12% of Physical Damage dealt"
+        ]
+      },
+      "armour": {
+        "stats": [
+          "14% increased Armour, Evasion and Energy Shield",
+          "Bonded: +10 to maximum Life",
+          "Bonded: +10 to maximum Mana"
+        ]
+      }
+    },
+    "tags": [
+      "physical",
+      "life",
+      "mana",
+      "es",
+      "armour",
+      "evasion",
+      "crit"
+    ]
+  },
+  {
+    "name": "Lesser Body Rune",
+    "slots": {
+      "weapon": {
+        "stats": [
+          "Leeches 2% of Physical Damage as Life",
+          "Bonded: 5% increased maximum Life"
+        ]
+      },
+      "caster": {
+        "stats": [
+          "+25 to maximum Energy Shield",
+          "Bonded: 5% increased maximum Life"
+        ]
+      },
+      "armour": {
+        "stats": [
+          "+20 to maximum Life",
+          "Bonded: +10 to maximum Life",
+          "Bonded: +10 to maximum Mana"
+        ]
+      }
+    },
+    "tags": [
+      "physical",
+      "life",
+      "mana",
+      "es"
+    ]
+  },
+  {
+    "name": "Lesser Mind Rune",
+    "slots": {
+      "weapon": {
+        "stats": [
+          "Leeches 1.5% of Physical Damage as Mana",
+          "Bonded: 5% increased maximum Mana"
+        ]
+      },
+      "caster": {
+        "stats": [
+          "+30 to maximum Mana",
+          "Bonded: 5% increased maximum Mana"
+        ]
+      },
+      "armour": {
+        "stats": [
+          "+15 to maximum Mana",
+          "Bonded: +10 to maximum Life",
+          "Bonded: +10 to maximum Mana"
+        ]
+      }
+    },
+    "tags": [
+      "physical",
+      "life",
+      "mana"
+    ]
+  },
+  {
+    "name": "Lesser Rebirth Rune",
+    "slots": {
+      "weapon": {
+        "stats": [
+          "Gain 10 Life per enemy killed",
+          "Bonded: Regenerate 0.4% of maximum Life per second"
+        ]
+      },
+      "caster": {
+        "stats": [
+          "12% increased Energy Shield Recharge Rate",
+          "Bonded: 8% of Damage taken Recouped as Life"
+        ]
+      },
+      "armour": {
+        "stats": [
+          "Regenerate 0.25% of maximum Life per second",
+          "Bonded: +10 to maximum Life",
+          "Bonded: +10 to maximum Mana"
+        ]
+      }
+    },
+    "tags": [
+      "life",
+      "mana",
+      "es"
+    ]
+  },
+  {
+    "name": "Lesser Inspiration Rune",
+    "slots": {
+      "weapon": {
+        "stats": [
+          "Gain 8 Mana per enemy killed",
+          "Bonded: 12% of Skill Mana Costs Converted to Life Costs"
+        ]
+      },
+      "caster": {
+        "stats": [
+          "16% increased Mana Regeneration Rate",
+          "Bonded: 16% increased Mana Cost Efficiency"
+        ]
+      },
+      "armour": {
+        "stats": [
+          "12% increased Mana Regeneration Rate",
+          "Bonded: +10 to maximum Life",
+          "Bonded: +10 to maximum Mana"
+        ]
+      }
+    },
+    "tags": [
+      "life",
+      "mana"
+    ]
+  },
+  {
+    "name": "Lesser Stone Rune",
+    "slots": {
+      "weapon": {
+        "stats": [
+          "Causes 20% increased Stun Buildup",
+          "Bonded: 40% increased Damage against Immobilised Enemies"
+        ]
+      },
+      "caster": {
+        "stats": [
+          "Gain additional Stun Threshold equal to 10% of maximum Energy Shield",
+          "Bonded: 30% increased Immobilisation buildup"
+        ]
+      },
+      "armour": {
+        "stats": [
+          "+40 to Stun Threshold",
+          "Bonded: +10 to maximum Life",
+          "Bonded: +10 to maximum Mana"
+        ]
+      }
+    },
+    "tags": [
+      "life",
+      "mana",
+      "es"
+    ]
+  },
+  {
+    "name": "Lesser Vision Rune",
+    "slots": {
+      "weapon": {
+        "stats": [
+          "+50 to Accuracy Rating",
+          "Bonded: Attacks have +1% to Critical Hit Chance"
+        ]
+      },
+      "caster": {
+        "stats": [
+          "16% increased Critical Hit Chance for Spells",
+          "Bonded: 25% increased Critical Damage Bonus"
+        ]
+      },
+      "armour": {
+        "stats": [
+          "8% increased Life and Mana Recovery from Flasks",
+          "Bonded: +10 to maximum Life",
+          "Bonded: +10 to maximum Mana"
+        ]
+      }
+    },
+    "tags": [
+      "life",
+      "mana",
+      "crit"
+    ]
+  },
+  {
+    "name": "Greater Desert Rune",
+    "slots": {
+      "weapon": {
+        "stats": [
+          "Adds 13 to 16 Fire Damage",
+          "Bonded: 25% increased Ignite Magnitude"
+        ]
+      },
+      "caster": {
+        "stats": [
+          "Gain 10% of Damage as Extra Fire Damage",
+          "Bonded: 25% increased Ignite Magnitude"
+        ]
+      },
+      "armour": {
+        "stats": [
+          "+14% to Fire Resistance",
+          "Bonded: +10 to maximum Life",
+          "Bonded: +10 to maximum Mana"
+        ]
+      }
+    },
+    "tags": [
+      "fire",
+      "life",
+      "mana",
+      "resistance"
+    ]
+  },
+  {
+    "name": "Greater Glacial Rune",
+    "slots": {
+      "weapon": {
+        "stats": [
+          "Adds 9 to 15 Cold Damage",
+          "Bonded: 30% increased Freeze Buildup"
+        ]
+      },
+      "caster": {
+        "stats": [
+          "Gain 10% of Damage as Extra Cold Damage",
+          "Bonded: 30% increased Freeze Buildup"
+        ]
+      },
+      "armour": {
+        "stats": [
+          "+14% to Cold Resistance",
+          "Bonded: +10 to maximum Life",
+          "Bonded: +10 to maximum Mana"
+        ]
+      }
+    },
+    "tags": [
+      "cold",
+      "life",
+      "mana",
+      "resistance"
+    ]
+  },
+  {
+    "name": "Greater Storm Rune",
+    "slots": {
+      "weapon": {
+        "stats": [
+          "Adds 1 to 30 Lightning Damage",
+          "Bonded: 30% increased Magnitude of Shock you inflict"
+        ]
+      },
+      "caster": {
+        "stats": [
+          "Gain 10% of Damage as Extra Lightning Damage",
+          "Bonded: 30% increased Magnitude of Shock you inflict"
+        ]
+      },
+      "armour": {
+        "stats": [
+          "+14% to Lightning Resistance",
+          "Bonded: +10 to maximum Life",
+          "Bonded: +10 to maximum Mana"
+        ]
+      }
+    },
+    "tags": [
+      "lightning",
+      "life",
+      "mana",
+      "resistance"
+    ]
+  },
+  {
+    "name": "Greater Iron Rune",
+    "slots": {
+      "weapon": {
+        "stats": [
+          "18% increased Physical Damage",
+          "Bonded: 20% increased effect of Fully Broken Armour"
+        ]
+      },
+      "caster": {
+        "stats": [
+          "30% increased Spell Damage",
+          "Bonded: Break Armour on Critical Hit with Spells equal to 12% of Physical Damage dealt"
+        ]
+      },
+      "armour": {
+        "stats": [
+          "18% increased Armour, Evasion and Energy Shield",
+          "Bonded: +10 to maximum Life",
+          "Bonded: +10 to maximum Mana"
+        ]
+      }
+    },
+    "tags": [
+      "physical",
+      "life",
+      "mana",
+      "es",
+      "armour",
+      "evasion",
+      "crit"
+    ]
+  },
+  {
+    "name": "Greater Body Rune",
+    "slots": {
+      "weapon": {
+        "stats": [
+          "Leeches 3% of Physical Damage as Life",
+          "Bonded: 5% increased maximum Life"
+        ]
+      },
+      "caster": {
+        "stats": [
+          "+35 to maximum Energy Shield",
+          "Bonded: 5% increased maximum Life"
+        ]
+      },
+      "armour": {
+        "stats": [
+          "+40 to maximum Life",
+          "Bonded: +10 to maximum Life",
+          "Bonded: +10 to maximum Mana"
+        ]
+      }
+    },
+    "tags": [
+      "physical",
+      "life",
+      "mana",
+      "es"
+    ]
+  },
+  {
+    "name": "Greater Mind Rune",
+    "slots": {
+      "weapon": {
+        "stats": [
+          "Leeches 2.5% of Physical Damage as Mana",
+          "Bonded: 5% increased maximum Mana"
+        ]
+      },
+      "caster": {
+        "stats": [
+          "+50 to maximum Mana",
+          "Bonded: 5% increased maximum Mana"
+        ]
+      },
+      "armour": {
+        "stats": [
+          "+35 to maximum Mana",
+          "Bonded: +10 to maximum Life",
+          "Bonded: +10 to maximum Mana"
+        ]
+      }
+    },
+    "tags": [
+      "physical",
+      "life",
+      "mana"
+    ]
+  },
+  {
+    "name": "Greater Rebirth Rune",
+    "slots": {
+      "weapon": {
+        "stats": [
+          "Gain 30 Life per enemy killed",
+          "Bonded: Regenerate 0.4% of maximum Life per second"
+        ]
+      },
+      "caster": {
+        "stats": [
+          "18% increased Energy Shield Recharge Rate",
+          "Bonded: 8% of Damage taken Recouped as Life"
+        ]
+      },
+      "armour": {
+        "stats": [
+          "Regenerate 0.35% of maximum Life per second",
+          "Bonded: +10 to maximum Life",
+          "Bonded: +10 to maximum Mana"
+        ]
+      }
+    },
+    "tags": [
+      "life",
+      "mana",
+      "es"
+    ]
+  },
+  {
+    "name": "Greater Inspiration Rune",
+    "slots": {
+      "weapon": {
+        "stats": [
+          "Gain 24 Mana per enemy killed",
+          "Bonded: 12% of Skill Mana Costs Converted to Life Costs"
+        ]
+      },
+      "caster": {
+        "stats": [
+          "24% increased Mana Regeneration Rate",
+          "Bonded: 16% increased Mana Cost Efficiency"
+        ]
+      },
+      "armour": {
+        "stats": [
+          "18% increased Mana Regeneration Rate",
+          "Bonded: +10 to maximum Life",
+          "Bonded: +10 to maximum Mana"
+        ]
+      }
+    },
+    "tags": [
+      "life",
+      "mana"
+    ]
+  },
+  {
+    "name": "Greater Stone Rune",
+    "slots": {
+      "weapon": {
+        "stats": [
+          "Causes 30% increased Stun Buildup",
+          "Bonded: 40% increased Damage against Immobilised Enemies"
+        ]
+      },
+      "caster": {
+        "stats": [
+          "Gain additional Stun Threshold equal to 14% of maximum Energy Shield",
+          "Bonded: 30% increased Immobilisation buildup"
+        ]
+      },
+      "armour": {
+        "stats": [
+          "+80 to Stun Threshold",
+          "Bonded: +10 to maximum Life",
+          "Bonded: +10 to maximum Mana"
+        ]
+      }
+    },
+    "tags": [
+      "life",
+      "mana",
+      "es"
+    ]
+  },
+  {
+    "name": "Greater Vision Rune",
+    "slots": {
+      "weapon": {
+        "stats": [
+          "+110 to Accuracy Rating",
+          "Bonded: Attacks have +1% to Critical Hit Chance"
+        ]
+      },
+      "caster": {
+        "stats": [
+          "24% increased Critical Hit Chance for Spells",
+          "Bonded: 25% increased Critical Damage Bonus"
+        ]
+      },
+      "armour": {
+        "stats": [
+          "12% increased Life and Mana Recovery from Flasks",
+          "Bonded: +10 to maximum Life",
+          "Bonded: +10 to maximum Mana"
+        ]
+      }
+    },
+    "tags": [
+      "life",
+      "mana",
+      "crit"
+    ]
+  },
+  {
+    "name": "Lesser Robust Rune",
+    "slots": {
+      "weapon": {
+        "stats": [
+          "+6 to Strength"
+        ]
+      },
+      "armour": {
+        "stats": [
+          "+6 to Strength"
+        ]
+      },
+      "caster": {
+        "stats": [
+          "+6 to Strength"
+        ]
+      }
+    },
+    "tags": []
+  },
+  {
+    "name": "Robust Rune",
+    "slots": {
+      "weapon": {
+        "stats": [
+          "+8 to Strength"
+        ]
+      },
+      "armour": {
+        "stats": [
+          "+8 to Strength"
+        ]
+      },
+      "caster": {
+        "stats": [
+          "+8 to Strength"
+        ]
+      }
+    },
+    "tags": []
+  },
+  {
+    "name": "Greater Robust Rune",
+    "slots": {
+      "weapon": {
+        "stats": [
+          "+10 to Strength"
+        ]
+      },
+      "armour": {
+        "stats": [
+          "+10 to Strength"
+        ]
+      },
+      "caster": {
+        "stats": [
+          "+10 to Strength"
+        ]
+      }
+    },
+    "tags": []
+  },
+  {
+    "name": "Lesser Adept Rune",
+    "slots": {
+      "weapon": {
+        "stats": [
+          "+6 to Dexterity"
+        ]
+      },
+      "armour": {
+        "stats": [
+          "+6 to Dexterity"
+        ]
+      },
+      "caster": {
+        "stats": [
+          "+6 to Dexterity"
+        ]
+      }
+    },
+    "tags": []
+  },
+  {
+    "name": "Adept Rune",
+    "slots": {
+      "weapon": {
+        "stats": [
+          "+8 to Dexterity"
+        ]
+      },
+      "armour": {
+        "stats": [
+          "+8 to Dexterity"
+        ]
+      },
+      "caster": {
+        "stats": [
+          "+8 to Dexterity"
+        ]
+      }
+    },
+    "tags": []
+  },
+  {
+    "name": "Greater Adept Rune",
+    "slots": {
+      "weapon": {
+        "stats": [
+          "+10 to Dexterity"
+        ]
+      },
+      "armour": {
+        "stats": [
+          "+10 to Dexterity"
+        ]
+      },
+      "caster": {
+        "stats": [
+          "+10 to Dexterity"
+        ]
+      }
+    },
+    "tags": []
+  },
+  {
+    "name": "Lesser Resolve Rune",
+    "slots": {
+      "weapon": {
+        "stats": [
+          "+6 to Intelligence"
+        ]
+      },
+      "armour": {
+        "stats": [
+          "+6 to Intelligence"
+        ]
+      },
+      "caster": {
+        "stats": [
+          "+6 to Intelligence"
+        ]
+      }
+    },
+    "tags": []
+  },
+  {
+    "name": "Resolve Rune",
+    "slots": {
+      "weapon": {
+        "stats": [
+          "+8 to Intelligence"
+        ]
+      },
+      "armour": {
+        "stats": [
+          "+8 to Intelligence"
+        ]
+      },
+      "caster": {
+        "stats": [
+          "+8 to Intelligence"
+        ]
+      }
+    },
+    "tags": []
+  },
+  {
+    "name": "Greater Resolve Rune",
+    "slots": {
+      "weapon": {
+        "stats": [
+          "+10 to Intelligence"
+        ]
+      },
+      "armour": {
+        "stats": [
+          "+10 to Intelligence"
+        ]
+      },
+      "caster": {
+        "stats": [
+          "+10 to Intelligence"
+        ]
+      }
+    },
+    "tags": []
+  },
+  {
+    "name": "Lesser Tempered Rune",
+    "slots": {
+      "weapon": {
+        "stats": [
+          "Adds 3 to 4 Physical Damage"
+        ]
+      },
+      "armour": {
+        "stats": [
+          "6 to 9 Physical Thorns damage"
+        ]
+      }
+    },
+    "tags": [
+      "physical"
+    ]
+  },
+  {
+    "name": "Tempered Rune",
+    "slots": {
+      "weapon": {
+        "stats": [
+          "Adds 6 to 9 Physical Damage"
+        ]
+      },
+      "armour": {
+        "stats": [
+          "14 to 21 Physical Thorns damage"
+        ]
+      }
+    },
+    "tags": [
+      "physical"
+    ]
+  },
+  {
+    "name": "Greater Tempered Rune",
+    "slots": {
+      "weapon": {
+        "stats": [
+          "Adds 9 to 12 Physical Damage"
+        ]
+      },
+      "armour": {
+        "stats": [
+          "31 to 52 Physical Thorns damage"
+        ]
+      }
+    },
+    "tags": [
+      "physical"
+    ]
+  },
+  {
+    "name": "Greater Rune of Leadership",
+    "slots": {
+      "weapon": {
+        "stats": [
+          "Minions gain 10% of their Physical Damage as Extra Lightning Damage",
+          "Bonded: Minions deal 20% increased Damage"
+        ]
+      },
+      "armour": {
+        "stats": [
+          "Minions take 10% of Physical Damage as Lightning Damage",
+          "Bonded: Minions have +10% to all Elemental Resistances"
+        ]
+      }
+    },
+    "tags": [
+      "physical",
+      "lightning",
+      "resistance",
+      "minion"
+    ]
+  },
+  {
+    "name": "Greater Rune of Tithing",
+    "slots": {
+      "weapon": {
+        "stats": [
+          "Meta Skills gain 10% increased Energy",
+          "Bonded: Invocated Spells have 25% chance to consume half as much Energy"
+        ]
+      },
+      "armour": {
+        "stats": [
+          "1 to 100 Lightning Thorns damage",
+          "Bonded: 15% increased Thorns damage"
+        ]
+      }
+    },
+    "tags": [
+      "lightning"
+    ]
+  },
+  {
+    "name": "Greater Rune of Alacrity",
+    "slots": {
+      "weapon": {
+        "stats": [
+          "8% increased Skill Speed",
+          "Bonded: 15% increased Reservation Efficiency of Herald Skills"
+        ]
+      },
+      "armour": {
+        "stats": [
+          "Debuffs on you expire 8% faster",
+          "Bonded: 15% increased Elemental Ailment Threshold"
+        ]
+      }
+    },
+    "tags": []
+  },
+  {
+    "name": "Greater Rune of Nobility",
+    "slots": {
+      "weapon": {
+        "stats": [
+          "Attacks with this Weapon have 10% chance to inflict Exposure",
+          "Bonded: 20% increased Exposure Effect"
+        ]
+      },
+      "armour": {
+        "stats": [
+          "10% reduced effect of Shock on you",
+          "Bonded: 10% reduced Shock duration on you"
+        ]
+      }
+    },
+    "tags": [
+      "lightning"
+    ]
+  },
+  {
+    "name": "Hedgewitch Assandra's Rune of Wisdom",
+    "slots": {
+      "caster": {
+        "stats": [
+          "+1 to Level of all Spell Skills",
+          "Bonded: Archon recovery period expires 30% faster"
+        ]
+      }
+    },
+    "tags": []
+  },
+  {
+    "name": "Saqawal's Rune of the Sky",
+    "slots": {
+      "weapon": {
+        "stats": [
+          "Gain 5% of Damage as Extra Damage of all Elements",
+          "Bonded: 8% chance to gain an additional random Charge when you gain a Charge"
+        ]
+      },
+      "caster": {
+        "stats": [
+          "Gain 5% of Damage as Extra Damage of all Elements",
+          "Bonded: 12% chance when collecting an Elemental Infusion to gain an",
+          "Bonded: additional Elemental Infusion of the same type"
+        ]
+      }
+    },
+    "tags": []
+  },
+  {
+    "name": "Fenumus' Rune of Agony",
+    "slots": {
+      "weapon": {
+        "stats": [
+          "Gain 13% of Damage as Extra Chaos Damage",
+          "Bonded: Gain 8% of Damage as Extra Physical Damage"
+        ]
+      },
+      "caster": {
+        "stats": [
+          "Gain 13% of Damage as Extra Chaos Damage",
+          "Bonded: Gain 8% of Damage as Extra Physical Damage"
+        ]
+      }
+    },
+    "tags": [
+      "physical",
+      "chaos"
+    ]
+  },
+  {
+    "name": "Farrul's Rune of Grace",
+    "slots": {
+      "boots": {
+        "stats": [
+          "8% increased Deflection Rating while moving",
+          "Bonded: Prevent +3% of Damage from Deflected Hits"
+        ]
+      }
+    },
+    "tags": []
+  },
+  {
+    "name": "Farrul's Rune of the Chase",
+    "slots": {
+      "boots": {
+        "stats": [
+          "5% increased Movement Speed",
+          "Bonded: 10% increased Cooldown Recovery Rate"
+        ]
+      }
+    },
+    "tags": []
+  },
+  {
+    "name": "Craiceann's Rune of Warding",
+    "slots": {
+      "body armour": {
+        "stats": [
+          "50% reduced effect of Curses on you",
+          "Bonded: 8% increased Curse Magnitudes"
+        ]
+      }
+    },
+    "tags": []
+  },
+  {
+    "name": "Saqawal's Rune of Memory",
+    "slots": {
+      "helmet": {
+        "stats": [
+          "2% increased Experience gain",
+          "Bonded: +10% to all Elemental Resistances"
+        ]
+      }
+    },
+    "tags": [
+      "resistance"
+    ]
+  },
+  {
+    "name": "Saqawal's Rune of Erosion",
+    "slots": {
+      "helmet": {
+        "stats": [
+          "25% increased Exposure Effect",
+          "Bonded: 15% increased Magnitude of Non-Damaging Ailments you inflict"
+        ]
+      }
+    },
+    "tags": []
+  },
+  {
+    "name": "Farrul's Rune of the Hunt",
+    "slots": {
+      "weapon": {
+        "stats": [
+          "50% increased Attack Damage against Rare or Unique Enemies",
+          "Bonded: +1 to Level of all Attack Skills"
+        ]
+      }
+    },
+    "tags": []
+  },
+  {
+    "name": "Craiceann's Rune of Recovery",
+    "slots": {
+      "body armour": {
+        "stats": [
+          "50% increased Energy Shield Recharge Rate",
+          "Bonded: 20% faster start of Energy Shield Recharge"
+        ]
+      }
+    },
+    "tags": [
+      "es"
+    ]
+  },
+  {
+    "name": "Courtesan Mannan's Rune of Cruelty",
+    "slots": {
+      "gloves": {
+        "stats": [
+          "20% increased Magnitude of Damaging Ailments you inflict",
+          "Bonded: 15% increased Duration of Damaging Ailments on Enemies"
+        ]
+      }
+    },
+    "tags": []
+  },
+  {
+    "name": "Thane Grannell's Rune of Mastery",
+    "slots": {
+      "gloves": {
+        "stats": [
+          "30% increased Magnitude of Non-Damaging Ailments you inflict",
+          "Bonded: 15% increased Duration of Elemental Ailments on Enemies"
+        ]
+      }
+    },
+    "tags": []
+  },
+  {
+    "name": "Fenumus' Rune of Spinning",
+    "slots": {
+      "gloves": {
+        "stats": [
+          "8% increased Cast Speed",
+          "Bonded: 20% increased Mana Cost Efficiency while on Low Mana"
+        ]
+      }
+    },
+    "tags": [
+      "mana"
+    ]
+  },
+  {
+    "name": "Countess Seske's Rune of Archery",
+    "slots": {
+      "bow": {
+        "stats": [
+          "Bow Attacks fire an additional Arrow",
+          "Bonded: 20% increased Projectile Speed"
+        ]
+      }
+    },
+    "tags": [
+      "fire"
+    ]
+  },
+  {
+    "name": "Thane Girt's Rune of Wildness",
+    "slots": {
+      "caster": {
+        "stats": [
+          "25% chance for Spell Skills to fire 2 additional Projectiles",
+          "Bonded: Every Rage also grants 1% increased Spell Damage"
+        ]
+      }
+    },
+    "tags": [
+      "fire"
+    ]
+  },
+  {
+    "name": "Fenumus' Rune of Draining",
+    "slots": {
+      "gloves": {
+        "stats": [
+          "20% increased Withered Magnitude",
+          "Bonded: +7% to Chaos Resistance"
+        ]
+      }
+    },
+    "tags": [
+      "chaos",
+      "resistance"
+    ]
+  },
+  {
+    "name": "Thane Myrk's Rune of Summer",
+    "slots": {
+      "weapon": {
+        "stats": [
+          "Adds 23 to 34 Fire Damage",
+          "Bonded: +2% to Maximum Fire Resistance"
+        ]
+      }
+    },
+    "tags": [
+      "fire",
+      "resistance"
+    ]
+  },
+  {
+    "name": "Lady Hestra's Rune of Winter",
+    "slots": {
+      "weapon": {
+        "stats": [
+          "Adds 19 to 28 Cold Damage",
+          "Bonded: +2% to Maximum Cold Resistance"
+        ]
+      }
+    },
+    "tags": [
+      "cold",
+      "resistance"
+    ]
+  },
+  {
+    "name": "Thane Leld's Rune of Spring",
+    "slots": {
+      "weapon": {
+        "stats": [
+          "Adds 1 to 60 Lightning Damage",
+          "Bonded: +2% to Maximum Lightning Resistance"
+        ]
+      }
+    },
+    "tags": [
+      "lightning",
+      "resistance"
+    ]
+  },
+  {
+    "name": "The Greatwolf's Rune of Claws",
+    "slots": {
+      "gloves": {
+        "stats": [
+          "Adds 5 to 12 Physical Damage to Attacks",
+          "Bonded: Fissure Skills have +2 to Limit"
+        ]
+      }
+    },
+    "tags": [
+      "physical"
+    ]
+  },
+  {
+    "name": "The Greatwolf's Rune of Willpower",
+    "slots": {
+      "body armour": {
+        "stats": [
+          "15% of Damage is taken from Mana before Life",
+          "Bonded: 8% of Maximum Life Converted to Energy Shield"
+        ]
+      }
+    },
+    "tags": [
+      "life",
+      "mana",
+      "es"
+    ]
+  },
+  {
+    "name": "Idol of Sirrius",
+    "slots": {
+      "gloves": {
+        "stats": [
+          "8% increased Attack Speed",
+          "Bonded: 15% reduced Slowing Potency of Debuffs on You"
+        ]
+      }
+    },
+    "tags": []
+  },
+  {
+    "name": "Idol of Thruldana",
+    "slots": {
+      "weapon": {
+        "stats": [
+          "25% reduced Poison Duration",
+          "Targets can be affected by +1 of your Poisons at the same time",
+          "Bonded: Gain 13% of Elemental Damage as Extra Chaos Damage"
+        ]
+      }
+    },
+    "tags": [
+      "chaos"
+    ]
+  },
+  {
+    "name": "Idol of Grold",
+    "slots": {
+      "gloves": {
+        "stats": [
+          "20% increased total Power counted by Warcries",
+          "Bonded: 20% increased Glory generation"
+        ]
+      }
+    },
+    "tags": []
+  },
+  {
+    "name": "Idol of Eeshta",
+    "slots": {
+      "helmet": {
+        "stats": [
+          "12% increased Cost Efficiency",
+          "Bonded: Meta Skills have 12% increased Reservation Efficiency"
+        ]
+      }
+    },
+    "tags": []
+  },
+  {
+    "name": "Idol of Egrin",
+    "slots": {
+      "helmet": {
+        "stats": [
+          "Enemies you Curse take 6% increased Damage",
+          "Bonded: 20% increased Area of Effect of Curses"
+        ]
+      }
+    },
+    "tags": []
+  },
+  {
+    "name": "Idol of Maxarius",
+    "slots": {
+      "body armour": {
+        "stats": [
+          "+1 Charm Slot",
+          "Bonded: Storm Skills have +1 to Limit"
+        ]
+      }
+    },
+    "tags": []
+  },
+  {
+    "name": "Idol of Ralakesh",
+    "slots": {
+      "helmet": {
+        "stats": [
+          "8% increased Reservation Efficiency of Minion Skills",
+          "Bonded: Minions Revive 8% faster"
+        ]
+      }
+    },
+    "tags": [
+      "minion"
+    ]
+  },
+  {
+    "name": "Snake Idol",
+    "slots": {
+      "gloves": {
+        "stats": [
+          "5% increased Curse Magnitudes",
+          "Bonded: Remnants have 10% increased effect"
+        ]
+      },
+      "sceptre": {
+        "stats": [
+          "Allies in your Presence have 8% increased Attack Speed",
+          "Bonded: 10% increased Skill Speed while Shapeshifted"
+        ]
+      }
+    },
+    "tags": []
+  },
+  {
+    "name": "Primate Idol",
+    "slots": {
+      "helmet": {
+        "stats": [
+          "Minions have 12% increased maximum Life",
+          "Bonded: Remnants can be collected from 20% further away"
+        ]
+      },
+      "sceptre": {
+        "stats": [
+          "Allies in your Presence deal 30% increased Damage",
+          "Bonded: 40% increased Damage while Shapeshifted"
+        ]
+      }
+    },
+    "tags": [
+      "life",
+      "minion"
+    ]
+  },
+  {
+    "name": "Owl Idol",
+    "slots": {
+      "focus": {
+        "stats": [
+          "10% increased Cooldown Recovery Rate",
+          "Bonded: 15% increased effect of Archon Buffs on you"
+        ]
+      },
+      "sceptre": {
+        "stats": [
+          "Allies in your Presence have 8% increased Cast Speed",
+          "Bonded: 10% increased Skill Speed while Shapeshifted"
+        ]
+      }
+    },
+    "tags": []
+  },
+  {
+    "name": "Cat Idol",
+    "slots": {
+      "gloves": {
+        "stats": [
+          "15% increased Accuracy Rating",
+          "Bonded: 20% increased Charm Charges gained"
+        ]
+      },
+      "sceptre": {
+        "stats": [
+          "Allies in your Presence have 14% increased Critical Hit Chance",
+          "Bonded: 25% increased Critical Hit Chance while Shapeshifted"
+        ]
+      }
+    },
+    "tags": [
+      "crit"
+    ]
+  },
+  {
+    "name": "Wolf Idol",
+    "slots": {
+      "gloves": {
+        "stats": [
+          "10% increased Magnitude of Bleeding you inflict",
+          "Bonded: 15% reduced Magnitude of Bleeding on You"
+        ]
+      },
+      "sceptre": {
+        "stats": [
+          "Allies in your Presence have 14% increased Critical Damage Bonus",
+          "Bonded: 25% increased Critical Hit Chance while Shapeshifted"
+        ]
+      }
+    },
+    "tags": [
+      "crit"
+    ]
+  },
+  {
+    "name": "Stag Idol",
+    "slots": {
+      "helmet": {
+        "stats": [
+          "50% increased Thorns Critical Hit Chance",
+          "Bonded: Thorns Damage has 40% chance to ignore Enemy Armour"
+        ]
+      },
+      "sceptre": {
+        "stats": [
+          "Allies in your Presence deal 1 to 40 added Attack Lightning Damage",
+          "Bonded: 40% increased Attack Damage while Shapeshifted"
+        ]
+      }
+    },
+    "tags": [
+      "lightning",
+      "armour",
+      "crit"
+    ]
+  },
+  {
+    "name": "Boar Idol",
+    "slots": {
+      "gloves": {
+        "stats": [
+          "Gain 1 Rage on Melee Hit",
+          "Bonded: 15% increased Warcry Cooldown Recovery Rate"
+        ]
+      },
+      "sceptre": {
+        "stats": [
+          "Allies in your Presence Regenerate 8 Life per second",
+          "Bonded: 25% increased Life Regeneration rate while Shapeshifted"
+        ]
+      }
+    },
+    "tags": [
+      "life"
+    ]
+  },
+  {
+    "name": "Bear Idol",
+    "slots": {
+      "helmet": {
+        "stats": [
+          "8% increased Area of Effect",
+          "Bonded: 10% increased Reservation Efficiency of Companion Skills"
+        ]
+      },
+      "sceptre": {
+        "stats": [
+          "Allies in your Presence deal 12 to 18 added Attack Physical Damage",
+          "Bonded: 40% increased Attack Damage while Shapeshifted"
+        ]
+      }
+    },
+    "tags": [
+      "physical"
+    ]
+  },
+  {
+    "name": "Ox Idol",
+    "slots": {
+      "shield": {
+        "stats": [
+          "10% increased Block chance",
+          "Bonded: 10% chance for Damage of Enemies Hitting you to be Unlucky"
+        ]
+      },
+      "sceptre": {
+        "stats": [
+          "Allies in your Presence have +8% to all Elemental Resistances",
+          "Bonded: +20% of Armour also applies to Elemental Damage while Shapeshifted"
+        ]
+      }
+    },
+    "tags": [
+      "armour",
+      "resistance"
+    ]
+  },
+  {
+    "name": "Rabbit Idol",
+    "slots": {
+      "body armour": {
+        "stats": [
+          "5% increased Rarity of Items found",
+          "Bonded: 5% increased Quantity of Gold Dropped by Slain Enemies"
+        ]
+      },
+      "sceptre": {
+        "stats": [
+          "10% increased Spirit",
+          "Bonded: Minions have 30% increased Cooldown Recovery Rate for Command Skills"
+        ]
+      }
+    },
+    "tags": [
+      "spirit",
+      "minion"
+    ]
+  },
+  {
+    "name": "Fox Idol",
+    "slots": {
+      "body armour": {
+        "stats": [
+          "+2% to Quality of all Skills",
+          "Bonded: +4 to all Attributes"
+        ]
+      },
+      "sceptre": {
+        "stats": [
+          "30% increased Presence Area of Effect",
+          "Bonded: Minions have 20% increased Area of Effect"
+        ]
+      }
+    },
+    "tags": [
+      "minion"
+    ]
+  }
+]
